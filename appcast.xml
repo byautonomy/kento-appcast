@@ -4,6 +4,77 @@
         <title>Kento</title>
         <item>
             <title>0.1</title>
+            <pubDate>Mon, 19 Oct 2026 17:04:42 -0700</pubDate>
+            <sparkle:version>640</sparkle:version>
+            <sparkle:shortVersionString>0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.1, build 640</h2>
+<h3>In this build</h3>
+<ul>
+<li>Backdrops: grab one anywhere to move it, and resize it from a wide band at any edge or corner. Its settings show in Properties when you click it, and the graph updates as you change them. Double-click its title or its note to edit them on the graph; the note's box grows with its lines.
+<li>Flipbook (Viewer &gt; Flipbook..., Alt+F): renders in the background to the cache, playing in the Viewer as the Timeline fills green, or to a QuickTime in its own player that you can save. It can leave a cache node (DiskCache) after the node you flipbooked.
+<li>Open and save in Kento's own dialog: favourites (the comp's folder, its shot and show, Renders, folders you star), recent folders, filters for comps, footage, this shot's versions and this week, a preview of what a comp holds, Version up.
+<li>Motion (the Curve Editor's Motion button, or a knob's menu): shakes, noise, waves and eases as cards with their waveforms. Bake one into keys, or add it on top, live: the knob's keys stay keyable underneath and the motion's settings become knobs you can key too. Nuke opens it the same.
+<li>Expressions read Nuke's curve (a knob's own keys).
+<li>Properties: several selected nodes get a panel of their own (group, Bento, backdrop, note, align, move by, colour, lock, disable, shared values); closed sections list what's changed in them; saturation's slider in greys; a Dot's panel.
+<li>Problems in plain words where they happen: a card when you rest on a red node, with fixes (Relink..., Show in Finder, nearest frame); the same at the top of the node's Properties; the Viewer names what it shows in place of a missing frame; a failed render shows a card with Retry from the frame that failed; an amber dot on a node that works but needs a look.
+<li>Curve Editor: box zoom (Control+Option and drag), Key properties (Enter), copy and paste whole curves, auto-clamped tangents, lane bars in the Ghost.
+<li>Dope Sheet: chevrons to fold a node's rows, the node's colour by its name, Ghost (curves behind the keys), Footage only.
+<li>Node Graph: jump labels (a long wire as two named tags), dotted lines for linked values, Select What Reads It, a group in its own tab (Cmd+Return), O for Roto, P for RotoPaint, Shift and a letter to branch, Shift+A for AddMix, Alt+N for a sticky note. Shift-snapping no longer lands nodes off the grid.
+<li>Scopes, from the Viewer bar's chart button.
+<li>Write: numbers its files by an offset, a start frame or an expression, and Render all follows each Write's render order.
+<li>The interface's brightness lifts every grey together.
+<li>numpy is part of Kento.
+</ul>
+<p>The first build for compositors to try. It opens and saves Nuke-compatible scripts, and is meant for</p>
+<p>new work as well as for playing old comps back.</p>
+<h3>Comps</h3>
+<ul>
+<li>Opens .nk scripts: all 1,388 scripts in Autonomy&#x27;s census open, with 99% of their nodes built. Saves Nuke-compatible .nk, and .ko, Kento&#x27;s own file, which keeps everything (tracks, solves, Kento&#x27;s own settings).
+<li>Expressions on knobs, Nuke-compatible: worked out live where Kento can, and kept in the script where it can&#x27;t yet. Known safe Python from comps runs.
+<li>Autosave, and recovery of an autosave newer than the comp.
+</ul>
+<h3>Nodes</h3>
+<ul>
+<li>Nuke-compatible nodes, by the names compositors know and checked pixel for pixel: merges, grades, transforms (concatenating), blurs, keyers, Roto and RotoPaint, Read and Write (EXR, DPX, PNG, TIFF, JPEG, ProRes, H.264), 3D cards, cameras and ScanlineRender, and more.
+<li>New nodes start from your recent or most common values, or their defaults.
+</ul>
+<h3>The Viewer</h3>
+<ul>
+<li>Up to four Viewers; compare and wipe; guides, aspect masks, rulers; the data passes (depth, motion, normals, IDs, position); Cryptomatte picking; pixel info.
+<li>On-screen controls for transforms, corner pins, crops, ramps, flares, the Tracker and the Sampler.
+</ul>
+<h3>Roto and paint</h3>
+<ul>
+<li>Draw Bezier, B-spline, rectangle and ellipse shapes; edit points and tangents, key them (auto-key), set colour, feather and opacity.
+<li>Paint with a brush, eraser, clone or reveal, with pen pressure; a clone&#x27;s source moved, turned and scaled. Edit painted strokes afterwards in the Layers panel: their lifetime, opacity, brush, colour and clone source; several at once.
+<li>The Layers panel: layers, shapes and strokes, renamed, duplicated and reordered by dragging.
+</ul>
+<h3>Tracking</h3>
+<ul>
+<li>The Tracker tracks in Kento, with tolerance, hand-over to another feature keeping the offset, rejoining the original, and filling gaps from other tracks. Forward and back, or multipass.
+<li>Tracks over time: a lane per track. Exports to Transform and CornerPin2D, linked or baked.
+</ul>
+<h3>Expressions</h3>
+<ul>
+<li>The expression helper (Utility menu): Link, Choose, Offset in time, Hold, Wiggle, Oscillate, Ramp, Step, Loop, Clamp and Size, with a live curve; pixel recipes for keys and masks.
+<li>The pick-whip: drag a knob&#x27;s state mark onto another knob to link it, or onto a node in the Node Graph to choose one of its knobs.
+</ul>
+<h3>Help</h3>
+<ul>
+<li>Report a problem: what happened, the comp, the log and the Mac&#x27;s details, saved as a .zip and filed in the studio bug tracker.
+</ul>
+<h3>Not yet</h3>
+<ul>
+<li>Proxy and downscale, and the manual: in the menus, dim.
+<li>Paint&#x27;s blur, sharpen, smear, dodge and burn; a clone source from another frame.
+<li>Roto open splines.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.1.640.zip" length="309465705" type="application/octet-stream" sparkle:edSignature="O7l1Y8rAPTsCj1AClROh5A6ne0vKJ1WwKXUbIxQNhgWyVj7gZuGKqrw32awvlwoItomukUD3RgXu4CkF1KBFCA=="/>
+        </item>
+        <item>
+            <title>0.1</title>
             <pubDate>Mon, 19 Oct 2026 12:54:41 -0700</pubDate>
             <sparkle:version>594</sparkle:version>
             <sparkle:shortVersionString>0.1</sparkle:shortVersionString>
@@ -134,63 +205,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.1.572.zip" length="303312057" type="application/octet-stream" sparkle:edSignature="gEgNQ941O6TJSMcgUh+4/L95qTFmRvef16HrrHrquNst1Fd6gEvjpV+S0xBtxk6P6k88v1fgDN0hrVh+uZ8fDw=="/>
-        </item>
-        <item>
-            <title>0.1</title>
-            <pubDate>Mon, 19 Oct 2026 09:52:48 -0700</pubDate>
-            <sparkle:version>553</sparkle:version>
-            <sparkle:shortVersionString>0.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.1, build 553</h2>
-<h3>In this build</h3>
-<ul>
-<li>Check for updates works, and installs a new build when Kento quits.</ul>
-<p>The first build for compositors to try. It opens and saves Nuke-compatible scripts, and is meant for</p>
-<p>new work as well as for playing old comps back.</p>
-<h3>Comps</h3>
-<ul>
-<li>Opens .nk scripts: all 1,388 scripts in Autonomy&#x27;s census open, with 99% of their nodes built. Saves Nuke-compatible .nk, and .ko, Kento&#x27;s own file, which keeps everything (tracks, solves, Kento&#x27;s own settings).
-<li>Expressions on knobs, Nuke-compatible: worked out live where Kento can, and kept in the script where it can&#x27;t yet. Known safe Python from comps runs.
-<li>Autosave, and recovery of an autosave newer than the comp.
-</ul>
-<h3>Nodes</h3>
-<ul>
-<li>Nuke-compatible nodes, by the names compositors know and checked pixel for pixel: merges, grades, transforms (concatenating), blurs, keyers, Roto and RotoPaint, Read and Write (EXR, DPX, PNG, TIFF, JPEG, ProRes, H.264), 3D cards, cameras and ScanlineRender, and more.
-<li>New nodes start from your recent or most common values, or their defaults.
-</ul>
-<h3>The Viewer</h3>
-<ul>
-<li>Up to four Viewers; compare and wipe; guides, aspect masks, rulers; the data passes (depth, motion, normals, IDs, position); Cryptomatte picking; pixel info.
-<li>On-screen controls for transforms, corner pins, crops, ramps, flares, the Tracker and the Sampler.
-</ul>
-<h3>Roto and paint</h3>
-<ul>
-<li>Draw Bezier, B-spline, rectangle and ellipse shapes; edit points and tangents, key them (auto-key), set colour, feather and opacity.
-<li>Paint with a brush, eraser, clone or reveal, with pen pressure; a clone&#x27;s source moved, turned and scaled. Edit painted strokes afterwards in the Layers panel: their lifetime, opacity, brush, colour and clone source; several at once.
-<li>The Layers panel: layers, shapes and strokes, renamed, duplicated and reordered by dragging.
-</ul>
-<h3>Tracking</h3>
-<ul>
-<li>The Tracker tracks in Kento, with tolerance, hand-over to another feature keeping the offset, rejoining the original, and filling gaps from other tracks. Forward and back, or multipass.
-<li>Tracks over time: a lane per track. Exports to Transform and CornerPin2D, linked or baked.
-</ul>
-<h3>Expressions</h3>
-<ul>
-<li>The expression helper (Utility menu): Link, Choose, Offset in time, Hold, Wiggle, Oscillate, Ramp, Step, Loop, Clamp and Size, with a live curve; pixel recipes for keys and masks.
-<li>The pick-whip: drag a knob&#x27;s state mark onto another knob to link it, or onto a node in the Node Graph to choose one of its knobs.
-</ul>
-<h3>Help</h3>
-<ul>
-<li>Report a problem: what happened, the comp, the log and the Mac&#x27;s details, saved as a .zip and filed in the studio bug tracker.
-</ul>
-<h3>Not yet</h3>
-<ul>
-<li>Scopes, Flipbook, proxy and downscale, and the manual: in the menus, dim.
-<li>Paint&#x27;s blur, sharpen, smear, dodge and burn; a clone source from another frame.
-<li>Roto open splines.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.1.553.zip" length="303218677" type="application/octet-stream" sparkle:edSignature="cX94qKOR0fdLjIcNI4WQTXcsRD03ZgPy3X/S1NfEeXhVGfNhOWqX0Q8WbjgbP+CHxNRv5HaYmEcQZflLCimkCg=="/>
         </item>
     </channel>
 </rss>
