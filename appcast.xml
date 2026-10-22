@@ -4,6 +4,28 @@
         <title>Kento</title>
         <item>
             <title>0.5</title>
+            <pubDate>Thu, 22 Oct 2026 10:11:58 -0700</pubDate>
+            <sparkle:version>974</sparkle:version>
+            <sparkle:shortVersionString>0.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.5, build 974</h2>
+<h3>In this build</h3>
+<ul>
+<li>Shaping a baked motion: Bake into keys keeps the motion's recipe. Its chip stays on the curve ("Camera shake, baked"); Shape in the Curve Editor shows its amplitude and frequency curves beside the keys, and what a re-bake would give is drawn dashed over them as you shape. Re-bake writes it in one undo. Also on the chip: Make it live again, and Keep the keys, forget the motion.
+<li>Backdrops and sticky notes take any colour: the wheel after the tints opens the colour picker, and your colour shows as its own swatch.
+</ul>
+<h3>Not yet</h3>
+<ul>
+<li>Re-bake as you shape, without the click.
+<li>Kento's own colour picker (the system's for now).
+<li>Paths written back for Windows and Linux on save, and relative paths.
+<li>ZDefocus2's bladed and image filters; SplineWarp in comps.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.5.974.zip" length="311992022" type="application/octet-stream" sparkle:edSignature="claf5ZiiZwDwOMU0f/6gFv9CfXQcaKwj32eg6HDXi4lBZTJmiIzx2DXIBl4Gzz3/QwjpLxQ+JXwd1oR1GpPwAw=="/>
+        </item>
+        <item>
+            <title>0.5</title>
             <pubDate>Thu, 22 Oct 2026 08:57:33 -0700</pubDate>
             <sparkle:version>970</sparkle:version>
             <sparkle:shortVersionString>0.5</sparkle:shortVersionString>
@@ -59,29 +81,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.5.959.zip" length="311780227" type="application/octet-stream" sparkle:edSignature="SUmgBiTyuOxDh7gAOMuoN49lviKfiowqZsfc8YoreK23kKPSABjLxe78J9chK58QIRv7badD31EbqV4XpJDRBA=="/>
-        </item>
-        <item>
-            <title>0.5</title>
-            <pubDate>Thu, 22 Oct 2026 05:18:52 -0700</pubDate>
-            <sparkle:version>952</sparkle:version>
-            <sparkle:shortVersionString>0.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.5, build 952</h2>
-<h3>In this build</h3>
-<ul>
-<li>ChromaKeyer keys as Nuke does: chroma gain, screen gain, the balance on red, green and blue screens, the alpha and despill biases, the black and white points and the replace modes, all checked pixel for pixel.
-<li>New nodes, checked against Nuke: EdgeExtend, Inpaint2, GenerateLUT (writes .cube, .3dl, .csp and .vf) and OCIONamedTransform. TimeDissolve follows its curve.
-<li>Comps open closer to how they look in Nuke: the classic Shuffle writes its second layer (alpha into depth and the like), MinColor uses the offset its analysis stored (Analyze on its panel), Dilate takes a separate width and height, and about a thousand more knob expressions now work, DasGrain's among them.
-</ul>
-<h3>Not yet</h3>
-<ul>
-<li>EdgeExtend's detail amount and Inpaint2's smoothness above 2 are close, not exact.
-<li>Grade and ColorCorrect's mix luminance.
-<li>ZDefocus and SplineWarp in comps: kept, not rendered yet.
-<li>Paint's blur, sharpen, smear, dodge and burn; Roto open splines.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.5.952.zip" length="311714153" type="application/octet-stream" sparkle:edSignature="llbt5rRH8K4Mvwu32saRsyFaUq0ZIHaN+/kBdlbNIwfT0KMrBX/sUj54qY8rSpa8WRLsfSKlsNjHsWWD7rcmBA=="/>
         </item>
     </channel>
 </rss>
