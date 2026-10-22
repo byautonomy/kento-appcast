@@ -4,6 +4,27 @@
         <title>Kento</title>
         <item>
             <title>0.5</title>
+            <pubDate>Thu, 22 Oct 2026 10:53:05 -0700</pubDate>
+            <sparkle:version>979</sparkle:version>
+            <sparkle:shortVersionString>0.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.5, build 979</h2>
+<h3>In this build</h3>
+<ul>
+<li>Every motion keeps its shaping curves when baked, Random per frame and Flicker too: the chip stays on the curve, Shape in the Curve Editor shows them beside the keys, and Re-bake writes the keys again from them.
+<li>The middle mouse button pans the Curve Editor, whether or not keys are selected (it used to move them).
+</ul>
+<h3>Not yet</h3>
+<ul>
+<li>Curves baked before build 974 have no recipe to shape: bake them again from their keys.
+<li>Re-bake as you shape, without the click; Kento's own colour picker.
+<li>Paths written back for Windows and Linux on save, and relative paths.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.5.979.zip" length="311996882" type="application/octet-stream" sparkle:edSignature="tabMQuv7Z792qzxCTA8MLXLLaz5VdS0/k0GaM8ZV7deFKusfNtxKroFTemZMbneSOT7SCe7g5mict92qeAnkAg=="/>
+        </item>
+        <item>
+            <title>0.5</title>
             <pubDate>Thu, 22 Oct 2026 10:11:58 -0700</pubDate>
             <sparkle:version>974</sparkle:version>
             <sparkle:shortVersionString>0.5</sparkle:shortVersionString>
@@ -52,35 +73,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.5.970.zip" length="311979262" type="application/octet-stream" sparkle:edSignature="i118E54OgCkkHjPGDJrUztaFe9KIWAy2QUUgfcJqiGTZUGG9vdxoxhAC2kHXt9Mp6g+G6wAwBCziwdPhDuMsAg=="/>
-        </item>
-        <item>
-            <title>0.5</title>
-            <pubDate>Thu, 22 Oct 2026 07:32:15 -0700</pubDate>
-            <sparkle:version>959</sparkle:version>
-            <sparkle:shortVersionString>0.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.5, build 959</h2>
-<h3>In this build</h3>
-<ul>
-<li>Undo history: Undo and Redo name the step they undo ("Undo Set Grade1.white"), and Edit &gt; History... lists every step of the comp by name. Click any step to go back or forward to it in one move. Two settings, both off (Settings &gt; General &gt; Undo history): keep the history in the comp, so a reopened comp can go back to its earlier steps, and a step selects the nodes it changed.
-<li>Settings and Quit stay available in the Kento menu after a comp opens.
-<li>The Window menu lists your open comps; choose one to bring it forward.
-<li>The Edit menu's AutoFill, Dictation and Emoji items now sit at its end, after Kento's own.
-<li>Brighter nodes and wires if you want them: Settings &gt; Node Graph &gt; Visibility has node brightness, node saturation, wire brightness, wire thickness and glyph size (the flow chevrons, ports and input labels), with quick presets (As designed, Brighter, Brightest, Bold wires).
-<li>A Timeline mark's text is one Note box.
-<li>Grade and ColorCorrect's mix luminance works, matching Nuke.
-<li>RotoPaint's global motion blur draws as Roto's does.
-<li>The PDF manual's part pages: their chapter lists no longer run over the titles.
-</ul>
-<h3>Not yet</h3>
-<ul>
-<li>The History window to its new design (board 38).
-<li>EdgeExtend's detail amount and Inpaint2's smoothness above 2 are close, not exact.
-<li>ZDefocus and SplineWarp in comps: kept, not rendered yet.
-<li>Paint's blur, sharpen, smear, dodge and burn; Roto open splines.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.5.959.zip" length="311780227" type="application/octet-stream" sparkle:edSignature="SUmgBiTyuOxDh7gAOMuoN49lviKfiowqZsfc8YoreK23kKPSABjLxe78J9chK58QIRv7badD31EbqV4XpJDRBA=="/>
         </item>
     </channel>
 </rss>
