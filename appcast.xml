@@ -4,6 +4,30 @@
         <title>Kento</title>
         <item>
             <title>0.6</title>
+            <pubDate>Thu, 22 Oct 2026 15:49:27 -0700</pubDate>
+            <sparkle:version>1006</sparkle:version>
+            <sparkle:shortVersionString>0.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.6, build 1006</h2>
+<h3>In this build</h3>
+<ul>
+<li>The menus keep working: in 1000 they stopped answering clicks after a while (their keys still worked).
+<li>An imported comp no longer lights up red: an error shows on the node it starts in, as a Read that can't find its file, not on everything downstream.
+<li>A Windows comp's Z:/kura and X:/kura footage reads on the Mac and Linux by default, through the studio's own path map.
+<li>Routed wires: a wire with no clear way round the nodes is drawn with square corners, never diagonal, and wires no longer twitch as the graph changes.
+<li>The Node Graph's Notes button shows or hides the sticky notes.
+<li>A node's menu: Select &gt; Upstream, Downstream and All connected.
+</ul>
+<h3>Not yet</h3>
+<ul>
+<li>Cameras and geometry still translate their paths one way, as a comp opens.
+<li>The path maps as a table with Mac, Windows and Linux columns; the noise scopes; re-bake as you shape.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.6.1006.zip" length="312577260" type="application/octet-stream" sparkle:edSignature="oyMoZhuQyP5o8YtLcAhSW4Ys06muJGmyl/sDM4vUoCTiCYgFUXFvCGQfHGhflXKlvxptxAhAk2H9cvhdefJ9AQ=="/>
+        </item>
+        <item>
+            <title>0.6</title>
             <pubDate>Thu, 22 Oct 2026 14:38:23 -0700</pubDate>
             <sparkle:version>1000</sparkle:version>
             <sparkle:shortVersionString>0.6</sparkle:shortVersionString>
@@ -44,27 +68,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.5.985.zip" length="312544729" type="application/octet-stream" sparkle:edSignature="bABzIm89ZwKgbU76MyAc+8JViZpqPC365MPqdCmTvY+/4sX82iyNRIfiPvxlCBM6Vvi1FpBBef712iUPhXGSAQ=="/>
-        </item>
-        <item>
-            <title>0.5</title>
-            <pubDate>Thu, 22 Oct 2026 10:53:05 -0700</pubDate>
-            <sparkle:version>979</sparkle:version>
-            <sparkle:shortVersionString>0.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.5, build 979</h2>
-<h3>In this build</h3>
-<ul>
-<li>Every motion keeps its shaping curves when baked, Random per frame and Flicker too: the chip stays on the curve, Shape in the Curve Editor shows them beside the keys, and Re-bake writes the keys again from them.
-<li>The middle mouse button pans the Curve Editor, whether or not keys are selected (it used to move them).
-</ul>
-<h3>Not yet</h3>
-<ul>
-<li>Curves baked before build 974 have no recipe to shape: bake them again from their keys.
-<li>Re-bake as you shape, without the click; Kento's own colour picker.
-<li>Paths written back for Windows and Linux on save, and relative paths.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.5.979.zip" length="311996882" type="application/octet-stream" sparkle:edSignature="tabMQuv7Z792qzxCTA8MLXLLaz5VdS0/k0GaM8ZV7deFKusfNtxKroFTemZMbneSOT7SCe7g5mict92qeAnkAg=="/>
         </item>
     </channel>
 </rss>
