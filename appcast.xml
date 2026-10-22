@@ -4,6 +4,35 @@
         <title>Kento</title>
         <item>
             <title>0.5</title>
+            <pubDate>Thu, 22 Oct 2026 07:32:15 -0700</pubDate>
+            <sparkle:version>959</sparkle:version>
+            <sparkle:shortVersionString>0.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.5, build 959</h2>
+<h3>In this build</h3>
+<ul>
+<li>Undo history: Undo and Redo name the step they undo ("Undo Set Grade1.white"), and Edit &gt; History... lists every step of the comp by name. Click any step to go back or forward to it in one move. Two settings, both off (Settings &gt; General &gt; Undo history): keep the history in the comp, so a reopened comp can go back to its earlier steps, and a step selects the nodes it changed.
+<li>Settings and Quit stay available in the Kento menu after a comp opens.
+<li>The Window menu lists your open comps; choose one to bring it forward.
+<li>The Edit menu's AutoFill, Dictation and Emoji items now sit at its end, after Kento's own.
+<li>Brighter nodes and wires if you want them: Settings &gt; Node Graph &gt; Visibility has node brightness, node saturation, wire brightness, wire thickness and glyph size (the flow chevrons, ports and input labels), with quick presets (As designed, Brighter, Brightest, Bold wires).
+<li>A Timeline mark's text is one Note box.
+<li>Grade and ColorCorrect's mix luminance works, matching Nuke.
+<li>RotoPaint's global motion blur draws as Roto's does.
+<li>The PDF manual's part pages: their chapter lists no longer run over the titles.
+</ul>
+<h3>Not yet</h3>
+<ul>
+<li>The History window to its new design (board 38).
+<li>EdgeExtend's detail amount and Inpaint2's smoothness above 2 are close, not exact.
+<li>ZDefocus and SplineWarp in comps: kept, not rendered yet.
+<li>Paint's blur, sharpen, smear, dodge and burn; Roto open splines.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.5.959.zip" length="311780227" type="application/octet-stream" sparkle:edSignature="SUmgBiTyuOxDh7gAOMuoN49lviKfiowqZsfc8YoreK23kKPSABjLxe78J9chK58QIRv7badD31EbqV4XpJDRBA=="/>
+        </item>
+        <item>
+            <title>0.5</title>
             <pubDate>Thu, 22 Oct 2026 05:18:52 -0700</pubDate>
             <sparkle:version>952</sparkle:version>
             <sparkle:shortVersionString>0.5</sparkle:shortVersionString>
@@ -47,36 +76,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.5.931.zip" length="311612548" type="application/octet-stream" sparkle:edSignature="xbiOqIVihgB1xD0tC9NNIWpAeDqADrVG1q0IdyuYnUCI4RU8S6BamogFA+yAKZsSDX+c08Z1K1rbXooqd3ufDw=="/>
-        </item>
-        <item>
-            <title>0.5</title>
-            <pubDate>Wed, 21 Oct 2026 18:39:56 -0700</pubDate>
-            <sparkle:version>927</sparkle:version>
-            <sparkle:shortVersionString>0.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.5, build 927</h2>
-<h3>In this build</h3>
-<ul>
-<li>Color: new comps start on ACES 2.0, working in ACEScg, on the un-tone-mapped view, and Settings &gt; Preferences &gt; Colour sets what new comps start with. File &gt; New comp in show starts a comp with a show's format, frame rate and color; an opened comp keeps its own and says where it differs from its show's.
-<li>Reads tag themselves from their files (the color interop ID, the primaries, then the file type), and the Read says what it decided and why. A file named with a color space in it no longer reads as that space under the classic config.
-<li>Write deliveries by use: EXR comps and plate returns, ProRes Rec.709, sRGB, H.264, HEVC, and P3 and HDR PQ. EXRs say what they hold.
-<li>The comp's own proxy: every Viewer and renders at This comp &gt; Proxy's size (&#8984;P), with Write and Read proxy files.
-<li>PixelKernel: per-pixel kernels written in Kento, and the BlinkScript kernels in comps run, checked against Nuke.
-<li>Nagi 1.4.6, Autonomy's noise reduction, as a Kento node: motion compensation, the Light, Standard and Strong presets, the Camera menu.
-<li>More nodes, checked pixel for pixel: ClipTest, Toe, ColorBars, ColorWheel, CMSTestPattern, Posterize, PLogLin, CCrosstalk, HSVTool, HistEQ, MinColor, ColorTransfer, the OCIO CDL, LogConvert and Look transforms, Tile, CopyRectangle, ZMerge, ZSlice, DropShadow, DegrainBlue, Emboss, Bilateral, TemporalMedian, TimeEcho, TimeDissolve, add and remove 3:2 pulldown; LightKey and PrimeKey keys, Steadiness, LensDistortion, Kronos, VectorGenerator, MotionBlur, SmartVector and VectorDistort.
-<li>The manual's pictures: every chapter's figures are in, in the app and the PDF.
-<li>Luma Pictures' gizmos ship with Kento, in the Nodes menu.
-<li>Comps open with more of their expressions worked out, and a knob a script leaves out takes the value it has in a script, not a new node's.
-<li>Fixed: a comp's knobs left at their defaults read as a new node's in eight nodes (Rectangle's area, LensDistortion's output, Kronos's channels and others).
-</ul>
-<h3>Not yet</h3>
-<ul>
-<li>ZDefocus, EdgeExtend, SplineWarp and Inpaint in comps: kept, not rendered yet.
-<li>Paint's blur, sharpen, smear, dodge and burn; a clone source from another frame.
-<li>Roto open splines.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.5.927.zip" length="311599720" type="application/octet-stream" sparkle:edSignature="ithj2nA/Nwp1rYREYoQ6K6wYmQCAL9UCFqjeTmCXmLmJuWZzQmrEZbY9r8QH/RIPMKOdOIPwlwozsQoUPDm/Dg=="/>
         </item>
     </channel>
 </rss>
