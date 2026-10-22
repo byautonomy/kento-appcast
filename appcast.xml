@@ -4,6 +4,27 @@
         <title>Kento</title>
         <item>
             <title>0.5</title>
+            <pubDate>Thu, 22 Oct 2026 12:26:59 -0700</pubDate>
+            <sparkle:version>985</sparkle:version>
+            <sparkle:shortVersionString>0.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.5, build 985</h2>
+<h3>In this build</h3>
+<ul>
+<li>A motion baked into keys shows its shaping curves in the Curve Editor at once, with the knob's keys from before it: the curve list and the dope strip now follow every change to the comp, undo too, not only a change of selection.
+<li>About Kento moves when you drag it anywhere on its background.
+<li>The manual has four new figures: Settings > General and Node Graph, the History window, and a baked motion being shaped.
+</ul>
+<h3>Not yet</h3>
+<ul>
+<li>Re-bake as you shape, without the click; Kento's own colour picker.
+<li>Paths written back for Windows and Linux on save, and relative paths.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.5.985.zip" length="312544729" type="application/octet-stream" sparkle:edSignature="bABzIm89ZwKgbU76MyAc+8JViZpqPC365MPqdCmTvY+/4sX82iyNRIfiPvxlCBM6Vvi1FpBBef712iUPhXGSAQ=="/>
+        </item>
+        <item>
+            <title>0.5</title>
             <pubDate>Thu, 22 Oct 2026 10:53:05 -0700</pubDate>
             <sparkle:version>979</sparkle:version>
             <sparkle:shortVersionString>0.5</sparkle:shortVersionString>
@@ -44,35 +65,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.5.974.zip" length="311992022" type="application/octet-stream" sparkle:edSignature="claf5ZiiZwDwOMU0f/6gFv9CfXQcaKwj32eg6HDXi4lBZTJmiIzx2DXIBl4Gzz3/QwjpLxQ+JXwd1oR1GpPwAw=="/>
-        </item>
-        <item>
-            <title>0.5</title>
-            <pubDate>Thu, 22 Oct 2026 08:57:33 -0700</pubDate>
-            <sparkle:version>970</sparkle:version>
-            <sparkle:shortVersionString>0.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.5, build 970</h2>
-<h3>In this build</h3>
-<ul>
-<li>ZDefocus2: depth of field from the depth channel, in layers laid far to near, so sharp edges in front stay sharp and the background fills in behind them. Close to Nuke by eye.
-<li>Grade and ColorCorrect with mix luminance no longer pass hidden working channels downstream; ColorCorrect's mix luminance has its on and off switch.
-<li>Node Graph: glow strength in Settings &gt; Node Graph &gt; Visibility, and Family colours: ten schemes from Greyscale and Subdued to Vivid and Saturated, or any family's colour typed in.
-<li>Wires hop each other again where a node sits a few pixels off the line.
-<li>History: a mark for each kind of step and a rule above the undone ones; also a panel, Window &gt; Panels &gt; History.
-<li>Settings &gt; Starting values redone: the three sources as cards, overrides showing what a new node would get, and an example of a new Grade under each source.
-<li>Curve Editor: Reference &gt; Audio draws the comp's sound along the bottom, to time keys to it.
-<li>Motion: Audio envelope keys a motion's amplitude from the comp's sound.
-</ul>
-<h3>Not yet</h3>
-<ul>
-<li>ZDefocus2's bladed and image filters (drawn as the disc), and its setup views.
-<li>Learning starting values from a folder of comps.
-<li>EdgeExtend's detail amount and Inpaint2's smoothness above 2 are close, not exact.
-<li>SplineWarp in comps: kept, not rendered yet.
-<li>Paint's blur, sharpen, smear, dodge and burn; Roto open splines.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.5.970.zip" length="311979262" type="application/octet-stream" sparkle:edSignature="i118E54OgCkkHjPGDJrUztaFe9KIWAy2QUUgfcJqiGTZUGG9vdxoxhAC2kHXt9Mp6g+G6wAwBCziwdPhDuMsAg=="/>
         </item>
     </channel>
 </rss>
