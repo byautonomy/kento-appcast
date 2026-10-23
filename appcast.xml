@@ -4,6 +4,65 @@
         <title>Kento</title>
         <item>
             <title>0.6</title>
+            <pubDate>Fri, 23 Oct 2026 05:55:27 -0700</pubDate>
+            <sparkle:version>1129</sparkle:version>
+            <sparkle:shortVersionString>0.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.6, build 1129</h2>
+<h3>Roto and paint</h3>
+<ul>
+<li>The Roto panel in tabs (Roto, Transform, Lifetime, Tracking): several shapes picked take a change together; a typed value sets them all, a drag moves each by the same amount.
+<li>The point menu in full: Convert to Bezier, B-spline or Polygon, Feather falloff, Track this point (T), Bake track into keys, Open shape here, Broken tangents (B) and Lock point (L).
+<li>Open splines: drawn and outlined as a line with round ends, and a tool to draw them (click the points, Enter ends it).
+<li>Track the shape forward, from the Tracking tab: the picked shape follows the picture, its translate keyed.
+<li>Every paint tool works: Blur, Sharpen, Smear, Dodge and Burn join Brush, Eraser, Clone and Reveal (X and D keys). Blur and Sharpen take their size from the brush menu's effect.
+<li>Strokes blend with their blending mode (the stroke inspector has the menu), premultiply matches, and a pen's pressure can drive the brush's size as well as its opacity.
+<li>A picked stroke's points can be moved and deleted in the Viewer. With falloff on in the tool row, a drag carries the neighbouring points too, to nothing at the reach.
+<li>Animated shapes now land where they should between keys.
+</ul>
+<h3>Warps</h3>
+<ul>
+<li>SplineWarp built in the Viewer: pins first, Bezier and B-spline shapes, boundaries, joins, a link to a Tracker and freezing at a frame.
+<li>GridWarp in the Viewer: the grids, their points and tangents, Fit, Copy and keys, and a link to a Tracker.
+</ul>
+<h3>Color</h3>
+<ul>
+<li>What color space is this? is a contact sheet: the frame through each space it could be, most likely first. A space the file's name spells says so. Every space in the config is under a fold.
+<li>A Read's tile and the Viewer show its color space as a small tag; a click on the tag opens the menu. Studio rules can set a Read's color space by folder or name.
+<li>Utility &gt; Match grade to colour checker: drag four corners onto a chart in the plate, any way up, and Kento fits a Grade or a colour matrix to it.
+</ul>
+<h3>Tracking</h3>
+<ul>
+<li>The Tracker's reference can be fixed or updated every frame.
+<li>Average: a new track at the selected tracks' mean.
+</ul>
+<h3>Footage and paths</h3>
+<ul>
+<li>Path maps as one table, a row per place with Mac, Windows and Linux columns; a studio map file is read first. A comp can carry its own maps, and a path fixed by hand can teach one.
+<li>Make paths relative to the comp's folder, from Relink or the File menu. Relink can match a sequence by its frame range as well as its name.
+<li>The footage browser scrubs a movie in its preview and gives a Photoshop file's layer count.
+</ul>
+<h3>Nagi</h3>
+<ul>
+<li>Nagi's panel and tool row, the profile box in the Viewer with its measured noise (and a warning when it sits on detail), and the noise scopes.
+</ul>
+<h3>Elsewhere</h3>
+<ul>
+<li>Utility &gt; Show expressions lists every expression in the comp, as written.
+<li>Re-bake as you shape: a baked motion keeps its recipe, to shape and bake again.
+<li>The memory watcher warns once, with its fix one click away. The disk cache can clear itself when Kento quits and warns when its disk is nearly full.
+<li>A Bento has a Node tab to switch it off.
+<li>The Dope Sheet's Snap can snap to other keys and to marks.
+</ul>
+<h3>Not yet</h3>
+<ul>
+<li>The Tracker's Gang; Nagi's Lock and Auto Setup; X-spline shapes.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.6.1129.zip" length="313300958" type="application/octet-stream" sparkle:edSignature="qp3IVuo289KQipVUKnIaNR86xvBsC3yQoE2/HYRVY+ujCgfZmp5esI+a+C2IFrhsXMYyakT0MNbiH2h+jsICCA=="/>
+        </item>
+        <item>
+            <title>0.6</title>
             <pubDate>Thu, 22 Oct 2026 15:49:27 -0700</pubDate>
             <sparkle:version>1006</sparkle:version>
             <sparkle:shortVersionString>0.6</sparkle:shortVersionString>
@@ -47,27 +106,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.6.1000.zip" length="312566541" type="application/octet-stream" sparkle:edSignature="IvRL2fuROoqrORkZcXrMihAPhPQ6WjETQZcsNBZiQVUZvXQFbOxUN12fQiY3qIcSZuqVCzubiwZ6XxcsuXOsDg=="/>
-        </item>
-        <item>
-            <title>0.5</title>
-            <pubDate>Thu, 22 Oct 2026 12:26:59 -0700</pubDate>
-            <sparkle:version>985</sparkle:version>
-            <sparkle:shortVersionString>0.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.5, build 985</h2>
-<h3>In this build</h3>
-<ul>
-<li>A motion baked into keys shows its shaping curves in the Curve Editor at once, with the knob's keys from before it: the curve list and the dope strip now follow every change to the comp, undo too, not only a change of selection.
-<li>About Kento moves when you drag it anywhere on its background.
-<li>The manual has four new figures: Settings > General and Node Graph, the History window, and a baked motion being shaped.
-</ul>
-<h3>Not yet</h3>
-<ul>
-<li>Re-bake as you shape, without the click; Kento's own colour picker.
-<li>Paths written back for Windows and Linux on save, and relative paths.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.5.985.zip" length="312544729" type="application/octet-stream" sparkle:edSignature="bABzIm89ZwKgbU76MyAc+8JViZpqPC365MPqdCmTvY+/4sX82iyNRIfiPvxlCBM6Vvi1FpBBef712iUPhXGSAQ=="/>
         </item>
     </channel>
 </rss>
