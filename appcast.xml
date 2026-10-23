@@ -4,6 +4,24 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Fri, 23 Oct 2026 09:46:49 -0700</pubDate>
+            <sparkle:version>1166</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1166</h2>
+<h3>In this build</h3>
+<ul>
+<li>The Node Graph's text and icon size is yours to set: Settings &gt; Interface &gt; Sizes, from 80 to 160%, on a slider notched at 90, 100, 120 and 140%. The tiles keep their size.
+</ul>
+<h3>Not yet</h3>
+<ul>
+<li>A size of its own for Properties; X-spline shapes; Follow a track in the Roto point menu.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1166.zip" length="313417988" type="application/octet-stream" sparkle:edSignature="WoEt4FWMwJGLYqNinSwNCDGE/pXOqk3sw1xg7IFzyqNll/3N3SPXXBFFO58PKJmbXC/2u2oZOUB0GPi2dKgXDg=="/>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Fri, 23 Oct 2026 09:02:15 -0700</pubDate>
             <sparkle:version>1164</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -99,30 +117,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.6.1129.zip" length="313300958" type="application/octet-stream" sparkle:edSignature="qp3IVuo289KQipVUKnIaNR86xvBsC3yQoE2/HYRVY+ujCgfZmp5esI+a+C2IFrhsXMYyakT0MNbiH2h+jsICCA=="/>
-        </item>
-        <item>
-            <title>0.6</title>
-            <pubDate>Thu, 22 Oct 2026 15:49:27 -0700</pubDate>
-            <sparkle:version>1006</sparkle:version>
-            <sparkle:shortVersionString>0.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.6, build 1006</h2>
-<h3>In this build</h3>
-<ul>
-<li>The menus keep working: in 1000 they stopped answering clicks after a while (their keys still worked).
-<li>An imported comp no longer lights up red: an error shows on the node it starts in, as a Read that can't find its file, not on everything downstream.
-<li>A Windows comp's Z:/kura and X:/kura footage reads on the Mac and Linux by default, through the studio's own path map.
-<li>Routed wires: a wire with no clear way round the nodes is drawn with square corners, never diagonal, and wires no longer twitch as the graph changes.
-<li>The Node Graph's Notes button shows or hides the sticky notes.
-<li>A node's menu: Select &gt; Upstream, Downstream and All connected.
-</ul>
-<h3>Not yet</h3>
-<ul>
-<li>Cameras and geometry still translate their paths one way, as a comp opens.
-<li>The path maps as a table with Mac, Windows and Linux columns; the noise scopes; re-bake as you shape.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.6.1006.zip" length="312577260" type="application/octet-stream" sparkle:edSignature="oyMoZhuQyP5o8YtLcAhSW4Ys06muJGmyl/sDM4vUoCTiCYgFUXFvCGQfHGhflXKlvxptxAhAk2H9cvhdefJ9AQ=="/>
         </item>
     </channel>
 </rss>
