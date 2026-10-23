@@ -3,6 +3,45 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.8</title>
+            <pubDate>Fri, 23 Oct 2026 09:02:15 -0700</pubDate>
+            <sparkle:version>1164</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1164</h2>
+<h3>Tracking</h3>
+<ul>
+<li>Gang: tracks on one rigid thing share one motion while tracking. A track whose feature is hidden is carried by the others and picks its own feature up again when it's back. The tracks list marks each gang.
+<li>Average now gives the same track as the reference compositor: keyed wherever any selected track has a key.
+<li>A track no longer takes featureless picture for a match.
+</ul>
+<h3>Roto and paint</h3>
+<ul>
+<li>A clone or reveal can take its source from another frame: relative to the current one, or a set frame.
+<li>The Layers panel's motion blur, blending, lock and lifetime columns work.
+</ul>
+<h3>Animation</h3>
+<ul>
+<li>The Motion window's Time and Character groups: hold, step, loop, ping-pong, stutter or speed ramp a knob's own animation; give its moves an overshoot, an anticipation, a settle, a bounce in or a wobble.
+<li>The Curve Editor's list can show the knobs without keys too, faint: one click keys a knob at the current frame.
+</ul>
+<h3>Nagi</h3>
+<ul>
+<li>Auto Setup and Lock work: Auto Setup measures the clip and sets the controls with the preset on top; Lock holds the noise measured around the current frame.
+<li>Move the box to flat picture: one click when the profile box sits on detail.
+</ul>
+<h3>Elsewhere</h3>
+<ul>
+<li>A flipbook can be made as the Viewer shows it: worked out at its downscale, played at full size.
+</ul>
+<h3>Not yet</h3>
+<ul>
+<li>X-spline shapes; Follow a track in the Roto point menu.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1164.zip" length="313413716" type="application/octet-stream" sparkle:edSignature="Ag7dQCs6nLcYOQMDDB0P1kVR3Ae7xf3TFcujeaBCrmZA49qSbIuH3QVuIwWzwkQz9NBGvo6KQzf78DjZsRjRCw=="/>
+        </item>
+        <item>
             <title>0.6</title>
             <pubDate>Fri, 23 Oct 2026 05:55:27 -0700</pubDate>
             <sparkle:version>1129</sparkle:version>
@@ -84,28 +123,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.6.1006.zip" length="312577260" type="application/octet-stream" sparkle:edSignature="oyMoZhuQyP5o8YtLcAhSW4Ys06muJGmyl/sDM4vUoCTiCYgFUXFvCGQfHGhflXKlvxptxAhAk2H9cvhdefJ9AQ=="/>
-        </item>
-        <item>
-            <title>0.6</title>
-            <pubDate>Thu, 22 Oct 2026 14:38:23 -0700</pubDate>
-            <sparkle:version>1000</sparkle:version>
-            <sparkle:shortVersionString>0.6</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.6, build 1000</h2>
-<h3>In this build</h3>
-<ul>
-<li>On a Mac signed in to the studio's Tailscale network, Kento activates on its own: no letter or code needed. The seat is in your name, lasts 14 days and renews each time Kento checks in on the network. Kento &gt; Activate Kento... says so.
-<li>Reads and Writes keep their paths as the comp has them and translate them as they read and write: a comp from Windows or Linux reads its footage on the Mac, and saves with its own paths. A path map now names one place on each kind of machine (Z:/kura=/Volumes/Autonomy/kura=/media/Autonomy/kura).
-<li>Paths relative to the comp (plates/sh010.####.exr) read from the comp's folder; a .nk's relative form opens relative and is written back the same way.
-<li>Nagi 1.4.7: reflections sliding over moving car paint are no longer read as noise and wiped.
-</ul>
-<h3>Not yet</h3>
-<ul>
-<li>Cameras and geometry still translate their paths one way, as a comp opens.
-<li>The path maps as a table with Mac, Windows and Linux columns; the noise scopes; re-bake as you shape.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.6.1000.zip" length="312566541" type="application/octet-stream" sparkle:edSignature="IvRL2fuROoqrORkZcXrMihAPhPQ6WjETQZcsNBZiQVUZvXQFbOxUN12fQiY3qIcSZuqVCzubiwZ6XxcsuXOsDg=="/>
         </item>
     </channel>
 </rss>
