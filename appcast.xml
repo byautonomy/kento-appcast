@@ -4,6 +4,23 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Sat, 24 Oct 2026 05:16:49 -0700</pubDate>
+            <sparkle:version>1237</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1237</h2>
+<h3>Updates</h3>
+<ul>
+<li>Updates come as small patches: from the next build on, Kento downloads only what changed since the build you have, and falls back to the whole update when it can't.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1237.zip" length="304474886" type="application/octet-stream" sparkle:edSignature="VE1KXw1bCeRJAvgFGFNhc73Zye3etSjKQLptTknMZh49nQqcoL1jsN12RNjWq2LZ09QNf8wk+xact739IZf/Cg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1237-1235.delta" sparkle:deltaFrom="1235" length="980358" type="application/octet-stream" sparkle:edSignature="wJIaqEkNar+jAIDw3w1vYAFQXaEIyih8lE7qF8sIZJeBSxv/fBMwc52AmF5+Sr0rMQpdYJVSdQJOXozEjW+EDw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Sat, 24 Oct 2026 04:54:53 -0700</pubDate>
             <sparkle:version>1235</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -83,32 +100,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1230.zip" length="315831091" type="application/octet-stream" sparkle:edSignature="DMwynouVo1iM6mtX6p4UnuFmT5qH3iF6xa0zTezoCMwK5nDcJWk2CFCw6l5DBLFNiFLZ6x+6KGWOUJ0+bXwrCw=="/>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Fri, 23 Oct 2026 12:51:46 -0700</pubDate>
-            <sparkle:version>1188</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1188</h2>
-<h3>Nodes, closer to the reference compositor</h3>
-<ul>
-<li>A Roto whose layer is planar tracked now follows the track, perspective and all: its shapes had been off away from the track's reference frame.
-<li>Transform and CornerPin2D clamp: negative values and the filter's ringing below 0 are cut, as the reference renders them.
-<li>Reformat to box keeps the box's own pixel aspect and the picture's proportions; to format keeps the format's pixel aspect.
-<li>Radial's replace and opacity.
-</ul>
-<h3>The manual</h3>
-<ul>
-<li>Ten more drawings of the interface, one for each guide chapter that had none.
-<li>The transform jack's invert mark is at its lower right, as drawn.
-</ul>
-<h3>Not yet</h3>
-<ul>
-<li>Flare's repeated flares; the Transitions window and Edit mode.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1188.zip" length="313867395" type="application/octet-stream" sparkle:edSignature="1xa6W+kHz/PdCGkNoVrdLoBG0SPrgmquftW2eDXQS5VQcxkRlWmaEtjSOc2ASrMgeiNO0KnxVC6hB7ud/LNdAw=="/>
         </item>
     </channel>
 </rss>
