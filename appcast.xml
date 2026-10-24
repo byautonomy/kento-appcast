@@ -4,6 +4,43 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Sat, 24 Oct 2026 15:59:46 -0700</pubDate>
+            <sparkle:version>1313</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1313</h2>
+<h3>New nodes</h3>
+<ul>
+<li>Prerender (Other): renders its input to disk once and reads the frames back: to the shot's precomps (named and versioned as the Kura Write names them), Kento's cache, or files you choose. Use switches between the rendered frames and the live picture: on its panel, the chip on its tile, or Shift+D. Render, Render out of date (frames an edit upstream changed, and missing ones), Flipbook. The Flipbook's Make a Prerender after it puts one after the node.
+<li>Map Defocus (Filter &gt; Blur and defocus): defocused by a map, 0 sharp to 1 the max size, in slices of Nuke's Defocus disc.
+<li>Highlight Suppress (Color): highlights rolled off to a white point above a knee, and Restore its exact inverse, for before and after a blur or defocus.
+<li>Edge Wrap (Filter &gt; Light and glow): the background's light, and its highlights, wrapped into a foreground's edge.
+<li>Bloom (Filter &gt; Light and glow): glows of doubling size added up, each weaker by the falloff.
+<li>A Nuke script gets each of these as a group of standard nodes that renders the same (Prerender: a Read of its frames). Highlight Rebuild now does too, instead of being baked.
+</ul>
+<h3>Generative tools</h3>
+<ul>
+<li>Cambi, AutoDeband, Deflicker and WhiteBalance show what they measure (the score, the frame's mean and gain, the estimate) on their panels.
+<li>Grain says when its pattern has too few coefficients for its lag.
+</ul>
+<h3>Playback</h3>
+<ul>
+<li>Parked on a frame, the Viewer no longer makes frames ahead; it does while playing, or always with Cache ahead while stopped (the playback chip, or Settings &gt; Performance).
+</ul>
+<h3>The look</h3>
+<ul>
+<li>A splash while Kento starts. The splash, About and the manual's cover carry K.O.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1313.zip" length="376739540" type="application/octet-stream" sparkle:edSignature="ULBw/vW8TKPzxHHjwtPjf6WLChqwc4sYJFmg11xEG2qrqTHD2Hgeh6FmA5fA95+QyfJSw4ckbLB3IxV+e1tNBA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1313-1296.delta" sparkle:deltaFrom="1296" length="1753062" type="application/octet-stream" sparkle:edSignature="D8UayG/OLpTfG8Rz8+FnhxKzPgHvH2RrvDgxLSYZBYDsxSj+VX9A9gIkPYk29tPIws8/rn000QOxd7XcP5fKBg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1313-1292.delta" sparkle:deltaFrom="1292" length="1889670" type="application/octet-stream" sparkle:edSignature="bCvdP7tks7m2D/czMYd3Xp1tX7aYIcdgQXnpIDXetYiR2VZdhT7mg7r6Na5hCRFa5GqwwvzBIyHeqLExidd6Dg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1313-1287.delta" sparkle:deltaFrom="1287" length="1957414" type="application/octet-stream" sparkle:edSignature="lPDerULqe12B/OktfIBsNOSehGNIvgaav0VCPH+QRwq77xDZqmyp/AT4ZxVO9wnkWqbYwDDdBig5GtNIHwylBQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Sat, 24 Oct 2026 13:34:19 -0700</pubDate>
             <sparkle:version>1296</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -70,66 +107,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1292-1287.delta" sparkle:deltaFrom="1287" length="1005802" type="application/octet-stream" sparkle:edSignature="+6cWzLR+8+yNd8oMIeTviwAlxbgggzfCzgLLDF5of0He5C/K2mWw1neHEDp//tiWm9cdLMRst55cfPF2Md1IBQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1292-1262.delta" sparkle:deltaFrom="1262" length="43932638" type="application/octet-stream" sparkle:edSignature="AsMLws0AfM0zfq94+79wwpbRjP2v3+79PMutTIVl8aEok9GD7IFjHvqmJiYvS12Ot/g9M57h0cnBXtkmy4gKBg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1292-1253.delta" sparkle:deltaFrom="1253" length="44184370" type="application/octet-stream" sparkle:edSignature="40md8oYjxZdF5qACPJZHJtg/8t3+qapCvwSlxQN3rOaPetVo1O9ZPJm2swA3r2uMOf35m/MMUNyx+Q2zgjBfDg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Sat, 24 Oct 2026 07:31:32 -0700</pubDate>
-            <sparkle:version>1287</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1287</h2>
-<h3>New nodes</h3>
-<ul>
-<li>GrainMatch (Filter &gt; Grain and noise), the first of Kento's own nodes: connect the comp, the plate and the plate denoised; Analyze reads the plate's grain at each brightness, and the grain is rebuilt at the comp's brightness where the comp changed the plate. A Nuke script gets it as a group of standard nodes that renders the same.
-</ul>
-<h3>Nodes</h3>
-<ul>
-<li>Colorspace: every primaries and illuminant choice works, and the Bradford adaptation.
-<li>Keyer's combine and input, Ramp's opacity, invert and replace, AddChannels' format size.
-<li>TimeOffset's reverse input and rounding: in Whole frames (the default) a fractional offset now moves by whole frames, as in other compositors; older comps with a fractional offset show a different frame.
-<li>Crop's presets set the box. Bilateral2 filters only the channels chosen.
-<li>A new Denoise2 denoises with Nagi.
-<li>Cryptomatte: Picker Add and Picker Remove pick names in the Viewer, and the layer is a menu of the input's layers.
-<li>RotoPaint keeps a script's brush size, hardness and spacing; Roto and RotoPaint have a shutter row for the selected shape.
-<li>Tracker: its corner pin export choice is kept, and show error on paths draws each track's path by how well it matched.
-<li>Read and Write keep their color space knobs and version.
-</ul>
-<h3>Shot panel</h3>
-<ul>
-<li>The Shot panel beside Properties: a shot's plates, renders, cameras, geometry, ST maps and reference by category, with a version menu each, the picture, sign-in and Send to Dailies. Import makes the nodes where you last clicked, as one undo; Check for new versions marks what's newer.
-<li>Render &gt; Kura Write (Alt-W): a Write that names its own path from the shot, task and version, follows the comp's version, and asks before rendering over a version.
-</ul>
-<h3>Menus</h3>
-<ul>
-<li>Nodes kept for comps from Nuke and seldom used for new work (older versions, rare tools) are left out of the toolbar and menus; Tab search lists them last, under Compatibility. Settings &gt; Node Graph &gt; compatibility nodes in menus lists them again. They still open and render.
-</ul>
-<h3>Nuke scripts</h3>
-<ul>
-<li>File &gt; Export &gt; Nuke script asks what to do with nodes Nuke doesn't have: bake them to EXRs beside the script, read in their place, or write NoOps.
-</ul>
-<h3>Animation</h3>
-<ul>
-<li>The Dope Sheet: snapping is a switch (N, or Cmd held while dragging), and snaps to the playhead too. A Roto shape's keys are drawn in the shape's own color.
-</ul>
-<h3>Color</h3>
-<ul>
-<li>FilmLab bakes its looks with Kento's own film engine; no other app is needed. Looks are close to before, not identical.
-</ul>
-<h3>Rendering</h3>
-<ul>
-<li>Render nodes on the studio's Tailscale network need no key.
-</ul>
-<h3>Panels</h3>
-<ul>
-<li>A node Kento hardly builds yet (CameraTracker) opens on its own first tab.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1287.zip" length="376498062" type="application/octet-stream" sparkle:edSignature="+FbdIUIJF7ipZHkMgqOrHnl20zgraT7qwrUmQ/q6llYCe/xSuaSAmf5UTXPDsDC5eRqh43qBduzXRyY6bTCuDA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1287-1262.delta" sparkle:deltaFrom="1262" length="43862482" type="application/octet-stream" sparkle:edSignature="dry00A8RPRzNNcorNnI1ViOnp2hPFNO4ij8EBMwg4TJPkB2XLRc79XyjAACe9nmDpA4TYNlvRH9TMzKwL8aaAg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1287-1253.delta" sparkle:deltaFrom="1253" length="44142866" type="application/octet-stream" sparkle:edSignature="+9QTWgKXlsC00issEnvApbZUsTvmJyhmOH8fwnOAnM/O36bsKLkl6r8UCj0JRs6ZHNhiZB52nQMQ1ny5kV4mBQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1287-1237.delta" sparkle:deltaFrom="1237" length="44220914" type="application/octet-stream" sparkle:edSignature="5wR43PDfIMf8uqOEC4i/A7usT5uVz8pplzAutF9MDiC5SnS/cur2UKtYBdtDxi5lbyZ/VsGn+WZQelZuI89YDw=="/>
             </sparkle:deltas>
         </item>
     </channel>
