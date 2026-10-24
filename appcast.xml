@@ -4,6 +4,42 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Sat, 24 Oct 2026 12:26:02 -0700</pubDate>
+            <sparkle:version>1292</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1292</h2>
+<h3>Movies</h3>
+<ul>
+<li>A movie plays to its end: a Read made by the Shot panel, dropped, chosen in the browser or given a movie's path runs from frame 1 to the movie's frame count (it was 1 to 1, holding the first frame).
+<li>Movies decode much faster: frames are read in blocks, with the next block read ahead, so H.264 and H.265 plates cache and play at the comp's rate. ProRes and movies with alpha are unchanged.
+</ul>
+<h3>New nodes</h3>
+<ul>
+<li>Despill (Keyer), the second of Kento's own nodes: pick the screen color from the Viewer; the despill math (average, maximum, minimum) and limit set how much comes out, restore and its color what goes back; the spill matte goes in alpha. A hue wheel under the screen color shows the screen, the primary it despills on, and the hues that lose color; drag the screen's dot to turn its hue. A Nuke script gets it as a group with one Expression node that renders the same.
+</ul>
+<h3>Panels</h3>
+<ul>
+<li>The Read's first and last frame fields are visible again (they were under their hold menus).
+<li>Controls Kento doesn't build yet (the Read's File Type and Localization Policy) look dim as well as being off. The Read's hidden version knob no longer shows as a row.
+<li>A color control can pick from the Viewer: a click, or a drag for a box's average (Despill's screen color).
+<li>Kento's own nodes have the usual mask row.
+</ul>
+<h3>Comps</h3>
+<ul>
+<li>New comps start at 23.976 fps (Settings &gt; Preferences &gt; General &gt; New comps).
+<li>A .ko keeps the finishing nodes (AutoDeband and the rest) and the review grade nodes as themselves; they were saved as empty stand-ins and lost.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1292.zip" length="376556462" type="application/octet-stream" sparkle:edSignature="PvUgatluGqgFhxwYjqiwvCCRH9dcYusS5w+CfYbnQ8JbsNgltwxP0XSzscju/HDPC1tePvBe1qh93eq5expDCQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1292-1287.delta" sparkle:deltaFrom="1287" length="1005802" type="application/octet-stream" sparkle:edSignature="+6cWzLR+8+yNd8oMIeTviwAlxbgggzfCzgLLDF5of0He5C/K2mWw1neHEDp//tiWm9cdLMRst55cfPF2Md1IBQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1292-1262.delta" sparkle:deltaFrom="1262" length="43932638" type="application/octet-stream" sparkle:edSignature="AsMLws0AfM0zfq94+79wwpbRjP2v3+79PMutTIVl8aEok9GD7IFjHvqmJiYvS12Ot/g9M57h0cnBXtkmy4gKBg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1292-1253.delta" sparkle:deltaFrom="1253" length="44184370" type="application/octet-stream" sparkle:edSignature="40md8oYjxZdF5qACPJZHJtg/8t3+qapCvwSlxQN3rOaPetVo1O9ZPJm2swA3r2uMOf35m/MMUNyx+Q2zgjBfDg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Sat, 24 Oct 2026 07:31:32 -0700</pubDate>
             <sparkle:version>1287</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -90,43 +126,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1262-1253.delta" sparkle:deltaFrom="1253" length="1413274" type="application/octet-stream" sparkle:edSignature="Y4lettceQ5ij/idEsxn3U1qE+2GnYMc/X9MWMNRI0yt5PIGqItM9nVX1azO6nw9eMU2lEwZbWCvwN/N+8F39Cw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1262-1237.delta" sparkle:deltaFrom="1237" length="1533734" type="application/octet-stream" sparkle:edSignature="EeKu5C58gsJZrC96yC8BFPoIMY5tsyHq1IG28QoIdeZp8wvPsf2mJFFpCdf3yW4DDvY93jRhMNNxGerL2WKrCQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1262-1235.delta" sparkle:deltaFrom="1235" length="1954398" type="application/octet-stream" sparkle:edSignature="gwG2iUISIBjTEn0oDcCs69OPYJf17eoUE0/GB+VuVJnW7ZDCgaSnDx9Qpar//b3K/s3PG6yGlKNBsbI/8wWbBg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Sat, 24 Oct 2026 05:44:30 -0700</pubDate>
-            <sparkle:version>1253</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1253</h2>
-<h3>Transitions</h3>
-<ul>
-<li>Window &gt; Transitions...: wipes, push and slide, dissolves, dip to black, flash and dither, each a card; set its start, length, angle, softness, edge line and ease, then Make transition. Right-click two nodes in the Node Graph for it too.
-<li>A transition's controls stay live after it's made, the kind too: an iris can become a dissolve and back.
-</ul>
-<h3>Time</h3>
-<ul>
-<li>TimeClip's reverse, fade in and fade out; AppendClip's fades and dissolve.
-</ul>
-<h3>Nodes</h3>
-<ul>
-<li>CornerPin2D's extra matrix; Reformat's clamp; ContactSheet's split inputs with their frame range.
-<li>GridWarp's background input and choices, its background mix and warp amount.
-<li>VectorBlur divides by alpha when asked; Tracker's adjust for luminance changes.
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li>A closed Roto panel no longer fills the log with errors as shapes change.
-</ul>
-<h3>Not yet</h3>
-<ul>
-<li>Edit mode itself; a transition's own panel; Flare's repeated flares.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1253.zip" length="304547662" type="application/octet-stream" sparkle:edSignature="dh8XApzi6ay07AlPklupD2kMEwo2eXJNstFoZKsVihQIIk18I6tzI3ZFHXOLrqIBrGl9gHmLcmPZIDL0jmejAg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1253-1237.delta" sparkle:deltaFrom="1237" length="860194" type="application/octet-stream" sparkle:edSignature="/gN2/nE7ZDktxCEIxrb2uJcDksdT3Js4AuAyXZFO5bpqlmN10OjT/A7NNJ5rONmh/BCkpBFK4GQvuaOt4IfcDQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1253-1235.delta" sparkle:deltaFrom="1235" length="1282910" type="application/octet-stream" sparkle:edSignature="senPcw+GpeoEw7MvqiHU33yd+lmT9wm3KWCivfBH9CSvxTRmbslIo2vrFCUV6k/vF3wRxwkCNQbSgAkDZd/8Cw=="/>
             </sparkle:deltas>
         </item>
     </channel>
