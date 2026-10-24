@@ -4,85 +4,111 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
-            <pubDate>Fri, 23 Oct 2026 11:46:07 -0700</pubDate>
-            <sparkle:version>1177</sparkle:version>
+            <pubDate>Sat, 24 Oct 2026 04:54:53 -0700</pubDate>
+            <sparkle:version>1235</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1177</h2>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1235</h2>
+<h3>Rendering</h3>
+<ul>
+<li>The Render Queue: jobs in order, by priority, paused, removed or sent to render nodes.
+<li>Render nodes: other Macs and Linux boxes render a comp's frames, on a studio key (Settings &gt; Preferences &gt; Render). This Mac can be one too: never (the default), when idle, or always.
+</ul>
 <h3>Nodes</h3>
 <ul>
-<li>CCorrect has all its controls: gamma, gain and offset for the shadows, midtones and highlights, white, and the master gamma, gain and offset, beside contrast and gray. LightWrap's color correction has them too.
-<li>A Roto with nothing connected draws at its own format, as a script sets it, not the comp's.
-<li>Groups and gizmos open in Kento's own Properties panel, their controls on their own tabs.
+<li>A Roto whose layer is planar tracked follows the track, perspective and all.
+<li>Transform and CornerPin2D clamp; Reformat to box keeps the box's own pixel aspect; Radial's replace and opacity.
+<li>VariableBlur: a blur whose size follows a matte.
+<li>Time presets on TimeOffset and TimeWarp; expression presets and speed ramps.
+<li>Frame controls are typed fields; more of Nuke's menus are menus.
+<li>Each node's panel shows the controls Kento doesn't build yet, dim, with a note saying so.
+</ul>
+<h3>Interface</h3>
+<ul>
+<li>Right-click menus in the Node Graph and the Viewer, from the menu bar's own items.
+<li>The Roto row: a button and a key for every tool; click inside a shape to pick it whole, drag to move it, Delete to remove it.
+<li>The Dope Sheet's right-click menu, and Delete takes the chosen keys out; the ruler scrubs the playhead in the Dope Sheet and Curve Editor.
+<li>Color sliders show the colors they make, on the color nodes, Review Grade and FilmLab; Grade's rows on one line.
+<li>FilmLab: its negative and print stocks as menus; saved grades import and export.
+<li>Preferences are filled in; the comp's sound is an AudioRead node.
 </ul>
 <h3>The manual</h3>
 <ul>
-<li>Clearer pages: sections and steps that stand apart, a worked example opening every guide chapter, and drawings of the interface with numbered parts.
-<li>The figures show real footage in the Viewer.
+<li>Ten more drawings of the interface; chapters for the Render Queue and render nodes.
 </ul>
 <h3>Not yet</h3>
 <ul>
-<li>The Transitions window and Edit mode (planned, boards 54 and 55); a size of its own for Properties.
+<li>FilmLab's own film engine (carried, not yet run); Flare's repeated flares; the Transitions window and Edit mode.
 </ul>
 ]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1177.zip" length="313707388" type="application/octet-stream" sparkle:edSignature="diy8oMwn8/6eAsMj07GWx81AKWzC+XmDzJ76HG2EhgimegWKuqpZl2BWg3DixlQa+foNOYOLqIsVzo1Dlse0AQ=="/>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1235.zip" length="303886779" type="application/octet-stream" sparkle:edSignature="QF0Q+YYwP0reJUU4tROmbwWdpzFBvYma9QrtakUHpPzp4eBmUT6NcGia1dBmy1YtydghnWt9Xril8CgUhSoNAw=="/>
         </item>
         <item>
             <title>0.8</title>
-            <pubDate>Fri, 23 Oct 2026 09:46:49 -0700</pubDate>
-            <sparkle:version>1166</sparkle:version>
+            <pubDate>Sat, 24 Oct 2026 04:43:45 -0700</pubDate>
+            <sparkle:version>1230</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1166</h2>
-<h3>In this build</h3>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1230</h2>
+<h3>Rendering</h3>
 <ul>
-<li>The Node Graph's text and icon size is yours to set: Settings &gt; Interface &gt; Sizes, from 80 to 160%, on a slider notched at 90, 100, 120 and 140%. The tiles keep their size.
+<li>The Render Queue: jobs in order, by priority, paused, removed or sent to render nodes.
+<li>Render nodes: other Macs and Linux boxes render a comp's frames, on a studio key (Settings &gt; Preferences &gt; Render). This Mac can be one too: never (the default), when idle, or always.
+</ul>
+<h3>Nodes</h3>
+<ul>
+<li>A Roto whose layer is planar tracked follows the track, perspective and all.
+<li>Transform and CornerPin2D clamp; Reformat to box keeps the box's own pixel aspect; Radial's replace and opacity.
+<li>VariableBlur: a blur whose size follows a matte.
+<li>Time presets on TimeOffset and TimeWarp; expression presets and speed ramps.
+<li>Frame controls are typed fields; more of Nuke's menus are menus.
+<li>Each node's panel shows the controls Kento doesn't build yet, dim, with a note saying so.
+</ul>
+<h3>Interface</h3>
+<ul>
+<li>Right-click menus in the Node Graph and the Viewer, from the menu bar's own items.
+<li>The Roto row: a button and a key for every tool; click inside a shape to pick it whole, drag to move it, Delete to remove it.
+<li>The Dope Sheet's right-click menu, and Delete takes the chosen keys out; the ruler scrubs the playhead in the Dope Sheet and Curve Editor.
+<li>Color sliders show the colors they make, on the color nodes, Review Grade and FilmLab; Grade's rows on one line.
+<li>FilmLab: its negative and print stocks as menus; saved grades import and export.
+<li>Preferences are filled in; the comp's sound is an AudioRead node.
+</ul>
+<h3>The manual</h3>
+<ul>
+<li>Ten more drawings of the interface; chapters for the Render Queue and render nodes.
 </ul>
 <h3>Not yet</h3>
 <ul>
-<li>A size of its own for Properties; X-spline shapes; Follow a track in the Roto point menu.
+<li>FilmLab's own film engine (carried, not yet run); Flare's repeated flares; the Transitions window and Edit mode.
 </ul>
 ]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1166.zip" length="313417988" type="application/octet-stream" sparkle:edSignature="WoEt4FWMwJGLYqNinSwNCDGE/pXOqk3sw1xg7IFzyqNll/3N3SPXXBFFO58PKJmbXC/2u2oZOUB0GPi2dKgXDg=="/>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1230.zip" length="315831091" type="application/octet-stream" sparkle:edSignature="DMwynouVo1iM6mtX6p4UnuFmT5qH3iF6xa0zTezoCMwK5nDcJWk2CFCw6l5DBLFNiFLZ6x+6KGWOUJ0+bXwrCw=="/>
         </item>
         <item>
             <title>0.8</title>
-            <pubDate>Fri, 23 Oct 2026 09:02:15 -0700</pubDate>
-            <sparkle:version>1164</sparkle:version>
+            <pubDate>Fri, 23 Oct 2026 12:51:46 -0700</pubDate>
+            <sparkle:version>1188</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1164</h2>
-<h3>Tracking</h3>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1188</h2>
+<h3>Nodes, closer to the reference compositor</h3>
 <ul>
-<li>Gang: tracks on one rigid thing share one motion while tracking. A track whose feature is hidden is carried by the others and picks its own feature up again when it's back. The tracks list marks each gang.
-<li>Average now gives the same track as the reference compositor: keyed wherever any selected track has a key.
-<li>A track no longer takes featureless picture for a match.
+<li>A Roto whose layer is planar tracked now follows the track, perspective and all: its shapes had been off away from the track's reference frame.
+<li>Transform and CornerPin2D clamp: negative values and the filter's ringing below 0 are cut, as the reference renders them.
+<li>Reformat to box keeps the box's own pixel aspect and the picture's proportions; to format keeps the format's pixel aspect.
+<li>Radial's replace and opacity.
 </ul>
-<h3>Roto and paint</h3>
+<h3>The manual</h3>
 <ul>
-<li>A clone or reveal can take its source from another frame: relative to the current one, or a set frame.
-<li>The Layers panel's motion blur, blending, lock and lifetime columns work.
-</ul>
-<h3>Animation</h3>
-<ul>
-<li>The Motion window's Time and Character groups: hold, step, loop, ping-pong, stutter or speed ramp a knob's own animation; give its moves an overshoot, an anticipation, a settle, a bounce in or a wobble.
-<li>The Curve Editor's list can show the knobs without keys too, faint: one click keys a knob at the current frame.
-</ul>
-<h3>Nagi</h3>
-<ul>
-<li>Auto Setup and Lock work: Auto Setup measures the clip and sets the controls with the preset on top; Lock holds the noise measured around the current frame.
-<li>Move the box to flat picture: one click when the profile box sits on detail.
-</ul>
-<h3>Elsewhere</h3>
-<ul>
-<li>A flipbook can be made as the Viewer shows it: worked out at its downscale, played at full size.
+<li>Ten more drawings of the interface, one for each guide chapter that had none.
+<li>The transform jack's invert mark is at its lower right, as drawn.
 </ul>
 <h3>Not yet</h3>
 <ul>
-<li>X-spline shapes; Follow a track in the Roto point menu.
+<li>Flare's repeated flares; the Transitions window and Edit mode.
 </ul>
 ]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1164.zip" length="313413716" type="application/octet-stream" sparkle:edSignature="Ag7dQCs6nLcYOQMDDB0P1kVR3Ae7xf3TFcujeaBCrmZA49qSbIuH3QVuIwWzwkQz9NBGvo6KQzf78DjZsRjRCw=="/>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1188.zip" length="313867395" type="application/octet-stream" sparkle:edSignature="1xa6W+kHz/PdCGkNoVrdLoBG0SPrgmquftW2eDXQS5VQcxkRlWmaEtjSOc2ASrMgeiNO0KnxVC6hB7ud/LNdAw=="/>
         </item>
     </channel>
 </rss>
