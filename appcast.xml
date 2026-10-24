@@ -4,6 +4,40 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Sat, 24 Oct 2026 13:34:19 -0700</pubDate>
+            <sparkle:version>1296</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1296</h2>
+<h3>New nodes</h3>
+<ul>
+<li>HighlightRebuild (Generative): where a highlight clipped in one or two channels and another still has detail, the clipped channels are rebuilt from it, by the channels' ratios nearby, so a sunlit cloud or chrome keeps its color and shape. Analyze reads each channel's clip level from the picture. Put it first, on the footage as it arrives.
+</ul>
+<h3>Generative tools</h3>
+<ul>
+<li>Cambi's output channel and map scale are menus; VeryCanny's stability is a menu of frame counts.
+<li>Generate: model, size, aspect and backend are menus (the job's default first), the display space a color space menu, the prompt several lines, and a Generate... button that shows the price first.
+<li>Grain: Load Grain Table..., and its Scaling, Pattern and Chroma settings as folding sections.
+<li>Sliders over useful ranges (Deband's range, Halation's threshold, ChromaRebuild's epsilon, Grain's intensity); Linearise's primaries and reference white show only for BT2446A, WhiteBalance's power only where it acts.
+</ul>
+<h3>Playback</h3>
+<ul>
+<li>J, K and L work over the Viewer, the Timeline, the Dope Sheet and the Curve Editor, and over the Viewer L no longer switches to luminance. L or J again plays faster (2x, 4x, 8x); K stops. Shift with the arrows steps 10 frames; Home and End go to the in and out points.
+</ul>
+<h3>Node Graph</h3>
+<ul>
+<li>Dragging a selection from empty space draws a dashed box.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1296.zip" length="376588211" type="application/octet-stream" sparkle:edSignature="HnGWYS2mrf4pUZO24aQPykiGMxaiuleW3bXHbh6b6ksyUeGvJuA0c2hZiAuRwYFOyz0AGJyKO9GyKxrFm59hBw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1296-1292.delta" sparkle:deltaFrom="1292" length="1050574" type="application/octet-stream" sparkle:edSignature="6r9es3w5X4M/La8XS/oJteooR7a9hg34xzuc/LVr2yf77N+EvOKjA0MNS/DFKmbK7wj9/qcifAb2Oqnk/VrQDQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1296-1287.delta" sparkle:deltaFrom="1287" length="1210426" type="application/octet-stream" sparkle:edSignature="E7cw4HLiIJqJAbHyQDOSqGgQheOzyZT8hNUW/Gx/tH7uLGY8VKwHdCgkncBOIqvqBex4iPRKj58E1dDMf8jTAA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1296-1262.delta" sparkle:deltaFrom="1262" length="44058250" type="application/octet-stream" sparkle:edSignature="tX2Ekak7CnKh/vLusIeYHqotcNVS97gRgccUzWpthZXKnQ4Vr0bnHpZWw2kkL86kKUovxREkFfhiMcGSICy7AQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Sat, 24 Oct 2026 12:26:02 -0700</pubDate>
             <sparkle:version>1292</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -96,36 +130,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1287-1262.delta" sparkle:deltaFrom="1262" length="43862482" type="application/octet-stream" sparkle:edSignature="dry00A8RPRzNNcorNnI1ViOnp2hPFNO4ij8EBMwg4TJPkB2XLRc79XyjAACe9nmDpA4TYNlvRH9TMzKwL8aaAg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1287-1253.delta" sparkle:deltaFrom="1253" length="44142866" type="application/octet-stream" sparkle:edSignature="+9QTWgKXlsC00issEnvApbZUsTvmJyhmOH8fwnOAnM/O36bsKLkl6r8UCj0JRs6ZHNhiZB52nQMQ1ny5kV4mBQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1287-1237.delta" sparkle:deltaFrom="1237" length="44220914" type="application/octet-stream" sparkle:edSignature="5wR43PDfIMf8uqOEC4i/A7usT5uVz8pplzAutF9MDiC5SnS/cur2UKtYBdtDxi5lbyZ/VsGn+WZQelZuI89YDw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Sat, 24 Oct 2026 05:53:09 -0700</pubDate>
-            <sparkle:version>1262</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1262</h2>
-<h3>Panels</h3>
-<ul>
-<li>Every node has its Node tab: label, color and postage stamp work; the rest show dim. A node's label from a .nk is kept and saved back.
-<li>Scene, MergeGeo, the point cloud and CameraTracker show their controls, dim where Kento doesn't build them yet.
-</ul>
-<h3>Animation</h3>
-<ul>
-<li>The Dope Sheet: the ruler from the comp's first frame with the Timeline's marks, footage bars with their file names, a TimeOffset's bar dragged to change its offset, box-select, and readouts while blocks move.
-<li>The Curve Editor's curve menu lists a curve's modifiers.
-</ul>
-<h3>Flipbooks and Scopes</h3>
-<ul>
-<li>An edit drops only the flipbook frames it changes; they render again while the flipbook plays.
-<li>The Scopes name each scope above it.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1262.zip" length="304619604" type="application/octet-stream" sparkle:edSignature="VdE+dcMucLd4T7qjO2EZrBt9xHvutAQusv5LBSgiLpSs0S1Kfu3eBlXiPtUxME+jjKs5SGx9xNxDrdD65vZVCg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1262-1253.delta" sparkle:deltaFrom="1253" length="1413274" type="application/octet-stream" sparkle:edSignature="Y4lettceQ5ij/idEsxn3U1qE+2GnYMc/X9MWMNRI0yt5PIGqItM9nVX1azO6nw9eMU2lEwZbWCvwN/N+8F39Cw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1262-1237.delta" sparkle:deltaFrom="1237" length="1533734" type="application/octet-stream" sparkle:edSignature="EeKu5C58gsJZrC96yC8BFPoIMY5tsyHq1IG28QoIdeZp8wvPsf2mJFFpCdf3yW4DDvY93jRhMNNxGerL2WKrCQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1262-1235.delta" sparkle:deltaFrom="1235" length="1954398" type="application/octet-stream" sparkle:edSignature="gwG2iUISIBjTEn0oDcCs69OPYJf17eoUE0/GB+VuVJnW7ZDCgaSnDx9Qpar//b3K/s3PG6yGlKNBsbI/8wWbBg=="/>
             </sparkle:deltas>
         </item>
     </channel>
