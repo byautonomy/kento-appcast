@@ -4,6 +4,66 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Sat, 24 Oct 2026 07:31:32 -0700</pubDate>
+            <sparkle:version>1287</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1287</h2>
+<h3>New nodes</h3>
+<ul>
+<li>GrainMatch (Filter &gt; Grain and noise), the first of Kento's own nodes: connect the comp, the plate and the plate denoised; Analyze reads the plate's grain at each brightness, and the grain is rebuilt at the comp's brightness where the comp changed the plate. A Nuke script gets it as a group of standard nodes that renders the same.
+</ul>
+<h3>Nodes</h3>
+<ul>
+<li>Colorspace: every primaries and illuminant choice works, and the Bradford adaptation.
+<li>Keyer's combine and input, Ramp's opacity, invert and replace, AddChannels' format size.
+<li>TimeOffset's reverse input and rounding: in Whole frames (the default) a fractional offset now moves by whole frames, as in other compositors; older comps with a fractional offset show a different frame.
+<li>Crop's presets set the box. Bilateral2 filters only the channels chosen.
+<li>A new Denoise2 denoises with Nagi.
+<li>Cryptomatte: Picker Add and Picker Remove pick names in the Viewer, and the layer is a menu of the input's layers.
+<li>RotoPaint keeps a script's brush size, hardness and spacing; Roto and RotoPaint have a shutter row for the selected shape.
+<li>Tracker: its corner pin export choice is kept, and show error on paths draws each track's path by how well it matched.
+<li>Read and Write keep their color space knobs and version.
+</ul>
+<h3>Shot panel</h3>
+<ul>
+<li>The Shot panel beside Properties: a shot's plates, renders, cameras, geometry, ST maps and reference by category, with a version menu each, the picture, sign-in and Send to Dailies. Import makes the nodes where you last clicked, as one undo; Check for new versions marks what's newer.
+<li>Render &gt; Kura Write (Alt-W): a Write that names its own path from the shot, task and version, follows the comp's version, and asks before rendering over a version.
+</ul>
+<h3>Menus</h3>
+<ul>
+<li>Nodes kept for comps from Nuke and seldom used for new work (older versions, rare tools) are left out of the toolbar and menus; Tab search lists them last, under Compatibility. Settings &gt; Node Graph &gt; compatibility nodes in menus lists them again. They still open and render.
+</ul>
+<h3>Nuke scripts</h3>
+<ul>
+<li>File &gt; Export &gt; Nuke script asks what to do with nodes Nuke doesn't have: bake them to EXRs beside the script, read in their place, or write NoOps.
+</ul>
+<h3>Animation</h3>
+<ul>
+<li>The Dope Sheet: snapping is a switch (N, or Cmd held while dragging), and snaps to the playhead too. A Roto shape's keys are drawn in the shape's own color.
+</ul>
+<h3>Color</h3>
+<ul>
+<li>FilmLab bakes its looks with Kento's own film engine; no other app is needed. Looks are close to before, not identical.
+</ul>
+<h3>Rendering</h3>
+<ul>
+<li>Render nodes on the studio's Tailscale network need no key.
+</ul>
+<h3>Panels</h3>
+<ul>
+<li>A node Kento hardly builds yet (CameraTracker) opens on its own first tab.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1287.zip" length="376498062" type="application/octet-stream" sparkle:edSignature="+FbdIUIJF7ipZHkMgqOrHnl20zgraT7qwrUmQ/q6llYCe/xSuaSAmf5UTXPDsDC5eRqh43qBduzXRyY6bTCuDA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1287-1262.delta" sparkle:deltaFrom="1262" length="43862482" type="application/octet-stream" sparkle:edSignature="dry00A8RPRzNNcorNnI1ViOnp2hPFNO4ij8EBMwg4TJPkB2XLRc79XyjAACe9nmDpA4TYNlvRH9TMzKwL8aaAg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1287-1253.delta" sparkle:deltaFrom="1253" length="44142866" type="application/octet-stream" sparkle:edSignature="+9QTWgKXlsC00issEnvApbZUsTvmJyhmOH8fwnOAnM/O36bsKLkl6r8UCj0JRs6ZHNhiZB52nQMQ1ny5kV4mBQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1287-1237.delta" sparkle:deltaFrom="1237" length="44220914" type="application/octet-stream" sparkle:edSignature="5wR43PDfIMf8uqOEC4i/A7usT5uVz8pplzAutF9MDiC5SnS/cur2UKtYBdtDxi5lbyZ/VsGn+WZQelZuI89YDw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Sat, 24 Oct 2026 05:53:09 -0700</pubDate>
             <sparkle:version>1262</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -67,23 +127,6 @@
             <sparkle:deltas>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1253-1237.delta" sparkle:deltaFrom="1237" length="860194" type="application/octet-stream" sparkle:edSignature="/gN2/nE7ZDktxCEIxrb2uJcDksdT3Js4AuAyXZFO5bpqlmN10OjT/A7NNJ5rONmh/BCkpBFK4GQvuaOt4IfcDQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1253-1235.delta" sparkle:deltaFrom="1235" length="1282910" type="application/octet-stream" sparkle:edSignature="senPcw+GpeoEw7MvqiHU33yd+lmT9wm3KWCivfBH9CSvxTRmbslIo2vrFCUV6k/vF3wRxwkCNQbSgAkDZd/8Cw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Sat, 24 Oct 2026 05:16:49 -0700</pubDate>
-            <sparkle:version>1237</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1237</h2>
-<h3>Updates</h3>
-<ul>
-<li>Updates come as small patches: from the next build on, Kento downloads only what changed since the build you have, and falls back to the whole update when it can't.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1237.zip" length="304474886" type="application/octet-stream" sparkle:edSignature="VE1KXw1bCeRJAvgFGFNhc73Zye3etSjKQLptTknMZh49nQqcoL1jsN12RNjWq2LZ09QNf8wk+xact739IZf/Cg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1237-1235.delta" sparkle:deltaFrom="1235" length="980358" type="application/octet-stream" sparkle:edSignature="wJIaqEkNar+jAIDw3w1vYAFQXaEIyih8lE7qF8sIZJeBSxv/fBMwc52AmF5+Sr0rMQpdYJVSdQJOXozEjW+EDw=="/>
             </sparkle:deltas>
         </item>
     </channel>
