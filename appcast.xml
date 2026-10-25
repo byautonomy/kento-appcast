@@ -4,6 +4,48 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Sat, 24 Oct 2026 21:36:55 -0700</pubDate>
+            <sparkle:version>1364</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1364</h2>
+<h3>Camera tracking</h3>
+<ul>
+<li>CameraTracker tracks and solves: Track features finds corners and follows them, Solve makes the camera, Refine drops tracks over the error you set. Its panel shows the solve's error and a strip of it over the frames.
+<li>Its mask keeps features off moving things (the source's alpha, or a matte on the Mask input), and the film back comes from a camera menu or by hand. Keyframes are the solve's own choice or two frames you set.
+<li>In the Viewer: the tracks by state, the solved points reprojected, a readout over a track. Pick tracks, delete the picked ones, or pick every track over the error.
+<li>Export &gt; Camera makes a Camera3 linked to the solve.
+</ul>
+<h3>Help on the panel</h3>
+<ul>
+<li>A Help tab on the more involved nodes (the generative tools, Grain, Tracker, Roto and RotoPaint, Kento's own nodes): a short manual for that node, the same text as the Node Reference.
+</ul>
+<h3>Viewer</h3>
+<ul>
+<li>Number keys over the Viewer switch which input it shows, instead of rewiring the graph, and the Viewer bar names the input shown.
+<li>Whole-number sliders now set their values; Cambi says what its score means.
+</ul>
+<h3>Faster</h3>
+<ul>
+<li>On a Mac, the motion vectors under Kronos, OFlow2, VectorGenerator and MotionBlur are made on the GPU: about 1.8 times faster at HD, the same results.
+<li>Nagi runs its motion compensation and spatial stage on the GPU: about twice as fast.
+<li>ZDefocus2 is 13 times faster, Map Defocus 2.6 times with a map, Edge Wrap and Median nearly twice, and the expression-built nodes up to twice.
+<li>OpenFX plugins that render through Metal now do, a whole frame at a time.
+</ul>
+<h3>Nodes</h3>
+<ul>
+<li>Nuke nodes our comps don't use and Kento won't build now are parked: they open, keep their settings and are written back, and say so.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1364.zip" length="377436995" type="application/octet-stream" sparkle:edSignature="oED+9Ja+VVpYbMLSCbrjdDo1RQJ46Y3HSDksFS2mfoEhmFdUidJBymAArRfe69jBIQcJhEZxrdYaV7VtG4DKDA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1364-1313.delta" sparkle:deltaFrom="1313" length="2458210" type="application/octet-stream" sparkle:edSignature="mZhVnJlQWnYszPhqiFYtiv6Wqyyuc8QTepNtd9lOiSiBEAN66m07T99aDFl+WzKVdtYpjOcQdar1ueM3BtX9DQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1364-1296.delta" sparkle:deltaFrom="1296" length="2817226" type="application/octet-stream" sparkle:edSignature="9rmHsRXhKKT7adHiclYGArtQfTwfilHX1qBJ1QgWjo1CsfNxgsRHgEAi/yS3kr9LRN0ywXrC6x7TS80A+t/2CA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1364-1292.delta" sparkle:deltaFrom="1292" length="2922626" type="application/octet-stream" sparkle:edSignature="oBNfArVRXxL1EFpafg+VrMz95HvpeA9vyi6gu25HsGojduQ3G7fyN4ep3CVeun1Oj8Dcmh219jJrjbxqPJT7Dw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Sat, 24 Oct 2026 15:59:46 -0700</pubDate>
             <sparkle:version>1313</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -71,42 +113,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1296-1292.delta" sparkle:deltaFrom="1292" length="1050574" type="application/octet-stream" sparkle:edSignature="6r9es3w5X4M/La8XS/oJteooR7a9hg34xzuc/LVr2yf77N+EvOKjA0MNS/DFKmbK7wj9/qcifAb2Oqnk/VrQDQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1296-1287.delta" sparkle:deltaFrom="1287" length="1210426" type="application/octet-stream" sparkle:edSignature="E7cw4HLiIJqJAbHyQDOSqGgQheOzyZT8hNUW/Gx/tH7uLGY8VKwHdCgkncBOIqvqBex4iPRKj58E1dDMf8jTAA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1296-1262.delta" sparkle:deltaFrom="1262" length="44058250" type="application/octet-stream" sparkle:edSignature="tX2Ekak7CnKh/vLusIeYHqotcNVS97gRgccUzWpthZXKnQ4Vr0bnHpZWw2kkL86kKUovxREkFfhiMcGSICy7AQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Sat, 24 Oct 2026 12:26:02 -0700</pubDate>
-            <sparkle:version>1292</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1292</h2>
-<h3>Movies</h3>
-<ul>
-<li>A movie plays to its end: a Read made by the Shot panel, dropped, chosen in the browser or given a movie's path runs from frame 1 to the movie's frame count (it was 1 to 1, holding the first frame).
-<li>Movies decode much faster: frames are read in blocks, with the next block read ahead, so H.264 and H.265 plates cache and play at the comp's rate. ProRes and movies with alpha are unchanged.
-</ul>
-<h3>New nodes</h3>
-<ul>
-<li>Despill (Keyer), the second of Kento's own nodes: pick the screen color from the Viewer; the despill math (average, maximum, minimum) and limit set how much comes out, restore and its color what goes back; the spill matte goes in alpha. A hue wheel under the screen color shows the screen, the primary it despills on, and the hues that lose color; drag the screen's dot to turn its hue. A Nuke script gets it as a group with one Expression node that renders the same.
-</ul>
-<h3>Panels</h3>
-<ul>
-<li>The Read's first and last frame fields are visible again (they were under their hold menus).
-<li>Controls Kento doesn't build yet (the Read's File Type and Localization Policy) look dim as well as being off. The Read's hidden version knob no longer shows as a row.
-<li>A color control can pick from the Viewer: a click, or a drag for a box's average (Despill's screen color).
-<li>Kento's own nodes have the usual mask row.
-</ul>
-<h3>Comps</h3>
-<ul>
-<li>New comps start at 23.976 fps (Settings &gt; Preferences &gt; General &gt; New comps).
-<li>A .ko keeps the finishing nodes (AutoDeband and the rest) and the review grade nodes as themselves; they were saved as empty stand-ins and lost.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1292.zip" length="376556462" type="application/octet-stream" sparkle:edSignature="PvUgatluGqgFhxwYjqiwvCCRH9dcYusS5w+CfYbnQ8JbsNgltwxP0XSzscju/HDPC1tePvBe1qh93eq5expDCQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1292-1287.delta" sparkle:deltaFrom="1287" length="1005802" type="application/octet-stream" sparkle:edSignature="+6cWzLR+8+yNd8oMIeTviwAlxbgggzfCzgLLDF5of0He5C/K2mWw1neHEDp//tiWm9cdLMRst55cfPF2Md1IBQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1292-1262.delta" sparkle:deltaFrom="1262" length="43932638" type="application/octet-stream" sparkle:edSignature="AsMLws0AfM0zfq94+79wwpbRjP2v3+79PMutTIVl8aEok9GD7IFjHvqmJiYvS12Ot/g9M57h0cnBXtkmy4gKBg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1292-1253.delta" sparkle:deltaFrom="1253" length="44184370" type="application/octet-stream" sparkle:edSignature="40md8oYjxZdF5qACPJZHJtg/8t3+qapCvwSlxQN3rOaPetVo1O9ZPJm2swA3r2uMOf35m/MMUNyx+Q2zgjBfDg=="/>
             </sparkle:deltas>
         </item>
     </channel>
