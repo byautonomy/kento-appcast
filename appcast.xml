@@ -4,6 +4,30 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Sun, 25 Oct 2026 08:14:19 -0700</pubDate>
+            <sparkle:version>1393</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1393</h2>
+<h3>Fixes</h3>
+<ul>
+<li>The Viewer showed nothing for a stereo comp (builds 1380 to 1392): it shows the comp's views again.
+</ul>
+<h3>Viewer</h3>
+<ul>
+<li>Bar 2's saturation works: the picture shown grayer or stronger, for the eye only.
+<li>In a stereo comp the view menu also offers Anaglyph (left in red, right in cyan) and Side by side.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1393.zip" length="379410872" type="application/octet-stream" sparkle:edSignature="BBuoPbGTFybCfLD26Et2I+NdwsRJwu8lOUp54op04F+nrnlcoEFS+ygv6jjQDqnImcpVtViGr8eB6T07+80wBQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1393-1392.delta" sparkle:deltaFrom="1392" length="718154" type="application/octet-stream" sparkle:edSignature="PwU6MvKddpOpuq/c9WdB5Rm0xT0ipWj+kRP0d40BbgKtSw/5eiVVEwHq9kg7NKNmT2swCsTpKQXdiV+0WEyeAg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1393-1380.delta" sparkle:deltaFrom="1380" length="2160818" type="application/octet-stream" sparkle:edSignature="E3eF4mDccur6igubcGYHi2BVHFVeZzbbe3TSh+GzaIoMiSsE2ebkKfNIh7m7KzAV2cwoH1Y0sycFuNaIR1ziCQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1393-1378.delta" sparkle:deltaFrom="1378" length="2230034" type="application/octet-stream" sparkle:edSignature="vn0vr51DgLj8fpbFJOp+sVqxXnYvqc6jNAflIMQGPNUwG9gY4SYCqLY5uQ0CiaoQEB+Lx7CIKR2yT6ihgdTsAA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Sun, 25 Oct 2026 08:00:25 -0700</pubDate>
             <sparkle:version>1392</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -71,36 +95,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1380-1378.delta" sparkle:deltaFrom="1378" length="1278702" type="application/octet-stream" sparkle:edSignature="q13xojSQTugK8suxVjK3DXB9rj5V6qjnIz0QRY6GWfd0NcYnwCjd+FY12iANHiiHQPcubPyJQ+fpH0ScQBatDg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1380-1364.delta" sparkle:deltaFrom="1364" length="2570746" type="application/octet-stream" sparkle:edSignature="mfzDfNNcdsgI2UF+MGQNVC5A7VyIxtgihc94F2ZcFv2Vcuzusi133oBawOwCKboBQIuTM4+/lBTRcBAbpajfCw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1380-1313.delta" sparkle:deltaFrom="1313" length="3805002" type="application/octet-stream" sparkle:edSignature="NM8diaipY27kc95PuN2zf13+pdjOZLjZWJIaHQSRR/d3dJzVYuAACgyncSNbse4bI0Qs0+ZEzkSxyoyKoipUBQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Sun, 25 Oct 2026 05:23:10 -0700</pubDate>
-            <sparkle:version>1378</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1378</h2>
-<h3>JPEG XL</h3>
-<ul>
-<li>Read opens JPEG XL (.jxl) stills, and the file browser lists them.
-<li>Write writes JPEG XL: give it a .jxl name or the jxl file type. Its own settings show for a .jxl: datatype (8 bit, 16 bit or 32 bit float), distance (0, the default, is lossless; 1 is visually lossless; higher makes smaller files) and effort (1 fastest to 9 smallest). Colour as a TIFF's for 8 and 16 bit, as an EXR's for float.
-</ul>
-<h3>Faster</h3>
-<ul>
-<li>Nagi now also runs its temporal stage and its multiscale luma on the GPU: about three times faster than the last build at HD.
-<li>VectorGenerator is about 30% faster, Kronos and OFlow2 10 to 20% (the same pictures), EdgeExtend and Inpaint2 about 15%.
-</ul>
-<h3>Fixes</h3>
-<ul>
-<li>Write's datatype now sets the bit depth of TIFF (8 bit, 16 bit, 32 bit float), PNG (8 or 16 bit) and DPX (8, 10, 12 or 16 bit) as well as EXR, so a Nuke script's 16-bit TIFF Write writes 16 bits.
-<li>A Radial's bounding box is now the area grown by a pixel (with its input's, unless replace is on), as in a Nuke script. A default Radial was its whole format, which made a Convolve with it slow.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1378.zip" length="379023918" type="application/octet-stream" sparkle:edSignature="wUABUWFT8atXjAcKTwTUj2Oz3E31NZXnVt4yK558VN7EbEkAB9OAvLpPBKpoFr16CaCjaFNWywFQ9OtWHTtmCA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1378-1364.delta" sparkle:deltaFrom="1364" length="2172422" type="application/octet-stream" sparkle:edSignature="sDkzqGZS8rWAw/no63vQ1H9Gk7G3bE6bpffW9rCzoy6jXz6q2dL/Hip9U7jeux9q99lj6oa6OO2t2Tc2D56NDA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1378-1313.delta" sparkle:deltaFrom="1313" length="3588506" type="application/octet-stream" sparkle:edSignature="zdBA19WUvLikjBMY5Aog2pfWqzmVhw/xwIz35s/cm4u3j9RI6J4YizrlKriKS+6p9Ske3GoXhwgDcBr5X78nCw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1378-1296.delta" sparkle:deltaFrom="1296" length="3950674" type="application/octet-stream" sparkle:edSignature="Z7t7VsO79mFyVblv08n3dY1o3gowME1ivwnR0fUrpoLLZ5RTHhhS3XRi6LLsZ6fdGC6rJ0eJLOaEdpTuCapODg=="/>
             </sparkle:deltas>
         </item>
     </channel>
