@@ -4,6 +4,35 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Sun, 25 Oct 2026 06:09:56 -0700</pubDate>
+            <sparkle:version>1380</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1380</h2>
+<h3>Stereo and views</h3>
+<ul>
+<li>A comp can have views: This comp &gt; Views sets up left and right (or goes back to one). A .nk's views open and save back.
+<li>Every node works on each view. A mono branch gives the same picture to both.
+<li>Read: a file named with %V (the view's name) or %v (its first letter) reads one file a view; a stereo EXR reads with both views.
+<li>Write: an EXR holds every view (its views knob keeps some); other file types, or a name with %V or %v, write a file a view.
+<li>The Viewer has a menu for the view shown when the comp is stereo.
+<li>New nodes in Views: JoinViews, OneView, ShuffleViews, MixViews, SideBySide, Anaglyph and ReConverge.
+<li>Not yet: a knob with a different value in each view (a .nk's split knob opens with its first value, and the load report lists it).
+</ul>
+<h3>New node</h3>
+<ul>
+<li>Dither (Filter): fine noise against banding before an 8- or 10-bit file, its own in each channel unless monodither, a new pattern each frame unless static seed.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1380.zip" length="379139328" type="application/octet-stream" sparkle:edSignature="7TWv7yGl1BZotdc/22MQbBoh0IsnG8nf0nLYhqpKu6FygnmrunGPH6J1sQJpsA6eIKtmgvaqMy1rf8oz8plUBg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1380-1378.delta" sparkle:deltaFrom="1378" length="1278702" type="application/octet-stream" sparkle:edSignature="q13xojSQTugK8suxVjK3DXB9rj5V6qjnIz0QRY6GWfd0NcYnwCjd+FY12iANHiiHQPcubPyJQ+fpH0ScQBatDg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1380-1364.delta" sparkle:deltaFrom="1364" length="2570746" type="application/octet-stream" sparkle:edSignature="mfzDfNNcdsgI2UF+MGQNVC5A7VyIxtgihc94F2ZcFv2Vcuzusi133oBawOwCKboBQIuTM4+/lBTRcBAbpajfCw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1380-1313.delta" sparkle:deltaFrom="1313" length="3805002" type="application/octet-stream" sparkle:edSignature="NM8diaipY27kc95PuN2zf13+pdjOZLjZWJIaHQSRR/d3dJzVYuAACgyncSNbse4bI0Qs0+ZEzkSxyoyKoipUBQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Sun, 25 Oct 2026 05:23:10 -0700</pubDate>
             <sparkle:version>1378</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -72,43 +101,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1364-1313.delta" sparkle:deltaFrom="1313" length="2458210" type="application/octet-stream" sparkle:edSignature="mZhVnJlQWnYszPhqiFYtiv6Wqyyuc8QTepNtd9lOiSiBEAN66m07T99aDFl+WzKVdtYpjOcQdar1ueM3BtX9DQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1364-1296.delta" sparkle:deltaFrom="1296" length="2817226" type="application/octet-stream" sparkle:edSignature="9rmHsRXhKKT7adHiclYGArtQfTwfilHX1qBJ1QgWjo1CsfNxgsRHgEAi/yS3kr9LRN0ywXrC6x7TS80A+t/2CA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1364-1292.delta" sparkle:deltaFrom="1292" length="2922626" type="application/octet-stream" sparkle:edSignature="oBNfArVRXxL1EFpafg+VrMz95HvpeA9vyi6gu25HsGojduQ3G7fyN4ep3CVeun1Oj8Dcmh219jJrjbxqPJT7Dw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Sat, 24 Oct 2026 15:59:46 -0700</pubDate>
-            <sparkle:version>1313</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1313</h2>
-<h3>New nodes</h3>
-<ul>
-<li>Prerender (Other): renders its input to disk once and reads the frames back: to the shot's precomps (named and versioned as the Kura Write names them), Kento's cache, or files you choose. Use switches between the rendered frames and the live picture: on its panel, the chip on its tile, or Shift+D. Render, Render out of date (frames an edit upstream changed, and missing ones), Flipbook. The Flipbook's Make a Prerender after it puts one after the node.
-<li>Map Defocus (Filter &gt; Blur and defocus): defocused by a map, 0 sharp to 1 the max size, in slices of Nuke's Defocus disc.
-<li>Highlight Suppress (Color): highlights rolled off to a white point above a knee, and Restore its exact inverse, for before and after a blur or defocus.
-<li>Edge Wrap (Filter &gt; Light and glow): the background's light, and its highlights, wrapped into a foreground's edge.
-<li>Bloom (Filter &gt; Light and glow): glows of doubling size added up, each weaker by the falloff.
-<li>A Nuke script gets each of these as a group of standard nodes that renders the same (Prerender: a Read of its frames). Highlight Rebuild now does too, instead of being baked.
-</ul>
-<h3>Generative tools</h3>
-<ul>
-<li>Cambi, AutoDeband, Deflicker and WhiteBalance show what they measure (the score, the frame's mean and gain, the estimate) on their panels.
-<li>Grain says when its pattern has too few coefficients for its lag.
-</ul>
-<h3>Playback</h3>
-<ul>
-<li>Parked on a frame, the Viewer no longer makes frames ahead; it does while playing, or always with Cache ahead while stopped (the playback chip, or Settings &gt; Performance).
-</ul>
-<h3>The look</h3>
-<ul>
-<li>A splash while Kento starts. The splash, About and the manual's cover carry K.O.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1313.zip" length="376739540" type="application/octet-stream" sparkle:edSignature="ULBw/vW8TKPzxHHjwtPjf6WLChqwc4sYJFmg11xEG2qrqTHD2Hgeh6FmA5fA95+QyfJSw4ckbLB3IxV+e1tNBA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1313-1296.delta" sparkle:deltaFrom="1296" length="1753062" type="application/octet-stream" sparkle:edSignature="D8UayG/OLpTfG8Rz8+FnhxKzPgHvH2RrvDgxLSYZBYDsxSj+VX9A9gIkPYk29tPIws8/rn000QOxd7XcP5fKBg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1313-1292.delta" sparkle:deltaFrom="1292" length="1889670" type="application/octet-stream" sparkle:edSignature="bCvdP7tks7m2D/czMYd3Xp1tX7aYIcdgQXnpIDXetYiR2VZdhT7mg7r6Na5hCRFa5GqwwvzBIyHeqLExidd6Dg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1313-1287.delta" sparkle:deltaFrom="1287" length="1957414" type="application/octet-stream" sparkle:edSignature="lPDerULqe12B/OktfIBsNOSehGNIvgaav0VCPH+QRwq77xDZqmyp/AT4ZxVO9wnkWqbYwDDdBig5GtNIHwylBQ=="/>
             </sparkle:deltas>
         </item>
     </channel>
