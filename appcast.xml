@@ -4,6 +4,36 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Sun, 25 Oct 2026 09:40:44 -0700</pubDate>
+            <sparkle:version>1405</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1405</h2>
+<h3>Deep</h3>
+<ul>
+<li>New: DeepExpression (an expression a channel on every sample: color, front and back depth), DeepReformat, DeepFromFrames, and DeepToPoints (kept for scripts; its points aren't drawn yet).
+<li>DeepFromImage drops samples with no alpha, as it should.
+</ul>
+<h3>New nodes and commands</h3>
+<ul>
+<li>MatchGrade (Color): Analyze grades the source to look like the target, as a 3D LUT or a CDL.
+<li>Edit &gt; Node &gt; Split and join views: the selected node made once a view, so each eye can be set on its own.
+</ul>
+<h3>Viewer</h3>
+<ul>
+<li>Stereo shown Interlaced (alternate rows) or Flicker (alternate frames), beside Anaglyph and Side by side.
+<li>Compare &gt; Contact sheet: every input connected to the Viewer in a grid.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1405.zip" length="379481838" type="application/octet-stream" sparkle:edSignature="w2nvHcaQBhehg3FrlLsaAuAMHbiW11cjmZd2Zx/oCxUCqjhZ3hQbiuUwJEN60WNN/TLz0AtS7lolhWWSwgvqDg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1405-1393.delta" sparkle:deltaFrom="1393" length="1581710" type="application/octet-stream" sparkle:edSignature="yI+p8USd4vKPnEiaLmh1ISWPob17FyP9SCGl8+eEHpZS4i1AGyWJ6H3U+CZ5T7HK0rOllDz3af3ro5kjMk8CDw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1405-1392.delta" sparkle:deltaFrom="1392" length="1583482" type="application/octet-stream" sparkle:edSignature="GPBkAD5wyutkAOsJG99JTBLpSW4zPNePa5IMe8yK5qqE3Xz2hJrZx1abF5OKuDhhbe90eImT0oX3IhS3v8hVDg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1405-1380.delta" sparkle:deltaFrom="1380" length="2257034" type="application/octet-stream" sparkle:edSignature="qAzJsToPamUwgNM11+2CBtJDs2vWzfSphMOHPVGPKjOxgagJGIsiFCiP5Ns7zLe4Uvj/OqhY7szWFLFpy7LKBA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Sun, 25 Oct 2026 08:14:19 -0700</pubDate>
             <sparkle:version>1393</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -66,35 +96,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1392-1380.delta" sparkle:deltaFrom="1380" length="2157726" type="application/octet-stream" sparkle:edSignature="q5fYOtXRFO5IHCyu3f10PamMtSw9GqWXD7qPygmO0lyQnlkXzM5pJNj6LERE8mgS98Zv8AAOZthkCw4N4UkjCw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1392-1378.delta" sparkle:deltaFrom="1378" length="2225290" type="application/octet-stream" sparkle:edSignature="lYsVDxH7iRLQ6WhaJnul4bYUJBC2gAdQeZUkRxFCcZjcBFMHO68dgG8oLR++ieDKg47ZQIfWxt/YzG6A9Y3cBA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1392-1364.delta" sparkle:deltaFrom="1364" length="3423186" type="application/octet-stream" sparkle:edSignature="VGHqsCOCos825ieK2Z24QYS1WzApPo1amww1pHPU8/2BG/dB7mEIMF30AH9vgEBWYhZXw/coDntRQITgyihvBw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Sun, 25 Oct 2026 06:09:56 -0700</pubDate>
-            <sparkle:version>1380</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1380</h2>
-<h3>Stereo and views</h3>
-<ul>
-<li>A comp can have views: This comp &gt; Views sets up left and right (or goes back to one). A .nk's views open and save back.
-<li>Every node works on each view. A mono branch gives the same picture to both.
-<li>Read: a file named with %V (the view's name) or %v (its first letter) reads one file a view; a stereo EXR reads with both views.
-<li>Write: an EXR holds every view (its views knob keeps some); other file types, or a name with %V or %v, write a file a view.
-<li>The Viewer has a menu for the view shown when the comp is stereo.
-<li>New nodes in Views: JoinViews, OneView, ShuffleViews, MixViews, SideBySide, Anaglyph and ReConverge.
-<li>Not yet: a knob with a different value in each view (a .nk's split knob opens with its first value, and the load report lists it).
-</ul>
-<h3>New node</h3>
-<ul>
-<li>Dither (Filter): fine noise against banding before an 8- or 10-bit file, its own in each channel unless monodither, a new pattern each frame unless static seed.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1380.zip" length="379139328" type="application/octet-stream" sparkle:edSignature="7TWv7yGl1BZotdc/22MQbBoh0IsnG8nf0nLYhqpKu6FygnmrunGPH6J1sQJpsA6eIKtmgvaqMy1rf8oz8plUBg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1380-1378.delta" sparkle:deltaFrom="1378" length="1278702" type="application/octet-stream" sparkle:edSignature="q13xojSQTugK8suxVjK3DXB9rj5V6qjnIz0QRY6GWfd0NcYnwCjd+FY12iANHiiHQPcubPyJQ+fpH0ScQBatDg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1380-1364.delta" sparkle:deltaFrom="1364" length="2570746" type="application/octet-stream" sparkle:edSignature="mfzDfNNcdsgI2UF+MGQNVC5A7VyIxtgihc94F2ZcFv2Vcuzusi133oBawOwCKboBQIuTM4+/lBTRcBAbpajfCw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1380-1313.delta" sparkle:deltaFrom="1313" length="3805002" type="application/octet-stream" sparkle:edSignature="NM8diaipY27kc95PuN2zf13+pdjOZLjZWJIaHQSRR/d3dJzVYuAACgyncSNbse4bI0Qs0+ZEzkSxyoyKoipUBQ=="/>
             </sparkle:deltas>
         </item>
     </channel>
