@@ -4,6 +4,48 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Sun, 25 Oct 2026 08:00:25 -0700</pubDate>
+            <sparkle:version>1392</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1392</h2>
+<h3>Deep</h3>
+<ul>
+<li>A Read of a deep EXR reads its samples, as DeepRead does; DeepWrite writes them.
+<li>New in Deep: DeepMerge2 (combine and holdout), DeepToImage2, DeepFromImage, DeepRecolor, DeepHoldout2, DeepCrop, DeepTransform, DeepColorCorrect2 and DeepSample.
+<li>The Viewer shows a deep image flattened.
+</ul>
+<h3>New nodes</h3>
+<ul>
+<li>MultiMerge (Merge): a layer stack in one node. Input 1 is the background and each input after it a layer with its own operation, mix and on switch. Its inputs appear one at a time as you connect them. A .nk gets a group of Merge2s that renders the same.
+<li>PlanarTracker (Transform): draw the plane's four corners in the Viewer, then Track follows it both ways from the reference frame. Create pin makes a CornerPin2D that carries a picture along, or holds the plane still.
+<li>Stabilize2D (one or two points), Precomp, MarkerRemoval, DustBust and Bokeh (a disc for now).
+</ul>
+<h3>Stereo</h3>
+<ul>
+<li>A .nk's knob split by view (a right-eye value) now opens with each view's value and saves back as it was.
+</ul>
+<h3>Viewer and graph</h3>
+<ul>
+<li>The M chip works: alpha shown as a tint over the picture, its color and opacity on the Viewer node. Viewer &gt; False color shows brightness in stops from middle gray, with NaN and infinite pixels in magenta.
+<li>Settings &gt; Preferences &gt; Viewer: a Color background of any color, and the checkerboard's two colors and size.
+<li>Settings &gt; Preferences &gt; Node Graph: grid dots, from off to four times as bright.
+<li>Edit &gt; Node &gt; Precomp selected (Shift+Cmd+P): the selected nodes saved as a comp of their own and replaced by a Precomp.
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>A node whose inputs grow as they're connected (Merge2's A3 and on, Blend) got no port for them in the Node Graph.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1392.zip" length="379408691" type="application/octet-stream" sparkle:edSignature="9SXYAZ8QGzf2ZRSSbq9O4AdjMUarnM8WrZI/COX+P36j/uiW689heWTdLQb0XtP7yYIxZqo2fOJWnNp76H5hAw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1392-1380.delta" sparkle:deltaFrom="1380" length="2157726" type="application/octet-stream" sparkle:edSignature="q5fYOtXRFO5IHCyu3f10PamMtSw9GqWXD7qPygmO0lyQnlkXzM5pJNj6LERE8mgS98Zv8AAOZthkCw4N4UkjCw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1392-1378.delta" sparkle:deltaFrom="1378" length="2225290" type="application/octet-stream" sparkle:edSignature="lYsVDxH7iRLQ6WhaJnul4bYUJBC2gAdQeZUkRxFCcZjcBFMHO68dgG8oLR++ieDKg47ZQIfWxt/YzG6A9Y3cBA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1392-1364.delta" sparkle:deltaFrom="1364" length="3423186" type="application/octet-stream" sparkle:edSignature="VGHqsCOCos825ieK2Z24QYS1WzApPo1amww1pHPU8/2BG/dB7mEIMF30AH9vgEBWYhZXw/coDntRQITgyihvBw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Sun, 25 Oct 2026 06:09:56 -0700</pubDate>
             <sparkle:version>1380</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -59,48 +101,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1378-1364.delta" sparkle:deltaFrom="1364" length="2172422" type="application/octet-stream" sparkle:edSignature="sDkzqGZS8rWAw/no63vQ1H9Gk7G3bE6bpffW9rCzoy6jXz6q2dL/Hip9U7jeux9q99lj6oa6OO2t2Tc2D56NDA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1378-1313.delta" sparkle:deltaFrom="1313" length="3588506" type="application/octet-stream" sparkle:edSignature="zdBA19WUvLikjBMY5Aog2pfWqzmVhw/xwIz35s/cm4u3j9RI6J4YizrlKriKS+6p9Ske3GoXhwgDcBr5X78nCw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1378-1296.delta" sparkle:deltaFrom="1296" length="3950674" type="application/octet-stream" sparkle:edSignature="Z7t7VsO79mFyVblv08n3dY1o3gowME1ivwnR0fUrpoLLZ5RTHhhS3XRi6LLsZ6fdGC6rJ0eJLOaEdpTuCapODg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Sat, 24 Oct 2026 21:36:55 -0700</pubDate>
-            <sparkle:version>1364</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1364</h2>
-<h3>Camera tracking</h3>
-<ul>
-<li>CameraTracker tracks and solves: Track features finds corners and follows them, Solve makes the camera, Refine drops tracks over the error you set. Its panel shows the solve's error and a strip of it over the frames.
-<li>Its mask keeps features off moving things (the source's alpha, or a matte on the Mask input), and the film back comes from a camera menu or by hand. Keyframes are the solve's own choice or two frames you set.
-<li>In the Viewer: the tracks by state, the solved points reprojected, a readout over a track. Pick tracks, delete the picked ones, or pick every track over the error.
-<li>Export &gt; Camera makes a Camera3 linked to the solve.
-</ul>
-<h3>Help on the panel</h3>
-<ul>
-<li>A Help tab on the more involved nodes (the generative tools, Grain, Tracker, Roto and RotoPaint, Kento's own nodes): a short manual for that node, the same text as the Node Reference.
-</ul>
-<h3>Viewer</h3>
-<ul>
-<li>Number keys over the Viewer switch which input it shows, instead of rewiring the graph, and the Viewer bar names the input shown.
-<li>Whole-number sliders now set their values; Cambi says what its score means.
-</ul>
-<h3>Faster</h3>
-<ul>
-<li>On a Mac, the motion vectors under Kronos, OFlow2, VectorGenerator and MotionBlur are made on the GPU: about 1.8 times faster at HD, the same results.
-<li>Nagi runs its motion compensation and spatial stage on the GPU: about twice as fast.
-<li>ZDefocus2 is 13 times faster, Map Defocus 2.6 times with a map, Edge Wrap and Median nearly twice, and the expression-built nodes up to twice.
-<li>OpenFX plugins that render through Metal now do, a whole frame at a time.
-</ul>
-<h3>Nodes</h3>
-<ul>
-<li>Nuke nodes our comps don't use and Kento won't build now are parked: they open, keep their settings and are written back, and say so.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1364.zip" length="377436995" type="application/octet-stream" sparkle:edSignature="oED+9Ja+VVpYbMLSCbrjdDo1RQJ46Y3HSDksFS2mfoEhmFdUidJBymAArRfe69jBIQcJhEZxrdYaV7VtG4DKDA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1364-1313.delta" sparkle:deltaFrom="1313" length="2458210" type="application/octet-stream" sparkle:edSignature="mZhVnJlQWnYszPhqiFYtiv6Wqyyuc8QTepNtd9lOiSiBEAN66m07T99aDFl+WzKVdtYpjOcQdar1ueM3BtX9DQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1364-1296.delta" sparkle:deltaFrom="1296" length="2817226" type="application/octet-stream" sparkle:edSignature="9rmHsRXhKKT7adHiclYGArtQfTwfilHX1qBJ1QgWjo1CsfNxgsRHgEAi/yS3kr9LRN0ywXrC6x7TS80A+t/2CA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1364-1292.delta" sparkle:deltaFrom="1292" length="2922626" type="application/octet-stream" sparkle:edSignature="oBNfArVRXxL1EFpafg+VrMz95HvpeA9vyi6gu25HsGojduQ3G7fyN4ep3CVeun1Oj8Dcmh219jJrjbxqPJT7Dw=="/>
             </sparkle:deltas>
         </item>
     </channel>
