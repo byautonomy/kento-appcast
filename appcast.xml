@@ -4,6 +4,36 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Sun, 25 Oct 2026 11:05:15 -0700</pubDate>
+            <sparkle:version>1420</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1420</h2>
+<h3>New nodes</h3>
+<p>Each of these is Kento's own node. A .nk script gets a group of standard nodes that renders the same.</p>
+<ul>
+<li>LensWarp (Transform): the picture warped about a center, fading out at a radius. Vortex, bulge or pinch, ripple, or polar coordinates.
+<li>CleanPlate (Keyer): a screen with its foreground filled in from the screen around it, for keyers that divide by a clean plate.
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>STMap: a uv set to a layer (forward, uv) now reads that layer's two channels. Before, it read black, so every pixel took one color.
+<li>ChromaticAberration's .nk group now uses the comp's frame size, not the default format's.
+</ul>
+<h3>Panels</h3>
+<ul>
+<li>PositionMatte's position layer is now a menu of the input's layers, position-like names first.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1420.zip" length="379661504" type="application/octet-stream" sparkle:edSignature="8NO5u7nolP/UuJt6XcM+nCXTE+FA9hZwwa+e753sa35en6EkQKQVeTbyxCRKnG2TO3u9a2uvd/JtXXl2ULNcAw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1420-1416.delta" sparkle:deltaFrom="1416" length="1193786" type="application/octet-stream" sparkle:edSignature="o9rd+uTWtQcAxtmTftpnJhRomPQXWsL0m4gGJTjcfqgMp9sSMw/MSepEka4WaP2DoxA3CYGFM5sc6H7CNhI2BQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1420-1405.delta" sparkle:deltaFrom="1405" length="1631618" type="application/octet-stream" sparkle:edSignature="5PmhQG4bYloF6ogNAAGM/ULKvnDso4/x114sMJq+gY9m+1YPX1hY67BaU0x7gAIfRcMwRXz9XYX40HJu84xyBg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1420-1393.delta" sparkle:deltaFrom="1393" length="1967298" type="application/octet-stream" sparkle:edSignature="ahcV784AxL50AF0yvlUEixkSVLqWm0+oFi2jhDswGckqtRQkxYW/AJOjwpIo1GqjD+1RX+4TrrYouMuhWVHFCw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Sun, 25 Oct 2026 10:40:32 -0700</pubDate>
             <sparkle:version>1416</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -66,30 +96,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1405-1393.delta" sparkle:deltaFrom="1393" length="1581710" type="application/octet-stream" sparkle:edSignature="yI+p8USd4vKPnEiaLmh1ISWPob17FyP9SCGl8+eEHpZS4i1AGyWJ6H3U+CZ5T7HK0rOllDz3af3ro5kjMk8CDw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1405-1392.delta" sparkle:deltaFrom="1392" length="1583482" type="application/octet-stream" sparkle:edSignature="GPBkAD5wyutkAOsJG99JTBLpSW4zPNePa5IMe8yK5qqE3Xz2hJrZx1abF5OKuDhhbe90eImT0oX3IhS3v8hVDg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1405-1380.delta" sparkle:deltaFrom="1380" length="2257034" type="application/octet-stream" sparkle:edSignature="qAzJsToPamUwgNM11+2CBtJDs2vWzfSphMOHPVGPKjOxgagJGIsiFCiP5Ns7zLe4Uvj/OqhY7szWFLFpy7LKBA=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Sun, 25 Oct 2026 08:14:19 -0700</pubDate>
-            <sparkle:version>1393</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1393</h2>
-<h3>Fixes</h3>
-<ul>
-<li>The Viewer showed nothing for a stereo comp (builds 1380 to 1392): it shows the comp's views again.
-</ul>
-<h3>Viewer</h3>
-<ul>
-<li>Bar 2's saturation works: the picture shown grayer or stronger, for the eye only.
-<li>In a stereo comp the view menu also offers Anaglyph (left in red, right in cyan) and Side by side.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1393.zip" length="379410872" type="application/octet-stream" sparkle:edSignature="BBuoPbGTFybCfLD26Et2I+NdwsRJwu8lOUp54op04F+nrnlcoEFS+ygv6jjQDqnImcpVtViGr8eB6T07+80wBQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1393-1392.delta" sparkle:deltaFrom="1392" length="718154" type="application/octet-stream" sparkle:edSignature="PwU6MvKddpOpuq/c9WdB5Rm0xT0ipWj+kRP0d40BbgKtSw/5eiVVEwHq9kg7NKNmT2swCsTpKQXdiV+0WEyeAg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1393-1380.delta" sparkle:deltaFrom="1380" length="2160818" type="application/octet-stream" sparkle:edSignature="E3eF4mDccur6igubcGYHi2BVHFVeZzbbe3TSh+GzaIoMiSsE2ebkKfNIh7m7KzAV2cwoH1Y0sycFuNaIR1ziCQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1393-1378.delta" sparkle:deltaFrom="1378" length="2230034" type="application/octet-stream" sparkle:edSignature="vn0vr51DgLj8fpbFJOp+sVqxXnYvqc6jNAflIMQGPNUwG9gY4SYCqLY5uQ0CiaoQEB+Lx7CIKR2yT6ihgdTsAA=="/>
             </sparkle:deltas>
         </item>
     </channel>
