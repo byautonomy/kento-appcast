@@ -4,6 +4,47 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Mon, 26 Oct 2026 16:28:53 -0700</pubDate>
+            <sparkle:version>1565</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1565</h2>
+<h3>3D viewer</h3>
+<ul>
+<li>Tab over the Viewer (or Viewer &gt; 3D view) shows the comp's 3D in the picture's place; Tab again gives the picture back. It shows the scene of what the Viewer shows: cards, spheres, cubes, cylinders and meshes where they render, each projection's camera, frustum and held image (in light blue), the comp's cameras as objects with an arrow along their view, a CameraTracker's solved points and the ground grid. The unconnected check adds the 3D nodes that aren't in the scene, faint.
+<li>Look from perspective, top, front, side, any camera or a projection's held camera. Alt-drag orbits, Alt-middle pans, Alt-right or the wheel zooms; F frames. W, E and R give the move, rotate and scale handles; a drag is one undo, and Cmd lands a move on a tracked point.
+</ul>
+<h3>ScanlineRender</h3>
+<ul>
+<li>Motion blur: samples, shutter, shutter offset, custom offset and randomize time; textures move with the shutter too.
+<li>Depth of field: focus diameter keeps the camera's new focal point sharp. Sample diameter and stochastic samples.
+<li>Overscan gives the format plus the overscan on every side. Motion vector channels is a forward or motion menu.
+</ul>
+<h3>Curve Editor and Dope Sheet</h3>
+<ul>
+<li>Knobs by their labels (Grade's gain), the name for expressions in the tooltip. Cmd-click or Cmd+Option-click a curve to key it; the curve under the pointer glows.
+<li>Tangent handles land on whole frames; Shift keeps them to one direction. Snap's settings are kept. A Roto's shape keys show in the list and the dope strip.
+<li>The board's details: values to three places, the gutter kept clear, the current ease lit, family colours on the Dope Sheet's nodes.
+</ul>
+<h3>Panels</h3>
+<ul>
+<li>Properties: each panel's header is a bar with a grip. Drag it up or down to reorder; drag it out sideways to float the panel. Long labels are shortened, the full label in the tooltip.
+<li>Scopes to their board. The Flipbook player takes L, J, K, the arrow keys and O, and has its own page in Preferences &gt; Shortcuts, as do Kento's other panels now.
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>The Node Graph's wires no longer flicker while the graph sits idle.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1565.zip" length="381291041" type="application/octet-stream" sparkle:edSignature="v4gtzI4JarPM+so9/Sgz//zgHIGiJNV2D4jv67hTGPcX7okXZO2c6MRk4SXN73sv23/ePpYhiqoOJ+fEBsfOAg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1565-1550.delta" sparkle:deltaFrom="1550" length="1763902" type="application/octet-stream" sparkle:edSignature="iXz4bj66tUFM264SZSN4l/2NafPmbqBVoCb2xVKU2nv9HTlabqWAIndkTuQeOGPOhfaoEGBKdDWUNhXewGDkBw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1565-1527.delta" sparkle:deltaFrom="1527" length="2394762" type="application/octet-stream" sparkle:edSignature="r3ViuzEUf2Uslx7KuUu2lvIuMIASubPtGxU3B7ck68OklsX6FaX81hU/lHT+PanX24DpB/kzAKYrAgRhGUIAAw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1565-1472.delta" sparkle:deltaFrom="1472" length="3172126" type="application/octet-stream" sparkle:edSignature="QocGdfpcjxxGXNkx7nccpWJm7RuSdnWTY1GtZYttWYNDE3YHEZaDcrovCz5tF+fF62nEkdcEYkwIIjM+SBFJAA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Mon, 26 Oct 2026 09:29:21 -0700</pubDate>
             <sparkle:version>1550</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -80,57 +121,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1527-1472.delta" sparkle:deltaFrom="1472" length="2671322" type="application/octet-stream" sparkle:edSignature="XdnpGr6uHPHJdmA9uc2S+uW0udk5hgjAhcymFXdhFG6b7ECrE/gCAB7BZ/zQxvNYXDcgzit7BIDBeiO8/9JmBQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1527-1420.delta" sparkle:deltaFrom="1420" length="3375906" type="application/octet-stream" sparkle:edSignature="e7znRI5PmHkdTox70iehPR1s+IF5Ti2R4TtpLUkmdCDaC3z1pRMrEynmpdOUz6x1kzj/m0KV2iNjXhpcRbwUBg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1527-1416.delta" sparkle:deltaFrom="1416" length="3429078" type="application/octet-stream" sparkle:edSignature="Tu2YFmE+AxcLvTmJcNtNRMAY5SIXNakzd1LgvGFIrgRQn4RhAraS8in6//lI9D3p1zIKxt1xKhA9fVpNmOm7BA=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Sun, 25 Oct 2026 15:38:29 -0700</pubDate>
-            <sparkle:version>1472</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1472</h2>
-<h3>New nodes</h3>
-<ul>
-<li>MultiMerge's layer list: top layer first, drag to reorder, each layer's eye, solo, operation and mix.
-<li>LayerMux (Channel): several pictures into one multi-layer picture, each input a layer of its own.
-<li>PickMatte (Keyer): a matte grown from a picked pixel by color tolerance and softness.
-<li>DepthToPosition (3D): each pixel's world position from its depth and the camera.
-<li>Axis4 and Cylinder (3D). Cylinder renders as NukeX does.
-<li>Lights and shaders (3D): Light2, Light3, DirectLight, PointLight and Spotlight; Phong, Diffuse, Specular, Emission and BasicMaterial. Lit cards match NukeX.
-<li>The older SphericalTransform class: its seven projections, rotations on both sides, and fix.
-<li>VariableSwitch, VectorToMotion, Encryptomatte, Profile, ScannedGrain, Sparkles, BumpBoss, DegrainSimple, LevelSet, VectorCornerPin, SphericalTransform2 and TVIscale2.
-</ul>
-<h3>Finished</h3>
-<ul>
-<li>DeepColorCorrect2: contrast, the shadows, midtones and highlights rows, mix, and the depth range. Several samples a pixel are corrected as NukeX does.
-<li>GridWarp3's morph mix.
-<li>FrameRepair can make bad frames from the motion around them, and TemporalSmooth can follow motion.
-<li>Reformat's input and output crops, and "to size".
-</ul>
-<h3>Panels: controls in place of typing</h3>
-<ul>
-<li>Curves you draw: ScannedGrain's weight, ColorLookup, HueCorrect, HueKeyer, AddMix, CCrosstalk, TimeDissolve and ColorCorrect's ranges have a graph above their text. Click to add a key and drag to move it. Right-click to delete it, set it smooth, linear or a step, or reset the curve. Hue curves have a strip of the hues under them.
-<li>Matrix: the kernel as a grid of fields, with a size menu and starting kernels (blur, sharpen, edge, emboss).
-<li>Text's font: a family menu and a style menu, filled from the Mac's fonts.
-<li>ModifyMetaData: its edits as a table, with the input's keys to pick.
-<li>LayerFilter: the input's layers to tick. VariableSwitch: the variable's values to tick for each input. LayerMux's layer names come from a menu.
-<li>View knobs (Anaglyph, MixViews, JoinViews, Write) are menus and check boxes. OCIOLookTransform's look is a menu. Write's EXR compression is a menu.
-<li>Bezier: Convert to Roto, to edit its points in the Viewer.
-<li>Every menu knob is now a menu, filled with its items.
-<li>The mask strip appears on every node that has a mask.
-</ul>
-<h3>Other</h3>
-<ul>
-<li>The Pixel inspector (Window > Panels): pin points and boxes, read live, with min, max, mean and median.
-<li>Viewer > Zebra: stripes over pixels at or above a level.
-<li>How a node reaches a Nuke script: a node that will be baked on export has a film mark on its tile, and the panel's first line says so. PickMatte is now offered for baking.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1472.zip" length="380336062" type="application/octet-stream" sparkle:edSignature="BNIsV+YKRvV0KepE/fGqhPs2qpYgUd3wCTJBFcPL8wcjtEU/Bzm4UUPRH34j+un5NtKq1b+TeMdAcIkLD/DQDg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1472-1420.delta" sparkle:deltaFrom="1420" length="2759578" type="application/octet-stream" sparkle:edSignature="XciR4Kszk41Z5o0YU9GfPTM4opa3fk0lxPq8Qua98BLBttH84hMq3NSaOymCnmzboiyk1lfb4Kg341AUaE1hCw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1472-1416.delta" sparkle:deltaFrom="1416" length="2771386" type="application/octet-stream" sparkle:edSignature="N3hhCKWEK74qUAacKOkSiHPVJ1rFqtg2hCNYf1nHZchlhT0JPV5IVUEoiPfphpojjh0pmd62FexjvmUNyL4iAA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1472-1405.delta" sparkle:deltaFrom="1405" length="2974114" type="application/octet-stream" sparkle:edSignature="ICG34PhuMzknrwl29vlNfkPvj+uOs6gxKVEPufqjnRQ7h7FYXuKoLqxwLhbhR5pvAcumGpGOlGESz3eBCI2dCQ=="/>
             </sparkle:deltas>
         </item>
     </channel>
