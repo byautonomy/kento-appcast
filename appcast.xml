@@ -4,6 +4,42 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Mon, 26 Oct 2026 09:29:21 -0700</pubDate>
+            <sparkle:version>1550</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1550</h2>
+<h3>Shortcuts</h3>
+<ul>
+<li>Preferences &gt; Shortcuts: every action with Kento's key and yours, found by name or by pressing its keys. Click a key cap and press the new keys; a conflict shows as you press. Your set can be exported and imported, and the full keyboard shows what every key does, with the modifiers held.
+<li>Tooltips, menu rows and chips that name a key show your key, and follow when you change it. Help &gt; Keyboard shortcuts lists your keys.
+</ul>
+<h3>3D scenes out</h3>
+<ul>
+<li>WriteGeo: the comp's 3D written to one Alembic or USD file (.abc, .usd, .usda, .usdc). Cameras from the CameraTracker or Export &gt; Camera move every frame; cards, spheres, cubes, cylinders, ReadGeo2 meshes and imported scenes go where Nuke's own WriteGeo puts them.
+<li>Its panel: the file type, what to write, the range on one row with limit to range, and Write file, which writes in the background and says what it wrote.
+<li>The Render window and queue list a WriteGeo as one job over its whole range; command-line renders write WriteGeos too, once each.
+</ul>
+<h3>Projection</h3>
+<ul>
+<li>Projecting onto heavy meshes is about a hundred times faster: an HD frame onto 200,000 triangles in under a second.
+<li>Paint as: in a wide-gamut comp, choose the painting's file (a 16-bit sRGB TIFF, a 16-bit TIFF with ACEScg primaries that clips nothing, or the linear EXR). Preferences &gt; General &gt; Paint sets the default.
+<li>Pad for paint: the percentage of the whole canvas or on each side; extend edges is the default fill; the edges line speaks of the padded canvas.
+</ul>
+<h3>Deep</h3>
+<ul>
+<li>DeepReformat's flip, flop, turn and center; resize none; box_fixed off keeps the input's shape. Samples move whole, never resampled.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1550.zip" length="381144980" type="application/octet-stream" sparkle:edSignature="YgJat3WWjcsSPiM+utLwEI6a8vWQ1X+FMUc/pGxYTwX2nPMbMpLBwZe4wConW4jAUhVLQBqosqeCIz3hlg5cDg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1550-1527.delta" sparkle:deltaFrom="1527" length="1940442" type="application/octet-stream" sparkle:edSignature="rBZrhtxYNiXeqh+ECA/M6KVKBt4lyGLjKwt1fbh6lAzChEoA4+PIc+38BIs+EoeT1Rd2CEcj2vLZcuBAYsrBDA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1550-1472.delta" sparkle:deltaFrom="1472" length="2919774" type="application/octet-stream" sparkle:edSignature="+cGi7+w7AytLyHscZ5AwtE5pmu3eIsO6oJyqGRzzcqWwvLawaw1adNRuADz0kgeCI9VUjv3Egr+5XkZZHBkpCw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1550-1420.delta" sparkle:deltaFrom="1420" length="3587538" type="application/octet-stream" sparkle:edSignature="E3Rlf1gKyQnJWCdSEam1KW7+CiwyFBmQY4jF0kzgQwUlhaYOUdes0hnja8KvaZVUarFpGh3Zo1qCDaDhEABCBg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Sun, 25 Oct 2026 20:40:23 -0700</pubDate>
             <sparkle:version>1527</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -95,36 +131,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1472-1420.delta" sparkle:deltaFrom="1420" length="2759578" type="application/octet-stream" sparkle:edSignature="XciR4Kszk41Z5o0YU9GfPTM4opa3fk0lxPq8Qua98BLBttH84hMq3NSaOymCnmzboiyk1lfb4Kg341AUaE1hCw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1472-1416.delta" sparkle:deltaFrom="1416" length="2771386" type="application/octet-stream" sparkle:edSignature="N3hhCKWEK74qUAacKOkSiHPVJ1rFqtg2hCNYf1nHZchlhT0JPV5IVUEoiPfphpojjh0pmd62FexjvmUNyL4iAA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1472-1405.delta" sparkle:deltaFrom="1405" length="2974114" type="application/octet-stream" sparkle:edSignature="ICG34PhuMzknrwl29vlNfkPvj+uOs6gxKVEPufqjnRQ7h7FYXuKoLqxwLhbhR5pvAcumGpGOlGESz3eBCI2dCQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Sun, 25 Oct 2026 11:05:15 -0700</pubDate>
-            <sparkle:version>1420</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1420</h2>
-<h3>New nodes</h3>
-<p>Each of these is Kento's own node. A .nk script gets a group of standard nodes that renders the same.</p>
-<ul>
-<li>LensWarp (Transform): the picture warped about a center, fading out at a radius. Vortex, bulge or pinch, ripple, or polar coordinates.
-<li>CleanPlate (Keyer): a screen with its foreground filled in from the screen around it, for keyers that divide by a clean plate.
-</ul>
-<h3>Fixes</h3>
-<ul>
-<li>STMap: a uv set to a layer (forward, uv) now reads that layer's two channels. Before, it read black, so every pixel took one color.
-<li>ChromaticAberration's .nk group now uses the comp's frame size, not the default format's.
-</ul>
-<h3>Panels</h3>
-<ul>
-<li>PositionMatte's position layer is now a menu of the input's layers, position-like names first.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1420.zip" length="379661504" type="application/octet-stream" sparkle:edSignature="8NO5u7nolP/UuJt6XcM+nCXTE+FA9hZwwa+e753sa35en6EkQKQVeTbyxCRKnG2TO3u9a2uvd/JtXXl2ULNcAw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1420-1416.delta" sparkle:deltaFrom="1416" length="1193786" type="application/octet-stream" sparkle:edSignature="o9rd+uTWtQcAxtmTftpnJhRomPQXWsL0m4gGJTjcfqgMp9sSMw/MSepEka4WaP2DoxA3CYGFM5sc6H7CNhI2BQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1420-1405.delta" sparkle:deltaFrom="1405" length="1631618" type="application/octet-stream" sparkle:edSignature="5PmhQG4bYloF6ogNAAGM/ULKvnDso4/x114sMJq+gY9m+1YPX1hY67BaU0x7gAIfRcMwRXz9XYX40HJu84xyBg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1420-1393.delta" sparkle:deltaFrom="1393" length="1967298" type="application/octet-stream" sparkle:edSignature="ahcV784AxL50AF0yvlUEixkSVLqWm0+oFi2jhDswGckqtRQkxYW/AJOjwpIo1GqjD+1RX+4TrrYouMuhWVHFCw=="/>
             </sparkle:deltas>
         </item>
     </channel>
