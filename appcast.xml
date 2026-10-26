@@ -4,6 +4,50 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Sun, 25 Oct 2026 20:40:23 -0700</pubDate>
+            <sparkle:version>1527</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1527</h2>
+<h3>Projection</h3>
+<ul>
+<li>Project this frame: Option-P over the Viewer, or the Viewer menu's Projection section. Builds a Projection at the current frame from the Viewer's picture and the comp's tracked camera, in one undo.
+<li>The Projection node: one tile that opens (Cmd+Return) to ordinary nodes: held camera, held image, projector, card or geometry, render through the shot camera over the plate. A Nuke script gets a Group of the same nodes.
+<li>One hold frame, shown on the tile, as a diamond on the timeline and as a badge in the Viewer; Go to hold and Hold here. The held camera follows the track; Bake held camera freezes a copy.
+<li>Onto: a card at a depth (typed, or clicked in the Viewer from the plate's depth or the nearest tracked point), a card through selected tracked points, or selected geometry.
+<li>Edges: black outside the image or extended edges, with where the card leaves the image and an overscan button.
+<li>Pad for paint: a larger canvas to paint past the plate's edges, optionally upscaled, projected so the original pixels stay where they were.
+<li>Send to paint: the held frame written out and opened in your paint app (Preferences &gt; General &gt; Paint); saving there updates the projection. New version, Back to plate, a round-trip test, and checks when the painting comes back.
+<li>Coverage in the Viewer: where the projection falls outside the held image, faces away, is hidden or grazes, on the shot itself, with the worst frames marked along the timeline.
+<li>Front faces only and occlusion are drawn as Nuke draws them.
+<li>Scripts whose image and camera holds disagree say so, with a choice to line them up or keep them.
+</ul>
+<h3>3D for projection</h3>
+<ul>
+<li>BlendMat and MergeMat, to stack projections; UVProject, DisplaceGeo, ApplyMaterial, ModelBuilder, Reconcile3D and ScanlineRender2.
+<li>Nuke's USD-based GeoCard, GeoImport, GeoReference, GeoBindMaterial, GeoScene and GeoViewScene. File &gt; Import &gt; USD scene... and dropping a .usd on the graph make a GeoImport.
+<li>ScanlineRender's ambient.
+</ul>
+<h3>Deep</h3>
+<ul>
+<li>DeepMerge2's plus; DeepCrop's outside z range and outside box.
+</ul>
+<h3>Node Graph and panels</h3>
+<ul>
+<li>A node's label shows under its tile.
+<li>MultiMerge's layer list: the drag grips show, and the list follows new layers.
+<li>The older SphericalTransform's face forward switch is shown, with what it does.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1527.zip" length="380912075" type="application/octet-stream" sparkle:edSignature="si+wKZi6/eTqTmUZcKm724tRJ0aIkM3E5ZCY+vuriMspfNjA4TLoiJGZNZjtHpQSrey1Tjvp00G8o4/lAH2bCQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1527-1472.delta" sparkle:deltaFrom="1472" length="2671322" type="application/octet-stream" sparkle:edSignature="XdnpGr6uHPHJdmA9uc2S+uW0udk5hgjAhcymFXdhFG6b7ECrE/gCAB7BZ/zQxvNYXDcgzit7BIDBeiO8/9JmBQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1527-1420.delta" sparkle:deltaFrom="1420" length="3375906" type="application/octet-stream" sparkle:edSignature="e7znRI5PmHkdTox70iehPR1s+IF5Ti2R4TtpLUkmdCDaC3z1pRMrEynmpdOUz6x1kzj/m0KV2iNjXhpcRbwUBg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1527-1416.delta" sparkle:deltaFrom="1416" length="3429078" type="application/octet-stream" sparkle:edSignature="Tu2YFmE+AxcLvTmJcNtNRMAY5SIXNakzd1LgvGFIrgRQn4RhAraS8in6//lI9D3p1zIKxt1xKhA9fVpNmOm7BA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Sun, 25 Oct 2026 15:38:29 -0700</pubDate>
             <sparkle:version>1472</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -81,42 +125,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1420-1416.delta" sparkle:deltaFrom="1416" length="1193786" type="application/octet-stream" sparkle:edSignature="o9rd+uTWtQcAxtmTftpnJhRomPQXWsL0m4gGJTjcfqgMp9sSMw/MSepEka4WaP2DoxA3CYGFM5sc6H7CNhI2BQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1420-1405.delta" sparkle:deltaFrom="1405" length="1631618" type="application/octet-stream" sparkle:edSignature="5PmhQG4bYloF6ogNAAGM/ULKvnDso4/x114sMJq+gY9m+1YPX1hY67BaU0x7gAIfRcMwRXz9XYX40HJu84xyBg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1420-1393.delta" sparkle:deltaFrom="1393" length="1967298" type="application/octet-stream" sparkle:edSignature="ahcV784AxL50AF0yvlUEixkSVLqWm0+oFi2jhDswGckqtRQkxYW/AJOjwpIo1GqjD+1RX+4TrrYouMuhWVHFCw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Sun, 25 Oct 2026 10:40:32 -0700</pubDate>
-            <sparkle:version>1416</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1416</h2>
-<h3>New nodes</h3>
-<p>Each of these is Kento's own node. A .nk script gets a group of standard nodes that renders the same.</p>
-<ul>
-<li>GamutCompress (Color): out-of-gamut colors brought back inside smoothly, or hard-limited to the gamut's edge. The reference values are for ACEScg. Invert undoes it.
-<li>ChromaticAberration (Transform): a lens's color fringing added, or taken out with a negative amount. Red and blue are scaled about the lens center.
-<li>RangeMatte (Keyer): a matte of the shadows, midtones or highlights, from the same ranges a ColorCorrect uses.
-<li>PositionMatte (Keyer): a matte of a sphere or a box in the scene, from a world position pass.
-<li>LayerFilter (Channel): keeps or removes layers whose names match wildcard patterns.
-<li>TimeDisplace (Time): each pixel shows another frame, picked by a map. Use it for slit-scans and time-smears.
-<li>FrameRepair (Time): bad frames replaced by the nearest good frame before or after, or a blend of the two.
-<li>TemporalSmooth (Time): each frame a weighted average of the frames around it, to take out flicker and boil.
-</ul>
-<h3>Viewer and panels</h3>
-<ul>
-<li>Guides: each guide, and each aspect's mask and lines, has its own color.
-<li>Reformat's panel shows only the controls for the chosen type. Width and height are in pixels, with an exact width and height option.
-</ul>
-<h3>.nk scripts</h3>
-<ul>
-<li>A .nk now declares the comp's own layers (P, N and the like), so they read back wherever the script is opened.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1416.zip" length="379624053" type="application/octet-stream" sparkle:edSignature="7PHTOELWa9tq1lBw+L0g0gAlv4SDbtPWdGsMXMt/BdfMNsDqE+W6sNmh2j4seACPYTTtUX9tjTyJMmwNyzWwAw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1416-1405.delta" sparkle:deltaFrom="1405" length="1559410" type="application/octet-stream" sparkle:edSignature="/ttXWVbxo+cQLfdBC/37bH3F+aBtG5HTN6jd2HMwUuOCRNixb0JdNJ5ZgCbv6xv1TaQ4VRCA2u34GEKX+qPKDA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1416-1393.delta" sparkle:deltaFrom="1393" length="1868590" type="application/octet-stream" sparkle:edSignature="VlbpQg8Q02Q9ecxWkXeWMQ8FXcJ57rUi7jB2220KNN/zitDziQW/3vx72gfKfw9rh5tWG5VrEZrBI7aSa70rDw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1416-1392.delta" sparkle:deltaFrom="1392" length="1875266" type="application/octet-stream" sparkle:edSignature="zsD2g8wksbgAql+04ZHMwnJtYYd2LGMh5ekDNWXCQqp+3LV6hkFlDJIxlznVHa06JX6cphMtqcKfAMCjlbkDCA=="/>
             </sparkle:deltas>
         </item>
     </channel>
