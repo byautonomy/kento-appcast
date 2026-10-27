@@ -4,6 +4,48 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Tue, 27 Oct 2026 16:54:43 -0700</pubDate>
+            <sparkle:version>1656</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1656</h2>
+<h3>A plane drawn on the plate</h3>
+<ul>
+<li>A Projection can go onto a plane you draw over the picture: choose a plane drawn on the plate in the onto menu (or Draw a plane on the plate in the Viewer's menu), click its four corners at the hold frame, and give it a depth from a tracked point or a typed one. A perspective grid and its size show while the corners can be a rectangle; when they can't, the hint says why.</li>
+<li>Drag a corner to refine it, one undo a drag. The plane is a Card beside the Projection whose lattice holds the corners exactly, so a Nuke script shows the same plane.</li>
+<li>On a still with no camera, Camera from this plane makes one from the drawing.</li>
+</ul>
+<h3>3D renders</h3>
+<ul>
+<li>Geometry running under or behind the camera, a floor or a road toward the lens, now renders up to the frame's edge instead of dropping out.</li>
+<li>Objects with a BlendMat or MergeMat that pass through each other are now in front where they are nearer, at each pixel.</li>
+<li>Card2's deformation lattice (bilinear and bicubic) renders as in Nuke scripts that use it.</li>
+<li>A scene with more than 16 surfaces now draws copies of one object together and says when anything is left out.</li>
+</ul>
+<h3>Remote control</h3>
+<ul>
+<li>Preferences &gt; Performance &gt; Remote control lets scripts, pipeline tools and assistants that speak MCP drive the open comp: describe it, make, wire and change nodes, render a frame, read pixels, save, undo. Local only, behind a token; each change is one undo, marked in History.</li>
+</ul>
+<h3>Faster</h3>
+<ul>
+<li>Rotated, skewed or scaled Transforms render about twice as fast, with the same picture to the bit.</li>
+<li>The median( values, count ) of pixel kernels now runs on the graphics card too.</li>
+</ul>
+<h3>More</h3>
+<ul>
+<li>A World-space blur pixel kernel, usable now that kernels run on the graphics card.</li>
+<li>Nuke scripts: expressions written as [value knob] (as the CameraShake2 gizmo's centre is) are read, and ChannelMerge's older intersect operation is read as in.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1656.zip" length="381759473" type="application/octet-stream" sparkle:edSignature="4YxHSh0xmvfLKgMS9YmHq1Uan2o8Vp7mQGhPvf5dMxlvf7Qw42bLnmTd5uJNCyJsdCaVdfByHzyvA6gne03uDQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1656-1631.delta" sparkle:deltaFrom="1631" length="1748030" type="application/octet-stream" sparkle:edSignature="HKTBzMNAFHmQMTLSyI332hUj4YPcEAatAgGKFHJVjwxaiDL8LYOWp3OlUVwHpeO2dYRw7Y9Uw3qCWfeItywFDQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1656-1613.delta" sparkle:deltaFrom="1613" length="2145086" type="application/octet-stream" sparkle:edSignature="1obhm1dcS2V14d3FzsfwJjNOfVTUNCPGfjebfrLSbRqjsn3Mze6upv9ClgBzR1DY2XMZ2MMSA22jmGnM590FBA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1656-1586.delta" sparkle:deltaFrom="1586" length="2629098" type="application/octet-stream" sparkle:edSignature="MM2e0CvRU8wi0KHpugmQdNEENOXKzK1FmXBvkDlTyE/Ozn0bGoXIqntu9YcLZz96WbQZjRw/doUrFjJ72fMIDg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Tue, 27 Oct 2026 14:21:55 -0700</pubDate>
             <sparkle:version>1631</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -72,37 +114,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1613-1586.delta" sparkle:deltaFrom="1586" length="1943862" type="application/octet-stream" sparkle:edSignature="pjwfNc4ZbrR1bvR/rz+puCblxvF2pyl0zH0l8sBS2lKthuDh/Vg74y+AE13ipik/6GfwAkulyXKYhCludj2aDA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1613-1579.delta" sparkle:deltaFrom="1579" length="2001238" type="application/octet-stream" sparkle:edSignature="2zfrsMnJvZxLVafZV6/qpSQ2xusHFqqzm9cRtQBW7jyh14P1APe77z+fjf0Ip8cJjt+qyKTlKETZzgfwM/kEAQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1613-1565.delta" sparkle:deltaFrom="1565" length="2055362" type="application/octet-stream" sparkle:edSignature="elAfeH6uSHQY4ov9cnriv203t9zCrCPJwzsyjj1pqDbkp4eyOdzGezS85sEg5WF4iLADBtLbFp3m42bFzaxGCw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Mon, 26 Oct 2026 21:03:26 -0700</pubDate>
-            <sparkle:version>1586</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1586</h2>
-<h3>Open and save</h3>
-<ul>
-<li>New folder: the folder button on the path bar, or Shift-Cmd-N, makes "untitled folder" with its name ready to type over.
-<li>Right-click a file or folder for Open, Rename (F2, in place; Esc leaves it), Show in Finder, Move to Trash (Cmd-Backspace) and New folder.
-<li>A type menu beside the chips shows only Comps, Images, Movies, Audio, 3D or Everything; All types, or a chip, goes back. Sequences stay one row.
-</ul>
-<h3>Plugins</h3>
-<ul>
-<li>More installed OpenFX plugins run: some only load in hosts they know, so Kento now introduces itself under a name they support. Neat Video 6 renders in Kento.
-<li>Settings &gt; Performance &gt; Processing: load the computer's OpenFX plugins, or only Kento's; and GPU for nodes that support it (plugins, Nagi, the optical flow), off for the CPU. Both from the next start.
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li>The chevron on a Properties panel's bar folds the panel again (it showed the drag hand instead).
-<li>The file dialog's Size column says 1 byte, not 1 bytes.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1586.zip" length="381339176" type="application/octet-stream" sparkle:edSignature="Xcomd2mQqx+4WTjC/Q4EHZGNw74iMiz1kjf1o9zIZrgnLoKG0udBo+dB2+Qv2j+MicfmYV1H68+uKVWhQ5eLCg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1586-1579.delta" sparkle:deltaFrom="1579" length="923046" type="application/octet-stream" sparkle:edSignature="Wut7xmkjkKCsCdrzstXhvUAX8dkXN9wKKAtrLX4pMuAW6F8g4gy+HP7LBqPMab1BepMRW1Y92zMUYk6qhQVGAg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1586-1565.delta" sparkle:deltaFrom="1565" length="1009386" type="application/octet-stream" sparkle:edSignature="Fq7DfPAe+CuuYlVWwX8Duv4NXNdHrTU9qjiQ2swZDpgsFT6bb7Vdq73KVb9W6h+gxN8UAV57fuoLw95/fzVlDA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1586-1550.delta" sparkle:deltaFrom="1550" length="1885910" type="application/octet-stream" sparkle:edSignature="X9kUy1Z9OMyrYwEmN0vodNqotNH3tE8cbWjVKvCQZa0mDiW0nTNXFZYm0wfFU9p661orslVf/K78MUFvvUvxCA=="/>
             </sparkle:deltas>
         </item>
     </channel>
