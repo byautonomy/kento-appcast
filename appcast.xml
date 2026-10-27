@@ -4,6 +4,42 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Tue, 27 Oct 2026 14:21:55 -0700</pubDate>
+            <sparkle:version>1631</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1631</h2>
+<h3>Pixel kernels on the GPU</h3>
+<ul>
+<li>PixelKernels run on the graphics card: an HD frame of a heavy kernel in hundredths of a second where the processor took seconds (Painterly 2.7 s to 0.01 s; the anisotropic Kuwahara from our comps, 58 s to under a quarter of a second). The pictures are the processor's, exactly or to a few millionths.</li>
+<li>GPU on the Kernel tab and in the kernel's window switches it for one node, and beside it Kento says where the kernel runs and why. A script keeps the switch as its node's own setting.</li>
+<li>Preferences &gt; Performance &gt; Processing, GPU, nodes that support it, now covers pixel kernels too.</li>
+</ul>
+<h3>Faster</h3>
+<ul>
+<li>Writing EXRs uses every core: an HD frame read and written in 0.027 s instead of 0.089, as fast as other compositing apps; renders of Grade, Blur and Merge comps are two to three times faster.</li>
+</ul>
+<h3>More ready-made kernels</h3>
+<ul>
+<li>Antialiasing recovery, Rank filter, Texture tile, Line drawer and Recursive warp vectors, by their authors' permission; S-curve (with its exact inverse) and Quantize. Their authors are credited in About.</li>
+<li>The kernel language gains median( values, count ).</li>
+<li>Kernels you save or export are .pk files; Import still reads the kernel files of other tools.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>A kernel whose init() sets its controls could read freed memory as it compiled, and crash.</li>
+<li>Installed OpenFX plugins are told Kento is an image effect host, as the newest OpenFX asks.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1631.zip" length="381623988" type="application/octet-stream" sparkle:edSignature="cGcRur0AvR6XzDHlt7JxCTpTxZnEEYjcClxVNOtKlgaZ3XmhdwmYuFOsmnAqz8pnfyn9JLZ9wHeHBdutqZ+lAw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1631-1613.delta" sparkle:deltaFrom="1613" length="1853110" type="application/octet-stream" sparkle:edSignature="OmN/XiEcYv74+h8gbbLYt7bzrctArkPGVfLaa+yfbc9UAD3BHVbHyszIO+GmbSspw3ai0fINEha8LemY8h/JBg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1631-1586.delta" sparkle:deltaFrom="1586" length="2332558" type="application/octet-stream" sparkle:edSignature="SIGxACYZ0twVSNWvbPpl6Scr2hE9oGL5yRdlIv32KKDLafJ79ZNAMrpdy+5h1xtRwBnB7tyB49DldVmmZaWuCg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1631-1579.delta" sparkle:deltaFrom="1579" length="2386914" type="application/octet-stream" sparkle:edSignature="sh0nrAKgb6TGa1UYKw9ER5KKD25UbuF8mLmE9jGsO6zuCZH/3e0OwUfh8BY38y9V7Nb+6rIUhe3kqHKd/faMCw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Tue, 27 Oct 2026 10:42:23 -0700</pubDate>
             <sparkle:version>1613</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -67,39 +103,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1586-1579.delta" sparkle:deltaFrom="1579" length="923046" type="application/octet-stream" sparkle:edSignature="Wut7xmkjkKCsCdrzstXhvUAX8dkXN9wKKAtrLX4pMuAW6F8g4gy+HP7LBqPMab1BepMRW1Y92zMUYk6qhQVGAg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1586-1565.delta" sparkle:deltaFrom="1565" length="1009386" type="application/octet-stream" sparkle:edSignature="Fq7DfPAe+CuuYlVWwX8Duv4NXNdHrTU9qjiQ2swZDpgsFT6bb7Vdq73KVb9W6h+gxN8UAV57fuoLw95/fzVlDA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1586-1550.delta" sparkle:deltaFrom="1550" length="1885910" type="application/octet-stream" sparkle:edSignature="X9kUy1Z9OMyrYwEmN0vodNqotNH3tE8cbWjVKvCQZa0mDiW0nTNXFZYm0wfFU9p661orslVf/K78MUFvvUvxCA=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Mon, 26 Oct 2026 18:42:59 -0700</pubDate>
-            <sparkle:version>1579</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1579</h2>
-<h3>OpenFX plugins</h3>
-<ul>
-<li>The OpenFX plugins installed on the computer run in Kento: Tab search lists them under Plugins by their own names, and a comp that uses one opens with it working. Each plugin's controls are its knobs, under its own labels. A plugin that's installed but won't run in Kento passes its input through, switched off, and opening the comp says so.
-</ul>
-<h3>Node Graph</h3>
-<ul>
-<li>3D nodes by kind: geometry the faceted hexagon, axes and cameras a glossy pill, lights a bulb, the Scene a doubled hexagon, and renders the plain box. A plugin's tile has a plug's two prongs.
-</ul>
-<h3>3D viewer</h3>
-<ul>
-<li>It follows the comp as you work: wiring an object into the scene, or moving or scaling it, shows at once.
-<li>Axis nodes are drawn as small gizmos in the axis colors, to select and move with the handles.
-</ul>
-<h3>Properties</h3>
-<ul>
-<li>Compact header bars, each panel closed by a dark line. Long tooltips wrap, the node's name bold over its description.
-<li>Channel menus on a layer other than rgba show that layer's channels. Projection's edges warning stops short of the overscan button.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1579.zip" length="381319265" type="application/octet-stream" sparkle:edSignature="Xr+mLlOOvkNkfpv9YdysNDT9VhiWkYEuq0kCJS9PeuNPiWs7Q2hNv9cs7z0GrJEksHFZ8hX5yMGCYowsypRGBg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1579-1565.delta" sparkle:deltaFrom="1565" length="919542" type="application/octet-stream" sparkle:edSignature="heDOel6lhIwjkKfJH5A4MrfTLZu8ThHEjschrFtBPq5qsSk0DPLx9h5Z4PeBWn22Px/Xwd/dbfbrlwppE7UcBA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1579-1550.delta" sparkle:deltaFrom="1550" length="1829730" type="application/octet-stream" sparkle:edSignature="CSvcLcUGIPlPzIg0HfZsIf1sd16zeGJxuglGDOXtH5EATHkS1zOnfEFrr5e/QnQrRu7UDXGipn0jmzHF8ckdCg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1579-1527.delta" sparkle:deltaFrom="1527" length="2452334" type="application/octet-stream" sparkle:edSignature="USu4BbkVJnDcL3uMTzQO2HC1uxoJU3GWbtd9otrMJMu+ae5ZlnoCnvGUlsif3Df2D6aJLMXurnV33lzkzzQYBw=="/>
             </sparkle:deltas>
         </item>
     </channel>
