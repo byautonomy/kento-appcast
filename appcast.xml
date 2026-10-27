@@ -4,6 +4,42 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Tue, 27 Oct 2026 10:42:23 -0700</pubDate>
+            <sparkle:version>1613</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1613</h2>
+<h3>Installed plugins</h3>
+<ul>
+<li>LensNode loads and renders (on the GPU). Its menus use a newer kind of plugin control that Kento now reads.
+<li>A plugin's panel is laid out as the plugin lays it out: its groups fold as sections of one tab, and its buttons sit where it puts them. Each change is passed to the plugin, so menus it fills (LensNode's Family and Variant after Manufacturer) and controls it hides or dims follow.
+<li>A plugin's own window (Neat Video's Prepare Profile) opens from its button, and what it sets there comes back to the node as one undo.
+<li>Plugins that can't render part of a frame are given the whole frame: Neat Video denoises correctly.
+</ul>
+<h3>Pixel kernels</h3>
+<ul>
+<li>Ten ready-made kernels under Nodes &gt; Other &gt; Pixel kernels, each with its own controls: Fix bad pixels, Firefly killer, Normals from height, Ambient occlusion from depth, Alpha stroke, Painterly (Kuwahara), Curvature from normals, STMap extension, Triplanar texture and Panini projection. A kernel menu on the panel swaps between them; their authors are credited in About.
+<li>Writing a kernel: the code is colored, its lines numbered, and the error's line marked with the wrong word underlined in red. Names are offered as you type; Return keeps the indent, Cmd-/ comments, Cmd-D duplicates, Cmd-L goes to a line, brackets match. The kernel applies a moment after you stop typing.
+<li>The kernel in its own window, resizable and full screen, with find and replace and the language's reference beside the code. Save to library keeps your kernels with versions; Export and Import write and read .blink files; a studio's shared folder can be set in Preferences.
+</ul>
+<h3>Send to paint</h3>
+<ul>
+<li>Soft, half-transparent strokes from a paint app come back as painted. A painting reloads after a save in the paint app as soon as its comp is open.
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Undoing a change to a pixel kernel's code works again.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1613.zip" length="381488306" type="application/octet-stream" sparkle:edSignature="dNJp1k214sblHzymanOyajNU/OO4WPT/nu7S7ltNSOMVr1Of7r48NiSXbt8h0cH+MHHMQpTgVIWnFApUmwZaCg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1613-1586.delta" sparkle:deltaFrom="1586" length="1943862" type="application/octet-stream" sparkle:edSignature="pjwfNc4ZbrR1bvR/rz+puCblxvF2pyl0zH0l8sBS2lKthuDh/Vg74y+AE13ipik/6GfwAkulyXKYhCludj2aDA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1613-1579.delta" sparkle:deltaFrom="1579" length="2001238" type="application/octet-stream" sparkle:edSignature="2zfrsMnJvZxLVafZV6/qpSQ2xusHFqqzm9cRtQBW7jyh14P1APe77z+fjf0Ip8cJjt+qyKTlKETZzgfwM/kEAQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1613-1565.delta" sparkle:deltaFrom="1565" length="2055362" type="application/octet-stream" sparkle:edSignature="elAfeH6uSHQY4ov9cnriv203t9zCrCPJwzsyjj1pqDbkp4eyOdzGezS85sEg5WF4iLADBtLbFp3m42bFzaxGCw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Mon, 26 Oct 2026 21:03:26 -0700</pubDate>
             <sparkle:version>1586</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -64,47 +100,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1579-1565.delta" sparkle:deltaFrom="1565" length="919542" type="application/octet-stream" sparkle:edSignature="heDOel6lhIwjkKfJH5A4MrfTLZu8ThHEjschrFtBPq5qsSk0DPLx9h5Z4PeBWn22Px/Xwd/dbfbrlwppE7UcBA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1579-1550.delta" sparkle:deltaFrom="1550" length="1829730" type="application/octet-stream" sparkle:edSignature="CSvcLcUGIPlPzIg0HfZsIf1sd16zeGJxuglGDOXtH5EATHkS1zOnfEFrr5e/QnQrRu7UDXGipn0jmzHF8ckdCg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1579-1527.delta" sparkle:deltaFrom="1527" length="2452334" type="application/octet-stream" sparkle:edSignature="USu4BbkVJnDcL3uMTzQO2HC1uxoJU3GWbtd9otrMJMu+ae5ZlnoCnvGUlsif3Df2D6aJLMXurnV33lzkzzQYBw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Mon, 26 Oct 2026 16:28:53 -0700</pubDate>
-            <sparkle:version>1565</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1565</h2>
-<h3>3D viewer</h3>
-<ul>
-<li>Tab over the Viewer (or Viewer &gt; 3D view) shows the comp's 3D in the picture's place; Tab again gives the picture back. It shows the scene of what the Viewer shows: cards, spheres, cubes, cylinders and meshes where they render, each projection's camera, frustum and held image (in light blue), the comp's cameras as objects with an arrow along their view, a CameraTracker's solved points and the ground grid. The unconnected check adds the 3D nodes that aren't in the scene, faint.
-<li>Look from perspective, top, front, side, any camera or a projection's held camera. Alt-drag orbits, Alt-middle pans, Alt-right or the wheel zooms; F frames. W, E and R give the move, rotate and scale handles; a drag is one undo, and Cmd lands a move on a tracked point.
-</ul>
-<h3>ScanlineRender</h3>
-<ul>
-<li>Motion blur: samples, shutter, shutter offset, custom offset and randomize time; textures move with the shutter too.
-<li>Depth of field: focus diameter keeps the camera's new focal point sharp. Sample diameter and stochastic samples.
-<li>Overscan gives the format plus the overscan on every side. Motion vector channels is a forward or motion menu.
-</ul>
-<h3>Curve Editor and Dope Sheet</h3>
-<ul>
-<li>Knobs by their labels (Grade's gain), the name for expressions in the tooltip. Cmd-click or Cmd+Option-click a curve to key it; the curve under the pointer glows.
-<li>Tangent handles land on whole frames; Shift keeps them to one direction. Snap's settings are kept. A Roto's shape keys show in the list and the dope strip.
-<li>The board's details: values to three places, the gutter kept clear, the current ease lit, family colours on the Dope Sheet's nodes.
-</ul>
-<h3>Panels</h3>
-<ul>
-<li>Properties: each panel's header is a bar with a grip. Drag it up or down to reorder; drag it out sideways to float the panel. Long labels are shortened, the full label in the tooltip.
-<li>Scopes to their board. The Flipbook player takes L, J, K, the arrow keys and O, and has its own page in Preferences &gt; Shortcuts, as do Kento's other panels now.
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li>The Node Graph's wires no longer flicker while the graph sits idle.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1565.zip" length="381291041" type="application/octet-stream" sparkle:edSignature="v4gtzI4JarPM+so9/Sgz//zgHIGiJNV2D4jv67hTGPcX7okXZO2c6MRk4SXN73sv23/ePpYhiqoOJ+fEBsfOAg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1565-1550.delta" sparkle:deltaFrom="1550" length="1763902" type="application/octet-stream" sparkle:edSignature="iXz4bj66tUFM264SZSN4l/2NafPmbqBVoCb2xVKU2nv9HTlabqWAIndkTuQeOGPOhfaoEGBKdDWUNhXewGDkBw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1565-1527.delta" sparkle:deltaFrom="1527" length="2394762" type="application/octet-stream" sparkle:edSignature="r3ViuzEUf2Uslx7KuUu2lvIuMIASubPtGxU3B7ck68OklsX6FaX81hU/lHT+PanX24DpB/kzAKYrAgRhGUIAAw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1565-1472.delta" sparkle:deltaFrom="1472" length="3172126" type="application/octet-stream" sparkle:edSignature="QocGdfpcjxxGXNkx7nccpWJm7RuSdnWTY1GtZYttWYNDE3YHEZaDcrovCz5tF+fF62nEkdcEYkwIIjM+SBFJAA=="/>
             </sparkle:deltas>
         </item>
     </channel>
