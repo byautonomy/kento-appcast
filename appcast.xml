@@ -4,6 +4,39 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Mon, 26 Oct 2026 18:42:59 -0700</pubDate>
+            <sparkle:version>1579</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1579</h2>
+<h3>OpenFX plugins</h3>
+<ul>
+<li>The OpenFX plugins installed on the computer run in Kento: Tab search lists them under Plugins by their own names, and a comp that uses one opens with it working. Each plugin's controls are its knobs, under its own labels. A plugin that's installed but won't run in Kento passes its input through, switched off, and opening the comp says so.
+</ul>
+<h3>Node Graph</h3>
+<ul>
+<li>3D nodes by kind: geometry the faceted hexagon, axes and cameras a glossy pill, lights a bulb, the Scene a doubled hexagon, and renders the plain box. A plugin's tile has a plug's two prongs.
+</ul>
+<h3>3D viewer</h3>
+<ul>
+<li>It follows the comp as you work: wiring an object into the scene, or moving or scaling it, shows at once.
+<li>Axis nodes are drawn as small gizmos in the axis colors, to select and move with the handles.
+</ul>
+<h3>Properties</h3>
+<ul>
+<li>Compact header bars, each panel closed by a dark line. Long tooltips wrap, the node's name bold over its description.
+<li>Channel menus on a layer other than rgba show that layer's channels. Projection's edges warning stops short of the overscan button.
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1579.zip" length="381319265" type="application/octet-stream" sparkle:edSignature="Xr+mLlOOvkNkfpv9YdysNDT9VhiWkYEuq0kCJS9PeuNPiWs7Q2hNv9cs7z0GrJEksHFZ8hX5yMGCYowsypRGBg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1579-1565.delta" sparkle:deltaFrom="1565" length="919542" type="application/octet-stream" sparkle:edSignature="heDOel6lhIwjkKfJH5A4MrfTLZu8ThHEjschrFtBPq5qsSk0DPLx9h5Z4PeBWn22Px/Xwd/dbfbrlwppE7UcBA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1579-1550.delta" sparkle:deltaFrom="1550" length="1829730" type="application/octet-stream" sparkle:edSignature="CSvcLcUGIPlPzIg0HfZsIf1sd16zeGJxuglGDOXtH5EATHkS1zOnfEFrr5e/QnQrRu7UDXGipn0jmzHF8ckdCg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1579-1527.delta" sparkle:deltaFrom="1527" length="2452334" type="application/octet-stream" sparkle:edSignature="USu4BbkVJnDcL3uMTzQO2HC1uxoJU3GWbtd9otrMJMu+ae5ZlnoCnvGUlsif3Df2D6aJLMXurnV33lzkzzQYBw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Mon, 26 Oct 2026 16:28:53 -0700</pubDate>
             <sparkle:version>1565</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -77,50 +110,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1550-1527.delta" sparkle:deltaFrom="1527" length="1940442" type="application/octet-stream" sparkle:edSignature="rBZrhtxYNiXeqh+ECA/M6KVKBt4lyGLjKwt1fbh6lAzChEoA4+PIc+38BIs+EoeT1Rd2CEcj2vLZcuBAYsrBDA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1550-1472.delta" sparkle:deltaFrom="1472" length="2919774" type="application/octet-stream" sparkle:edSignature="+cGi7+w7AytLyHscZ5AwtE5pmu3eIsO6oJyqGRzzcqWwvLawaw1adNRuADz0kgeCI9VUjv3Egr+5XkZZHBkpCw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1550-1420.delta" sparkle:deltaFrom="1420" length="3587538" type="application/octet-stream" sparkle:edSignature="E3Rlf1gKyQnJWCdSEam1KW7+CiwyFBmQY4jF0kzgQwUlhaYOUdes0hnja8KvaZVUarFpGh3Zo1qCDaDhEABCBg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Sun, 25 Oct 2026 20:40:23 -0700</pubDate>
-            <sparkle:version>1527</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1527</h2>
-<h3>Projection</h3>
-<ul>
-<li>Project this frame: Option-P over the Viewer, or the Viewer menu's Projection section. Builds a Projection at the current frame from the Viewer's picture and the comp's tracked camera, in one undo.
-<li>The Projection node: one tile that opens (Cmd+Return) to ordinary nodes: held camera, held image, projector, card or geometry, render through the shot camera over the plate. A Nuke script gets a Group of the same nodes.
-<li>One hold frame, shown on the tile, as a diamond on the timeline and as a badge in the Viewer; Go to hold and Hold here. The held camera follows the track; Bake held camera freezes a copy.
-<li>Onto: a card at a depth (typed, or clicked in the Viewer from the plate's depth or the nearest tracked point), a card through selected tracked points, or selected geometry.
-<li>Edges: black outside the image or extended edges, with where the card leaves the image and an overscan button.
-<li>Pad for paint: a larger canvas to paint past the plate's edges, optionally upscaled, projected so the original pixels stay where they were.
-<li>Send to paint: the held frame written out and opened in your paint app (Preferences &gt; General &gt; Paint); saving there updates the projection. New version, Back to plate, a round-trip test, and checks when the painting comes back.
-<li>Coverage in the Viewer: where the projection falls outside the held image, faces away, is hidden or grazes, on the shot itself, with the worst frames marked along the timeline.
-<li>Front faces only and occlusion are drawn as Nuke draws them.
-<li>Scripts whose image and camera holds disagree say so, with a choice to line them up or keep them.
-</ul>
-<h3>3D for projection</h3>
-<ul>
-<li>BlendMat and MergeMat, to stack projections; UVProject, DisplaceGeo, ApplyMaterial, ModelBuilder, Reconcile3D and ScanlineRender2.
-<li>Nuke's USD-based GeoCard, GeoImport, GeoReference, GeoBindMaterial, GeoScene and GeoViewScene. File &gt; Import &gt; USD scene... and dropping a .usd on the graph make a GeoImport.
-<li>ScanlineRender's ambient.
-</ul>
-<h3>Deep</h3>
-<ul>
-<li>DeepMerge2's plus; DeepCrop's outside z range and outside box.
-</ul>
-<h3>Node Graph and panels</h3>
-<ul>
-<li>A node's label shows under its tile.
-<li>MultiMerge's layer list: the drag grips show, and the list follows new layers.
-<li>The older SphericalTransform's face forward switch is shown, with what it does.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1527.zip" length="380912075" type="application/octet-stream" sparkle:edSignature="si+wKZi6/eTqTmUZcKm724tRJ0aIkM3E5ZCY+vuriMspfNjA4TLoiJGZNZjtHpQSrey1Tjvp00G8o4/lAH2bCQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1527-1472.delta" sparkle:deltaFrom="1472" length="2671322" type="application/octet-stream" sparkle:edSignature="XdnpGr6uHPHJdmA9uc2S+uW0udk5hgjAhcymFXdhFG6b7ECrE/gCAB7BZ/zQxvNYXDcgzit7BIDBeiO8/9JmBQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1527-1420.delta" sparkle:deltaFrom="1420" length="3375906" type="application/octet-stream" sparkle:edSignature="e7znRI5PmHkdTox70iehPR1s+IF5Ti2R4TtpLUkmdCDaC3z1pRMrEynmpdOUz6x1kzj/m0KV2iNjXhpcRbwUBg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1527-1416.delta" sparkle:deltaFrom="1416" length="3429078" type="application/octet-stream" sparkle:edSignature="Tu2YFmE+AxcLvTmJcNtNRMAY5SIXNakzd1LgvGFIrgRQn4RhAraS8in6//lI9D3p1zIKxt1xKhA9fVpNmOm7BA=="/>
             </sparkle:deltas>
         </item>
     </channel>
