@@ -4,6 +4,48 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Tue, 27 Oct 2026 20:02:13 -0700</pubDate>
+            <sparkle:version>1677</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1677</h2>
+<h3>Shaping a card</h3>
+<ul>
+<li>A Card's lattice is shaped in the 3D view: click Edit in the Viewer on the Card's lattice row, then pick points (Shift adds, drag round several) and move them on the handle, or click the numbers beside it to type a position. Each drag is one undo.</li>
+<li>Corners bends the whole card from its four corners, bilinear or bicubic; points you moved by hand keep their own offset on top. Tangents shows every point's tangent ends to drag, with mirror tangents keeping the surface smooth (Alt-drag breaks a pair).</li>
+<li>An influence carries a point's neighbours part of the way: a reach in cells, a falloff, and by distance or along rows and columns.</li>
+<li>On a card a projection lands on, points move along the projector's rays, so the picture at the hold frame stays where it was and only its depth changes (Shift moves freely).</li>
+<li>The lattice row's smoothness runs from smooth to square, for the selected points or the whole card. Reset point and Reset lattice put the flat card back.</li>
+<li>Everything shaped is the lattice's points and tangents, so a Nuke script shows the same card.</li>
+</ul>
+<h3>More planes off a drawn plane</h3>
+<ul>
+<li>Once a plane is drawn on the plate, each free edge has a handle and a +: click the + for a plane off that edge at the angle shown, or pull the handle and the new plane's far edge follows the cursor. A floor, a side wall, a step: a few pulls.</li>
+<li>A room in one click: with the drawn plane as the back, tick floor, left, right or ceiling and Make the planes; each runs out to the frame's side.</li>
+<li>The card becomes a set of planes: one Card, rendered as one object, its planes sharing their seams. The Card's panel lists them (shown, name, the edge each comes off, its angle), with Fold and Extrude for the plane picked.</li>
+<li>Deal out to cards makes one Card a plane for a chain of its own, following the set's move unless you untick it.</li>
+</ul>
+<h3>Several projectors on one target</h3>
+<ul>
+<li>A Projection can hold several frames: Add at this frame, or Add every so many frames for a long move. Each projector is a row of a stack on the panel, top first; where they overlap the top one wins.</li>
+<li>The order comes from the camera's move (closing in, later and sharper holds go on top) or by hand: drag a row's grip.</li>
+<li>Each projector can have a mask, a Roto say, held at its frame: a window's reflection from one frame, the wall from another.</li>
+<li>Coverage in the Viewer can show which projector wins each part of the target, and the timeline has a diamond at every hold.</li>
+</ul>
+<h3>Faster 3D view</h3>
+<ul>
+<li>Dragging a handle in the 3D view is about 17 times quicker, and orbiting, panning and zooming draw several times faster.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1677.zip" length="381952328" type="application/octet-stream" sparkle:edSignature="kkTeIhqYbk1dIuj3UmA0u85sJzQj4xZ4gIygj2Gg16fi8Lg/vKoOsO5CD9TPXOtA0BxG0eNye0m8tc1Rzd9ZCg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1677-1656.delta" sparkle:deltaFrom="1656" length="1408326" type="application/octet-stream" sparkle:edSignature="J45QBKTxrHg89DygLqX7zYEER5nkSk5u55RLFBh6OsGLzAGQcCrO9fBPpRPSMXpmzR49F2MdLZk/j7vIe1lsBw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1677-1631.delta" sparkle:deltaFrom="1631" length="1962494" type="application/octet-stream" sparkle:edSignature="hU+Rj6mr5XRXQtrmQ3mTlMubRJJ/QNS5+CgqCN8nI6FGhVFyKDsAVGpBtRxNIyG2mN21BER76/KlxMupsHgBDw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1677-1613.delta" sparkle:deltaFrom="1613" length="2354494" type="application/octet-stream" sparkle:edSignature="PK467QPlUKFEi2Beg9Y/4UrUWyCel+P3VoLjG4dcGEK0dr64u800411MpQ7Lwe8ZFUkN3RiChfX0ARXa5YWyCg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Tue, 27 Oct 2026 16:54:43 -0700</pubDate>
             <sparkle:version>1656</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -78,42 +120,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1631-1613.delta" sparkle:deltaFrom="1613" length="1853110" type="application/octet-stream" sparkle:edSignature="OmN/XiEcYv74+h8gbbLYt7bzrctArkPGVfLaa+yfbc9UAD3BHVbHyszIO+GmbSspw3ai0fINEha8LemY8h/JBg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1631-1586.delta" sparkle:deltaFrom="1586" length="2332558" type="application/octet-stream" sparkle:edSignature="SIGxACYZ0twVSNWvbPpl6Scr2hE9oGL5yRdlIv32KKDLafJ79ZNAMrpdy+5h1xtRwBnB7tyB49DldVmmZaWuCg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1631-1579.delta" sparkle:deltaFrom="1579" length="2386914" type="application/octet-stream" sparkle:edSignature="sh0nrAKgb6TGa1UYKw9ER5KKD25UbuF8mLmE9jGsO6zuCZH/3e0OwUfh8BY38y9V7Nb+6rIUhe3kqHKd/faMCw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Tue, 27 Oct 2026 10:42:23 -0700</pubDate>
-            <sparkle:version>1613</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1613</h2>
-<h3>Installed plugins</h3>
-<ul>
-<li>LensNode loads and renders (on the GPU). Its menus use a newer kind of plugin control that Kento now reads.
-<li>A plugin's panel is laid out as the plugin lays it out: its groups fold as sections of one tab, and its buttons sit where it puts them. Each change is passed to the plugin, so menus it fills (LensNode's Family and Variant after Manufacturer) and controls it hides or dims follow.
-<li>A plugin's own window (Neat Video's Prepare Profile) opens from its button, and what it sets there comes back to the node as one undo.
-<li>Plugins that can't render part of a frame are given the whole frame: Neat Video denoises correctly.
-</ul>
-<h3>Pixel kernels</h3>
-<ul>
-<li>Ten ready-made kernels under Nodes &gt; Other &gt; Pixel kernels, each with its own controls: Fix bad pixels, Firefly killer, Normals from height, Ambient occlusion from depth, Alpha stroke, Painterly (Kuwahara), Curvature from normals, STMap extension, Triplanar texture and Panini projection. A kernel menu on the panel swaps between them; their authors are credited in About.
-<li>Writing a kernel: the code is colored, its lines numbered, and the error's line marked with the wrong word underlined in red. Names are offered as you type; Return keeps the indent, Cmd-/ comments, Cmd-D duplicates, Cmd-L goes to a line, brackets match. The kernel applies a moment after you stop typing.
-<li>The kernel in its own window, resizable and full screen, with find and replace and the language's reference beside the code. Save to library keeps your kernels with versions; Export and Import write and read .blink files; a studio's shared folder can be set in Preferences.
-</ul>
-<h3>Send to paint</h3>
-<ul>
-<li>Soft, half-transparent strokes from a paint app come back as painted. A painting reloads after a save in the paint app as soon as its comp is open.
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li>Undoing a change to a pixel kernel's code works again.
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1613.zip" length="381488306" type="application/octet-stream" sparkle:edSignature="dNJp1k214sblHzymanOyajNU/OO4WPT/nu7S7ltNSOMVr1Of7r48NiSXbt8h0cH+MHHMQpTgVIWnFApUmwZaCg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1613-1586.delta" sparkle:deltaFrom="1586" length="1943862" type="application/octet-stream" sparkle:edSignature="pjwfNc4ZbrR1bvR/rz+puCblxvF2pyl0zH0l8sBS2lKthuDh/Vg74y+AE13ipik/6GfwAkulyXKYhCludj2aDA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1613-1579.delta" sparkle:deltaFrom="1579" length="2001238" type="application/octet-stream" sparkle:edSignature="2zfrsMnJvZxLVafZV6/qpSQ2xusHFqqzm9cRtQBW7jyh14P1APe77z+fjf0Ip8cJjt+qyKTlKETZzgfwM/kEAQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1613-1565.delta" sparkle:deltaFrom="1565" length="2055362" type="application/octet-stream" sparkle:edSignature="elAfeH6uSHQY4ov9cnriv203t9zCrCPJwzsyjj1pqDbkp4eyOdzGezS85sEg5WF4iLADBtLbFp3m42bFzaxGCw=="/>
             </sparkle:deltas>
         </item>
     </channel>
