@@ -4,6 +4,50 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Wed, 28 Oct 2026 08:24:46 -0700</pubDate>
+            <sparkle:version>1756</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1756</h2>
+<h3>Shapes from a matte</h3>
+<ul>
+<li>Press and hold the plate tool's shape button for From a Roto shape and From a node's alpha.</li>
+<li>From a Roto shape: the shape's outline is the Roto's at the hold frame, its feather the Roto's, and it stays linked: change the Roto or the hold and it follows. Drag one of its points to make it your own.</li>
+<li>From a node's alpha: the shape covers the matte's bounds and the matte is its edge, soft or hard, each projector's at its own frame.</li>
+<li>On the Card panel a shape's row says what it's from; click the words to change it.</li>
+</ul>
+<h3>Foreground, as Tour Into the Picture's</h3>
+<ul>
+<li>A cut-out stands on the plane it touches: on a floor, hanging from a ceiling, out of a side wall. A plane square to the camera says why it can't take one.</li>
+<li>A cut-out can stand on a block's top, or on a side the camera sees (a plant on a table, a sign on a crate); the on menu lists the faces the camera sees.</li>
+<li>A + off each cut-out's left and right side hinges a plane there at the bar's angle (a door ajar, a bag carried).</li>
+<li>The shape feather is live: Roto's, the outline solid and the picture fading past it; a hole fades its plane to its edge.</li>
+</ul>
+<h3>Projections</h3>
+<ul>
+<li>Projector stacks (BlendMat, MergeMat) draw more than 16 surfaces, at the same speed as before up to 16.</li>
+<li>A texture a plane holds its plane's cut-outs too; Send to paint opens, beside it, a guide of where cut-outs hide the plane.</li>
+</ul>
+<h3>Shots</h3>
+<ul>
+<li>A dot in the shot menu marks each shot with something newer than its newest comp reads; hover to see what. The shot menu shows the code bright and the task dim.</li>
+<li>Settings, Preferences, Shot panel: the provider, its folder, what each provider supports, who is signed in, and the panel's options.</li>
+</ul>
+<h3>Also</h3>
+<ul>
+<li>A turned or scaled Transform renders about twice as fast, the picture the same.</li>
+<li>CameraTracker's Export makes a point cloud, or a camera, points and a render together.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1756.zip" length="383111173" type="application/octet-stream" sparkle:edSignature="g3hheVcq086QMb3pwmAmtAgP6ens8eyYWrnmzZeRVdiPAgovvooPcHFPNnnO/w0dfN4LaPBRigVT/rxB62QjAQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1756-1735.delta" sparkle:deltaFrom="1735" length="1993886" type="application/octet-stream" sparkle:edSignature="ObtGH9tu3b6R4/GV1bGuqZ7btvQt6PEaL+2twLG/8EXW7bkn/TFm4yfA1KfXFO5EXOl9YXKE8QT89bwJJwTyCw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1756-1677.delta" sparkle:deltaFrom="1677" length="3042366" type="application/octet-stream" sparkle:edSignature="9N+yAuEgR+sapA0TQr0mK2YFS5gs+dTrtNBINa6gJEW7yTIqs9GdujSjhQyUuIR1zceZnxuspRv8a8KqOKQrCQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1756-1656.delta" sparkle:deltaFrom="1656" length="3155270" type="application/octet-stream" sparkle:edSignature="QyHpLCrHnfa1z7F/803VfffYPWaW7cuLqGBJ0kPzOrTVUoi83R8rdoZVJD/cZm2WIRM7F6lFIA1WAyh99v3cDg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Wed, 28 Oct 2026 01:19:27 -0700</pubDate>
             <sparkle:version>1735</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -92,48 +136,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1677-1656.delta" sparkle:deltaFrom="1656" length="1408326" type="application/octet-stream" sparkle:edSignature="J45QBKTxrHg89DygLqX7zYEER5nkSk5u55RLFBh6OsGLzAGQcCrO9fBPpRPSMXpmzR49F2MdLZk/j7vIe1lsBw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1677-1631.delta" sparkle:deltaFrom="1631" length="1962494" type="application/octet-stream" sparkle:edSignature="hU+Rj6mr5XRXQtrmQ3mTlMubRJJ/QNS5+CgqCN8nI6FGhVFyKDsAVGpBtRxNIyG2mN21BER76/KlxMupsHgBDw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1677-1613.delta" sparkle:deltaFrom="1613" length="2354494" type="application/octet-stream" sparkle:edSignature="PK467QPlUKFEi2Beg9Y/4UrUWyCel+P3VoLjG4dcGEK0dr64u800411MpQ7Lwe8ZFUkN3RiChfX0ARXa5YWyCg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Tue, 27 Oct 2026 16:54:43 -0700</pubDate>
-            <sparkle:version>1656</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1656</h2>
-<h3>A plane drawn on the plate</h3>
-<ul>
-<li>A Projection can go onto a plane you draw over the picture: choose a plane drawn on the plate in the onto menu (or Draw a plane on the plate in the Viewer's menu), click its four corners at the hold frame, and give it a depth from a tracked point or a typed one. A perspective grid and its size show while the corners can be a rectangle; when they can't, the hint says why.</li>
-<li>Drag a corner to refine it, one undo a drag. The plane is a Card beside the Projection whose lattice holds the corners exactly, so a Nuke script shows the same plane.</li>
-<li>On a still with no camera, Camera from this plane makes one from the drawing.</li>
-</ul>
-<h3>3D renders</h3>
-<ul>
-<li>Geometry running under or behind the camera, a floor or a road toward the lens, now renders up to the frame's edge instead of dropping out.</li>
-<li>Objects with a BlendMat or MergeMat that pass through each other are now in front where they are nearer, at each pixel.</li>
-<li>Card2's deformation lattice (bilinear and bicubic) renders as in Nuke scripts that use it.</li>
-<li>A scene with more than 16 surfaces now draws copies of one object together and says when anything is left out.</li>
-</ul>
-<h3>Remote control</h3>
-<ul>
-<li>Preferences &gt; Performance &gt; Remote control lets scripts, pipeline tools and assistants that speak MCP drive the open comp: describe it, make, wire and change nodes, render a frame, read pixels, save, undo. Local only, behind a token; each change is one undo, marked in History.</li>
-</ul>
-<h3>Faster</h3>
-<ul>
-<li>Rotated, skewed or scaled Transforms render about twice as fast, with the same picture to the bit.</li>
-<li>The median( values, count ) of pixel kernels now runs on the graphics card too.</li>
-</ul>
-<h3>More</h3>
-<ul>
-<li>A World-space blur pixel kernel, usable now that kernels run on the graphics card.</li>
-<li>Nuke scripts: expressions written as [value knob] (as the CameraShake2 gizmo's centre is) are read, and ChannelMerge's older intersect operation is read as in.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1656.zip" length="381759473" type="application/octet-stream" sparkle:edSignature="4YxHSh0xmvfLKgMS9YmHq1Uan2o8Vp7mQGhPvf5dMxlvf7Qw42bLnmTd5uJNCyJsdCaVdfByHzyvA6gne03uDQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1656-1631.delta" sparkle:deltaFrom="1631" length="1748030" type="application/octet-stream" sparkle:edSignature="HKTBzMNAFHmQMTLSyI332hUj4YPcEAatAgGKFHJVjwxaiDL8LYOWp3OlUVwHpeO2dYRw7Y9Uw3qCWfeItywFDQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1656-1613.delta" sparkle:deltaFrom="1613" length="2145086" type="application/octet-stream" sparkle:edSignature="1obhm1dcS2V14d3FzsfwJjNOfVTUNCPGfjebfrLSbRqjsn3Mze6upv9ClgBzR1DY2XMZ2MMSA22jmGnM590FBA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1656-1586.delta" sparkle:deltaFrom="1586" length="2629098" type="application/octet-stream" sparkle:edSignature="MM2e0CvRU8wi0KHpugmQdNEENOXKzK1FmXBvkDlTyE/Ozn0bGoXIqntu9YcLZz96WbQZjRw/doUrFjJ72fMIDg=="/>
             </sparkle:deltas>
         </item>
     </channel>
