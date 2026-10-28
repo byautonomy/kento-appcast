@@ -4,6 +4,56 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Wed, 28 Oct 2026 01:19:27 -0700</pubDate>
+            <sparkle:version>1735</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1735</h2>
+<h3>Planes that find the picture's lines</h3>
+<ul>
+<li>Pulling a plane off an edge, its far edge is caught by a strong straight edge in the held frame (a kerb, a roof line); dragging a corner of a drawn plane catches a corner the same way. A caught edge draws dashed. Snapping is on by default; untick it to place freely.</li>
+<li>Drag a line across a plane to fold it there.</li>
+</ul>
+<h3>Shapes on planes</h3>
+<ul>
+<li>A shape's points can be dragged after it's made, one undo each drag.</li>
+<li>A shape's deep field makes it a solid: a footprint becomes a block, a cut-out grows back from its face.</li>
+<li>A hole in a card bent by its lattice follows the bend.</li>
+</ul>
+<h3>Baking</h3>
+<ul>
+<li>The layout menu bakes each plane to a texture of its own, or every plane into one atlas, with a rectangle for each cut-out.</li>
+<li>Each baked texture is a tile showing its size; click it to see it in the Viewer. A line under them names the projection and its projectors.</li>
+<li>Dealt-out cards keep following their set after the comp is saved and reopened, and follow later edits to the set's planes.</li>
+</ul>
+<h3>Coverage</h3>
+<ul>
+<li>A new soft state marks where a push-in has outgrown the hold, so you know where a later projector is needed.</li>
+</ul>
+<h3>Rendering</h3>
+<ul>
+<li>ScanlineRender draws more than 16 surfaces: the rest render in further groups of 16. Scenes under projector stacks (BlendMat, MergeMat) still stop at 16 and say so.</li>
+</ul>
+<h3>Shots</h3>
+<ul>
+<li>Opening a shot's comp with the Shot panel closed still checks for newer versions and says so briefly.</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>Angle fields show three digits (120 no longer reads 12).</li>
+<li>On a narrow panel, a projector row's note no longer runs over its mask menu.</li>
+<li>A per-plane bake after an atlas fills each texture again.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1735.zip" length="382757590" type="application/octet-stream" sparkle:edSignature="42dZdh55TVuGRr/I7pUbQi0/thBB5bMUvLtAsvjSRIXpaSitAx6ZBH4kzbuWB4YCWYwm0PDL3J1l86yaDq5VCA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1735-1677.delta" sparkle:deltaFrom="1677" length="2529498" type="application/octet-stream" sparkle:edSignature="drq/tQJ/K02cqYXbp1YIIQfeb+/V+FscVZkeVYvuQdzr/Uojve6AZaGSFl0jXuIL3o+j/o/I3Snc/vD3TGtoBA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1735-1656.delta" sparkle:deltaFrom="1656" length="2713218" type="application/octet-stream" sparkle:edSignature="IzlCVAve96znV5GOECXpNOZ0fQJqOQkTH0jFQYIA87cen13kFxJS/5buA0iWkHIINVzLW2IfdqB3bOws84hnDQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1735-1631.delta" sparkle:deltaFrom="1631" length="2915042" type="application/octet-stream" sparkle:edSignature="dXhiX7SyZYce1QNqr+QtpKzKBIU17h0nbN4s7ml6PQM7C02vO29gDzEAHrTcGhR/VQnFGgxyNOWq1Bb0UB0MDw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Tue, 27 Oct 2026 20:02:13 -0700</pubDate>
             <sparkle:version>1677</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -84,42 +134,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1656-1631.delta" sparkle:deltaFrom="1631" length="1748030" type="application/octet-stream" sparkle:edSignature="HKTBzMNAFHmQMTLSyI332hUj4YPcEAatAgGKFHJVjwxaiDL8LYOWp3OlUVwHpeO2dYRw7Y9Uw3qCWfeItywFDQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1656-1613.delta" sparkle:deltaFrom="1613" length="2145086" type="application/octet-stream" sparkle:edSignature="1obhm1dcS2V14d3FzsfwJjNOfVTUNCPGfjebfrLSbRqjsn3Mze6upv9ClgBzR1DY2XMZ2MMSA22jmGnM590FBA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1656-1586.delta" sparkle:deltaFrom="1586" length="2629098" type="application/octet-stream" sparkle:edSignature="MM2e0CvRU8wi0KHpugmQdNEENOXKzK1FmXBvkDlTyE/Ozn0bGoXIqntu9YcLZz96WbQZjRw/doUrFjJ72fMIDg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Tue, 27 Oct 2026 14:21:55 -0700</pubDate>
-            <sparkle:version>1631</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1631</h2>
-<h3>Pixel kernels on the GPU</h3>
-<ul>
-<li>PixelKernels run on the graphics card: an HD frame of a heavy kernel in hundredths of a second where the processor took seconds (Painterly 2.7 s to 0.01 s; the anisotropic Kuwahara from our comps, 58 s to under a quarter of a second). The pictures are the processor's, exactly or to a few millionths.</li>
-<li>GPU on the Kernel tab and in the kernel's window switches it for one node, and beside it Kento says where the kernel runs and why. A script keeps the switch as its node's own setting.</li>
-<li>Preferences &gt; Performance &gt; Processing, GPU, nodes that support it, now covers pixel kernels too.</li>
-</ul>
-<h3>Faster</h3>
-<ul>
-<li>Writing EXRs uses every core: an HD frame read and written in 0.027 s instead of 0.089, as fast as other compositing apps; renders of Grade, Blur and Merge comps are two to three times faster.</li>
-</ul>
-<h3>More ready-made kernels</h3>
-<ul>
-<li>Antialiasing recovery, Rank filter, Texture tile, Line drawer and Recursive warp vectors, by their authors' permission; S-curve (with its exact inverse) and Quantize. Their authors are credited in About.</li>
-<li>The kernel language gains median( values, count ).</li>
-<li>Kernels you save or export are .pk files; Import still reads the kernel files of other tools.</li>
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li>A kernel whose init() sets its controls could read freed memory as it compiled, and crash.</li>
-<li>Installed OpenFX plugins are told Kento is an image effect host, as the newest OpenFX asks.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1631.zip" length="381623988" type="application/octet-stream" sparkle:edSignature="cGcRur0AvR6XzDHlt7JxCTpTxZnEEYjcClxVNOtKlgaZ3XmhdwmYuFOsmnAqz8pnfyn9JLZ9wHeHBdutqZ+lAw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1631-1613.delta" sparkle:deltaFrom="1613" length="1853110" type="application/octet-stream" sparkle:edSignature="OmN/XiEcYv74+h8gbbLYt7bzrctArkPGVfLaa+yfbc9UAD3BHVbHyszIO+GmbSspw3ai0fINEha8LemY8h/JBg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1631-1586.delta" sparkle:deltaFrom="1586" length="2332558" type="application/octet-stream" sparkle:edSignature="SIGxACYZ0twVSNWvbPpl6Scr2hE9oGL5yRdlIv32KKDLafJ79ZNAMrpdy+5h1xtRwBnB7tyB49DldVmmZaWuCg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1631-1579.delta" sparkle:deltaFrom="1579" length="2386914" type="application/octet-stream" sparkle:edSignature="sh0nrAKgb6TGa1UYKw9ER5KKD25UbuF8mLmE9jGsO6zuCZH/3e0OwUfh8BY38y9V7Nb+6rIUhe3kqHKd/faMCw=="/>
             </sparkle:deltas>
         </item>
     </channel>
