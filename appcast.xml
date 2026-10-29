@@ -4,6 +4,47 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Thu, 29 Oct 2026 15:11:46 -0700</pubDate>
+            <sparkle:version>1871</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1871</h2>
+<h3>Projections</h3>
+<ul>
+<li>The Projection's mode row shows what each mode set, with its next step as a button: paint back for Stabilize and paint, a dome for Sky, a 2D insert for Screen insert, the object's shape for Clean-plate removal, and cards for DMP cards.</li>
+<li>DMP cards puts each layer of a layered painting (a Photoshop file, or an EXR with layers) on a card of its own inside the projection, at its depth. The panel lists the layers, with depth from their names, their order or typed, even depth or even parallax, and erode, feather and fill against fringes.</li>
+<li>The hold can be a grain-free average of the frames round it, beside the Projection. Compare the averaged hold against the single frame in the Viewer.</li>
+<li>The lineup strip shows whether the projection stays on the plate through the shot, with Checker, Edges and Difference views.</li>
+<li>Fixed: closing a comp after removing DMP cards could crash Kento.</li>
+</ul>
+<h3>New</h3>
+<ul>
+<li>Matte Refine works a rough matte's edge out from the picture's colours: hair, motion blur and defocus. Two solves on a menu, frame by frame with an option to steady the matte over neighbouring frames, and the band from the matte's edge, painted, or both.</li>
+<li>A gizmo's own text, dividers and buttons show on its panel where its author put them. Buttons Kento can press work; the rest are marked as imported from Nuke.</li>
+</ul>
+<h3>Faster</h3>
+<ul>
+<li>Renders work out a blur's input whole before the blur, so threads stop waiting on each other: a size 50 Blur renders about a third faster, and some studio comps nearly twice as fast.</li>
+<li>ColorCorrect works about twice as fast and Gamma about a quarter faster; other color nodes read their pixels faster too.</li>
+<li>Nodes fed only black pass black on without working it out.</li>
+</ul>
+<h3>Remote control</h3>
+<ul>
+<li>Assistants and scripts connected to Kento reach much more of it: node housekeeping, keys and links, Roto shapes and paint strokes, Trackers and the CameraTracker, the Projection's mode, hold, checks and next step, the Viewer's exposure, gamma and channel, playback, preferences, per-node timings and recent messages.</li>
+<li>They can build several nodes and their wires in one step, as one undo, and press a node's panel buttons.</li>
+<li>Commands lists everything they can do, and a mistyped name comes back with the nearest ones.</li>
+<li>While a dialog is open or you're dragging, their changes wait.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1871.zip" length="384122873" type="application/octet-stream" sparkle:edSignature="uQ/cVds7JxrE30q2e9QMlyx79KWsHGPST9MN1N/EgW1ZMhZqr10vrUXK/sVPbRRZpiTCASWm4lxfdZ/+dcahCA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1871-1830.delta" sparkle:deltaFrom="1830" length="2158270" type="application/octet-stream" sparkle:edSignature="ogJzJTuSAY/Z9mPKvMl+fXv4otH1Iu/XTshOy+8aDnj1ISEikaPm1qni02lugCDTnEFi3E4da9D1rfDV4KgVDQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1871-1756.delta" sparkle:deltaFrom="1756" length="3081314" type="application/octet-stream" sparkle:edSignature="raIOioYqDn8n1kee/3fxh96prloSlbHNwjvDA6jIwNhW6IG7U5iosBHvjiz2+CFKBtDBXzHBRq/4tO2BsgB7Ag=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1871-1735.delta" sparkle:deltaFrom="1735" length="3535738" type="application/octet-stream" sparkle:edSignature="2up/KP7wywZ2pgMXIWFGuQ/rcfDR+YJufbAXACWWA31oaR29lpxx/W+643zjzCpYSjFtpTwcSMPr7YurClurAw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Thu, 29 Oct 2026 07:30:27 -0700</pubDate>
             <sparkle:version>1830</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -100,56 +141,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1756-1735.delta" sparkle:deltaFrom="1735" length="1993886" type="application/octet-stream" sparkle:edSignature="ObtGH9tu3b6R4/GV1bGuqZ7btvQt6PEaL+2twLG/8EXW7bkn/TFm4yfA1KfXFO5EXOl9YXKE8QT89bwJJwTyCw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1756-1677.delta" sparkle:deltaFrom="1677" length="3042366" type="application/octet-stream" sparkle:edSignature="9N+yAuEgR+sapA0TQr0mK2YFS5gs+dTrtNBINa6gJEW7yTIqs9GdujSjhQyUuIR1zceZnxuspRv8a8KqOKQrCQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1756-1656.delta" sparkle:deltaFrom="1656" length="3155270" type="application/octet-stream" sparkle:edSignature="QyHpLCrHnfa1z7F/803VfffYPWaW7cuLqGBJ0kPzOrTVUoi83R8rdoZVJD/cZm2WIRM7F6lFIA1WAyh99v3cDg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Wed, 28 Oct 2026 01:19:27 -0700</pubDate>
-            <sparkle:version>1735</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1735</h2>
-<h3>Planes that find the picture's lines</h3>
-<ul>
-<li>Pulling a plane off an edge, its far edge is caught by a strong straight edge in the held frame (a kerb, a roof line); dragging a corner of a drawn plane catches a corner the same way. A caught edge draws dashed. Snapping is on by default; untick it to place freely.</li>
-<li>Drag a line across a plane to fold it there.</li>
-</ul>
-<h3>Shapes on planes</h3>
-<ul>
-<li>A shape's points can be dragged after it's made, one undo each drag.</li>
-<li>A shape's deep field makes it a solid: a footprint becomes a block, a cut-out grows back from its face.</li>
-<li>A hole in a card bent by its lattice follows the bend.</li>
-</ul>
-<h3>Baking</h3>
-<ul>
-<li>The layout menu bakes each plane to a texture of its own, or every plane into one atlas, with a rectangle for each cut-out.</li>
-<li>Each baked texture is a tile showing its size; click it to see it in the Viewer. A line under them names the projection and its projectors.</li>
-<li>Dealt-out cards keep following their set after the comp is saved and reopened, and follow later edits to the set's planes.</li>
-</ul>
-<h3>Coverage</h3>
-<ul>
-<li>A new soft state marks where a push-in has outgrown the hold, so you know where a later projector is needed.</li>
-</ul>
-<h3>Rendering</h3>
-<ul>
-<li>ScanlineRender draws more than 16 surfaces: the rest render in further groups of 16. Scenes under projector stacks (BlendMat, MergeMat) still stop at 16 and say so.</li>
-</ul>
-<h3>Shots</h3>
-<ul>
-<li>Opening a shot's comp with the Shot panel closed still checks for newer versions and says so briefly.</li>
-</ul>
-<h3>Fixes</h3>
-<ul>
-<li>Angle fields show three digits (120 no longer reads 12).</li>
-<li>On a narrow panel, a projector row's note no longer runs over its mask menu.</li>
-<li>A per-plane bake after an atlas fills each texture again.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1735.zip" length="382757590" type="application/octet-stream" sparkle:edSignature="42dZdh55TVuGRr/I7pUbQi0/thBB5bMUvLtAsvjSRIXpaSitAx6ZBH4kzbuWB4YCWYwm0PDL3J1l86yaDq5VCA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1735-1677.delta" sparkle:deltaFrom="1677" length="2529498" type="application/octet-stream" sparkle:edSignature="drq/tQJ/K02cqYXbp1YIIQfeb+/V+FscVZkeVYvuQdzr/Uojve6AZaGSFl0jXuIL3o+j/o/I3Snc/vD3TGtoBA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1735-1656.delta" sparkle:deltaFrom="1656" length="2713218" type="application/octet-stream" sparkle:edSignature="IzlCVAve96znV5GOECXpNOZ0fQJqOQkTH0jFQYIA87cen13kFxJS/5buA0iWkHIINVzLW2IfdqB3bOws84hnDQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1735-1631.delta" sparkle:deltaFrom="1631" length="2915042" type="application/octet-stream" sparkle:edSignature="dXhiX7SyZYce1QNqr+QtpKzKBIU17h0nbN4s7ml6PQM7C02vO29gDzEAHrTcGhR/VQnFGgxyNOWq1Bb0UB0MDw=="/>
             </sparkle:deltas>
         </item>
     </channel>
