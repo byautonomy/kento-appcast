@@ -4,6 +4,62 @@
         <title>Kento</title>
         <item>
             <title>0.8</title>
+            <pubDate>Thu, 29 Oct 2026 07:30:27 -0700</pubDate>
+            <sparkle:version>1830</sparkle:version>
+            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.8, build 1830</h2>
+<h3>Inpaint and Generate</h3>
+<ul>
+<li>Kento &gt; Generative &gt; Inpaint fills a projection's baked textures. Its panel shows the takes and what they cost, the request line, Fill... and More takes..., and Again as it was.</li>
+<li>Generate works the same way: a request, a price for each still, and a run in the background.</li>
+<li>Generation jobs run in the Render Queue.</li>
+<li>Takes has its own panel beside Shot, with In use, Working, Parked and Rejected. Drag a take between them, or double-click one to use it.</li>
+<li>Compare wipes the take in use against what came in or against another take. In the Takes panel, right-click a take to compare it.</li>
+<li>A Roto can be a fill's source. The sheet's brush marks what to fill, and its eraser marks what to leave alone.</li>
+<li>Settings, Preferences, Generative sets where takes go and an optional spending limit for the comp.</li>
+<li>Renders made from a generated take say so in the Render Queue and the Shot panel.</li>
+</ul>
+<h3>Projections</h3>
+<ul>
+<li>A hint under the hold row tells you when another frame would give more of the picture. Best hold... shows the shot's scores.</li>
+<li>Checks show under the hint, each with its fix: a soft hold, a plane seen edge on or too thin, a bake that's out of date, lens distortion on a plate that isn't undistorted, overscan that's too short, motion blur off on a fast move, and the plate's grain frozen.</li>
+<li>A face the bake never saw borrows the opposite face for now, under its own texture.</li>
+<li>Extrude, Fold and Bend are on the plate tool's bar.</li>
+<li>An awning can hinge off a cut-out's top, and a flap off an awning's side.</li>
+</ul>
+<h3>Comps from Nuke</h3>
+<ul>
+<li>IDefocus, Filler, Exponential Glow and LightWrapPro rebuild their insides when you change their controls, as they do in Nuke. Moving DasGrain's sample box sets its sample frame.</li>
+<li>A gizmo's reset and set-frame buttons work in Kento. Kento keeps all its other buttons for Nuke.</li>
+<li>A .nk saved from Kento keeps everything the script had: each node's scripts and help, a gizmo's panel, the Viewer's settings, hidden inputs, Dot labels and colors, backdrops, format names, and names with spaces.</li>
+<li>Saved colorspaces and Write displays are kept, so the comp opens in Nuke in the same spaces.</li>
+<li>Fixed: a clone could take the name of a later node.</li>
+<li>Fixed: a comp with a Card wouldn't save as a .ko.</li>
+</ul>
+<h3>Faster</h3>
+<ul>
+<li>IDefocus renders about 100 times faster, and Glint about 20 times faster.</li>
+<li>Very large blurs (a glow's) render about 25 times faster.</li>
+<li>Motion-blurred transforms and trackers render 2 to 5 times faster.</li>
+<li>Merges, corner pins and Roto written to rgba are faster too.</li>
+<li>Comps from the studio's library, measured on a sample of them, render in about a sixth of the time they did.</li>
+</ul>
+<h3>Also</h3>
+<ul>
+<li>Remote control can grab a single panel, and it can run the Render Queue.</li>
+<li>Scrubbing the time ruler moves the playhead, and a closed Dope Sheet no longer slows playback.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1830.zip" length="383883002" type="application/octet-stream" sparkle:edSignature="b9+noNHlU4BlUvEb/E7cxP2ahwd5ukCz6OckS1fQ2PCDSmPYIobTkK77WzqqYGHk11BZ4tGeLY/d9idvXot5Dw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1830-1756.delta" sparkle:deltaFrom="1756" length="2612994" type="application/octet-stream" sparkle:edSignature="Orz6AtbrOsY/h8e0PhOwI5nr1EQnXOwY/ejc7zJRHs9DBdU1gfn+7dGapt7XT+eE1GYouxN2BbRBHF0F6LoUDg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1830-1735.delta" sparkle:deltaFrom="1735" length="3085450" type="application/octet-stream" sparkle:edSignature="iQTALH1WqGp9cFwz5qZzJSAc0vIyFSgx3UTrCiQWvJD61ALImbGa1+d1B/u2wxPWaAMdOL25X52kCH4GAM35Bw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1830-1677.delta" sparkle:deltaFrom="1677" length="3888742" type="application/octet-stream" sparkle:edSignature="4OKsxQCwvYE4nRcM5mB9dH2ndOGEcHJIIls2jt8YE3eEBRRxNq028V1Io1JcjIEHKWT/3Omcp2mCLQs4aHf/Bw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.8</title>
             <pubDate>Wed, 28 Oct 2026 08:24:46 -0700</pubDate>
             <sparkle:version>1756</sparkle:version>
             <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
@@ -94,48 +150,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1735-1677.delta" sparkle:deltaFrom="1677" length="2529498" type="application/octet-stream" sparkle:edSignature="drq/tQJ/K02cqYXbp1YIIQfeb+/V+FscVZkeVYvuQdzr/Uojve6AZaGSFl0jXuIL3o+j/o/I3Snc/vD3TGtoBA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1735-1656.delta" sparkle:deltaFrom="1656" length="2713218" type="application/octet-stream" sparkle:edSignature="IzlCVAve96znV5GOECXpNOZ0fQJqOQkTH0jFQYIA87cen13kFxJS/5buA0iWkHIINVzLW2IfdqB3bOws84hnDQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1735-1631.delta" sparkle:deltaFrom="1631" length="2915042" type="application/octet-stream" sparkle:edSignature="dXhiX7SyZYce1QNqr+QtpKzKBIU17h0nbN4s7ml6PQM7C02vO29gDzEAHrTcGhR/VQnFGgxyNOWq1Bb0UB0MDw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Tue, 27 Oct 2026 20:02:13 -0700</pubDate>
-            <sparkle:version>1677</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1677</h2>
-<h3>Shaping a card</h3>
-<ul>
-<li>A Card's lattice is shaped in the 3D view: click Edit in the Viewer on the Card's lattice row, then pick points (Shift adds, drag round several) and move them on the handle, or click the numbers beside it to type a position. Each drag is one undo.</li>
-<li>Corners bends the whole card from its four corners, bilinear or bicubic; points you moved by hand keep their own offset on top. Tangents shows every point's tangent ends to drag, with mirror tangents keeping the surface smooth (Alt-drag breaks a pair).</li>
-<li>An influence carries a point's neighbours part of the way: a reach in cells, a falloff, and by distance or along rows and columns.</li>
-<li>On a card a projection lands on, points move along the projector's rays, so the picture at the hold frame stays where it was and only its depth changes (Shift moves freely).</li>
-<li>The lattice row's smoothness runs from smooth to square, for the selected points or the whole card. Reset point and Reset lattice put the flat card back.</li>
-<li>Everything shaped is the lattice's points and tangents, so a Nuke script shows the same card.</li>
-</ul>
-<h3>More planes off a drawn plane</h3>
-<ul>
-<li>Once a plane is drawn on the plate, each free edge has a handle and a +: click the + for a plane off that edge at the angle shown, or pull the handle and the new plane's far edge follows the cursor. A floor, a side wall, a step: a few pulls.</li>
-<li>A room in one click: with the drawn plane as the back, tick floor, left, right or ceiling and Make the planes; each runs out to the frame's side.</li>
-<li>The card becomes a set of planes: one Card, rendered as one object, its planes sharing their seams. The Card's panel lists them (shown, name, the edge each comes off, its angle), with Fold and Extrude for the plane picked.</li>
-<li>Deal out to cards makes one Card a plane for a chain of its own, following the set's move unless you untick it.</li>
-</ul>
-<h3>Several projectors on one target</h3>
-<ul>
-<li>A Projection can hold several frames: Add at this frame, or Add every so many frames for a long move. Each projector is a row of a stack on the panel, top first; where they overlap the top one wins.</li>
-<li>The order comes from the camera's move (closing in, later and sharper holds go on top) or by hand: drag a row's grip.</li>
-<li>Each projector can have a mask, a Roto say, held at its frame: a window's reflection from one frame, the wall from another.</li>
-<li>Coverage in the Viewer can show which projector wins each part of the target, and the timeline has a diamond at every hold.</li>
-</ul>
-<h3>Faster 3D view</h3>
-<ul>
-<li>Dragging a handle in the 3D view is about 17 times quicker, and orbiting, panning and zooming draw several times faster.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1677.zip" length="381952328" type="application/octet-stream" sparkle:edSignature="kkTeIhqYbk1dIuj3UmA0u85sJzQj4xZ4gIygj2Gg16fi8Lg/vKoOsO5CD9TPXOtA0BxG0eNye0m8tc1Rzd9ZCg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1677-1656.delta" sparkle:deltaFrom="1656" length="1408326" type="application/octet-stream" sparkle:edSignature="J45QBKTxrHg89DygLqX7zYEER5nkSk5u55RLFBh6OsGLzAGQcCrO9fBPpRPSMXpmzR49F2MdLZk/j7vIe1lsBw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1677-1631.delta" sparkle:deltaFrom="1631" length="1962494" type="application/octet-stream" sparkle:edSignature="hU+Rj6mr5XRXQtrmQ3mTlMubRJJ/QNS5+CgqCN8nI6FGhVFyKDsAVGpBtRxNIyG2mN21BER76/KlxMupsHgBDw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1677-1613.delta" sparkle:deltaFrom="1613" length="2354494" type="application/octet-stream" sparkle:edSignature="PK467QPlUKFEi2Beg9Y/4UrUWyCel+P3VoLjG4dcGEK0dr64u800411MpQ7Lwe8ZFUkN3RiChfX0ARXa5YWyCg=="/>
             </sparkle:deltas>
         </item>
     </channel>
