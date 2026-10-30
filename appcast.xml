@@ -3,6 +3,55 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.1</title>
+            <pubDate>Fri, 30 Oct 2026 05:44:09 -0700</pubDate>
+            <sparkle:version>1932</sparkle:version>
+            <sparkle:shortVersionString>0.9.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.1, build 1932</h2>
+<h3>New</h3>
+<ul>
+<li>The Viewer, refined. Exposure, gamma and saturation are meters on bar 2: drag anywhere on one (Shift for coarse, Option for fine), double-click for neutral, click to type, or use the scroll wheel and arrow keys. Gamma's scale is logarithmic. The channels are one strip; click a lit channel again to go back to RGB. Menus are as wide as their longest entry, and on a narrow Viewer whole groups fold away together, so nothing is cut off.</li>
+<li>The Viewer keeps up with changes made elsewhere: tool rows follow their node's values, the shown input follows a rename, the eyes menu follows the comp's stereo views, and menus follow a changed color config. A floating Viewer takes the keys.</li>
+<li>The Node Graph, refined. Long names keep their beginning and end, and text stays readable when zoomed out. Zoomed far out, landmarks are labeled: errors, the selection, Viewers, Reads and Writes. Hovering shows a node's name, and Find rings its matches.</li>
+<li>Node shapes by role: sources rounded on top, outputs on their foot, merges pointed, 3D nodes with their facets.</li>
+<li>Drop a free node on a wire and it goes into the wire, on the input that suits what the wire carries (a matte goes to the mask). Nodes already wired are never rewired by a move.</li>
+<li>Find: Return steps through the matches, Shift+Return steps back.</li>
+<li>Kento now looks for updates on its own, when it opens and every six hours, and offers a newer version with its release notes. Later offers it again in a day; Skip This Version waits for the next one. Settings &gt; General &gt; Updates turns this off.</li>
+</ul>
+<h3>Roto and paint</h3>
+<ul>
+<li>Box-select points across shapes, then drag, nudge (Option+arrow keys) or delete them together. Cmd+Option-click adds a point without changing the curve at any key.</li>
+<li>Cmd-drag a point pulls its feather. A corner's first drag moves the point, not a tangent. Drags keep their grab instead of jumping to the pointer.</li>
+<li>The transform jack: side ticks scale one way, Cmd skews, Cmd on the center moves the pivot (kept in the comp as the shape's transform center), and Shift keeps a move to x or y.</li>
+<li>Drawing: Option pans, Shift squares, Cmd draws from the center, Backspace drops the last point, and a dashed segment runs to the pointer. A new shape is selected whole and keyed when auto-key is on.</li>
+<li>A key is the whole shape's, feather included. Shapes outside their lifetime are hidden. When a shape is selected the others dim.</li>
+<li>Paint: Shift-drag up and down sets the brush's hardness, Cmd+Shift-drag its opacity.</li>
+<li>SplineWarp: a drag from a shape's outline moves the whole shape; the selected shape's corners and jack scale and rotate it; a selected point's tangents show and drag.</li>
+</ul>
+<h3>Faster</h3>
+<ul>
+<li>Comps of standard nodes render faster: the benchmark's small comp went from 0.090 to 0.076 s a frame. Sharpen runs in one step after its blur.</li>
+<li>The Node Graph draws faster, and the Viewer's info bar reads pixels at most once per screen refresh.</li>
+</ul>
+<h3>Fixed and changed</h3>
+<ul>
+<li>A wire dropped on a Viewer no longer connects inputs 1 and 2. Ports that share a side of a node are picked as themselves.</li>
+<li>Wires: a crossing run sits halfway between its nodes, and a wire into a Merge's A comes over the node rather than under it.</li>
+<li>Backdrops are followed from the moment a comp opens.</li>
+<li>The wipe handle follows the Viewer's compare settings before the picture has drawn.</li>
+<li>Merge works in one step even when its inputs have different bounding boxes, with the same result.</li>
+<li>Shapes drawn and edited in Kento open and draw the same in .nk.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.1.1932.zip" length="384393499" type="application/octet-stream" sparkle:edSignature="ojiGwp2LjkZbTKOrRQ5uJk0pA16S6QNlA65TGifdcl5V+Gh5MKlkiNZfsqtr6tUFNkWDYQr040ztewfBIC7YBg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1932-1905.delta" sparkle:deltaFrom="1905" length="2179102" type="application/octet-stream" sparkle:edSignature="1otV7ZP8orth0I3Rk3x7uOaVgNmAtx1Qsy+Bsh0B5ObRLy6fgDHeksd93izZsfSzSA264eEzCFiYkCOS30cZBQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1932-1871.delta" sparkle:deltaFrom="1871" length="2634898" type="application/octet-stream" sparkle:edSignature="ltAmFtAIp56UUWiDVycrxWsMAo8FebCFYEMKUxTrurco8OjBWsLwsIS3/8UeHzAqRsJnc0esDriNLqIcJOeBAg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1932-1830.delta" sparkle:deltaFrom="1830" length="2947406" type="application/octet-stream" sparkle:edSignature="3TgA+LoNUW+wMJMpdmjKP3BhhHO2VMLGDJg7yGeX+6cjc9TNg/+hOpIs9vOUHkuQxMIq5OxU4ZMuaMjlTROgDg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9</title>
             <pubDate>Thu, 29 Oct 2026 21:19:10 -0700</pubDate>
             <sparkle:version>1905</sparkle:version>
@@ -88,62 +137,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1871-1830.delta" sparkle:deltaFrom="1830" length="2158270" type="application/octet-stream" sparkle:edSignature="ogJzJTuSAY/Z9mPKvMl+fXv4otH1Iu/XTshOy+8aDnj1ISEikaPm1qni02lugCDTnEFi3E4da9D1rfDV4KgVDQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1871-1756.delta" sparkle:deltaFrom="1756" length="3081314" type="application/octet-stream" sparkle:edSignature="raIOioYqDn8n1kee/3fxh96prloSlbHNwjvDA6jIwNhW6IG7U5iosBHvjiz2+CFKBtDBXzHBRq/4tO2BsgB7Ag=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1871-1735.delta" sparkle:deltaFrom="1735" length="3535738" type="application/octet-stream" sparkle:edSignature="2up/KP7wywZ2pgMXIWFGuQ/rcfDR+YJufbAXACWWA31oaR29lpxx/W+643zjzCpYSjFtpTwcSMPr7YurClurAw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Thu, 29 Oct 2026 07:30:27 -0700</pubDate>
-            <sparkle:version>1830</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1830</h2>
-<h3>Inpaint and Generate</h3>
-<ul>
-<li>Kento &gt; Generative &gt; Inpaint fills a projection's baked textures. Its panel shows the takes and what they cost, the request line, Fill... and More takes..., and Again as it was.</li>
-<li>Generate works the same way: a request, a price for each still, and a run in the background.</li>
-<li>Generation jobs run in the Render Queue.</li>
-<li>Takes has its own panel beside Shot, with In use, Working, Parked and Rejected. Drag a take between them, or double-click one to use it.</li>
-<li>Compare wipes the take in use against what came in or against another take. In the Takes panel, right-click a take to compare it.</li>
-<li>A Roto can be a fill's source. The sheet's brush marks what to fill, and its eraser marks what to leave alone.</li>
-<li>Settings, Preferences, Generative sets where takes go and an optional spending limit for the comp.</li>
-<li>Renders made from a generated take say so in the Render Queue and the Shot panel.</li>
-</ul>
-<h3>Projections</h3>
-<ul>
-<li>A hint under the hold row tells you when another frame would give more of the picture. Best hold... shows the shot's scores.</li>
-<li>Checks show under the hint, each with its fix: a soft hold, a plane seen edge on or too thin, a bake that's out of date, lens distortion on a plate that isn't undistorted, overscan that's too short, motion blur off on a fast move, and the plate's grain frozen.</li>
-<li>A face the bake never saw borrows the opposite face for now, under its own texture.</li>
-<li>Extrude, Fold and Bend are on the plate tool's bar.</li>
-<li>An awning can hinge off a cut-out's top, and a flap off an awning's side.</li>
-</ul>
-<h3>Comps from Nuke</h3>
-<ul>
-<li>IDefocus, Filler, Exponential Glow and LightWrapPro rebuild their insides when you change their controls, as they do in Nuke. Moving DasGrain's sample box sets its sample frame.</li>
-<li>A gizmo's reset and set-frame buttons work in Kento. Kento keeps all its other buttons for Nuke.</li>
-<li>A .nk saved from Kento keeps everything the script had: each node's scripts and help, a gizmo's panel, the Viewer's settings, hidden inputs, Dot labels and colors, backdrops, format names, and names with spaces.</li>
-<li>Saved colorspaces and Write displays are kept, so the comp opens in Nuke in the same spaces.</li>
-<li>Fixed: a clone could take the name of a later node.</li>
-<li>Fixed: a comp with a Card wouldn't save as a .ko.</li>
-</ul>
-<h3>Faster</h3>
-<ul>
-<li>IDefocus renders about 100 times faster, and Glint about 20 times faster.</li>
-<li>Very large blurs (a glow's) render about 25 times faster.</li>
-<li>Motion-blurred transforms and trackers render 2 to 5 times faster.</li>
-<li>Merges, corner pins and Roto written to rgba are faster too.</li>
-<li>Comps from the studio's library, measured on a sample of them, render in about a sixth of the time they did.</li>
-</ul>
-<h3>Also</h3>
-<ul>
-<li>Remote control can grab a single panel, and it can run the Render Queue.</li>
-<li>Scrubbing the time ruler moves the playhead, and a closed Dope Sheet no longer slows playback.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1830.zip" length="383883002" type="application/octet-stream" sparkle:edSignature="b9+noNHlU4BlUvEb/E7cxP2ahwd5ukCz6OckS1fQ2PCDSmPYIobTkK77WzqqYGHk11BZ4tGeLY/d9idvXot5Dw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1830-1756.delta" sparkle:deltaFrom="1756" length="2612994" type="application/octet-stream" sparkle:edSignature="Orz6AtbrOsY/h8e0PhOwI5nr1EQnXOwY/ejc7zJRHs9DBdU1gfn+7dGapt7XT+eE1GYouxN2BbRBHF0F6LoUDg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1830-1735.delta" sparkle:deltaFrom="1735" length="3085450" type="application/octet-stream" sparkle:edSignature="iQTALH1WqGp9cFwz5qZzJSAc0vIyFSgx3UTrCiQWvJD61ALImbGa1+d1B/u2wxPWaAMdOL25X52kCH4GAM35Bw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1830-1677.delta" sparkle:deltaFrom="1677" length="3888742" type="application/octet-stream" sparkle:edSignature="4OKsxQCwvYE4nRcM5mB9dH2ndOGEcHJIIls2jt8YE3eEBRRxNq028V1Io1JcjIEHKWT/3Omcp2mCLQs4aHf/Bw=="/>
             </sparkle:deltas>
         </item>
     </channel>
