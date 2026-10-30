@@ -3,6 +3,53 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9</title>
+            <pubDate>Thu, 29 Oct 2026 21:19:10 -0700</pubDate>
+            <sparkle:version>1905</sparkle:version>
+            <sparkle:shortVersionString>0.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9, build 1905</h2>
+<h3>New</h3>
+<ul>
+<li>Every control that can be animated has a key button at the end of its row in Properties: click it to set a key on this frame, click it again to delete that key. Animated fields are shaded, more strongly on a key, and a key's outline glows a little.</li>
+<li>The pick-whip shows: a spiral beside the key button while the pointer is on the row. Drag it onto another control, or onto a node in the Node Graph, to link.</li>
+<li>Project settings in Properties: press S over the Node Graph, choose Edit &gt; Project Settings..., or click the format in the Viewer's info bar. Format, pixel aspect, frame range, frame rate and start timecode, with the plate's format and range offered when they differ from the comp's; Colour, Views, Proxy and Paths as tabs.</li>
+<li>Optimize, a tab beside Properties (or Render &gt; Optimize comp...): it times the current frame node by node and lists what would save time, largest first. A color node breaking a concatenation, a blur worked out at full size before a downscale, a bounding box far bigger than the frame, a file read twice, nodes nothing uses. Each fix is one click and one undo, and a fix that changes the picture says by how much.</li>
+<li>Drag versions out of the Shot panel onto the Node Graph or the Viewer: they're imported where you let go.</li>
+<li>DMP cards: Break out puts the projection and its cards into the comp as plain nodes.</li>
+</ul>
+<h3>Handles</h3>
+<ul>
+<li>Roto: the selected shape's center moves it, a corner scales it and just outside a corner rotates it. The selected point's feather point drags.</li>
+<li>Tracker: a ring of fixed size takes a track and drags it; Add track is spelled out.</li>
+<li>Card lattice points drag directly, the Text node's box drags and sizes like a Crop's, and placed pixel inspector pins and boxes move.</li>
+<li>Every tangent the Curve Editor draws can be dragged.</li>
+<li>Easier to catch: box edges, the transform jack's bars and ring, and ruler guides. The wipe's rotate arc is drawn over all of the part that turns it.</li>
+<li>Fixed: with a GridWarp in view, clicks meant for the eyedropper, guides and the wipe were taken by it. Hidden camera tracks could be picked.</li>
+</ul>
+<h3>Faster</h3>
+<ul>
+<li>The Viewer works out a blur's input whole before the blur, as renders already do: some studio comps show about a third faster, and blurs inside gizmos are included.</li>
+<li>Kronos and OFlow2 no longer work the comp above them out again for each in-between, and give out the frame's format: comps with a retime several times faster.</li>
+<li>Feathered Roto shapes render faster.</li>
+</ul>
+<h3>Fixed and changed</h3>
+<ul>
+<li>F with the pointer over the Timeline frames it to the working range.</li>
+<li>The Viewer's guides follow the comp's format, and a Read's Format row says its frame is the file's.</li>
+<li>The Viewer bar's exposure field fits its value; double-clicking a slider's handle resets it.</li>
+<li>A display or view the color config doesn't have shows the config's default, with a warning, instead of stopping the frame.</li>
+<li>Remote control: changes wait while you're dragging, read from the system's own button state, and the connection lists its tools.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.1905.zip" length="384276874" type="application/octet-stream" sparkle:edSignature="JEdQfhaJYGQhRrXB7NWCkSM0mlMZ3B+Pm2BRu+0nU+Ea0hGldTggUXls6X5pA3Szfgpb3LTatBRrkCoirTWTAg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1905-1871.delta" sparkle:deltaFrom="1871" length="2318206" type="application/octet-stream" sparkle:edSignature="yWaZxLtmZ84iesTIhezpczS7KIOnodylmoxdQ/vUIYkq4ryhe7xfueZSIj16Nbtb3rXVAKyG6bcGdh8kHkz0CA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1905-1830.delta" sparkle:deltaFrom="1830" length="2651514" type="application/octet-stream" sparkle:edSignature="fxUo3b37a6yb7CcPzhfjesnCI4yRNrVR1nh+m5MscbGAaDnMyqkLseiukFMVc6zObQ2+jqI1k8OxvYACw/pMBw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1905-1756.delta" sparkle:deltaFrom="1756" length="3472334" type="application/octet-stream" sparkle:edSignature="y1xFaI8i2d2CcgK2R5taGx9rNXiuZWVIuyoFEU1B9JmDCBNBYOuu76pDAU5EDVsXh444MAqdzZvzhBq0giDaAQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.8</title>
             <pubDate>Thu, 29 Oct 2026 15:11:46 -0700</pubDate>
             <sparkle:version>1871</sparkle:version>
@@ -97,50 +144,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1830-1756.delta" sparkle:deltaFrom="1756" length="2612994" type="application/octet-stream" sparkle:edSignature="Orz6AtbrOsY/h8e0PhOwI5nr1EQnXOwY/ejc7zJRHs9DBdU1gfn+7dGapt7XT+eE1GYouxN2BbRBHF0F6LoUDg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1830-1735.delta" sparkle:deltaFrom="1735" length="3085450" type="application/octet-stream" sparkle:edSignature="iQTALH1WqGp9cFwz5qZzJSAc0vIyFSgx3UTrCiQWvJD61ALImbGa1+d1B/u2wxPWaAMdOL25X52kCH4GAM35Bw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1830-1677.delta" sparkle:deltaFrom="1677" length="3888742" type="application/octet-stream" sparkle:edSignature="4OKsxQCwvYE4nRcM5mB9dH2ndOGEcHJIIls2jt8YE3eEBRRxNq028V1Io1JcjIEHKWT/3Omcp2mCLQs4aHf/Bw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Wed, 28 Oct 2026 08:24:46 -0700</pubDate>
-            <sparkle:version>1756</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1756</h2>
-<h3>Shapes from a matte</h3>
-<ul>
-<li>Press and hold the plate tool's shape button for From a Roto shape and From a node's alpha.</li>
-<li>From a Roto shape: the shape's outline is the Roto's at the hold frame, its feather the Roto's, and it stays linked: change the Roto or the hold and it follows. Drag one of its points to make it your own.</li>
-<li>From a node's alpha: the shape covers the matte's bounds and the matte is its edge, soft or hard, each projector's at its own frame.</li>
-<li>On the Card panel a shape's row says what it's from; click the words to change it.</li>
-</ul>
-<h3>Foreground, as Tour Into the Picture's</h3>
-<ul>
-<li>A cut-out stands on the plane it touches: on a floor, hanging from a ceiling, out of a side wall. A plane square to the camera says why it can't take one.</li>
-<li>A cut-out can stand on a block's top, or on a side the camera sees (a plant on a table, a sign on a crate); the on menu lists the faces the camera sees.</li>
-<li>A + off each cut-out's left and right side hinges a plane there at the bar's angle (a door ajar, a bag carried).</li>
-<li>The shape feather is live: Roto's, the outline solid and the picture fading past it; a hole fades its plane to its edge.</li>
-</ul>
-<h3>Projections</h3>
-<ul>
-<li>Projector stacks (BlendMat, MergeMat) draw more than 16 surfaces, at the same speed as before up to 16.</li>
-<li>A texture a plane holds its plane's cut-outs too; Send to paint opens, beside it, a guide of where cut-outs hide the plane.</li>
-</ul>
-<h3>Shots</h3>
-<ul>
-<li>A dot in the shot menu marks each shot with something newer than its newest comp reads; hover to see what. The shot menu shows the code bright and the task dim.</li>
-<li>Settings, Preferences, Shot panel: the provider, its folder, what each provider supports, who is signed in, and the panel's options.</li>
-</ul>
-<h3>Also</h3>
-<ul>
-<li>A turned or scaled Transform renders about twice as fast, the picture the same.</li>
-<li>CameraTracker's Export makes a point cloud, or a camera, points and a render together.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1756.zip" length="383111173" type="application/octet-stream" sparkle:edSignature="g3hheVcq086QMb3pwmAmtAgP6ens8eyYWrnmzZeRVdiPAgovvooPcHFPNnnO/w0dfN4LaPBRigVT/rxB62QjAQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1756-1735.delta" sparkle:deltaFrom="1735" length="1993886" type="application/octet-stream" sparkle:edSignature="ObtGH9tu3b6R4/GV1bGuqZ7btvQt6PEaL+2twLG/8EXW7bkn/TFm4yfA1KfXFO5EXOl9YXKE8QT89bwJJwTyCw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1756-1677.delta" sparkle:deltaFrom="1677" length="3042366" type="application/octet-stream" sparkle:edSignature="9N+yAuEgR+sapA0TQr0mK2YFS5gs+dTrtNBINa6gJEW7yTIqs9GdujSjhQyUuIR1zceZnxuspRv8a8KqOKQrCQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1756-1656.delta" sparkle:deltaFrom="1656" length="3155270" type="application/octet-stream" sparkle:edSignature="QyHpLCrHnfa1z7F/803VfffYPWaW7cuLqGBJ0kPzOrTVUoi83R8rdoZVJD/cZm2WIRM7F6lFIA1WAyh99v3cDg=="/>
             </sparkle:deltas>
         </item>
     </channel>
