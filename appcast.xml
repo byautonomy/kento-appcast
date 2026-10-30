@@ -3,6 +3,51 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.2</title>
+            <pubDate>Fri, 30 Oct 2026 10:13:21 -0700</pubDate>
+            <sparkle:version>1987</sparkle:version>
+            <sparkle:shortVersionString>0.9.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.2, build 1987</h2>
+<h3>New: Perspective</h3>
+<ul>
+<li>A new Perspective node (Transform menu). Draw lines along a plate's edges, each on its axis, and it works out the vanishing points, the horizon and the camera: focal length with its plus-or-minus, tilt, roll and field of view, live as you draw. Lines slide onto the plate's edge when you let go (Shift leaves them where drawn).</li>
+<li>Find lines finds the plate's straight edges on the frame; click one to add it on the axis it agrees with.</li>
+<li>Line sets: lock a set to keep its lines over the plate as a reference for a lineup. Locked sets show in every Viewer showing the plate or anything below it.</li>
+<li>Match to another plate compares two plates' cameras in words and makes the CornerPin2D or Transform that lines one up with the other. Make Camera makes a camera linked to the solve.</li>
+<li>Measure: set one known height and the panel shows the camera's height; each Measure line reads the height of what it spans.</li>
+<li>Drag a vanishing point to swing its lines; a hand-drawn horizon moves, turns and levels, and can keep the ground's vanishing points on it. With one axis and the horizon, type the focal length.</li>
+</ul>
+<h3>New: Lens</h3>
+<ul>
+<li>A new Lens node (Transform menu): takes a lens's distortion out of a plate or puts it back, as the picture, an STMap or both. The distortion is a curve to drag, with sliders beside it, and the row says barrel or pincushion.</li>
+<li>Work it out from a lens grid, from lines drawn on the plate, or from the shot's camera tracks; the Report shows each corner's leftover error, the straightened lines, or the camera solve's stages.</li>
+<li>The lens card names the lens the plate was most likely shot on, from its metadata (movies' too), the film back worked out from the plate's size and file name, and the show's lens library. Use this lens hands it to a CameraTracker, each value Fixed or Refine.</li>
+<li>Write STMaps and Save to the lens library; the Viewer shows the grid as the lens bends it, the box, and the lens center to drag.</li>
+<li>LensDistortion2 renders every model on its preset menu as scripts set them, and Detect and Solve work it out from a checkerboard. Its STMap output now covers the whole frame.</li>
+<li>The two lens-model nodes from matchmove scripts, Classic LD and Radial Standard degree 4, now render instead of being left out.</li>
+<li>A CameraTracker set to Unknown Lens works the lens out with the camera, and with an anamorphic lens its two asymmetric values too.</li>
+</ul>
+<h3>Faster</h3>
+<ul>
+<li>PixelKernel on the processor is now compiled the first time it renders: the painterly kernel went from 48 seconds an HD frame to under one. On a Mac without the command-line developer tools, Kento offers to install them.</li>
+<li>Merge works its operations a tile at a time, faster with the same picture.</li>
+</ul>
+<h3>Fixed and changed</h3>
+<ul>
+<li>FillMat renders: it fills the chosen channels with its color, the surface replacing what's behind it.</li>
+<li>The Curve Editor's key sidebar scrolls when a short editor crops it.</li>
+<li>Deep EXRs are recognized from their header, faster.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.2.1987.zip" length="384942124" type="application/octet-stream" sparkle:edSignature="vJte+0Dx8zbj9yalH9P6m1W1X06o56w4g6iYU3As6YNvi5fFR5fVuWTzQSLc9dGlgbI23r40HH4HuZo8osbCBw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1987-1932.delta" sparkle:deltaFrom="1932" length="2598254" type="application/octet-stream" sparkle:edSignature="v5P4QRujrZFCk75bixImX2zZoIR7HXO5ZYe+F+f0yGZUODG9fVO9WoSifaji9l9A2YBKz3I7xRIzCv42nj+VDw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1987-1905.delta" sparkle:deltaFrom="1905" length="2975634" type="application/octet-stream" sparkle:edSignature="MVRGkC9WfeOTUrTlCD57t74xDIP7w+43XT5ASpGPQJePA1le8IpeynW3C0sjO2VWDLZVcapnBcq0+1qDJKhjBw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento1987-1871.delta" sparkle:deltaFrom="1871" length="3345190" type="application/octet-stream" sparkle:edSignature="Q9szXntj6zDfuJbOE/8ioQ9wLjnFzenBiDCFpWKm/8gUk/VvPVcpA6HMxy8wc8RcKvU31kgF50fJB/4oJghMBA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.1</title>
             <pubDate>Fri, 30 Oct 2026 05:44:09 -0700</pubDate>
             <sparkle:version>1932</sparkle:version>
@@ -96,47 +141,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1905-1871.delta" sparkle:deltaFrom="1871" length="2318206" type="application/octet-stream" sparkle:edSignature="yWaZxLtmZ84iesTIhezpczS7KIOnodylmoxdQ/vUIYkq4ryhe7xfueZSIj16Nbtb3rXVAKyG6bcGdh8kHkz0CA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1905-1830.delta" sparkle:deltaFrom="1830" length="2651514" type="application/octet-stream" sparkle:edSignature="fxUo3b37a6yb7CcPzhfjesnCI4yRNrVR1nh+m5MscbGAaDnMyqkLseiukFMVc6zObQ2+jqI1k8OxvYACw/pMBw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1905-1756.delta" sparkle:deltaFrom="1756" length="3472334" type="application/octet-stream" sparkle:edSignature="y1xFaI8i2d2CcgK2R5taGx9rNXiuZWVIuyoFEU1B9JmDCBNBYOuu76pDAU5EDVsXh444MAqdzZvzhBq0giDaAQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.8</title>
-            <pubDate>Thu, 29 Oct 2026 15:11:46 -0700</pubDate>
-            <sparkle:version>1871</sparkle:version>
-            <sparkle:shortVersionString>0.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.8, build 1871</h2>
-<h3>Projections</h3>
-<ul>
-<li>The Projection's mode row shows what each mode set, with its next step as a button: paint back for Stabilize and paint, a dome for Sky, a 2D insert for Screen insert, the object's shape for Clean-plate removal, and cards for DMP cards.</li>
-<li>DMP cards puts each layer of a layered painting (a Photoshop file, or an EXR with layers) on a card of its own inside the projection, at its depth. The panel lists the layers, with depth from their names, their order or typed, even depth or even parallax, and erode, feather and fill against fringes.</li>
-<li>The hold can be a grain-free average of the frames round it, beside the Projection. Compare the averaged hold against the single frame in the Viewer.</li>
-<li>The lineup strip shows whether the projection stays on the plate through the shot, with Checker, Edges and Difference views.</li>
-<li>Fixed: closing a comp after removing DMP cards could crash Kento.</li>
-</ul>
-<h3>New</h3>
-<ul>
-<li>Matte Refine works a rough matte's edge out from the picture's colours: hair, motion blur and defocus. Two solves on a menu, frame by frame with an option to steady the matte over neighbouring frames, and the band from the matte's edge, painted, or both.</li>
-<li>A gizmo's own text, dividers and buttons show on its panel where its author put them. Buttons Kento can press work; the rest are marked as imported from Nuke.</li>
-</ul>
-<h3>Faster</h3>
-<ul>
-<li>Renders work out a blur's input whole before the blur, so threads stop waiting on each other: a size 50 Blur renders about a third faster, and some studio comps nearly twice as fast.</li>
-<li>ColorCorrect works about twice as fast and Gamma about a quarter faster; other color nodes read their pixels faster too.</li>
-<li>Nodes fed only black pass black on without working it out.</li>
-</ul>
-<h3>Remote control</h3>
-<ul>
-<li>Assistants and scripts connected to Kento reach much more of it: node housekeeping, keys and links, Roto shapes and paint strokes, Trackers and the CameraTracker, the Projection's mode, hold, checks and next step, the Viewer's exposure, gamma and channel, playback, preferences, per-node timings and recent messages.</li>
-<li>They can build several nodes and their wires in one step, as one undo, and press a node's panel buttons.</li>
-<li>Commands lists everything they can do, and a mistyped name comes back with the nearest ones.</li>
-<li>While a dialog is open or you're dragging, their changes wait.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.8.1871.zip" length="384122873" type="application/octet-stream" sparkle:edSignature="uQ/cVds7JxrE30q2e9QMlyx79KWsHGPST9MN1N/EgW1ZMhZqr10vrUXK/sVPbRRZpiTCASWm4lxfdZ/+dcahCA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1871-1830.delta" sparkle:deltaFrom="1830" length="2158270" type="application/octet-stream" sparkle:edSignature="ogJzJTuSAY/Z9mPKvMl+fXv4otH1Iu/XTshOy+8aDnj1ISEikaPm1qni02lugCDTnEFi3E4da9D1rfDV4KgVDQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1871-1756.delta" sparkle:deltaFrom="1756" length="3081314" type="application/octet-stream" sparkle:edSignature="raIOioYqDn8n1kee/3fxh96prloSlbHNwjvDA6jIwNhW6IG7U5iosBHvjiz2+CFKBtDBXzHBRq/4tO2BsgB7Ag=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1871-1735.delta" sparkle:deltaFrom="1735" length="3535738" type="application/octet-stream" sparkle:edSignature="2up/KP7wywZ2pgMXIWFGuQ/rcfDR+YJufbAXACWWA31oaR29lpxx/W+643zjzCpYSjFtpTwcSMPr7YurClurAw=="/>
             </sparkle:deltas>
         </item>
     </channel>
