@@ -3,6 +3,74 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.3</title>
+            <pubDate>Sat, 31 Oct 2026 08:44:20 -0700</pubDate>
+            <sparkle:version>2076</sparkle:version>
+            <sparkle:shortVersionString>0.9.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.3, build 2076</h2>
+<h3>Selecting points in the Viewer</h3>
+<ul>
+<li>Drag a box from empty ground to select points in every tool that has them: CornerPin, Crop, Transform, Radial, Rectangle, Ramp, Text, Tracker, Roto, RotoPaint, GridWarp, SplineWarp, Perspective and a Card's lattice in the 3D view. Shift-drag adds to the selection.</li>
+<li>Shift-click adds a point or takes it out; a drag on one selected point moves them all, as one undo. Cmd+A selects every point, Esc lets go, and Option with the arrow keys nudges the selection a pixel (Shift, ten).</li>
+<li>The point a click would take lights up under the pointer, with the move cursor.</li>
+<li>A GridWarp box can start anywhere in the Viewer, and the warp now reaches past the edge of the image.</li>
+<li>The Projection's drawn plane: Shift-click or Shift-drag a box round its corners to move several at once, or drag inside the plane to slide it.</li>
+</ul>
+<h3>Picking colors</h3>
+<ul>
+<li>Every color row of a node with a picture coming in (a Grade, a ColorCorrect and the rest) has an eyedropper beside the color wheel: click the Viewer for a pixel, or drag a box for its average.</li>
+<li>A box picked over a whole plate is near instant (it took several seconds).</li>
+<li>The eyedropper and the pick-whip have new icons that look like what they are.</li>
+</ul>
+<h3>The Viewer</h3>
+<ul>
+<li>Depth, motion vectors, normals, position and uv passes show readably as soon as they're chosen from the layer menu, with no node needed.</li>
+<li>Switched to an image of another size, the Viewer shows that image's format; its on-screen controls work on any format.</li>
+<li>The number keys over the Viewer switch its inputs; I and O set the in and out points.</li>
+<li>Closing a floating Viewer's window puts the view back in the Viewer panel.</li>
+<li>The wipe, ruler guides and rulers can be dragged with any tool open; an armed eyedropper takes the next click.</li>
+</ul>
+<h3>The Node Graph and keys</h3>
+<ul>
+<li>W puts a Write in the stream, as the other node keys do, and every node key makes its node as Tab does, with its starting values.</li>
+<li>Shift-click on a selected node takes it out of the selection. An undo just after a snapped drag puts the nodes back.</li>
+<li>Import Nuke Script selects and frames what came in.</li>
+<li>Lists pick as lists do: Shift-click picks a range and Cmd-click adds or takes out one, in Roto's Layers, the Tracker's table, Tracks over time and Perspective's lines. Layers also takes Up, Down and Cmd+A.</li>
+<li>Cmd+, opens Settings.</li>
+<li>The frame step keys stop at the ends of the range.</li>
+</ul>
+<h3>Number fields</h3>
+<ul>
+<li>A drag scrubs by the digit under the pointer, keeping the digits after it; Up and Down step the digit after the cursor.</li>
+<li>Esc while typing puts the value back.</li>
+</ul>
+<h3>Perspective and Lens</h3>
+<ul>
+<li>Both open on a start card for a first-time user, with the next step named and the expert sections closed.</li>
+<li>Perspective lists the current set's lines, one a row: select, change direction, leave one out of the solve or delete it.</li>
+<li>Lens: grid shoots of several frames solved together, dot and line charts beside the checkerboard, an anamorphic lens from lines in the plate, and a learned first guess (downloaded the first time it's asked for).</li>
+</ul>
+<h3>Fixed and changed</h3>
+<ul>
+<li>Use for the comp on a Read sets the comp's format to the plate's size; Project settings opens from the Node Graph; Custom size in the format menus.</li>
+<li>Every menu item works from the menu: Viewer &gt; Rulers, the overlays, Proxy, Downscale and Snap to grid did nothing there.</li>
+<li>The Curve Editor frames its keys clear of the ruler, and a drag on a key moves the key.</li>
+<li>The Dope Sheet takes Cmd+A and Esc; file lists find a file as you type its name.</li>
+<li>Looks follow the comp's color configuration.</li>
+<li>Gizmos that add their own layers (L_ChannelSolo) render.</li>
+<li>Switching workspaces no longer leaves errors behind.</li>
+<li>The Node tab's bookmark is the star on the node, read from and written to .nk files.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.3.2076.zip" length="386696803" type="application/octet-stream" sparkle:edSignature="q/SRwDMBayitzr2oWYx7jiegNHcxILEUfIDKJRrqA0cv+4dGNy8Z7373SUBoDBd8S0eWTyAmdSbnWKal/OhlBA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2076-1987.delta" sparkle:deltaFrom="1987" length="3788138" type="application/octet-stream" sparkle:edSignature="iIVWmtdXZuKneBtGqQBOk8QU3NB6N+q3Doc0HTdBcJzcQLl3Hg+0Mt5RgH3R4OnkBrtq1DpLo7X4nc76XDU3BQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2076-1932.delta" sparkle:deltaFrom="1932" length="4621006" type="application/octet-stream" sparkle:edSignature="iHJLFSjlJBY7ISJFHgGjetRjJdTnsfXiEQFypejEqCN02b8OyhRBi7MWBN+INN8W2Or7WqDAhHj+xmmhJ1iABQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2076-1905.delta" sparkle:deltaFrom="1905" length="4914194" type="application/octet-stream" sparkle:edSignature="nJ9zdExOaB+6DgnC7mpNNAxzqyqJDUngfFc0qap1zKHRGFBdlr9RXkSHskFczSmm4bYrYO/Jq6W1qco3qbI1DQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.2</title>
             <pubDate>Fri, 30 Oct 2026 10:13:21 -0700</pubDate>
             <sparkle:version>1987</sparkle:version>
@@ -94,53 +162,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1932-1905.delta" sparkle:deltaFrom="1905" length="2179102" type="application/octet-stream" sparkle:edSignature="1otV7ZP8orth0I3Rk3x7uOaVgNmAtx1Qsy+Bsh0B5ObRLy6fgDHeksd93izZsfSzSA264eEzCFiYkCOS30cZBQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1932-1871.delta" sparkle:deltaFrom="1871" length="2634898" type="application/octet-stream" sparkle:edSignature="ltAmFtAIp56UUWiDVycrxWsMAo8FebCFYEMKUxTrurco8OjBWsLwsIS3/8UeHzAqRsJnc0esDriNLqIcJOeBAg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1932-1830.delta" sparkle:deltaFrom="1830" length="2947406" type="application/octet-stream" sparkle:edSignature="3TgA+LoNUW+wMJMpdmjKP3BhhHO2VMLGDJg7yGeX+6cjc9TNg/+hOpIs9vOUHkuQxMIq5OxU4ZMuaMjlTROgDg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9</title>
-            <pubDate>Thu, 29 Oct 2026 21:19:10 -0700</pubDate>
-            <sparkle:version>1905</sparkle:version>
-            <sparkle:shortVersionString>0.9</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9, build 1905</h2>
-<h3>New</h3>
-<ul>
-<li>Every control that can be animated has a key button at the end of its row in Properties: click it to set a key on this frame, click it again to delete that key. Animated fields are shaded, more strongly on a key, and a key's outline glows a little.</li>
-<li>The pick-whip shows: a spiral beside the key button while the pointer is on the row. Drag it onto another control, or onto a node in the Node Graph, to link.</li>
-<li>Project settings in Properties: press S over the Node Graph, choose Edit &gt; Project Settings..., or click the format in the Viewer's info bar. Format, pixel aspect, frame range, frame rate and start timecode, with the plate's format and range offered when they differ from the comp's; Colour, Views, Proxy and Paths as tabs.</li>
-<li>Optimize, a tab beside Properties (or Render &gt; Optimize comp...): it times the current frame node by node and lists what would save time, largest first. A color node breaking a concatenation, a blur worked out at full size before a downscale, a bounding box far bigger than the frame, a file read twice, nodes nothing uses. Each fix is one click and one undo, and a fix that changes the picture says by how much.</li>
-<li>Drag versions out of the Shot panel onto the Node Graph or the Viewer: they're imported where you let go.</li>
-<li>DMP cards: Break out puts the projection and its cards into the comp as plain nodes.</li>
-</ul>
-<h3>Handles</h3>
-<ul>
-<li>Roto: the selected shape's center moves it, a corner scales it and just outside a corner rotates it. The selected point's feather point drags.</li>
-<li>Tracker: a ring of fixed size takes a track and drags it; Add track is spelled out.</li>
-<li>Card lattice points drag directly, the Text node's box drags and sizes like a Crop's, and placed pixel inspector pins and boxes move.</li>
-<li>Every tangent the Curve Editor draws can be dragged.</li>
-<li>Easier to catch: box edges, the transform jack's bars and ring, and ruler guides. The wipe's rotate arc is drawn over all of the part that turns it.</li>
-<li>Fixed: with a GridWarp in view, clicks meant for the eyedropper, guides and the wipe were taken by it. Hidden camera tracks could be picked.</li>
-</ul>
-<h3>Faster</h3>
-<ul>
-<li>The Viewer works out a blur's input whole before the blur, as renders already do: some studio comps show about a third faster, and blurs inside gizmos are included.</li>
-<li>Kronos and OFlow2 no longer work the comp above them out again for each in-between, and give out the frame's format: comps with a retime several times faster.</li>
-<li>Feathered Roto shapes render faster.</li>
-</ul>
-<h3>Fixed and changed</h3>
-<ul>
-<li>F with the pointer over the Timeline frames it to the working range.</li>
-<li>The Viewer's guides follow the comp's format, and a Read's Format row says its frame is the file's.</li>
-<li>The Viewer bar's exposure field fits its value; double-clicking a slider's handle resets it.</li>
-<li>A display or view the color config doesn't have shows the config's default, with a warning, instead of stopping the frame.</li>
-<li>Remote control: changes wait while you're dragging, read from the system's own button state, and the connection lists its tools.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.1905.zip" length="384276874" type="application/octet-stream" sparkle:edSignature="JEdQfhaJYGQhRrXB7NWCkSM0mlMZ3B+Pm2BRu+0nU+Ea0hGldTggUXls6X5pA3Szfgpb3LTatBRrkCoirTWTAg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1905-1871.delta" sparkle:deltaFrom="1871" length="2318206" type="application/octet-stream" sparkle:edSignature="yWaZxLtmZ84iesTIhezpczS7KIOnodylmoxdQ/vUIYkq4ryhe7xfueZSIj16Nbtb3rXVAKyG6bcGdh8kHkz0CA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1905-1830.delta" sparkle:deltaFrom="1830" length="2651514" type="application/octet-stream" sparkle:edSignature="fxUo3b37a6yb7CcPzhfjesnCI4yRNrVR1nh+m5MscbGAaDnMyqkLseiukFMVc6zObQ2+jqI1k8OxvYACw/pMBw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1905-1756.delta" sparkle:deltaFrom="1756" length="3472334" type="application/octet-stream" sparkle:edSignature="y1xFaI8i2d2CcgK2R5taGx9rNXiuZWVIuyoFEU1B9JmDCBNBYOuu76pDAU5EDVsXh444MAqdzZvzhBq0giDaAQ=="/>
             </sparkle:deltas>
         </item>
     </channel>
