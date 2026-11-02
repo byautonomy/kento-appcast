@@ -3,6 +3,60 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.4</title>
+            <pubDate>Sun, 01 Nov 2026 20:59:14 -0800</pubDate>
+            <sparkle:version>2224</sparkle:version>
+            <sparkle:shortVersionString>0.9.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.4, build 2224</h2>
+<h3>Kento's own render engine</h3>
+<ul>
+<li>Renders and the Viewer now go through Kento's own render engine, which works out a whole frame at once and runs the comp's separate branches side by side. It's on by default: Settings &gt; Render &gt; Render engine, both rows tagged Recommended.</li>
+<li>The picture is the same as before, to the last bit. Only the time changes.</li>
+<li>Heavy comps render much faster: across the show's 33 heavier Writes, about two and a half times as fast. A 274-node show comp renders its frames a shade faster than Nuke.</li>
+<li>In the Viewer, an edit is shown again in a quarter of a second or less, even on big comps, because the engine keeps what it worked out and redoes only what changed. Zoomed in, it works out only the part on screen.</li>
+<li>Every node renders through the engine, the deep nodes, the denoiser, Text2, Matte Refine and the stereo nodes included. Rendering several Writes of one comp reuses what the first already worked out.</li>
+<li>DeepWrite writes its deep files through the engine too, and the Viewer shows deep pictures and each view of a stereo comp through it.</li>
+<li>EXR, TIFF, PNG, DPX, JPEG and Targa files go through the engine, with the delivery presets' display transforms baked in the same way, and so do a QuickTime's frames.</li>
+<li>A few things still go the previous way, automatically and with the same picture: a Write (rather than a DeepWrite) of a deep picture, a file other than EXR with channels besides red, green, blue and alpha, and a comp in proxy; and a downscaled Viewer.</li>
+<li>Each Render engine row explains in plain words what it does, with a tag: Recommended, or Diagnostic for the experiment to leave off. Turn either row off to go back to the previous way.</li>
+</ul>
+<h3>Comparing in the Viewer</h3>
+<ul>
+<li>The wipe's handles show only with the pointer near its center, fading in and out; the line stays, dimmed until the pointer comes near.</li>
+<li>Hold Shift while turning the wipe to step by 45 degrees.</li>
+<li>The wipe's mix square works: drag it to mix A into B on the B side.</li>
+<li>The pointer no longer vanishes over the compare control or the other on-screen controls, and the move pointers look as they do in other apps (no more four-way star).</li>
+</ul>
+<h3>Picking colors</h3>
+<ul>
+<li>Click a color row's swatch to open the picker. The color wheel button is gone, so a row with the eyedropper keeps a longer slider.</li>
+<li>The red, green, blue and alpha toggles sit side by side as framed buttons: a filled square when on, an outline when off.</li>
+<li>The same across the panels: Settings' swatches open the picker, and a backdrop's last swatch shows a color wheel until a color of its own is chosen.</li>
+<li>On the Mac the picker is the system's color window, whose eyedropper picks from anywhere on the screen, not just Kento's windows.</li>
+</ul>
+<h3>The Node Graph</h3>
+<ul>
+<li>Wires stay put: a wire moves only when one of its own nodes moves, not while the Viewer renders or thumbnails arrive. A big comp's graph sits quiet while it works.</li>
+<li>Transform's node menu is in groups, as Filter's is: Position and size, Lens (with every lens model), Warp, Tracking, and Crop and bounding box.</li>
+</ul>
+<h3>Fixed and changed</h3>
+<ul>
+<li>A heavy comp whose gizmo turns its picture before a run of blurs no longer shows black in the Viewer for minutes.</li>
+<li>Comps with DasGrain render and match Nuke: random() in expressions, and Premult and Unpremult with an alpha outside 0 to 1.</li>
+<li>Merge2's mix and Sharpen read past an input's edge as Nuke does.</li>
+<li>DeepCrop on a flat picture no longer crashes.</li>
+<li>With two Viewers open, Roto's Layers panel follows its own node's selection.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.4.2224.zip" length="389642648" type="application/octet-stream" sparkle:edSignature="s9ioytuyZZVrR8A7n+eePsGZSCT2YFIxpJ3m23bAbu08owMSeii0kdT2JQnU+bYK7jHJpXDxxhmnnnCX6d4MBw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2224-2076.delta" sparkle:deltaFrom="2076" length="12369854" type="application/octet-stream" sparkle:edSignature="8mks70EHvuZEpPa0L30ikmV45czr4O1MTi0mIJOJw9lZuVsASWfVhq7+ThougBusXh/uVPWU5SjgIEGTAoUBAw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2224-1987.delta" sparkle:deltaFrom="1987" length="14354706" type="application/octet-stream" sparkle:edSignature="8TwqgLwsqPSYK0i7haPAVPDknqTP0AXxrIK5OYu27+XteqGHnAy49F5MhvMdmO/Ps7CMJE+R8vvDR4disCOWAQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2224-1932.delta" sparkle:deltaFrom="1932" length="14895050" type="application/octet-stream" sparkle:edSignature="YE6aHIz/4SYxtKKWTHgPm+YTtDir5ZNA/wLTOUOAzgV57AEfPOMG6+N0AQJLsUosvZlt7XkmZTGQ+DJP4MFjCA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.3</title>
             <pubDate>Sat, 31 Oct 2026 08:44:20 -0700</pubDate>
             <sparkle:version>2076</sparkle:version>
@@ -113,55 +167,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1987-1932.delta" sparkle:deltaFrom="1932" length="2598254" type="application/octet-stream" sparkle:edSignature="v5P4QRujrZFCk75bixImX2zZoIR7HXO5ZYe+F+f0yGZUODG9fVO9WoSifaji9l9A2YBKz3I7xRIzCv42nj+VDw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1987-1905.delta" sparkle:deltaFrom="1905" length="2975634" type="application/octet-stream" sparkle:edSignature="MVRGkC9WfeOTUrTlCD57t74xDIP7w+43XT5ASpGPQJePA1le8IpeynW3C0sjO2VWDLZVcapnBcq0+1qDJKhjBw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento1987-1871.delta" sparkle:deltaFrom="1871" length="3345190" type="application/octet-stream" sparkle:edSignature="Q9szXntj6zDfuJbOE/8ioQ9wLjnFzenBiDCFpWKm/8gUk/VvPVcpA6HMxy8wc8RcKvU31kgF50fJB/4oJghMBA=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.1</title>
-            <pubDate>Fri, 30 Oct 2026 05:44:09 -0700</pubDate>
-            <sparkle:version>1932</sparkle:version>
-            <sparkle:shortVersionString>0.9.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.1, build 1932</h2>
-<h3>New</h3>
-<ul>
-<li>The Viewer, refined. Exposure, gamma and saturation are meters on bar 2: drag anywhere on one (Shift for coarse, Option for fine), double-click for neutral, click to type, or use the scroll wheel and arrow keys. Gamma's scale is logarithmic. The channels are one strip; click a lit channel again to go back to RGB. Menus are as wide as their longest entry, and on a narrow Viewer whole groups fold away together, so nothing is cut off.</li>
-<li>The Viewer keeps up with changes made elsewhere: tool rows follow their node's values, the shown input follows a rename, the eyes menu follows the comp's stereo views, and menus follow a changed color config. A floating Viewer takes the keys.</li>
-<li>The Node Graph, refined. Long names keep their beginning and end, and text stays readable when zoomed out. Zoomed far out, landmarks are labeled: errors, the selection, Viewers, Reads and Writes. Hovering shows a node's name, and Find rings its matches.</li>
-<li>Node shapes by role: sources rounded on top, outputs on their foot, merges pointed, 3D nodes with their facets.</li>
-<li>Drop a free node on a wire and it goes into the wire, on the input that suits what the wire carries (a matte goes to the mask). Nodes already wired are never rewired by a move.</li>
-<li>Find: Return steps through the matches, Shift+Return steps back.</li>
-<li>Kento now looks for updates on its own, when it opens and every six hours, and offers a newer version with its release notes. Later offers it again in a day; Skip This Version waits for the next one. Settings &gt; General &gt; Updates turns this off.</li>
-</ul>
-<h3>Roto and paint</h3>
-<ul>
-<li>Box-select points across shapes, then drag, nudge (Option+arrow keys) or delete them together. Cmd+Option-click adds a point without changing the curve at any key.</li>
-<li>Cmd-drag a point pulls its feather. A corner's first drag moves the point, not a tangent. Drags keep their grab instead of jumping to the pointer.</li>
-<li>The transform jack: side ticks scale one way, Cmd skews, Cmd on the center moves the pivot (kept in the comp as the shape's transform center), and Shift keeps a move to x or y.</li>
-<li>Drawing: Option pans, Shift squares, Cmd draws from the center, Backspace drops the last point, and a dashed segment runs to the pointer. A new shape is selected whole and keyed when auto-key is on.</li>
-<li>A key is the whole shape's, feather included. Shapes outside their lifetime are hidden. When a shape is selected the others dim.</li>
-<li>Paint: Shift-drag up and down sets the brush's hardness, Cmd+Shift-drag its opacity.</li>
-<li>SplineWarp: a drag from a shape's outline moves the whole shape; the selected shape's corners and jack scale and rotate it; a selected point's tangents show and drag.</li>
-</ul>
-<h3>Faster</h3>
-<ul>
-<li>Comps of standard nodes render faster: the benchmark's small comp went from 0.090 to 0.076 s a frame. Sharpen runs in one step after its blur.</li>
-<li>The Node Graph draws faster, and the Viewer's info bar reads pixels at most once per screen refresh.</li>
-</ul>
-<h3>Fixed and changed</h3>
-<ul>
-<li>A wire dropped on a Viewer no longer connects inputs 1 and 2. Ports that share a side of a node are picked as themselves.</li>
-<li>Wires: a crossing run sits halfway between its nodes, and a wire into a Merge's A comes over the node rather than under it.</li>
-<li>Backdrops are followed from the moment a comp opens.</li>
-<li>The wipe handle follows the Viewer's compare settings before the picture has drawn.</li>
-<li>Merge works in one step even when its inputs have different bounding boxes, with the same result.</li>
-<li>Shapes drawn and edited in Kento open and draw the same in .nk.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.1.1932.zip" length="384393499" type="application/octet-stream" sparkle:edSignature="ojiGwp2LjkZbTKOrRQ5uJk0pA16S6QNlA65TGifdcl5V+Gh5MKlkiNZfsqtr6tUFNkWDYQr040ztewfBIC7YBg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1932-1905.delta" sparkle:deltaFrom="1905" length="2179102" type="application/octet-stream" sparkle:edSignature="1otV7ZP8orth0I3Rk3x7uOaVgNmAtx1Qsy+Bsh0B5ObRLy6fgDHeksd93izZsfSzSA264eEzCFiYkCOS30cZBQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1932-1871.delta" sparkle:deltaFrom="1871" length="2634898" type="application/octet-stream" sparkle:edSignature="ltAmFtAIp56UUWiDVycrxWsMAo8FebCFYEMKUxTrurco8OjBWsLwsIS3/8UeHzAqRsJnc0esDriNLqIcJOeBAg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento1932-1830.delta" sparkle:deltaFrom="1830" length="2947406" type="application/octet-stream" sparkle:edSignature="3TgA+LoNUW+wMJMpdmjKP3BhhHO2VMLGDJg7yGeX+6cjc9TNg/+hOpIs9vOUHkuQxMIq5OxU4ZMuaMjlTROgDg=="/>
             </sparkle:deltas>
         </item>
     </channel>
