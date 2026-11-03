@@ -3,6 +3,71 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.7</title>
+            <pubDate>Tue, 03 Nov 2026 04:05:00 -0800</pubDate>
+            <sparkle:version>2416</sparkle:version>
+            <sparkle:shortVersionString>0.9.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.7, build 2416</h2>
+<h3>The Read's panel</h3>
+<ul>
+<li>A quiet line under a Read's name says what its file is: its size, frames and layers, such as "1920 x 1080, 1001 to 1096, 3 layers".</li>
+<li><b>version</b> steps the file's version with its arrows, only to versions that have files on disk. Every "v002" in the path changes at once, the folder's and the file's, as one undo.</li>
+<li><b>Make relative</b> beside the version writes the file from the comp's folder ("../plates/..."); <b>Make full</b> writes it in full again.</li>
+<li>The <b>frame range</b> is one row: the first frame and what shows before it, then the last frame and what shows after it.</li>
+<li><b>Rescan</b> beside the original range reads the folder again; the frame range follows when it was the old original range.</li>
+<li>A <b>?</b> beside the input transform says how the Read's color space was chosen, or what the file itself says when it was set by hand.</li>
+<li>The format row reads "1920 x 1080, from the file", and the panel's labels are lower case, as designed.</li>
+</ul>
+<h3>Color</h3>
+<ul>
+<li>The Viewer's <b>look</b> menu, after the view, shows a look from the comp's config, or a <b>session CDL</b> loaded from a .cc, .cdl or .ccc file, before the display and view. For the eye only, and not saved with the comp; playing from the cache shows it too.</li>
+<li><b>This comp &gt; Colour &gt; Reading files by kind</b> sets the color space for 8-bit, 16-bit, log, float and movie files that don't say what they are, with <b>use the config's file rules first</b>. They're saved with the comp, and the comp panel's Colour tab has them too. A Nuke script opened in Kento brings its Project Settings' LUTs for each kind there.</li>
+</ul>
+<h3>Formats</h3>
+<ul>
+<li><b>Formats...</b> beside the comp's format lists every format the menus offer. Add your own (name, width, height, pixel aspect) or remove them; yours are kept with your preferences and are in every format menu.</li>
+<li>A size named in a format menu's <b>Custom size...</b> is kept the same way.</li>
+</ul>
+<h3>On-screen controls</h3>
+<ul>
+<li>A Transform's jack takes the transform's scale and skew, as the picture does: scaled more in x than y, its circle is an ellipse; skewed, it leans. It keeps its size on screen.</li>
+</ul>
+<h3>The Node Graph's settings</h3>
+<ul>
+<li>Settings &gt; Node Graph &gt; Wires is laid out as designed: Direct or Routed, Hop, Gap or Plain, and Off, Selected nodes or All for linked values, side by side; the thickness as a field and a slider, with a strip showing each kind of line at that thickness; the checks paired on a row each.</li>
+</ul>
+<h3>Focus mode</h3>
+<ul>
+<li>While a panel fills the window, the pane's tabs and menu square hide, and so does the Viewers panel's row of tabs.</li>
+<li>Settings &gt; Interface &gt; Focus: keep the tool bars, the transport, its timeline, and its frame and fps, each on or off; hide the controls after a number of seconds; panels slide in from the edge, open only on a click or key, or stay hidden; and <b>dim the image behind</b> a panel that has slid in.</li>
+</ul>
+<h3>The Timeline</h3>
+<ul>
+<li><b>Client notes</b>, the toggle beside Marks, shows the shot's review notes on the ruler: a yellow tick at each frame a note names, a white dot under it when the note has drawing there. Point at one for its words, who wrote it and when. The comp must be saved in a shot's folder.</li>
+</ul>
+<h3>Sound</h3>
+<ul>
+<li>While stopped, moving the playhead plays a moment of the comp's sound there, so you can find a beat by ear. <b>Scrub the sound</b> in the audio lane's menu, or Preferences &gt; Viewer &gt; Playback, turns it off.</li>
+</ul>
+<h3>Report a problem</h3>
+<ul>
+<li><b>the last minute</b> goes with a report: your undo steps and the log's lines from the minute before the window opened, as text, so what just happened can be sent without having recorded it.</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>A Nuke script saved back from Kento keeps its color management (the OCIO config, working space and LUTs): an ACES script no longer opens in Nuke on Nuke's default config. A comp whose config you changed in Kento leaves them out.</li>
+<li>A rec709 show's Reads read as Rec.709 in their pixels, not only in what the panel said, even when another comp had read the same file first.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.7.2416.zip" length="375957547" type="application/octet-stream" sparkle:edSignature="u1AGfT3MrJv/+tkuNEhuJvuvqkFdQEz9SvfGimCQsJwSAQ9A39VE5P0hAEFen2G5BTIB/LUSYVRGJeZizRpNDA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2416-2394.delta" sparkle:deltaFrom="2394" length="3204258" type="application/octet-stream" sparkle:edSignature="/FrQdpHkIMhXE8nFOV+i4/31y0bW1ZnY42i1a1ViI6wB8lpaHeFsz+GQcoYjWOiWU6+vxrNPuNU7Z2C+q4pFAA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2416-2260.delta" sparkle:deltaFrom="2260" length="6576962" type="application/octet-stream" sparkle:edSignature="oaSbA96Deiv2o6YyYy7bLnvi8Vwjv06xUbLEIKWk942g/a15s9U5iHZGbl9TUTJY0RAyy061r1UZzTpc3hysCg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2416-2224.delta" sparkle:deltaFrom="2224" length="6685678" type="application/octet-stream" sparkle:edSignature="mCbSqoFyFmg6Y0ey6oPhw/B80PZangsX9brUNz9ohwrcwxqrvJS3+p1QsrVArBokIQVrdAx1uPlcI978rbLYCg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.6</title>
             <pubDate>Tue, 03 Nov 2026 00:07:48 -0800</pubDate>
             <sparkle:version>2394</sparkle:version>
@@ -164,60 +229,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2260-2224.delta" sparkle:deltaFrom="2224" length="2144566" type="application/octet-stream" sparkle:edSignature="X2RmkVayXhDzdSrEkNpCwbQNMW1MVMwCbX2XVwXK29EejSPpo4mQSqkVxpvhD9bts8/nfhglko5OVWNO+FGWBA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2260-2076.delta" sparkle:deltaFrom="2076" length="12703306" type="application/octet-stream" sparkle:edSignature="3SvtSAJucjtW8pJG5wZvrvsvBYadBXWoxR8fzr3FNEyMJdCVxjrAXV9cgVasxQNeaZdqEroDsS59CL9aid+wBw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2260-1987.delta" sparkle:deltaFrom="1987" length="14520438" type="application/octet-stream" sparkle:edSignature="jAZZXKWTlN0uvlND7zlz70Bxg6KPgknKSEWzRjvHrLWEAQbJUfcwW4fjofvCebXgCvSt2Bdd6DdQEFWcgs7iBg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.4</title>
-            <pubDate>Sun, 01 Nov 2026 20:59:14 -0800</pubDate>
-            <sparkle:version>2224</sparkle:version>
-            <sparkle:shortVersionString>0.9.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.4, build 2224</h2>
-<h3>Kento's own render engine</h3>
-<ul>
-<li>Renders and the Viewer now go through Kento's own render engine, which works out a whole frame at once and runs the comp's separate branches side by side. It's on by default: Settings &gt; Render &gt; Render engine, both rows tagged Recommended.</li>
-<li>The picture is the same as before, to the last bit. Only the time changes.</li>
-<li>Heavy comps render much faster: across the show's 33 heavier Writes, about two and a half times as fast. A 274-node show comp renders its frames a shade faster than Nuke.</li>
-<li>In the Viewer, an edit is shown again in a quarter of a second or less, even on big comps, because the engine keeps what it worked out and redoes only what changed. Zoomed in, it works out only the part on screen.</li>
-<li>Every node renders through the engine, the deep nodes, the denoiser, Text2, Matte Refine and the stereo nodes included. Rendering several Writes of one comp reuses what the first already worked out.</li>
-<li>DeepWrite writes its deep files through the engine too, and the Viewer shows deep pictures and each view of a stereo comp through it.</li>
-<li>EXR, TIFF, PNG, DPX, JPEG and Targa files go through the engine, with the delivery presets' display transforms baked in the same way, and so do a QuickTime's frames.</li>
-<li>A few things still go the previous way, automatically and with the same picture: a Write (rather than a DeepWrite) of a deep picture, a file other than EXR with channels besides red, green, blue and alpha, and a comp in proxy; and a downscaled Viewer.</li>
-<li>Each Render engine row explains in plain words what it does, with a tag: Recommended, or Diagnostic for the experiment to leave off. Turn either row off to go back to the previous way.</li>
-</ul>
-<h3>Comparing in the Viewer</h3>
-<ul>
-<li>The wipe's handles show only with the pointer near its center, fading in and out; the line stays, dimmed until the pointer comes near.</li>
-<li>Hold Shift while turning the wipe to step by 45 degrees.</li>
-<li>The wipe's mix square works: drag it to mix A into B on the B side.</li>
-<li>The pointer no longer vanishes over the compare control or the other on-screen controls, and the move pointers look as they do in other apps (no more four-way star).</li>
-</ul>
-<h3>Picking colors</h3>
-<ul>
-<li>Click a color row's swatch to open the picker. The color wheel button is gone, so a row with the eyedropper keeps a longer slider.</li>
-<li>The red, green, blue and alpha toggles sit side by side as framed buttons: a filled square when on, an outline when off.</li>
-<li>The same across the panels: Settings' swatches open the picker, and a backdrop's last swatch shows a color wheel until a color of its own is chosen.</li>
-<li>On the Mac the picker is the system's color window, whose eyedropper picks from anywhere on the screen, not just Kento's windows.</li>
-</ul>
-<h3>The Node Graph</h3>
-<ul>
-<li>Wires stay put: a wire moves only when one of its own nodes moves, not while the Viewer renders or thumbnails arrive. A big comp's graph sits quiet while it works.</li>
-<li>Transform's node menu is in groups, as Filter's is: Position and size, Lens (with every lens model), Warp, Tracking, and Crop and bounding box.</li>
-</ul>
-<h3>Fixed and changed</h3>
-<ul>
-<li>A heavy comp whose gizmo turns its picture before a run of blurs no longer shows black in the Viewer for minutes.</li>
-<li>Comps with DasGrain render and match Nuke: random() in expressions, and Premult and Unpremult with an alpha outside 0 to 1.</li>
-<li>Merge2's mix and Sharpen read past an input's edge as Nuke does.</li>
-<li>DeepCrop on a flat picture no longer crashes.</li>
-<li>With two Viewers open, Roto's Layers panel follows its own node's selection.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.4.2224.zip" length="389642648" type="application/octet-stream" sparkle:edSignature="s9ioytuyZZVrR8A7n+eePsGZSCT2YFIxpJ3m23bAbu08owMSeii0kdT2JQnU+bYK7jHJpXDxxhmnnnCX6d4MBw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2224-2076.delta" sparkle:deltaFrom="2076" length="12369854" type="application/octet-stream" sparkle:edSignature="8mks70EHvuZEpPa0L30ikmV45czr4O1MTi0mIJOJw9lZuVsASWfVhq7+ThougBusXh/uVPWU5SjgIEGTAoUBAw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2224-1987.delta" sparkle:deltaFrom="1987" length="14354706" type="application/octet-stream" sparkle:edSignature="8TwqgLwsqPSYK0i7haPAVPDknqTP0AXxrIK5OYu27+XteqGHnAy49F5MhvMdmO/Ps7CMJE+R8vvDR4disCOWAQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2224-1932.delta" sparkle:deltaFrom="1932" length="14895050" type="application/octet-stream" sparkle:edSignature="YE6aHIz/4SYxtKKWTHgPm+YTtDir5ZNA/wLTOUOAzgV57AEfPOMG6+N0AQJLsUosvZlt7XkmZTGQ+DJP4MFjCA=="/>
             </sparkle:deltas>
         </item>
     </channel>
