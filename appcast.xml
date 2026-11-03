@@ -3,6 +3,62 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.10</title>
+            <pubDate>Tue, 03 Nov 2026 13:34:53 -0800</pubDate>
+            <sparkle:version>2477</sparkle:version>
+            <sparkle:shortVersionString>0.9.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.10, build 2477</h2>
+<h3>The planar tracker</h3>
+<ul>
+<li>The PlanarTracker's panel is rebuilt to its design. The <b>Track</b> tab has <b>operation</b> (<b>Track</b> or <b>Steady</b>), the <b>reference</b> frame with <b>Set</b> and <b>Go</b>, then <b>Pattern</b> and <b>Tracking</b>. <b>Surface</b> holds the plane's corners, and <b>Output</b> the tracked corners with <b>Create pin</b>.</li>
+<li><b>Pattern</b>:
+<ul>
+<li><b>track outside the shape</b>;</li>
+<li>an occlusion <b>matte</b> from any node in the comp, its alpha or red, so a hand passing in front is left out;</li>
+<li>five <b>motion</b> toggles (translate, scale, rotate, shear, perspective) that make the motion model;</li>
+<li><b>channel</b>, and <b>adapt to light changes</b>.</li>
+</ul></li>
+<li><b>tracker</b>: <b>Hybrid</b> is new. After the features are fitted, every pixel of the plane lines it up with the reference frame. It lands closer (ten times closer on our test plates), follows a change of light, and carries the plane on through frames where too few features are left.</li>
+<li><b>Tracking</b>:
+<ul>
+<li><b>Analyze</b>, and step or run a frame at a time, either way;</li>
+<li><b>trim</b> the keys before, after, at this frame or between keys;</li>
+<li><b>search area</b>; <b>share</b>, <b>refine</b> and <b>smooth</b>;</li>
+<li>a confidence for every frame, with <b>mark below</b> and <b>stop when below</b>.</li>
+</ul></li>
+<li><b>Steady</b> holds the plane still where it is at the reference frame, so any drift in the track shows as the plane moving.</li>
+<li>In the Viewer, the tracked plane draws with a grid and short trails behind its corners. The features used show green and those left out red, with their counts. A track bar sits under the Viewer's bars: step buttons, the motion toggles, search, <b>Steady</b>, <b>Refine</b> and <b>Export</b>.</li>
+<li>A <b>Confidence</b> strip under the Viewer runs along the shot. The frames under <b>mark below</b> are shaded and the run at the playhead is named ("1005 to 1007 low"). Click in it to go to a frame.</li>
+<li><b>Refine</b> opens the four corners magnified. This frame's are on top; under each is the reference frame, or the frame before, carried by the track. Drag in a loupe to nudge its corner, blended over a few frames either side. Nudges are kept when you track again. <b>Previous low frame</b> and <b>Next low frame</b> step through the weak frames.</li>
+<li><b>Export</b> makes nodes from the track:
+<ul>
+<li>a Planar Transform, live or baked;</li>
+<li>a corner pin, relative or absolute;</li>
+<li>a stabilize or a match-move;</li>
+<li>a Tracker with a track at each corner, for Nuke.</li>
+</ul>
+The matrix, Roto, mesh and 3D items are on the menu, dim, and say what's missing.</li>
+<li>Not in Kento yet, shown dim: tracking a Roto layer, point tracks to help the plane, <b>max motion</b>, <b>Stop</b> and <b>Track between keys</b>, motion blur, a lens, and the panel's <b>Corner pin</b>, <b>Stabilize</b> and <b>Match-move</b> operations (use <b>Export</b>).</li>
+</ul>
+<h3>Remote control</h3>
+<ul>
+<li><b>planar.track</b> steps or runs from one frame to another. <b>planar.trim</b>, <b>planar.nudge</b> and <b>planar.export</b> are new.</li>
+</ul>
+<h3>The manual</h3>
+<ul>
+<li>The tracking chapter covers the planar tracker.</li>
+<li>Seven new diagrams: a comp's files, the Text row, the Settings window, the Shortcuts keyboard, a kernel's parts, the Shot panel, and how a projection works, seen from above.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.10.2477.zip" length="375881889" type="application/octet-stream" sparkle:edSignature="HQLUSv34NxIN0jpkkSnnWKjQCCSByGaidN9NCEAlFISPk3oNT/heDE6+tGnzbjLjRYJDCxrLeBgx8xfoD92qDQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2477-2466.delta" sparkle:deltaFrom="2466" length="2130786" type="application/octet-stream" sparkle:edSignature="IujXmTWsujNa6Pqe0nh9G09Awm1v6skUbYPzadcODoIDFKYYzVPD/g/ozbWWbtWtmMvUsDqjfI3/hbxuC4fbCg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2477-2451.delta" sparkle:deltaFrom="2451" length="2732598" type="application/octet-stream" sparkle:edSignature="R/piqK8ZNlUgGU+ZJQgGftxdHipnJqozrBrSSALI2j0NFMTjHcFzqV/6dxvlJNG2nQty4BmZQbil0bhmAA8tCA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2477-2416.delta" sparkle:deltaFrom="2416" length="9403786" type="application/octet-stream" sparkle:edSignature="0lFx5R/7dIKyKwY1wV12H+UFCMFsnGesOYR1NrinC5Bp0DPodm7S8AkcsZdEtPMjLI804+lU1Fr//unoeIsmDQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.9</title>
             <pubDate>Tue, 03 Nov 2026 11:51:09 -0800</pubDate>
             <sparkle:version>2466</sparkle:version>
@@ -124,71 +180,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2451-2416.delta" sparkle:deltaFrom="2416" length="8683146" type="application/octet-stream" sparkle:edSignature="WqS1avhjLxNLnXqedBRFRFmBhWlgEYCjEhXwfoox9v790mzqVwUz1PZTs8I+9il/F1ejKFC2qUJruq0H7NknCQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2451-2394.delta" sparkle:deltaFrom="2394" length="9533102" type="application/octet-stream" sparkle:edSignature="QmJupi/Y811gr/ZhJutrZ9QFB/fJc42qTCti4MZGA3b7yuLErufkimPFqqXG/eOqF017sLFxmIrqIYkSbIW3Dw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2451-2260.delta" sparkle:deltaFrom="2260" length="10681206" type="application/octet-stream" sparkle:edSignature="maDbBuaN44d+tf7sfwjprIlyKy7m4+Nq1Wqh/htYnfqEmFpa1beFLnApqcDgujrmphL9kwsV9AnxuuHflMUhCA=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.7</title>
-            <pubDate>Tue, 03 Nov 2026 04:05:00 -0800</pubDate>
-            <sparkle:version>2416</sparkle:version>
-            <sparkle:shortVersionString>0.9.7</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.7, build 2416</h2>
-<h3>The Read's panel</h3>
-<ul>
-<li>A quiet line under a Read's name says what its file is: its size, frames and layers, such as "1920 x 1080, 1001 to 1096, 3 layers".</li>
-<li><b>version</b> steps the file's version with its arrows, only to versions that have files on disk. Every "v002" in the path changes at once, the folder's and the file's, as one undo.</li>
-<li><b>Make relative</b> beside the version writes the file from the comp's folder ("../plates/..."); <b>Make full</b> writes it in full again.</li>
-<li>The <b>frame range</b> is one row: the first frame and what shows before it, then the last frame and what shows after it.</li>
-<li><b>Rescan</b> beside the original range reads the folder again; the frame range follows when it was the old original range.</li>
-<li>A <b>?</b> beside the input transform says how the Read's color space was chosen, or what the file itself says when it was set by hand.</li>
-<li>The format row reads "1920 x 1080, from the file", and the panel's labels are lower case, as designed.</li>
-</ul>
-<h3>Color</h3>
-<ul>
-<li>The Viewer's <b>look</b> menu, after the view, shows a look from the comp's config, or a <b>session CDL</b> loaded from a .cc, .cdl or .ccc file, before the display and view. For the eye only, and not saved with the comp; playing from the cache shows it too.</li>
-<li><b>This comp &gt; Colour &gt; Reading files by kind</b> sets the color space for 8-bit, 16-bit, log, float and movie files that don't say what they are, with <b>use the config's file rules first</b>. They're saved with the comp, and the comp panel's Colour tab has them too. A Nuke script opened in Kento brings its Project Settings' LUTs for each kind there.</li>
-</ul>
-<h3>Formats</h3>
-<ul>
-<li><b>Formats...</b> beside the comp's format lists every format the menus offer. Add your own (name, width, height, pixel aspect) or remove them; yours are kept with your preferences and are in every format menu.</li>
-<li>A size named in a format menu's <b>Custom size...</b> is kept the same way.</li>
-</ul>
-<h3>On-screen controls</h3>
-<ul>
-<li>A Transform's jack takes the transform's scale and skew, as the picture does: scaled more in x than y, its circle is an ellipse; skewed, it leans. It keeps its size on screen.</li>
-</ul>
-<h3>The Node Graph's settings</h3>
-<ul>
-<li>Settings &gt; Node Graph &gt; Wires is laid out as designed: Direct or Routed, Hop, Gap or Plain, and Off, Selected nodes or All for linked values, side by side; the thickness as a field and a slider, with a strip showing each kind of line at that thickness; the checks paired on a row each.</li>
-</ul>
-<h3>Focus mode</h3>
-<ul>
-<li>While a panel fills the window, the pane's tabs and menu square hide, and so does the Viewers panel's row of tabs.</li>
-<li>Settings &gt; Interface &gt; Focus: keep the tool bars, the transport, its timeline, and its frame and fps, each on or off; hide the controls after a number of seconds; panels slide in from the edge, open only on a click or key, or stay hidden; and <b>dim the image behind</b> a panel that has slid in.</li>
-</ul>
-<h3>The Timeline</h3>
-<ul>
-<li><b>Client notes</b>, the toggle beside Marks, shows the shot's review notes on the ruler: a yellow tick at each frame a note names, a white dot under it when the note has drawing there. Point at one for its words, who wrote it and when. The comp must be saved in a shot's folder.</li>
-</ul>
-<h3>Sound</h3>
-<ul>
-<li>While stopped, moving the playhead plays a moment of the comp's sound there, so you can find a beat by ear. <b>Scrub the sound</b> in the audio lane's menu, or Preferences &gt; Viewer &gt; Playback, turns it off.</li>
-</ul>
-<h3>Report a problem</h3>
-<ul>
-<li><b>the last minute</b> goes with a report: your undo steps and the log's lines from the minute before the window opened, as text, so what just happened can be sent without having recorded it.</li>
-</ul>
-<h3>Fixes</h3>
-<ul>
-<li>A Nuke script saved back from Kento keeps its color management (the OCIO config, working space and LUTs): an ACES script no longer opens in Nuke on Nuke's default config. A comp whose config you changed in Kento leaves them out.</li>
-<li>A rec709 show's Reads read as Rec.709 in their pixels, not only in what the panel said, even when another comp had read the same file first.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.7.2416.zip" length="375957547" type="application/octet-stream" sparkle:edSignature="u1AGfT3MrJv/+tkuNEhuJvuvqkFdQEz9SvfGimCQsJwSAQ9A39VE5P0hAEFen2G5BTIB/LUSYVRGJeZizRpNDA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2416-2394.delta" sparkle:deltaFrom="2394" length="3204258" type="application/octet-stream" sparkle:edSignature="/FrQdpHkIMhXE8nFOV+i4/31y0bW1ZnY42i1a1ViI6wB8lpaHeFsz+GQcoYjWOiWU6+vxrNPuNU7Z2C+q4pFAA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2416-2260.delta" sparkle:deltaFrom="2260" length="6576962" type="application/octet-stream" sparkle:edSignature="oaSbA96Deiv2o6YyYy7bLnvi8Vwjv06xUbLEIKWk942g/a15s9U5iHZGbl9TUTJY0RAyy061r1UZzTpc3hysCg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2416-2224.delta" sparkle:deltaFrom="2224" length="6685678" type="application/octet-stream" sparkle:edSignature="mCbSqoFyFmg6Y0ey6oPhw/B80PZangsX9brUNz9ohwrcwxqrvJS3+p1QsrVArBokIQVrdAx1uPlcI978rbLYCg=="/>
             </sparkle:deltas>
         </item>
     </channel>
