@@ -3,6 +3,54 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.11</title>
+            <pubDate>Tue, 03 Nov 2026 15:40:24 -0800</pubDate>
+            <sparkle:version>2490</sparkle:version>
+            <sparkle:shortVersionString>0.9.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.11, build 2490</h2>
+<h3>Heal, Dust and Wire removal</h3>
+<ul>
+<li>Three repair tools of Kento's own in RotoPaint's row, after Clone and Reveal. Their settings are on the row's <b>repair</b> menu.</li>
+<li><b>Heal</b> paints a blemish out. Around the stroke, it fills from the picture round it with its texture, or smoothly. From an offset (Cmd-click a source, as for Clone), it takes the tone at the stroke's edge.</li>
+<li><b>Dust</b> takes out specks that are there on one frame and not the next. Each pixel is compared with the frames either side and replaced only where it differs from them by more than the threshold, by their median or the nearest clean frame. It works on shots where the camera holds still.</li>
+<li><b>Wire removal</b> paints along a wire or rig and fills it across from its edges. Filling from other frames or a clean plate is on the menu, dim.</li>
+<li>A .nk writes each as a clone stroke; Nuke shows a plain clone where Kento shows the repair.</li>
+</ul>
+<h3>Clones</h3>
+<ul>
+<li><b>Edit &gt; Clone</b> (<b>Alt+K</b>) puts a clone of each selected node beside it, as in Nuke. A clone's settings are its original's: change one in either node and both change, keys included. Its input and place are its own.</li>
+<li><b>Edit &gt; Declone</b> (<b>Shift+Alt+K</b>) makes clones nodes of their own again, keeping their settings.</li>
+<li>A .nk writes clones as Nuke does, and Nuke opens them as clones. A script's clones now open in Kento as live clones, not copies.</li>
+</ul>
+<h3>Roto's Tracking tab</h3>
+<ul>
+<li>The picked shape's layer, or the selected shapes, tracked as one plane through the Roto's input with the planar tracker. The shapes above leave the track out where they pass in front. The motion is keyed into the layer's or shapes' transform, as Nuke keys a tracked layer, so the shapes follow the picture.</li>
+<li><b>Analyze</b> forward and back over in to out, the step buttons, the five motion toggles, <b>tolerance</b>, <b>adapt to light</b>, <b>every pixel refines it</b>, a confidence summary, and <b>Export track</b> to make a PlanarTracker of the track.</li>
+<li>Not in Kento yet, shown dim: selected points, follow a track, points and mesh layers, edits kept on top, Stay linked.</li>
+</ul>
+<h3>Roto</h3>
+<ul>
+<li><b>invert</b> and <b>motion blur on</b> each have a row and a key diamond in Selected shape, so they can change over time. Keyed, they switch halfway between an off key and an on key.</li>
+<li>The curvature comb draws on X-spline shapes too.</li>
+</ul>
+<h3>Properties' size</h3>
+<ul>
+<li>The parts of Kento's own panels that stayed at 100% now follow <b>Properties</b> in Settings &gt; Interface &gt; Sizes. These include the Read's version chip, the header's file line, MultiMerge's layer list, and several panels' buttons, fields and labels.</li>
+</ul>
+<h3>Remote control</h3>
+<ul>
+<li><b>roto.track_plane</b> and <b>roto.export_track</b> are new.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.11.2490.zip" length="375951366" type="application/octet-stream" sparkle:edSignature="SKhh2Rp1oRcUcuLeaNDt8j9+UClRQsUjtdUEHVw3QFczg0V1o08IUGXdLHopuEne/a8zlrrVRUJ5VS3RC/MtDA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2490-2477.delta" sparkle:deltaFrom="2477" length="1918106" type="application/octet-stream" sparkle:edSignature="b0CsHw2buDJlI+kt+070xFcPPoqhSAU3n/x7PFJOaoeG7cfY00uUz73kuz3b1HTAa+iWwa5goa538crRmM10Cg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2490-2466.delta" sparkle:deltaFrom="2466" length="2498586" type="application/octet-stream" sparkle:edSignature="Vk2WslZM6ObtzXlQjTyYScu6l3rFGi3yzE7J6kSF7k5rSb4boheLBOcaz6E/9LNwCFHiMipWjqNY1VyCLBoNCg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2490-2451.delta" sparkle:deltaFrom="2451" length="3123578" type="application/octet-stream" sparkle:edSignature="qZ1W4pFu5NcYO1ZrrToeH4IJtxUra2B81Zuh8sBtK35oolj4orsNn3yc0WWYNC1zGnLcINUrglOfXsTsQFuVCQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.10</title>
             <pubDate>Tue, 03 Nov 2026 13:34:53 -0800</pubDate>
             <sparkle:version>2477</sparkle:version>
@@ -104,82 +152,6 @@ The matrix, Roto, mesh and 3D items are on the menu, dim, and say what's missing
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2466-2451.delta" sparkle:deltaFrom="2451" length="2350766" type="application/octet-stream" sparkle:edSignature="pRGXTk4c3xRJ6P1g7QZ6n37DR/Itp7HrSQazgD4yMr7H/I8vMm4GtHyzEiejnRu1UtxnMvEGStnkRAY3N2FbAg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2466-2416.delta" sparkle:deltaFrom="2416" length="9182562" type="application/octet-stream" sparkle:edSignature="caxEQAshloV5mIPHSL1XyKoO3bSkP/54SmgaKqXyT08IA1XdHKVS/qOm7/bDNI/5AWCwiRm6/xKTjuD3htXGBw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2466-2394.delta" sparkle:deltaFrom="2394" length="10030270" type="application/octet-stream" sparkle:edSignature="CMAK5shfjJnc0bSzgd7eKJrCpN4YgYuCpd686f/8GUjPzxcZIsG+hpricQNlCIBQM96TM3obvZKMKxWQOA0nCg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.8</title>
-            <pubDate>Tue, 03 Nov 2026 08:06:03 -0800</pubDate>
-            <sparkle:version>2451</sparkle:version>
-            <sparkle:shortVersionString>0.9.8</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.8, build 2451</h2>
-<h3>The color picker</h3>
-<ul>
-<li>Every color swatch opens Kento's own color picker: a square of saturation and value beside a hue strip, drawn as your display shows them.</li>
-<li><b>RGB</b> (with alpha, where the color has one) and <b>HSV</b> are linear values, as the comp works in them, and can go past 1. The menu at the end of the hex row shows them in another of the config's spaces; the knob always gets the working space.</li>
-<li><b>hex</b> is the color as the display shows it; type a code to set it.</li>
-<li><b>Pick from the Viewer</b>: a point, or the average of an area you drag, of the picture coming into the node (<b>before</b>) or the one it makes (<b>after</b>).</li>
-<li><b>Screen...</b> opens the system's color window, to pick from anywhere on the screen.</li>
-<li><b>recent</b> keeps the last six colors you chose; <b>swatches</b> are your own (<b>+</b> adds one, right-click removes it). Both are kept with your preferences.</li>
-</ul>
-<h3>The Viewer</h3>
-<ul>
-<li>The input process works, as in Nuke: name any image node <b>VIEWER_INPUT</b> (a grade, a group) and the Viewer shows its picture through it, for the eye only. <b>IP</b> on bar 1 turns it off and on. The pixel readout and the scopes read the picture itself. A .nk keeps a Viewer's IP turned off and another node's name.</li>
-</ul>
-<h3>Motion</h3>
-<ul>
-<li>The Motion window's <b>Edit</b> works: the motion as Nuke's expression, to change as you like; Apply writes it onto the knobs, <code>curve</code> standing for the knob's own keys.</li>
-<li>Each setting of a motion (amplitude, frequency, roughness...) can be linked to another knob with the link button at the end of its row: the motion follows that knob, live, and a bake keeps its values.</li>
-</ul>
-<h3>The Node Graph</h3>
-<ul>
-<li><b>⌥H</b> (Edit &gt; Node &gt; Hide input) hides a node's input wire, leaving a short stub at the input; it shows dashed while the node or its source is selected. The Node tab's <b>hide input</b> does the same, and a .nk's hide input comes in and goes back.</li>
-<li><b>⌘F7</b> to <b>⌘F10</b> keep the Node Graph's view, zoom and group; <b>⇧F8</b> to <b>⇧F10</b> go back to them (the first from Edit &gt; Node Graph location).</li>
-<li><b>⇧⌘B</b> bookmarks the selected nodes.</li>
-<li><b>⌥↑</b> and <b>⌥↓</b> (Edit &gt; Node &gt; Version up and down) step the selected Reads to their next or previous version on disk, and Writes one version on or back.</li>
-</ul>
-<h3>Tracking</h3>
-<ul>
-<li>A track handed over shows the point it lost in a dashed box, "lost at" its frame, and, selected, a card saying when it was handed over and the offset kept.</li>
-</ul>
-<h3>Roto</h3>
-<ul>
-<li><b>Per-point feather</b>, under Selected shape on the Roto tab: how far the point picked in the Viewer has its feather point, in pixels. Change it and the feather moves along the way it stands out, or straight out from the shape for a point with no feather yet.</li>
-<li>The Dope Sheet opens a Roto or RotoPaint into its shapes and strokes, each with its tool's icon and its lifetime as a bar in its color: drag an end to change that frame, or the bar to slide it. <b>This frame</b> keeps only what's drawn at the current frame.</li>
-<li><b>Freehand</b> (<b>⇧V</b>) draws a shape by hand: drag round the outline and it becomes a smooth Bezier.</li>
-</ul>
-<h3>Report a problem</h3>
-<ul>
-<li>A report filed in the studio bug tracker now takes its .zip with it (the comp, every picture, the voice note), up to 100 MB; a bigger one stays on your Mac and the note says so.</li>
-<li><b>Help &gt; My reports</b> shows how each filed report stands in the tracker: Open, In progress, Resolved or Won't fix, with the pipeline team's reply under it.</li>
-</ul>
-<h3>The look</h3>
-<ul>
-<li>Each pane's menu (split, float, its panels) is a small icon at the end of its tab row, where a blank square was. The Viewers panel, alone in its pane, shows one row: its strip, with the same icon.</li>
-<li>One error red everywhere: a node's error glow and the error card use the same red.</li>
-<li>The transport's buttons are outlines: bars and triangles at the ends, a chevron a frame either way.</li>
-<li>A Read's <b>Colour</b> tab says what its file tells of its color: file type, bit depth, what the file says, the rules that match, every guess, and what it's read as.</li>
-</ul>
-<h3>Fixes</h3>
-<ul>
-<li>The Dope Sheet's rows follow an undo at once (a shape's keys moved back showed where they had been).</li>
-<li>The Timeline under the Viewer is never cut off: in a narrow window its transport line shows in full below the ruler, and so does its sound lane.</li>
-</ul>
-<h3>Color</h3>
-<ul>
-<li>A Nuke script saved back from Kento writes the kinds you chose in This comp &gt; Colour &gt; Reading files by kind as its Project Settings' LUTs.</li>
-</ul>
-<h3>The manual</h3>
-<ul>
-<li>Every guide chapter now starts with a Try it; the keyboard shortcuts chapter's shows how to look a key up and give a free key an action.</li>
-<li>The getting-started chapters have them too: make room for the picture and put the window back, save and version up a comp, find a key and a node's help. Getting help's page on reporting a problem now matches the window.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.8.2451.zip" length="375604610" type="application/octet-stream" sparkle:edSignature="aQUICkyIqwC7Nd/HM0NsVS/KOypzDood66Z56U3gAnWwOXvE06oGyJEeR1nrEpq8FN3LX2740BQOh8/d995aDA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2451-2416.delta" sparkle:deltaFrom="2416" length="8683146" type="application/octet-stream" sparkle:edSignature="WqS1avhjLxNLnXqedBRFRFmBhWlgEYCjEhXwfoox9v790mzqVwUz1PZTs8I+9il/F1ejKFC2qUJruq0H7NknCQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2451-2394.delta" sparkle:deltaFrom="2394" length="9533102" type="application/octet-stream" sparkle:edSignature="QmJupi/Y811gr/ZhJutrZ9QFB/fJc42qTCti4MZGA3b7yuLErufkimPFqqXG/eOqF017sLFxmIrqIYkSbIW3Dw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2451-2260.delta" sparkle:deltaFrom="2260" length="10681206" type="application/octet-stream" sparkle:edSignature="maDbBuaN44d+tf7sfwjprIlyKy7m4+Nq1Wqh/htYnfqEmFpa1beFLnApqcDgujrmphL9kwsV9AnxuuHflMUhCA=="/>
             </sparkle:deltas>
         </item>
     </channel>
