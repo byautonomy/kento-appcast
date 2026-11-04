@@ -3,6 +3,36 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.21</title>
+            <pubDate>Wed, 04 Nov 2026 11:22:05 -0800</pubDate>
+            <sparkle:version>2617</sparkle:version>
+            <sparkle:shortVersionString>0.9.21</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.21, build 2617</h2>
+<h3>Paint</h3>
+<ul>
+<li>Much faster: Paint now works only where its strokes are and passes the rest of the picture straight through. A UHD frame with no paint costs nothing, and a stroke on a 4K plate comes back in about a second, where it took over 40.</li>
+<li>Your tablet's pressure now reaches the paint, in Paint and RotoPaint.</li>
+<li>New tool icons, one set for Paint and RotoPaint: Dodge is a sun and Burn a flame, Clone a stamp, Dust a broom, Smear a fingertip.</li>
+<li>Grain is a chip on the strip with its own menu (off, or the plate's own), no longer a card over the picture.</li>
+<li>Fixed: the tiles around a painted area could come out black.</li>
+</ul>
+<h3>Roto and RotoPaint</h3>
+<ul>
+<li>Delete or Backspace takes out the picked shapes and strokes: a shape clicked, strokes clicked, or everything a box drag takes in.</li>
+<li>Cmd+X, Cmd+C and Cmd+V cut, copy and paste shapes and strokes, into the same node or another, even in another comp.</li>
+<li>The Viewer's right-click menu has Cut, Copy, Paste and Delete.</li>
+<li>A box drag now picks paint strokes as well as points.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.21.2617.zip" length="427196867" type="application/octet-stream" sparkle:edSignature="h0Tht9a4rLeO3/zZhdluBcXKdfBUjfwYx+7hlE9bzkslE9GbzdURpmm23S8kgt4YIvFiTuuT5gCxLPLfocI/CQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2617-2606.delta" sparkle:deltaFrom="2606" length="2567318" type="application/octet-stream" sparkle:edSignature="3yoGkeeArzq7qLNO4xyxSp0WMadqP6wboIWSAWKC4I6w1Lo2cydVKoe79PhT8DkoZ0RedbXFuJbxAABdt7KEDg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2617-2586.delta" sparkle:deltaFrom="2586" length="32893314" type="application/octet-stream" sparkle:edSignature="uAOiqbES18zjSjlUs8A2O8g26ZEmyLy9jN5k9gmppCG68plhi00n6xGF6AIrKxK+2DE0MG/0v3Hz9y0tQ9Y/BA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2617-2571.delta" sparkle:deltaFrom="2571" length="33142806" type="application/octet-stream" sparkle:edSignature="B10GHerw+YM+NwwYc6gbVIuDrs4f5PHY0Xsx1mF/hKm3V5QAJ4fJy8BhKoW5Xw4ECj6DvfmEZBe3Qlsn2dfYAQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.20</title>
             <pubDate>Wed, 04 Nov 2026 09:57:54 -0800</pubDate>
             <sparkle:version>2606</sparkle:version>
@@ -89,42 +119,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2586-2571.delta" sparkle:deltaFrom="2571" length="1633246" type="application/octet-stream" sparkle:edSignature="ySQB6j1QGNe3BNTGH8Yx499BsZuFbIpzgfor2L6rGARuSSyO+BoNVgkORWkUgDViifhQFG4gXhOm9T0QPnukAw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2586-2557.delta" sparkle:deltaFrom="2557" length="2511142" type="application/octet-stream" sparkle:edSignature="zNotSEcorgjmnkeedUXAyrZ2K7Gmb4BWJf08zor/GuassNV/aEpxuervYfBGCOXF9eIqjIqOtps7qCtfkt0wCw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2586-2546.delta" sparkle:deltaFrom="2546" length="2606214" type="application/octet-stream" sparkle:edSignature="z5Q8u0jNAnr6od/jkVUkftSCSO2d/F8FCM79uqEEfXojbyerbpPXkyI0I0HGH0A74EmqnZ8OqjaQp7QVwYufAg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.18</title>
-            <pubDate>Wed, 04 Nov 2026 03:11:53 -0800</pubDate>
-            <sparkle:version>2571</sparkle:version>
-            <sparkle:shortVersionString>0.9.18</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.18, build 2571</h2>
-<h3>Viewer</h3>
-<ul>
-<li>A new compare, <b>Visible difference</b>: how much someone would notice B differ from A, as a heatmap, black where they look the same through purple and orange to yellow where the difference is plain. It uses FLIP, NVIDIA's measure, on the linear pictures over the exposures that matter, so it plays down changes the eye wouldn't catch and plays up the ones it would. A few seconds an HD frame.</li>
-<li>The same as a node, <b>Visible Difference</b> under Merge, with a choice of looking at the pictures as displayed, how far away you sit, and the plain error in place of the heatmap; its mean error is in its metadata.</li>
-</ul>
-<h3>Faster</h3>
-<ul>
-<li>Slow results the Viewer and renders work out (a big defocus, a denoise) are kept on disk in the cache folder and read back instead of being worked out again, after a long session or the next time you open the comp. Anything that changes a result, including a file it reads being rewritten, makes it a new one, so you never see an old picture. Turn it off with <b>keep slow render results here for later sessions</b> in Settings &gt; Performance &gt; Disk cache; <b>Clear the cache</b> empties them.</li>
-<li>Renders from the command line keep them too (<b>--no-disk-cache</b> to skip it), so rendering a comp again skips what it worked out before.</li>
-</ul>
-<h3>Nodes</h3>
-<ul>
-<li>OCIOCDLTransform reads its grade from a .cc, .ccc or .cdl file: choose the <b>file</b> and its correction fills slope, offset, power and saturation; <b>cccid</b> is a menu of the file's corrections; <b>Reload</b> reads it again. <b>read from file</b> dims the grade, as in Nuke.</li>
-<li>GenerateLUT writes .cms, .cub and .blut too, as Nuke does.</li>
-<li>ChromaKeyer's <b>insideMask</b> works: on <b>source alpha</b> the input's alpha is added to the matte.</li>
-<li>Encryptomatte's <b>Export Write</b> makes a Write beside it that writes every channel to a 32-bit EXR.</li>
-<li>Card3D draws a card that crosses behind the camera: the part in front is drawn, its perspective running off toward the horizon, where before nothing was drawn.</li>
-<li>ReConverge reads the disparity at <b>convergepoint</b>, so that point lands on the screen, as in Nuke.</li>
-<li>SphericalTransform2's <b>From-To</b> and <b>Look</b> rotation modes turn the picture on a lat-long, where before they left it as it was.</li>
-<li>A dimmed text field in Properties now looks dimmed.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.18.2571.zip" length="376322676" type="application/octet-stream" sparkle:edSignature="qk3NguVCG7NLs+ritkRjfJirStqp3gAiPN+rDQY9O4LFz8pI9oow1i6cMV0hL9AqntVo/K0RN+CFzo/vcQpbBg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2571-2557.delta" sparkle:deltaFrom="2557" length="2294378" type="application/octet-stream" sparkle:edSignature="d4EU1/tY3x9g9hif6YZv2xFyd30GD1LAdsNyYvssXHZa9/MCX0oEFC8EHIpK3WFyBG2Wmat6Jm9R5BJ3sEXhBQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2571-2546.delta" sparkle:deltaFrom="2546" length="2418686" type="application/octet-stream" sparkle:edSignature="ziLqUGMNdrbBs61K8RTJxSvzv+RYpt4j9nnoPdVgUW3a1DIxKPQpknouEn/ePxRUkUHTUqFEcrMMbTqv/nMNDw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2571-2526.delta" sparkle:deltaFrom="2526" length="3408286" type="application/octet-stream" sparkle:edSignature="vZke4utqFNxamDUibTm2zmSxDt4RwV40VkbWbcSCKUEaIDEnFkU5dg7L5pCDKjcuEwRSyDpMqAH4D6Vt8cdKDQ=="/>
             </sparkle:deltas>
         </item>
     </channel>
