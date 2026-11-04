@@ -3,6 +3,42 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.22</title>
+            <pubDate>Wed, 04 Nov 2026 12:45:14 -0800</pubDate>
+            <sparkle:version>2639</sparkle:version>
+            <sparkle:shortVersionString>0.9.22</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.22, build 2639</h2>
+<h3>Paint</h3>
+<ul>
+<li>The stroke under your pen now looks as it will paint: the brush's color with its softness, the clone's source picture as it will be laid, the plate showing through the eraser.</li>
+<li><b>Keyed strokes</b>: pick a stroke, go to another frame and drag it, and it's keyed there; between keys it moves smoothly. A sign that drifts or a wire that sways is painted once and reshaped on a few frames. The keys show as diamonds in History and on the Timeline.</li>
+<li>Faster still: strokes far apart are painted separately, and the parts of the picture a stroke doesn't touch are kept as they were, so the Viewer redraws only what changed.</li>
+</ul>
+<h3>Roto and RotoPaint</h3>
+<ul>
+<li>A compact tool row: the tools are grouped (shapes, brush and eraser, clone and reveal, repair, blur, dodge and burn), each group's button showing its last tool, with a labeled list behind its arrow. Size, hardness and opacity always have room.</li>
+<li>Bezier and Open spline have icons you can tell apart.</li>
+</ul>
+<h3>Node Graph</h3>
+<ul>
+<li>A node's port names each have room of their own, and no longer overlap the node or each other.</li>
+<li>No raw knob values under a node: RotoPaint shows its brush size, not its stroke data.</li>
+<li>Port names stay their size at any zoom.</li>
+</ul>
+<h3>Faster</h3>
+<ul>
+<li>Expressions render up to three times faster in Kento's render engine; a LightKey on a 4K plate keys in well under half the time.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.22.2639.zip" length="427250418" type="application/octet-stream" sparkle:edSignature="wzd41l3T9aJSSVMMuApHpeS7ECNHGJ4TgWk+eSyjTXHm6Qo39u1qlc525QQasGH9heOzlbSWIk+D0MvtGYMNBA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2639-2617.delta" sparkle:deltaFrom="2617" length="2307890" type="application/octet-stream" sparkle:edSignature="P+T0B7G/h2fr/Q0RwZqeMEG2HpoewccyAYtSXRSGK/73CPlW5r4ucpEFXgnSCZWix1KV3Tr1HJFzgzN2971QAA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2639-2606.delta" sparkle:deltaFrom="2606" length="3207130" type="application/octet-stream" sparkle:edSignature="YrLaZH6tEqm9iHjRn8IDTCFWqb7aH748UCPL0+VT4GJsJYd7xmxsLLsGMh+TCRtBmSU+eP2lj6MCOaFlM793AA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2639-2586.delta" sparkle:deltaFrom="2586" length="33536026" type="application/octet-stream" sparkle:edSignature="fU4n0ikOoIWYvcdlvjAXb2sadhl4btPVh+Y6970Z86sy/q+vz+a/lHyeePKidixxX3p3tGE6tx3pKbtX5I6XDw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.21</title>
             <pubDate>Wed, 04 Nov 2026 11:22:05 -0800</pubDate>
             <sparkle:version>2617</sparkle:version>
@@ -84,41 +120,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2606-2586.delta" sparkle:deltaFrom="2586" length="32912106" type="application/octet-stream" sparkle:edSignature="jnK0zPnQhGXkqlsARTyF5ZzQL39p8MXSCD890M2J8ukuqauqzE+X2tYuBjIDmsyQd6f8iLmffoqFeQ2KszAiDg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2606-2571.delta" sparkle:deltaFrom="2571" length="33053606" type="application/octet-stream" sparkle:edSignature="IrxRk4COS+ir9fAronJ5UHCgR4dU/AAPoyD6R57zeWoDVDdibB57UDG58S9TiOQEkbKbZail3ufz9m2jftAlAg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2606-2557.delta" sparkle:deltaFrom="2557" length="33661106" type="application/octet-stream" sparkle:edSignature="3bcEwbFS/LJfcJt0AzWS54RGN5m6VFhV8k7TnEKOogqn+aF9f7PAlISxwB/P2BBaZ03sv9Bwrv2dvJ3cZhezBg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.19</title>
-            <pubDate>Wed, 04 Nov 2026 05:04:24 -0800</pubDate>
-            <sparkle:version>2586</sparkle:version>
-            <sparkle:shortVersionString>0.9.19</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.19, build 2586</h2>
-<h3>3D</h3>
-<ul>
-<li>WriteGeo writes OBJ: the meshes in world space, laid out as Nuke writes them. Put #### in the file name to write a file for each frame.</li>
-<li>An Axis can read its movement from an Alembic file: <b>Read file</b> keys it from the file's first axis, or the one you choose in <b>axis in file</b>.</li>
-</ul>
-<h3>Keying</h3>
-<ul>
-<li>LightKey's inside and outside masks work: the inside mask fills in the matte (with the inside replace colour), the outside mask cuts it away, from the mask's alpha or luminance.</li>
-<li>LightKey's source crops work: Colour, Repeat, Reflect or Wrap outside the crop, before keying.</li>
-<li>Fixed: LightKey's mask and background inputs were read in the wrong order from Nuke scripts. They now match Nuke: input 1 the inside mask, 2 the outside mask, 3 the background.</li>
-</ul>
-<h3>Deep</h3>
-<ul>
-<li>DeepSample lists the samples at its position in its panel, each one's front, back and channels, or with <b>accumulate</b> the running composite.</li>
-<li>DeepReformat's <b>black_outside</b> and <b>pbb</b> work as in Nuke.</li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li>VectorRetime's <b>retimedChannels</b> works: the channels you leave out pass through untouched instead of being retimed.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.19.2586.zip" length="376354286" type="application/octet-stream" sparkle:edSignature="1X0NbkCbE0dDkY6W9ArXSyyaEJsH42iTVgFvYbSopK7lP5GSv33xZ78uHFfnLwCmUxjWDKCrdImLI4F1kMK7Bg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2586-2571.delta" sparkle:deltaFrom="2571" length="1633246" type="application/octet-stream" sparkle:edSignature="ySQB6j1QGNe3BNTGH8Yx499BsZuFbIpzgfor2L6rGARuSSyO+BoNVgkORWkUgDViifhQFG4gXhOm9T0QPnukAw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2586-2557.delta" sparkle:deltaFrom="2557" length="2511142" type="application/octet-stream" sparkle:edSignature="zNotSEcorgjmnkeedUXAyrZ2K7Gmb4BWJf08zor/GuassNV/aEpxuervYfBGCOXF9eIqjIqOtps7qCtfkt0wCw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2586-2546.delta" sparkle:deltaFrom="2546" length="2606214" type="application/octet-stream" sparkle:edSignature="z5Q8u0jNAnr6od/jkVUkftSCSO2d/F8FCM79uqEEfXojbyerbpPXkyI0I0HGH0A74EmqnZ8OqjaQp7QVwYufAg=="/>
             </sparkle:deltas>
         </item>
     </channel>
