@@ -3,6 +3,60 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.13</title>
+            <pubDate>Tue, 03 Nov 2026 18:38:35 -0800</pubDate>
+            <sparkle:version>2511</sparkle:version>
+            <sparkle:shortVersionString>0.9.13</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.13, build 2511</h2>
+<h3>Planar tracker: multipass</h3>
+<ul>
+<li>A <b>Multipass</b> section on the PlanarTracker's Track tab. <b>passes</b> picks single, forward and back, or multipass.</li>
+<li>Under <b>vary</b>, each toggle adds a pass that changes one thing: direction, tracker, reference (the frames under <b>refs</b>), motion model, channel or search.</li>
+<li><b>score by</b> rates each frame of each pass by its confidence, its agreement with the other passes, and its smoothness. <b>combine</b> takes the most consistent path, each frame from the best pass with <b>switch cost</b> for a change, or the best single pass. <b>smooth the joins</b> blends where the pass changes.</li>
+<li><b>Track all passes</b> tracks them; nothing is keyed until <b>Accept</b>. <b>Use pass for range</b> uses one pass from in to out, and <b>Discard</b> drops the run. A graph shows each pass and the combined track.</li>
+<li>Running in the background is on the menu, dim: the passes run now, with their progress.</li>
+</ul>
+<h3>Tracker: the planar track row</h3>
+<ul>
+<li>The Tracker's <b>planar track</b> row now sits in Tracking, as the design has it: the PlanarTracker menu, then <b>guide search</b>, <b>fill gaps</b> and <b>points on it</b> as toggles.</li>
+<li>With <b>points on it</b> on, <b>Add</b> makes a track that rides the plane. The Point on the plane button is gone.</li>
+</ul>
+<h3>Links</h3>
+<ul>
+<li><b>Edit &gt; Link</b> (<b>Alt+L</b>) puts a link to each selected node beside it. Like a clone, its settings are its source's, both ways, keys included.</li>
+<li><b>Edit &gt; Unlink</b> (<b>Shift+Alt+L</b>) makes links nodes of their own. <b>Edit &gt; Copy As Links</b> (<b>Alt+Cmd+L</b>) puts links on the clipboard to paste.</li>
+<li>A .nk writes links as Nuke does, and Nuke opens them as links. A script's links open in Kento as links; a link whose source is missing opens as a node of its own, and the load report says so.</li>
+</ul>
+<h3>MatchGrade</h3>
+<ul>
+<li><b>mask</b> works with Asobi's methods too: the curves and matrix fit reads where both pictures' alpha say so, the other methods each picture by its own.</li>
+<li>Before fitting, Asobi's curves and matrix now finds where the source sits in the target's frame: fitted, filling the frame or stretched, then blown up and moved a little. The closest match is kept, and the line beside Analyze says where the source was placed.</li>
+<li>Bars are left out of the target only, as Asobi now does, and the histogram match no longer fails on an empty side.</li>
+</ul>
+<h3>Playback</h3>
+<ul>
+<li>The held frames are no longer let go at every play and stop. Play, stop and play again now plays from what's held.</li>
+<li>A frame much bigger than the Viewer shows it is held smaller, as sharp as the screen can show it, so more frames fit and they're ready sooner. <b>hold big frames at screen size</b>, in Settings &gt; Preferences &gt; Performance, turns it off.</li>
+<li>The picture past the format (overscan, or a move off it) plays from the cache too, as does the <b>Clipping warning</b> and <b>Absolute values</b>.</li>
+</ul>
+<h3>Roto</h3>
+<ul>
+<li>A point added on a B-spline or X-spline (<b>Cmd+Alt-click</b>) goes where you click on the curve. It had been placed at the middle of the control polygon, which pulled the curve away.</li>
+</ul>
+<h3>Remote control</h3>
+<ul>
+<li><b>planar.multipass</b> and <b>node.clone</b> (clone, declone, link and unlink) are new.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.13.2511.zip" length="376084650" type="application/octet-stream" sparkle:edSignature="wmLC9hdhX8iyar3HPXfm1fP6xp7lhtfqY6wTt1ltPHQuCrN09NKaCBcurBoShm+GEos3+zNT5cVBGaqv0UfgBw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2511-2501.delta" sparkle:deltaFrom="2501" length="1794058" type="application/octet-stream" sparkle:edSignature="2SG1mafs0lYIOSGMlreV6keCisqtAKrQiwJ/4i1PB2qhcSxs+wIQZVDlTA7DgFsDsbVnIp00dAiyWv+oCLd7Bg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2511-2490.delta" sparkle:deltaFrom="2490" length="1898094" type="application/octet-stream" sparkle:edSignature="MbhlMVeTByOtnHzaUCGyz/RDVlADfhG0O4FmmiexsaIu2ztoVDEqI8gC6uFQtnu1+hF9sRVCYac04QFctO2/DQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2511-2477.delta" sparkle:deltaFrom="2477" length="2340822" type="application/octet-stream" sparkle:edSignature="f0mYJWald/XBAeol6m0EANynoajE3i3q1HZsO4j1cI3hPXN4Eg9UF7KfdUxbpUBPghwOGFMchv+jRqqtOYGwBw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.12</title>
             <pubDate>Tue, 03 Nov 2026 17:02:23 -0800</pubDate>
             <sparkle:version>2501</sparkle:version>
@@ -93,62 +147,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2490-2477.delta" sparkle:deltaFrom="2477" length="1918106" type="application/octet-stream" sparkle:edSignature="b0CsHw2buDJlI+kt+070xFcPPoqhSAU3n/x7PFJOaoeG7cfY00uUz73kuz3b1HTAa+iWwa5goa538crRmM10Cg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2490-2466.delta" sparkle:deltaFrom="2466" length="2498586" type="application/octet-stream" sparkle:edSignature="Vk2WslZM6ObtzXlQjTyYScu6l3rFGi3yzE7J6kSF7k5rSb4boheLBOcaz6E/9LNwCFHiMipWjqNY1VyCLBoNCg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2490-2451.delta" sparkle:deltaFrom="2451" length="3123578" type="application/octet-stream" sparkle:edSignature="qZ1W4pFu5NcYO1ZrrToeH4IJtxUra2B81Zuh8sBtK35oolj4orsNn3yc0WWYNC1zGnLcINUrglOfXsTsQFuVCQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.10</title>
-            <pubDate>Tue, 03 Nov 2026 13:34:53 -0800</pubDate>
-            <sparkle:version>2477</sparkle:version>
-            <sparkle:shortVersionString>0.9.10</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.10, build 2477</h2>
-<h3>The planar tracker</h3>
-<ul>
-<li>The PlanarTracker's panel is rebuilt to its design. The <b>Track</b> tab has <b>operation</b> (<b>Track</b> or <b>Steady</b>), the <b>reference</b> frame with <b>Set</b> and <b>Go</b>, then <b>Pattern</b> and <b>Tracking</b>. <b>Surface</b> holds the plane's corners, and <b>Output</b> the tracked corners with <b>Create pin</b>.</li>
-<li><b>Pattern</b>:
-<ul>
-<li><b>track outside the shape</b>;</li>
-<li>an occlusion <b>matte</b> from any node in the comp, its alpha or red, so a hand passing in front is left out;</li>
-<li>five <b>motion</b> toggles (translate, scale, rotate, shear, perspective) that make the motion model;</li>
-<li><b>channel</b>, and <b>adapt to light changes</b>.</li>
-</ul></li>
-<li><b>tracker</b>: <b>Hybrid</b> is new. After the features are fitted, every pixel of the plane lines it up with the reference frame. It lands closer (ten times closer on our test plates), follows a change of light, and carries the plane on through frames where too few features are left.</li>
-<li><b>Tracking</b>:
-<ul>
-<li><b>Analyze</b>, and step or run a frame at a time, either way;</li>
-<li><b>trim</b> the keys before, after, at this frame or between keys;</li>
-<li><b>search area</b>; <b>share</b>, <b>refine</b> and <b>smooth</b>;</li>
-<li>a confidence for every frame, with <b>mark below</b> and <b>stop when below</b>.</li>
-</ul></li>
-<li><b>Steady</b> holds the plane still where it is at the reference frame, so any drift in the track shows as the plane moving.</li>
-<li>In the Viewer, the tracked plane draws with a grid and short trails behind its corners. The features used show green and those left out red, with their counts. A track bar sits under the Viewer's bars: step buttons, the motion toggles, search, <b>Steady</b>, <b>Refine</b> and <b>Export</b>.</li>
-<li>A <b>Confidence</b> strip under the Viewer runs along the shot. The frames under <b>mark below</b> are shaded and the run at the playhead is named ("1005 to 1007 low"). Click in it to go to a frame.</li>
-<li><b>Refine</b> opens the four corners magnified. This frame's are on top; under each is the reference frame, or the frame before, carried by the track. Drag in a loupe to nudge its corner, blended over a few frames either side. Nudges are kept when you track again. <b>Previous low frame</b> and <b>Next low frame</b> step through the weak frames.</li>
-<li><b>Export</b> makes nodes from the track:
-<ul>
-<li>a Planar Transform, live or baked;</li>
-<li>a corner pin, relative or absolute;</li>
-<li>a stabilize or a match-move;</li>
-<li>a Tracker with a track at each corner, for Nuke.</li>
-</ul>
-The matrix, Roto, mesh and 3D items are on the menu, dim, and say what's missing.</li>
-<li>Not in Kento yet, shown dim: tracking a Roto layer, point tracks to help the plane, <b>max motion</b>, <b>Stop</b> and <b>Track between keys</b>, motion blur, a lens, and the panel's <b>Corner pin</b>, <b>Stabilize</b> and <b>Match-move</b> operations (use <b>Export</b>).</li>
-</ul>
-<h3>Remote control</h3>
-<ul>
-<li><b>planar.track</b> steps or runs from one frame to another. <b>planar.trim</b>, <b>planar.nudge</b> and <b>planar.export</b> are new.</li>
-</ul>
-<h3>The manual</h3>
-<ul>
-<li>The tracking chapter covers the planar tracker.</li>
-<li>Seven new diagrams: a comp's files, the Text row, the Settings window, the Shortcuts keyboard, a kernel's parts, the Shot panel, and how a projection works, seen from above.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.10.2477.zip" length="375881889" type="application/octet-stream" sparkle:edSignature="HQLUSv34NxIN0jpkkSnnWKjQCCSByGaidN9NCEAlFISPk3oNT/heDE6+tGnzbjLjRYJDCxrLeBgx8xfoD92qDQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2477-2466.delta" sparkle:deltaFrom="2466" length="2130786" type="application/octet-stream" sparkle:edSignature="IujXmTWsujNa6Pqe0nh9G09Awm1v6skUbYPzadcODoIDFKYYzVPD/g/ozbWWbtWtmMvUsDqjfI3/hbxuC4fbCg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2477-2451.delta" sparkle:deltaFrom="2451" length="2732598" type="application/octet-stream" sparkle:edSignature="R/piqK8ZNlUgGU+ZJQgGftxdHipnJqozrBrSSALI2j0NFMTjHcFzqV/6dxvlJNG2nQty4BmZQbil0bhmAA8tCA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2477-2416.delta" sparkle:deltaFrom="2416" length="9403786" type="application/octet-stream" sparkle:edSignature="0lFx5R/7dIKyKwY1wV12H+UFCMFsnGesOYR1NrinC5Bp0DPodm7S8AkcsZdEtPMjLI804+lU1Fr//unoeIsmDQ=="/>
             </sparkle:deltas>
         </item>
     </channel>
