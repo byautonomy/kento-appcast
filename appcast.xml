@@ -3,6 +3,41 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.19</title>
+            <pubDate>Wed, 04 Nov 2026 05:04:24 -0800</pubDate>
+            <sparkle:version>2586</sparkle:version>
+            <sparkle:shortVersionString>0.9.19</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.19, build 2586</h2>
+<h3>3D</h3>
+<ul>
+<li>WriteGeo writes OBJ: the meshes in world space, laid out as Nuke writes them. Put #### in the file name to write a file for each frame.</li>
+<li>An Axis can read its movement from an Alembic file: <b>Read file</b> keys it from the file's first axis, or the one you choose in <b>axis in file</b>.</li>
+</ul>
+<h3>Keying</h3>
+<ul>
+<li>Keylight's inside and outside masks work: the inside mask fills in the matte (with the inside replace colour), the outside mask cuts it away, from the mask's alpha or luminance.</li>
+<li>Keylight's source crops work: Colour, Repeat, Reflect or Wrap outside the crop, before keying.</li>
+<li>Fixed: Keylight's mask and background inputs were read in the wrong order from Nuke scripts. They now match Nuke: input 1 the inside mask, 2 the outside mask, 3 the background.</li>
+</ul>
+<h3>Deep</h3>
+<ul>
+<li>DeepSample lists the samples at its position in its panel, each one's front, back and channels, or with <b>accumulate</b> the running composite.</li>
+<li>DeepReformat's <b>black_outside</b> and <b>pbb</b> work as in Nuke.</li>
+</ul>
+<h3>Other</h3>
+<ul>
+<li>Kronos's <b>retimedChannels</b> works: the channels you leave out pass through untouched instead of being retimed.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.19.2586.zip" length="376354286" type="application/octet-stream" sparkle:edSignature="1X0NbkCbE0dDkY6W9ArXSyyaEJsH42iTVgFvYbSopK7lP5GSv33xZ78uHFfnLwCmUxjWDKCrdImLI4F1kMK7Bg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2586-2571.delta" sparkle:deltaFrom="2571" length="1633246" type="application/octet-stream" sparkle:edSignature="ySQB6j1QGNe3BNTGH8Yx499BsZuFbIpzgfor2L6rGARuSSyO+BoNVgkORWkUgDViifhQFG4gXhOm9T0QPnukAw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2586-2557.delta" sparkle:deltaFrom="2557" length="2511142" type="application/octet-stream" sparkle:edSignature="zNotSEcorgjmnkeedUXAyrZ2K7Gmb4BWJf08zor/GuassNV/aEpxuervYfBGCOXF9eIqjIqOtps7qCtfkt0wCw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2586-2546.delta" sparkle:deltaFrom="2546" length="2606214" type="application/octet-stream" sparkle:edSignature="z5Q8u0jNAnr6od/jkVUkftSCSO2d/F8FCM79uqEEfXojbyerbpPXkyI0I0HGH0A74EmqnZ8OqjaQp7QVwYufAg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.18</title>
             <pubDate>Wed, 04 Nov 2026 03:11:53 -0800</pubDate>
             <sparkle:version>2571</sparkle:version>
@@ -64,41 +99,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2557-2546.delta" sparkle:deltaFrom="2546" length="1129406" type="application/octet-stream" sparkle:edSignature="uR4G2U/r5OXZa76fdwdw0sb4Gy5ix6dGDkbnnmj2i8qT9mliNJb0xD/3sQ7CrWiy7qFzMwl+yA7RjerPkzTgBQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2557-2526.delta" sparkle:deltaFrom="2526" length="2549390" type="application/octet-stream" sparkle:edSignature="rsn5VOQJNGML4NTrQt2nvNVbMKG55lzulh7lA3/9NdrVjHM7DcsalHqEkXdRcG0XcPq5PKJDDUXezKUfCEIZBA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2557-2522.delta" sparkle:deltaFrom="2522" length="3815990" type="application/octet-stream" sparkle:edSignature="usdIotClNOwoDCB+QRNrYj3HMNSxGeL967SSqjcfXzV6Sr5cgYuGwvBqZucp5BknQj5hKv3eymQoU3nWaMO5CA=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.16</title>
-            <pubDate>Tue, 03 Nov 2026 23:22:45 -0800</pubDate>
-            <sparkle:version>2546</sparkle:version>
-            <sparkle:shortVersionString>0.9.16</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.16, build 2546</h2>
-<h3>Roto</h3>
-<ul>
-<li>The Tracking tab's <b>selected points</b> works: the points you pick in the Viewer (click, Shift-click or drag a box) are each tracked on their own through the Roto's input, and their positions keyed where the track holds. The other points stay as they were.</li>
-</ul>
-<h3>Nodes</h3>
-<ul>
-<li>PointsTo3D's <b>generate axis</b> works the point out from its three picks through the camera, sets <b>point3d</b> and makes an Axis there.</li>
-<li>GeoViewScene's <b>Export</b> writes the scene to a USD file over the comp's range, and <b>Refresh</b> draws the 3D views again.</li>
-<li><b>unpremult</b> and its <b>invert</b> now work on CCorrect, Histogram, RolloffContrast and the OCIO nodes, and <b>invert</b> on Invert, Saturation and EXPTool too.</li>
-<li>Fixed: undoing <b>Edit inside</b> on a Bento could quit Kento.</li>
-</ul>
-<h3>Manual</h3>
-<ul>
-<li>Each Node Reference chapter now opens with a short worked example (Try it): reading and writing a plate, a soft matte, a held frame, a grade, a key, a merge and the rest.</li>
-</ul>
-<h3>Remote control</h3>
-<ul>
-<li>Remote control reaches more of Kento: the comp's settings on every Settings &gt; This comp page, with their choices (<b>comp.settings</b>, <b>comp.set</b>), the comp's views, variables, path maps and the color space for each kind of file (<b>comp.views</b>, <b>comp.variables</b>, <b>comp.path_maps</b>, <b>comp.read_kinds</b>).</li>
-<li>Also: the Curve Editor's Scale and Smooth on a control's keys (<b>key.scale</b>, <b>key.smooth</b>); the motion library (<b>motion.list</b>, <b>add</b>, <b>get</b>, <b>set</b>); folded inputs and detailed labels (<b>graph.show_inputs</b>, <b>graph.details</b>); Roto's follow a track, On the shape and selected points (<b>roto.follow_track</b>, <b>roto.pivot</b>, <b>roto.track_points</b>); GridWarp's Fit to the image (<b>node.fit_grid</b>); a CameraTracker's tracks and their errors (<b>camera.tracks</b>); and the planar multipass report in numbers.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.16.2546.zip" length="376204345" type="application/octet-stream" sparkle:edSignature="Wy320XgdsZ8ySRizcTPFDzdIX44/3OVbognILja5Xtq/AdrRDb7dmnvJJCkb9yiXQO67PGkkYspN7+UgsqUjAQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2546-2526.delta" sparkle:deltaFrom="2526" length="2340562" type="application/octet-stream" sparkle:edSignature="E51uyXjyGRTyCUidpFDimUMGfSi4UyOXOrbPgvnF5wCYQiPRy0Qz8Dw2cbxBhZwl6THcLWKsTVNPXiJcf8U5AA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2546-2522.delta" sparkle:deltaFrom="2522" length="3583682" type="application/octet-stream" sparkle:edSignature="K7ajbFt0mJUTbGVgxrk8CJND8ZdhufboHMQKCBTC9xiu58pYfdthuqRveOCZwZkw41C1JuuhHr5QrQQiZXw2AQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2546-2511.delta" sparkle:deltaFrom="2511" length="3872502" type="application/octet-stream" sparkle:edSignature="h0EM2+kXx4KMrGf3kDGy/77RK+htS7kk6QXKmTOzBqP6sT6L/G+ef5U2Y5/At4xuzcfIGXPAKDDmiL0LNriqDA=="/>
             </sparkle:deltas>
         </item>
     </channel>
