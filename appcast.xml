@@ -3,6 +3,34 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.17</title>
+            <pubDate>Wed, 04 Nov 2026 00:21:49 -0800</pubDate>
+            <sparkle:version>2557</sparkle:version>
+            <sparkle:shortVersionString>0.9.17</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.17, build 2557</h2>
+<h3>Paint</h3>
+<ul>
+<li>Wire removal follows a track: choose a Tracker's track in the wire pop-over's <b>track</b> menu and the wire you paint moves with it from the frame you painted it on. Filling from <b>other frames</b> or <b>a clean plate</b> lines those up by the track too, so a moving camera fills cleanly. Track the shot again and the wire follows the new track.</li>
+</ul>
+<h3>Roto</h3>
+<ul>
+<li><b>Stay linked</b> works: follow a track with it on and the shapes keep following the PlanarTracker, keyed again whenever its track changes (a track run, a corner moved). <b>Bake into keys</b> keys it once, as before, and drops a link already made. The link is saved with the comp.</li>
+<li>The Tracking tab's <b>mesh</b> lays a grid over the shapes, tracks its corners one by one and keys the points where the grid takes them, for shapes on something that bends.</li>
+</ul>
+<h3>Remote control</h3>
+<ul>
+<li>Remote control now reaches every button on every panel: a Nagi's Auto setup (<b>nagi.auto_setup</b>), a plug-in node's buttons (<b>node.plugin_button</b>), Roto's mesh (<b>roto.track_mesh</b>) and Stay linked (<b>roto.follow_track</b> with <b>linked</b>), and a wire stroke's track (<b>roto.add_stroke</b>). 148 commands in 26 areas.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.17.2557.zip" length="376230593" type="application/octet-stream" sparkle:edSignature="y30Agg/z2X3Nx/q/jpmxa+3EL9LEpoGVtNv4oMVfamUiPtj0I6jTNYvQE7zJ7Oc/jSv2PjKpAZGW8/VkEtmTAQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2557-2546.delta" sparkle:deltaFrom="2546" length="1129406" type="application/octet-stream" sparkle:edSignature="uR4G2U/r5OXZa76fdwdw0sb4Gy5ix6dGDkbnnmj2i8qT9mliNJb0xD/3sQ7CrWiy7qFzMwl+yA7RjerPkzTgBQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2557-2526.delta" sparkle:deltaFrom="2526" length="2549390" type="application/octet-stream" sparkle:edSignature="rsn5VOQJNGML4NTrQt2nvNVbMKG55lzulh7lA3/9NdrVjHM7DcsalHqEkXdRcG0XcPq5PKJDDUXezKUfCEIZBA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2557-2522.delta" sparkle:deltaFrom="2522" length="3815990" type="application/octet-stream" sparkle:edSignature="usdIotClNOwoDCB+QRNrYj3HMNSxGeL967SSqjcfXzV6Sr5cgYuGwvBqZucp5BknQj5hKv3eymQoU3nWaMO5CA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.16</title>
             <pubDate>Tue, 03 Nov 2026 23:22:45 -0800</pubDate>
             <sparkle:version>2546</sparkle:version>
@@ -85,41 +113,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2526-2522.delta" sparkle:deltaFrom="2522" length="2545014" type="application/octet-stream" sparkle:edSignature="RBsDRHYD8qIImk7SAEdH+jNGtcFZcAWafoxuPqT+EoWg2PR6/jsPkifMGzyD+8WPUgjRwFEslnKLBwl5zivhAw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2526-2511.delta" sparkle:deltaFrom="2511" length="3037846" type="application/octet-stream" sparkle:edSignature="5/RxstuuMPvqDQQOdSKtb4jHvqxteEKnvGu5ekNqX7f+vztgrSoT/IlbKl5qZCw5NK00jbNQUfbLON668MsHBg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2526-2501.delta" sparkle:deltaFrom="2501" length="3272518" type="application/octet-stream" sparkle:edSignature="tOtkqzczYeoI2+xNsRTaV/+ogEZX1zCGSKoIB/tlESO+K9HZKB3vpV/4olSoVPSL9SHad+ihriqwnjW9kOo6BQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.14</title>
-            <pubDate>Tue, 03 Nov 2026 20:07:11 -0800</pubDate>
-            <sparkle:version>2522</sparkle:version>
-            <sparkle:shortVersionString>0.9.14</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.14, build 2522</h2>
-<h3>Mask controls: fringe and inject</h3>
-<ul>
-<li><b>fringe</b> works on every node with Nuke's mask controls: the effect lands on the mask's soft edges only, strongest where the mask is half on. With <b>invert</b>, everywhere but the edges. Measured against NukeX and matched.</li>
-<li><b>inject</b> copies the mask into the output's <b>mask.a</b> channel, to use again further down. It's set in a .nk or over Remote control; the panel's mask row has no place for it.</li>
-<li><b>invert</b> beside <b>(un)premult by</b> now works on Grade, ColorCorrect, HueCorrect, HueShift, ColorLookup, ColorMatrix, Colorspace, Expression, Log2Lin and ScannedGrain: the color is divided by one minus alpha instead. Not yet on Add, Multiply and the other math nodes.</li>
-</ul>
-<h3>Planar tracking</h3>
-<ul>
-<li>Multipass runs <b>in the background</b> by default, as the design has it: keep working while the passes track, the button reading <b>Stop</b>; <b>Accept</b> wakes when they're done.</li>
-<li>Roto's Tracking tab: <b>follow a track</b> keys the motion of a PlanarTracker already in the comp into the layer or shapes, without tracking again. Pick it in the menu beside the button, then <b>Analyze</b>.</li>
-<li><b>points moved by the plane</b> keys the shapes' own points where the plane takes them, instead of the transform, so you can correct them on top.</li>
-</ul>
-<h3>Paint</h3>
-<ul>
-<li>Wire removal's <b>fill</b> menu is live: <b>other frames</b> takes each pixel from the picture two frames either side, where the wire has moved off (for a camera that holds still); <b>a clean plate</b> takes the RotoPaint's <b>bg1</b> input, its tone matched at the stroke's edge. Aligning frames or a plate by a track isn't in Kento yet.</li>
-</ul>
-<h3>Playback</h3>
-<ul>
-<li>A Flipbook rendering while the Viewer plays now adds its frames to the Timeline's green line beside the Viewer's, instead of the two wiping each other's out.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.14.2522.zip" length="376106225" type="application/octet-stream" sparkle:edSignature="yzIZKDhJch1Eabh2HYXZRGUePEy07DIvT1ApDFgVZ7sOm+P/tKEVoJCalhZNgupj0TEbbjfxNfczzq4bBfeNBg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2522-2511.delta" sparkle:deltaFrom="2511" length="2069778" type="application/octet-stream" sparkle:edSignature="M/wzm1S5TJdzyRmSTSwkTN43A3jAxfXtuTV+LvfqxPWlJ6iRGM2zuqoB4PDT3+tNHXSdmDHiNo7A1VaRXlyKDQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2522-2501.delta" sparkle:deltaFrom="2501" length="2401346" type="application/octet-stream" sparkle:edSignature="AhKN98OflwS1U8Q5TgOr3Pq/wULbgvrxBKEZKXodRi3luSFnBIAG2+JYrMjdQZYNMAEe23rXrVOGjLeKdJDOBg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2522-2490.delta" sparkle:deltaFrom="2490" length="2471390" type="application/octet-stream" sparkle:edSignature="gmSalk6wM87jlohZGaMKEbm6TJu6rHeUX6zvKfuW0T7CKgUYgWJUxR2Lirteur3NsBgMycsBbbVsT25t2JMhBA=="/>
             </sparkle:deltas>
         </item>
     </channel>
