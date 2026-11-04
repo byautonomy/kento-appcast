@@ -27,7 +27,7 @@
 </ul>
 <h3>Other</h3>
 <ul>
-<li>Kronos's <b>retimedChannels</b> works: the channels you leave out pass through untouched instead of being retimed.</li>
+<li>VectorRetime's <b>retimedChannels</b> works: the channels you leave out pass through untouched instead of being retimed.</li>
 </ul>
 ]]></description>
             <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.19.2586.zip" length="376354286" type="application/octet-stream" sparkle:edSignature="1X0NbkCbE0dDkY6W9ArXSyyaEJsH42iTVgFvYbSopK7lP5GSv33xZ78uHFfnLwCmUxjWDKCrdImLI4F1kMK7Bg=="/>
