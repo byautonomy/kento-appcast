@@ -3,6 +3,51 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.12</title>
+            <pubDate>Tue, 03 Nov 2026 17:02:23 -0800</pubDate>
+            <sparkle:version>2501</sparkle:version>
+            <sparkle:shortVersionString>0.9.12</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.12, build 2501</h2>
+<h3>MatchGrade: Asobi's grade match</h3>
+<ul>
+<li>A <b>method</b> menu under match task. <b>Nuke's fit</b> is the default and works as before.</li>
+<li><b>curves and matrix (Asobi)</b> is for Match Graded Source, where the target is the same picture graded. It fits a tone curve for each channel and a color matrix where the two frames show the same picture. Burned-in text, changed patches, letterbox bars (in either picture) and clipped highlights are left out. Where the picture shows nothing of a color, that color is left alone.</li>
+<li><b>Reinhard</b>, <b>MKL</b> and <b>HM-MKL-HM</b> are for Match Different Clip. They move the source's colors to the target's overall.</li>
+<li><b>knots</b> sets how many points each curve has. <b>min likeness</b> sets how alike the pictures must be to match at all. Another picture is refused, and one that differs in places gets a warning.</li>
+<li>The fit works in the color config's color timing space (ACEScct in an ACES config), so it suits a scene-linear comp. A line beside <b>Analyze</b> gives the difference before and after, how much of the frame was used, or why the shot wasn't matched.</li>
+<li>Not in Kento yet: <b>mask</b> for these methods, and writing their match to a .nk.</li>
+</ul>
+<h3>MatchGrade: Export .cube</h3>
+<ul>
+<li><b>Export .cube...</b> saves the match as a .cube and names it in <b>outfile</b>.</li>
+<li>With Asobi's methods it's their fitted cube. A line at the top of the file says which space it applies in.</li>
+<li>With Nuke's fit it's the 3D LUT, or the CDL baked over 0 to 1 when <b>transform</b> is CDL.</li>
+</ul>
+<h3>Point tracks and the planar tracker</h3>
+<ul>
+<li>The PlanarTracker's <b>point tracks</b> row picks a Tracker of the comp whose tracks help the plane. <b>start</b> places the plane on every frame from them, <b>constrain</b> holds it close to them through blur or a bare surface, and <b>recover</b> carries it where its own match is lost.</li>
+<li>The other way round, the Tracker's <b>planar track</b>, under When a track fails, picks a PlanarTracker. Each search starts where the plane carries the point, so moves faster than the search area stay found.</li>
+<li><b>fill gaps from the plane</b> fills a track's missed frames from the plane's motion, not from the other tracks.</li>
+<li><b>Point on the plane</b> adds a track at the plane's center that rides the plane on every frame it's tracked.</li>
+</ul>
+<h3>Playback</h3>
+<ul>
+<li><b>Skip frames to keep the rate</b>, on the Timeline's playback chip and in Settings &gt; Viewer &gt; Playback. While playing, a frame that isn't ready when its turn comes is skipped, so the motion keeps its real speed. Off (the default), every frame is played, waiting for any that aren't ready.</li>
+</ul>
+<h3>Remote control</h3>
+<ul>
+<li><b>matchgrade.analyze</b> and <b>tracker.on_plane</b> are new.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.12.2501.zip" length="376009550" type="application/octet-stream" sparkle:edSignature="xl0yBcbtdI0iFwBKZQvA+nwIreWnSRIPqne1/zByuI4vZt3LdI5jZaJgJ9bJnT6NnQVnEu8BjslHegFiPtMuCQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2501-2490.delta" sparkle:deltaFrom="2490" length="1569730" type="application/octet-stream" sparkle:edSignature="xWN+3NsD+0B3e2XsXCr14SyuNlTjpr/Y4h1rntaRwlxgl7vb2PXHvc0ijEh7CqqWwsyxYUWJF2RHPpGXuKafCg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2501-2477.delta" sparkle:deltaFrom="2477" length="2098158" type="application/octet-stream" sparkle:edSignature="2XM9xPv0ndQSrQtazWftiLY9TvoILeVAA8g2f3s8NYKOSXpKwIla1doSSVPDbceS93utbFm43J+VpC3BtDUuBA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2501-2466.delta" sparkle:deltaFrom="2466" length="2668622" type="application/octet-stream" sparkle:edSignature="dADk+pRS49yzWlt97bn91uFR7OD0qrgIdjZtbnuMjzS+7wMHRRlPGW911M4/h/3iwflKTWXibkg+ufMwAzgzBQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.11</title>
             <pubDate>Tue, 03 Nov 2026 15:40:24 -0800</pubDate>
             <sparkle:version>2490</sparkle:version>
@@ -104,54 +149,6 @@ The matrix, Roto, mesh and 3D items are on the menu, dim, and say what's missing
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2477-2466.delta" sparkle:deltaFrom="2466" length="2130786" type="application/octet-stream" sparkle:edSignature="IujXmTWsujNa6Pqe0nh9G09Awm1v6skUbYPzadcODoIDFKYYzVPD/g/ozbWWbtWtmMvUsDqjfI3/hbxuC4fbCg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2477-2451.delta" sparkle:deltaFrom="2451" length="2732598" type="application/octet-stream" sparkle:edSignature="R/piqK8ZNlUgGU+ZJQgGftxdHipnJqozrBrSSALI2j0NFMTjHcFzqV/6dxvlJNG2nQty4BmZQbil0bhmAA8tCA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2477-2416.delta" sparkle:deltaFrom="2416" length="9403786" type="application/octet-stream" sparkle:edSignature="0lFx5R/7dIKyKwY1wV12H+UFCMFsnGesOYR1NrinC5Bp0DPodm7S8AkcsZdEtPMjLI804+lU1Fr//unoeIsmDQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.9</title>
-            <pubDate>Tue, 03 Nov 2026 11:51:09 -0800</pubDate>
-            <sparkle:version>2466</sparkle:version>
-            <sparkle:shortVersionString>0.9.9</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.9, build 2466</h2>
-<h3>Properties' size</h3>
-<ul>
-<li><b>Settings &gt; Preferences &gt; Interface &gt; Sizes</b> has <b>Properties</b> beside <b>Node Graph</b>: a slider from 80 to 160%, notched at 90, 100, 120 and 140%. It sizes Properties' panels whole, their words, fields, sliders, buttons and rows, and the menus they open. Open panels are made again at the new size, and the Properties pane widens to fit.</li>
-<li>Under the sliders, three nodes are drawn at 100% beside the Node Graph size you chose, and change as you drag.</li>
-<li>The Viewer, the Node Graph and the other panels keep their size.</li>
-<li>A few parts of Kento's own tools' panels that are drawn their own way stay at 100% for now.</li>
-</ul>
-<h3>Kento's own nodes' panels</h3>
-<ul>
-<li>Menus read in words: WhiteBalance's <b>shades of gray</b>, Linearise's <b>sRGB</b>, <b>BT.1886</b> and <b>BT.2446 Method A (to HDR)</b>.</li>
-<li>Measured readings (Cambi's score, WhiteBalance's estimate and gain, Deflicker's frame mean) show whole instead of cut in the middle.</li>
-<li>Deband's and AutoDeband's <b>direction</b> reads in degrees, -360 to 360.</li>
-<li>The Generative nodes' first tab is named for the node (Halation, Generate), as Kento's own nodes' are.</li>
-<li>Frame Repair has <b>Add this frame</b> and <b>Remove this frame</b> under its bad frames.</li>
-<li>Layer Mux's Layers section says where its rows come from before anything is plugged in; Layer Filter's layers line and Prerender's notes show whole.</li>
-<li>Every Generative node and every node of Kento's own now has a Help tab: what it's for, how to use it, and what to watch for.</li>
-</ul>
-<h3>Roto</h3>
-<ul>
-<li>The selected shape's <b>colour</b> is a color row as Grade's is: one value on a slider for all four channels, the swatch opening the color picker, and <b>4</b> splitting it into red, green, blue and alpha. It was four numbers in a text box.</li>
-<li>Opacity, feather, falloff, <b>colour</b>, shutter and blending each have a key diamond at the end of the row: click it to key that setting at this frame, so it changes over time; click a filled one to take the key off.</li>
-</ul>
-<h3>Gizmos as Bentos</h3>
-<ul>
-<li>A gizmo you import (<b>File &gt; Import &gt; Gizmo...</b>, or a .gizmo dropped on the Node Graph) becomes a Bento: it's published to your first Bento library under <b>Gizmos</b>, and the node is that Bento, with its tile, its controls and <b>Edit inside</b>. The same file again uses the same Bento; a changed file is its next version.</li>
-<li>It keeps the gizmo's class: a .nk or .ko saves it as the gizmo's own node with the controls you changed, so Nuke opens it as before.</li>
-<li>Opening a comp that uses a gizmo already in your library brings its nodes in as that Bento, unless a control of theirs is animated or driven by an expression. A gizmo that rebuilds itself when a control changes stays a group.</li>
-</ul>
-<h3>X-spline shapes</h3>
-<ul>
-<li>Roto and RotoPaint have a new shape, the <b>X-spline</b> (<b>Shift+K</b>, beside B-spline): click its points and it curves smoothly through them. Each point has a <b>tension</b> on the Roto tab: -1 smooth through the point, 0 a sharp corner, 1 rounded off near it, so one shape mixes smooth, sharp and soft corners with no tangents to pull.</li>
-<li><b>Convert to</b> turns a Bezier or B-spline into an X-spline and back. A .nk writes it as the B-spline of its points; a .ko keeps it.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.9.2466.zip" length="375709478" type="application/octet-stream" sparkle:edSignature="tQQnqrkQuo56xkLc4w4KUlDAgH2aBGhYcU4YaAeENyplYZ8QvHARWAQNrpvLA/MHvNbwKBMWfN8Ue8sqBxslAw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2466-2451.delta" sparkle:deltaFrom="2451" length="2350766" type="application/octet-stream" sparkle:edSignature="pRGXTk4c3xRJ6P1g7QZ6n37DR/Itp7HrSQazgD4yMr7H/I8vMm4GtHyzEiejnRu1UtxnMvEGStnkRAY3N2FbAg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2466-2416.delta" sparkle:deltaFrom="2416" length="9182562" type="application/octet-stream" sparkle:edSignature="caxEQAshloV5mIPHSL1XyKoO3bSkP/54SmgaKqXyT08IA1XdHKVS/qOm7/bDNI/5AWCwiRm6/xKTjuD3htXGBw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2466-2394.delta" sparkle:deltaFrom="2394" length="10030270" type="application/octet-stream" sparkle:edSignature="CMAK5shfjJnc0bSzgd7eKJrCpN4YgYuCpd686f/8GUjPzxcZIsG+hpricQNlCIBQM96TM3obvZKMKxWQOA0nCg=="/>
             </sparkle:deltas>
         </item>
     </channel>
