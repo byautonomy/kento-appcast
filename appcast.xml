@@ -16,9 +16,9 @@
 </ul>
 <h3>Keying</h3>
 <ul>
-<li>Keylight's inside and outside masks work: the inside mask fills in the matte (with the inside replace colour), the outside mask cuts it away, from the mask's alpha or luminance.</li>
-<li>Keylight's source crops work: Colour, Repeat, Reflect or Wrap outside the crop, before keying.</li>
-<li>Fixed: Keylight's mask and background inputs were read in the wrong order from Nuke scripts. They now match Nuke: input 1 the inside mask, 2 the outside mask, 3 the background.</li>
+<li>LightKey's inside and outside masks work: the inside mask fills in the matte (with the inside replace colour), the outside mask cuts it away, from the mask's alpha or luminance.</li>
+<li>LightKey's source crops work: Colour, Repeat, Reflect or Wrap outside the crop, before keying.</li>
+<li>Fixed: LightKey's mask and background inputs were read in the wrong order from Nuke scripts. They now match Nuke: input 1 the inside mask, 2 the outside mask, 3 the background.</li>
 </ul>
 <h3>Deep</h3>
 <ul>
