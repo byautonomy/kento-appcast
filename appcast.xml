@@ -3,6 +3,41 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.16</title>
+            <pubDate>Tue, 03 Nov 2026 23:22:45 -0800</pubDate>
+            <sparkle:version>2546</sparkle:version>
+            <sparkle:shortVersionString>0.9.16</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.16, build 2546</h2>
+<h3>Roto</h3>
+<ul>
+<li>The Tracking tab's <b>selected points</b> works: the points you pick in the Viewer (click, Shift-click or drag a box) are each tracked on their own through the Roto's input, and their positions keyed where the track holds. The other points stay as they were.</li>
+</ul>
+<h3>Nodes</h3>
+<ul>
+<li>PointsTo3D's <b>generate axis</b> works the point out from its three picks through the camera, sets <b>point3d</b> and makes an Axis there.</li>
+<li>GeoViewScene's <b>Export</b> writes the scene to a USD file over the comp's range, and <b>Refresh</b> draws the 3D views again.</li>
+<li><b>unpremult</b> and its <b>invert</b> now work on CCorrect, Histogram, RolloffContrast and the OCIO nodes, and <b>invert</b> on Invert, Saturation and EXPTool too.</li>
+<li>Fixed: undoing <b>Edit inside</b> on a Bento could quit Kento.</li>
+</ul>
+<h3>Manual</h3>
+<ul>
+<li>Each Node Reference chapter now opens with a short worked example (Try it): reading and writing a plate, a soft matte, a held frame, a grade, a key, a merge and the rest.</li>
+</ul>
+<h3>Remote control</h3>
+<ul>
+<li>Remote control reaches more of Kento: the comp's settings on every Settings &gt; This comp page, with their choices (<b>comp.settings</b>, <b>comp.set</b>), the comp's views, variables, path maps and the color space for each kind of file (<b>comp.views</b>, <b>comp.variables</b>, <b>comp.path_maps</b>, <b>comp.read_kinds</b>).</li>
+<li>Also: the Curve Editor's Scale and Smooth on a control's keys (<b>key.scale</b>, <b>key.smooth</b>); the motion library (<b>motion.list</b>, <b>add</b>, <b>get</b>, <b>set</b>); folded inputs and detailed labels (<b>graph.show_inputs</b>, <b>graph.details</b>); Roto's follow a track, On the shape and selected points (<b>roto.follow_track</b>, <b>roto.pivot</b>, <b>roto.track_points</b>); GridWarp's Fit to the image (<b>node.fit_grid</b>); a CameraTracker's tracks and their errors (<b>camera.tracks</b>); and the planar multipass report in numbers.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.16.2546.zip" length="376204345" type="application/octet-stream" sparkle:edSignature="Wy320XgdsZ8ySRizcTPFDzdIX44/3OVbognILja5Xtq/AdrRDb7dmnvJJCkb9yiXQO67PGkkYspN7+UgsqUjAQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2546-2526.delta" sparkle:deltaFrom="2526" length="2340562" type="application/octet-stream" sparkle:edSignature="E51uyXjyGRTyCUidpFDimUMGfSi4UyOXOrbPgvnF5wCYQiPRy0Qz8Dw2cbxBhZwl6THcLWKsTVNPXiJcf8U5AA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2546-2522.delta" sparkle:deltaFrom="2522" length="3583682" type="application/octet-stream" sparkle:edSignature="K7ajbFt0mJUTbGVgxrk8CJND8ZdhufboHMQKCBTC9xiu58pYfdthuqRveOCZwZkw41C1JuuhHr5QrQQiZXw2AQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2546-2511.delta" sparkle:deltaFrom="2511" length="3872502" type="application/octet-stream" sparkle:edSignature="h0EM2+kXx4KMrGf3kDGy/77RK+htS7kk6QXKmTOzBqP6sT6L/G+ef5U2Y5/At4xuzcfIGXPAKDDmiL0LNriqDA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.15</title>
             <pubDate>Tue, 03 Nov 2026 22:00:04 -0800</pubDate>
             <sparkle:version>2526</sparkle:version>
@@ -85,60 +120,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2522-2511.delta" sparkle:deltaFrom="2511" length="2069778" type="application/octet-stream" sparkle:edSignature="M/wzm1S5TJdzyRmSTSwkTN43A3jAxfXtuTV+LvfqxPWlJ6iRGM2zuqoB4PDT3+tNHXSdmDHiNo7A1VaRXlyKDQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2522-2501.delta" sparkle:deltaFrom="2501" length="2401346" type="application/octet-stream" sparkle:edSignature="AhKN98OflwS1U8Q5TgOr3Pq/wULbgvrxBKEZKXodRi3luSFnBIAG2+JYrMjdQZYNMAEe23rXrVOGjLeKdJDOBg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2522-2490.delta" sparkle:deltaFrom="2490" length="2471390" type="application/octet-stream" sparkle:edSignature="gmSalk6wM87jlohZGaMKEbm6TJu6rHeUX6zvKfuW0T7CKgUYgWJUxR2Lirteur3NsBgMycsBbbVsT25t2JMhBA=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.13</title>
-            <pubDate>Tue, 03 Nov 2026 18:38:35 -0800</pubDate>
-            <sparkle:version>2511</sparkle:version>
-            <sparkle:shortVersionString>0.9.13</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.13, build 2511</h2>
-<h3>Planar tracker: multipass</h3>
-<ul>
-<li>A <b>Multipass</b> section on the PlanarTracker's Track tab. <b>passes</b> picks single, forward and back, or multipass.</li>
-<li>Under <b>vary</b>, each toggle adds a pass that changes one thing: direction, tracker, reference (the frames under <b>refs</b>), motion model, channel or search.</li>
-<li><b>score by</b> rates each frame of each pass by its confidence, its agreement with the other passes, and its smoothness. <b>combine</b> takes the most consistent path, each frame from the best pass with <b>switch cost</b> for a change, or the best single pass. <b>smooth the joins</b> blends where the pass changes.</li>
-<li><b>Track all passes</b> tracks them; nothing is keyed until <b>Accept</b>. <b>Use pass for range</b> uses one pass from in to out, and <b>Discard</b> drops the run. A graph shows each pass and the combined track.</li>
-<li>Running in the background is on the menu, dim: the passes run now, with their progress.</li>
-</ul>
-<h3>Tracker: the planar track row</h3>
-<ul>
-<li>The Tracker's <b>planar track</b> row now sits in Tracking, as the design has it: the PlanarTracker menu, then <b>guide search</b>, <b>fill gaps</b> and <b>points on it</b> as toggles.</li>
-<li>With <b>points on it</b> on, <b>Add</b> makes a track that rides the plane. The Point on the plane button is gone.</li>
-</ul>
-<h3>Links</h3>
-<ul>
-<li><b>Edit &gt; Link</b> (<b>Alt+L</b>) puts a link to each selected node beside it. Like a clone, its settings are its source's, both ways, keys included.</li>
-<li><b>Edit &gt; Unlink</b> (<b>Shift+Alt+L</b>) makes links nodes of their own. <b>Edit &gt; Copy As Links</b> (<b>Alt+Cmd+L</b>) puts links on the clipboard to paste.</li>
-<li>A .nk writes links as Nuke does, and Nuke opens them as links. A script's links open in Kento as links; a link whose source is missing opens as a node of its own, and the load report says so.</li>
-</ul>
-<h3>MatchGrade</h3>
-<ul>
-<li><b>mask</b> works with Asobi's methods too: the curves and matrix fit reads where both pictures' alpha say so, the other methods each picture by its own.</li>
-<li>Before fitting, Asobi's curves and matrix now finds where the source sits in the target's frame: fitted, filling the frame or stretched, then blown up and moved a little. The closest match is kept, and the line beside Analyze says where the source was placed.</li>
-<li>Bars are left out of the target only, as Asobi now does, and the histogram match no longer fails on an empty side.</li>
-</ul>
-<h3>Playback</h3>
-<ul>
-<li>The held frames are no longer let go at every play and stop. Play, stop and play again now plays from what's held.</li>
-<li>A frame much bigger than the Viewer shows it is held smaller, as sharp as the screen can show it, so more frames fit and they're ready sooner. <b>hold big frames at screen size</b>, in Settings &gt; Preferences &gt; Performance, turns it off.</li>
-<li>The picture past the format (overscan, or a move off it) plays from the cache too, as does the <b>Clipping warning</b> and <b>Absolute values</b>.</li>
-</ul>
-<h3>Roto</h3>
-<ul>
-<li>A point added on a B-spline or X-spline (<b>Cmd+Alt-click</b>) goes where you click on the curve. It had been placed at the middle of the control polygon, which pulled the curve away.</li>
-</ul>
-<h3>Remote control</h3>
-<ul>
-<li><b>planar.multipass</b> and <b>node.clone</b> (clone, declone, link and unlink) are new.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.13.2511.zip" length="376084650" type="application/octet-stream" sparkle:edSignature="wmLC9hdhX8iyar3HPXfm1fP6xp7lhtfqY6wTt1ltPHQuCrN09NKaCBcurBoShm+GEos3+zNT5cVBGaqv0UfgBw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2511-2501.delta" sparkle:deltaFrom="2501" length="1794058" type="application/octet-stream" sparkle:edSignature="2SG1mafs0lYIOSGMlreV6keCisqtAKrQiwJ/4i1PB2qhcSxs+wIQZVDlTA7DgFsDsbVnIp00dAiyWv+oCLd7Bg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2511-2490.delta" sparkle:deltaFrom="2490" length="1898094" type="application/octet-stream" sparkle:edSignature="MbhlMVeTByOtnHzaUCGyz/RDVlADfhG0O4FmmiexsaIu2ztoVDEqI8gC6uFQtnu1+hF9sRVCYac04QFctO2/DQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2511-2477.delta" sparkle:deltaFrom="2477" length="2340822" type="application/octet-stream" sparkle:edSignature="f0mYJWald/XBAeol6m0EANynoajE3i3q1HZsO4j1cI3hPXN4Eg9UF7KfdUxbpUBPghwOGFMchv+jRqqtOYGwBw=="/>
             </sparkle:deltas>
         </item>
     </channel>
