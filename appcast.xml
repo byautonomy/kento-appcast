@@ -3,6 +3,56 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.15</title>
+            <pubDate>Tue, 03 Nov 2026 22:00:04 -0800</pubDate>
+            <sparkle:version>2526</sparkle:version>
+            <sparkle:shortVersionString>0.9.15</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.15, build 2526</h2>
+<h3>Viewer</h3>
+<ul>
+<li>Fixed: a Viewer left on the default display showed the config's default view instead of the comp's <b>Viewer's display</b>. A new ACES 2.0 comp, set to Un-tone-mapped, showed white as gray. Viewers now show the comp's display and follow it when it changes, until you choose a view on the bar.</li>
+<li><b>tone map</b>, after the view menu, switches in one click between the config's tone-mapped view (an ACES view: 1.0 shows as a light gray, highlights roll off) and Un-tone-mapped (1.0 shows as white). It's dim for a config whose views don't tone-map.</li>
+<li>On a narrow Viewer the display menu folds into <b>...</b> before the view menu, so the view's name stays in sight.</li>
+</ul>
+<h3>Properties</h3>
+<ul>
+<li>Right-click a number field for the control's menu, with <b>Reset to default</b>, keys, expressions, and copy and paste, instead of the text menu.</li>
+<li>The mask row has a second line with <b>inject</b>, under <b>invert</b>: it copies the mask into the output's mask.a.</li>
+<li><b>invert</b> beside <b>(un)premult by</b> now works on Add and Multiply too.</li>
+<li>CameraShake's <b>center</b> shows the input's middle, where it turns, until you set your own.</li>
+</ul>
+<h3>Node Graph</h3>
+<ul>
+<li><b>Detailed labels</b>: under each node, after its label, up to two of its controls that differ from their defaults, for example "size 12  filter box" under a Blur, or a Transform's moves. Right-click a node for <b>Hide Details</b> or <b>Hide Details on Every</b> (its class). Settings &gt; Node Graph has <b>detailed labels</b> and the classes you've hidden.</li>
+<li><b>Unused inputs fold away</b>: an empty mask input or a merge's spare A inputs show only while the pointer is on the node or you drag a wire. Select nodes and press <b>Shift+H</b> (Edit &gt; Show Inputs) to keep theirs showing. <b>fold unused inputs</b> in Settings turns it off.</li>
+</ul>
+<h3>Color</h3>
+<ul>
+<li>A MatchGrade on one of Asobi's methods now saves to a .nk as a group Nuke renders the same: the fitted cube between conversions into and out of the color timing space. The cube is copied beside the script. Kento opens the group as the MatchGrade again.</li>
+<li>Kento's own labels, tabs, menus and tips now spell it color: Settings &gt; Color, the comp panel's and Read's Color tabs, Utility &gt; Color checker and the rest. The manual too.</li>
+</ul>
+<h3>3D</h3>
+<ul>
+<li>PositionToPoints2 and CameraTrackerPointCloud draw their point clouds in the 3D view: a point for each sampled pixel of the position pass in the picture's colors, and the tracker's solved points.</li>
+</ul>
+<h3>Settings</h3>
+<ul>
+<li><b>bento libraries</b>, <b>gizmo folders</b> and <b>pixel kernel libraries</b> are lists: a folder a line with <b>Remove</b> beside it, and <b>Add folder...</b> to choose one, for a studio's shared gizmos or Bentos.</li>
+</ul>
+<h3>Remote control</h3>
+<ul>
+<li><b>viewer.look</b> reports the Viewer's display transform: display, view, look, where they came from and the comp's own Viewer's display. <b>viewer.set_look</b> takes a display and a view (<b>default</b> follows the comp's again).</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.15.2526.zip" length="376137658" type="application/octet-stream" sparkle:edSignature="3cGvedQqckkq116+S09d1/Z//LIg+pqJ+4fU3ock6AUqA5wRCQxAIXjto6XCR909C5YnoAxdp3jhQPoICbbKCQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2526-2522.delta" sparkle:deltaFrom="2522" length="2545014" type="application/octet-stream" sparkle:edSignature="RBsDRHYD8qIImk7SAEdH+jNGtcFZcAWafoxuPqT+EoWg2PR6/jsPkifMGzyD+8WPUgjRwFEslnKLBwl5zivhAw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2526-2511.delta" sparkle:deltaFrom="2511" length="3037846" type="application/octet-stream" sparkle:edSignature="5/RxstuuMPvqDQQOdSKtb4jHvqxteEKnvGu5ekNqX7f+vztgrSoT/IlbKl5qZCw5NK00jbNQUfbLON668MsHBg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2526-2501.delta" sparkle:deltaFrom="2501" length="3272518" type="application/octet-stream" sparkle:edSignature="tOtkqzczYeoI2+xNsRTaV/+ogEZX1zCGSKoIB/tlESO+K9HZKB3vpV/4olSoVPSL9SHad+ihriqwnjW9kOo6BQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.14</title>
             <pubDate>Tue, 03 Nov 2026 20:07:11 -0800</pubDate>
             <sparkle:version>2522</sparkle:version>
@@ -89,51 +139,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2511-2501.delta" sparkle:deltaFrom="2501" length="1794058" type="application/octet-stream" sparkle:edSignature="2SG1mafs0lYIOSGMlreV6keCisqtAKrQiwJ/4i1PB2qhcSxs+wIQZVDlTA7DgFsDsbVnIp00dAiyWv+oCLd7Bg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2511-2490.delta" sparkle:deltaFrom="2490" length="1898094" type="application/octet-stream" sparkle:edSignature="MbhlMVeTByOtnHzaUCGyz/RDVlADfhG0O4FmmiexsaIu2ztoVDEqI8gC6uFQtnu1+hF9sRVCYac04QFctO2/DQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2511-2477.delta" sparkle:deltaFrom="2477" length="2340822" type="application/octet-stream" sparkle:edSignature="f0mYJWald/XBAeol6m0EANynoajE3i3q1HZsO4j1cI3hPXN4Eg9UF7KfdUxbpUBPghwOGFMchv+jRqqtOYGwBw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.12</title>
-            <pubDate>Tue, 03 Nov 2026 17:02:23 -0800</pubDate>
-            <sparkle:version>2501</sparkle:version>
-            <sparkle:shortVersionString>0.9.12</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.12, build 2501</h2>
-<h3>MatchGrade: Asobi's grade match</h3>
-<ul>
-<li>A <b>method</b> menu under match task. <b>Nuke's fit</b> is the default and works as before.</li>
-<li><b>curves and matrix (Asobi)</b> is for Match Graded Source, where the target is the same picture graded. It fits a tone curve for each channel and a color matrix where the two frames show the same picture. Burned-in text, changed patches, letterbox bars (in either picture) and clipped highlights are left out. Where the picture shows nothing of a color, that color is left alone.</li>
-<li><b>Reinhard</b>, <b>MKL</b> and <b>HM-MKL-HM</b> are for Match Different Clip. They move the source's colors to the target's overall.</li>
-<li><b>knots</b> sets how many points each curve has. <b>min likeness</b> sets how alike the pictures must be to match at all. Another picture is refused, and one that differs in places gets a warning.</li>
-<li>The fit works in the color config's color timing space (ACEScct in an ACES config), so it suits a scene-linear comp. A line beside <b>Analyze</b> gives the difference before and after, how much of the frame was used, or why the shot wasn't matched.</li>
-<li>Not in Kento yet: <b>mask</b> for these methods, and writing their match to a .nk.</li>
-</ul>
-<h3>MatchGrade: Export .cube</h3>
-<ul>
-<li><b>Export .cube...</b> saves the match as a .cube and names it in <b>outfile</b>.</li>
-<li>With Asobi's methods it's their fitted cube. A line at the top of the file says which space it applies in.</li>
-<li>With Nuke's fit it's the 3D LUT, or the CDL baked over 0 to 1 when <b>transform</b> is CDL.</li>
-</ul>
-<h3>Point tracks and the planar tracker</h3>
-<ul>
-<li>The PlanarTracker's <b>point tracks</b> row picks a Tracker of the comp whose tracks help the plane. <b>start</b> places the plane on every frame from them, <b>constrain</b> holds it close to them through blur or a bare surface, and <b>recover</b> carries it where its own match is lost.</li>
-<li>The other way round, the Tracker's <b>planar track</b>, under When a track fails, picks a PlanarTracker. Each search starts where the plane carries the point, so moves faster than the search area stay found.</li>
-<li><b>fill gaps from the plane</b> fills a track's missed frames from the plane's motion, not from the other tracks.</li>
-<li><b>Point on the plane</b> adds a track at the plane's center that rides the plane on every frame it's tracked.</li>
-</ul>
-<h3>Playback</h3>
-<ul>
-<li><b>Skip frames to keep the rate</b>, on the Timeline's playback chip and in Settings &gt; Viewer &gt; Playback. While playing, a frame that isn't ready when its turn comes is skipped, so the motion keeps its real speed. Off (the default), every frame is played, waiting for any that aren't ready.</li>
-</ul>
-<h3>Remote control</h3>
-<ul>
-<li><b>matchgrade.analyze</b> and <b>tracker.on_plane</b> are new.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.12.2501.zip" length="376009550" type="application/octet-stream" sparkle:edSignature="xl0yBcbtdI0iFwBKZQvA+nwIreWnSRIPqne1/zByuI4vZt3LdI5jZaJgJ9bJnT6NnQVnEu8BjslHegFiPtMuCQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2501-2490.delta" sparkle:deltaFrom="2490" length="1569730" type="application/octet-stream" sparkle:edSignature="xWN+3NsD+0B3e2XsXCr14SyuNlTjpr/Y4h1rntaRwlxgl7vb2PXHvc0ijEh7CqqWwsyxYUWJF2RHPpGXuKafCg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2501-2477.delta" sparkle:deltaFrom="2477" length="2098158" type="application/octet-stream" sparkle:edSignature="2XM9xPv0ndQSrQtazWftiLY9TvoILeVAA8g2f3s8NYKOSXpKwIla1doSSVPDbceS93utbFm43J+VpC3BtDUuBA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2501-2466.delta" sparkle:deltaFrom="2466" length="2668622" type="application/octet-stream" sparkle:edSignature="dADk+pRS49yzWlt97bn91uFR7OD0qrgIdjZtbnuMjzS+7wMHRRlPGW911M4/h/3iwflKTWXibkg+ufMwAzgzBQ=="/>
             </sparkle:deltas>
         </item>
     </channel>
