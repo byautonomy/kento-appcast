@@ -3,6 +3,60 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.20</title>
+            <pubDate>Wed, 04 Nov 2026 09:57:54 -0800</pubDate>
+            <sparkle:version>2606</sparkle:version>
+            <sparkle:shortVersionString>0.9.20</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.20, build 2606</h2>
+<h3>Paint</h3>
+<ul>
+<li>A new node, <b>Paint</b> (under Draw), made for cleanup: brush, eraser, clone, reveal, heal, dust, wire removal, blur, sharpen, smear, dodge and burn, from a tool rail over the picture.</li>
+<li>The strip over the Viewer holds the brush (size, hardness, opacity, color), where clone takes from, the stroke's lifetime and the channels. Click the tool chip for presets, each drawn on your own plate. Hold the right button for the marking menu.</li>
+<li>Clone from Paint's own painted output on another frame. <b>Onion skin</b> (O) and <b>split compare</b> (Caps Lock) line a clone up. <b>Auto grade</b> matches the source's brightness to where it lands, and <b>warp pins</b> bend the source to fit.</li>
+<li><b>Grain-aware</b> strokes put the plate's own grain back under what you paint, so a clone doesn't leave a smooth patch.</li>
+<li>Every stroke stays editable: pick one in <b>History</b> and the same strip edits it, in blue-gray, until Done. Drag strokes to reorder them, Delete takes one out.</li>
+<li>Painted frames are cached as tiles where there's paint, in memory and then on the local disk, so playing and cloning across frames are quick.</li>
+<li><b>Edit brush...</b> opens the brush editor: a live pad on your plate, shape, the pressure curve, tilt and speed, the stabilizer, blend modes including pigment mixing.</li>
+<li><b>AI fill</b>: paint over what to remove on a hero frame and Saku fills it, shown with its price first. It comes back as a reveal source for the frames around it, regrained.</li>
+<li>Window &gt; Workspaces &gt; <b>Paint</b>: the Viewer large, History beside it.</li>
+</ul>
+<h3>AI roto: Isolate</h3>
+<ul>
+<li>A new node, <b>Isolate</b> (under Draw): click on an object in the Viewer and SAM 2 follows it through the shot, each object ending as a matte channel of its own (<b>isolate.&lt;name&gt;</b>). Alt-click takes away, a drag draws a box round it, and <b>stroke</b> lays points along a line for something thin.</li>
+<li><b>Track both ways</b> runs in the background while you work. The strip under the Viewer shows each frame green, amber or red by how sure the tracker is, lost frames hatched, so you can see where to click again.</li>
+<li><b>Find every</b> picks objects by name: type "cars" or "people, bikes" and each one SAM 3.1 finds on the frame becomes an object of its own, ready to track.</li>
+<li><b>Edge</b>: snap the matte's edge to the picture, decontaminate the edge's color, reduce chatter between frames, and add motion blur along the object's motion.</li>
+<li><b>Out</b>: a channel per object or Cryptomatte, alpha from every object, and <b>Bake to EXR</b>. The mattes are kept beside the comp, so it renders anywhere, the farm included, without the tracker.</li>
+<li>Set up in Settings &gt; Performance &gt; AI roto: <b>Find</b> fills in what's on your Mac.</li>
+</ul>
+<h3>Saku, built in</h3>
+<ul>
+<li>Kento now ships its own Saku, the version Kento was made with, so Generate, Inpaint and AI fill work without installing anything first.</li>
+<li><b>Settings &gt; Generative &gt; Provider keys</b>: paste your Gemini, OpenAI, Replicate, fal, Higgsfield, Topaz and BytePlus keys there. Each is shown only by its last four characters and kept in Saku's own file, readable only by you.</li>
+</ul>
+<h3>Node Graph</h3>
+<ul>
+<li><b>Tidy</b> lays the selection out as you would: each input straight above its port (a side input above and out to its side), rows evenly spaced, nothing overlapping, the bottom node kept where it is.</li>
+<li>Zoomed out, the ports a hover reveals get room of their own outside the node, their labels level.</li>
+</ul>
+<h3>Faster</h3>
+<ul>
+<li>The Viewer's <b>Visible difference</b> compare is much faster on 4K pictures.</li>
+</ul>
+<h3>Remote control</h3>
+<ul>
+<li>Isolate and Paint are reachable too: Isolate's objects, prompts, Find every, Track and Bake; Paint's strokes, presets, cache and AI fill. 166 commands.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.20.2606.zip" length="427175433" type="application/octet-stream" sparkle:edSignature="G0I73JK/pVda+fLFBsNsNaPCqpZco9+9oDasMQtPhEp7HrzUbgHxQ6JzeWxhPnqMoX7yVAwSifiIEjXJXzXyDw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2606-2586.delta" sparkle:deltaFrom="2586" length="32912106" type="application/octet-stream" sparkle:edSignature="jnK0zPnQhGXkqlsARTyF5ZzQL39p8MXSCD890M2J8ukuqauqzE+X2tYuBjIDmsyQd6f8iLmffoqFeQ2KszAiDg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2606-2571.delta" sparkle:deltaFrom="2571" length="33053606" type="application/octet-stream" sparkle:edSignature="IrxRk4COS+ir9fAronJ5UHCgR4dU/AAPoyD6R57zeWoDVDdibB57UDG58S9TiOQEkbKbZail3ufz9m2jftAlAg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2606-2557.delta" sparkle:deltaFrom="2557" length="33661106" type="application/octet-stream" sparkle:edSignature="3bcEwbFS/LJfcJt0AzWS54RGN5m6VFhV8k7TnEKOogqn+aF9f7PAlISxwB/P2BBaZ03sv9Bwrv2dvJ3cZhezBg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.19</title>
             <pubDate>Wed, 04 Nov 2026 05:04:24 -0800</pubDate>
             <sparkle:version>2586</sparkle:version>
@@ -71,34 +125,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2571-2557.delta" sparkle:deltaFrom="2557" length="2294378" type="application/octet-stream" sparkle:edSignature="d4EU1/tY3x9g9hif6YZv2xFyd30GD1LAdsNyYvssXHZa9/MCX0oEFC8EHIpK3WFyBG2Wmat6Jm9R5BJ3sEXhBQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2571-2546.delta" sparkle:deltaFrom="2546" length="2418686" type="application/octet-stream" sparkle:edSignature="ziLqUGMNdrbBs61K8RTJxSvzv+RYpt4j9nnoPdVgUW3a1DIxKPQpknouEn/ePxRUkUHTUqFEcrMMbTqv/nMNDw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2571-2526.delta" sparkle:deltaFrom="2526" length="3408286" type="application/octet-stream" sparkle:edSignature="vZke4utqFNxamDUibTm2zmSxDt4RwV40VkbWbcSCKUEaIDEnFkU5dg7L5pCDKjcuEwRSyDpMqAH4D6Vt8cdKDQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.17</title>
-            <pubDate>Wed, 04 Nov 2026 00:21:49 -0800</pubDate>
-            <sparkle:version>2557</sparkle:version>
-            <sparkle:shortVersionString>0.9.17</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.17, build 2557</h2>
-<h3>Paint</h3>
-<ul>
-<li>Wire removal follows a track: choose a Tracker's track in the wire pop-over's <b>track</b> menu and the wire you paint moves with it from the frame you painted it on. Filling from <b>other frames</b> or <b>a clean plate</b> lines those up by the track too, so a moving camera fills cleanly. Track the shot again and the wire follows the new track.</li>
-</ul>
-<h3>Roto</h3>
-<ul>
-<li><b>Stay linked</b> works: follow a track with it on and the shapes keep following the PlanarTracker, keyed again whenever its track changes (a track run, a corner moved). <b>Bake into keys</b> keys it once, as before, and drops a link already made. The link is saved with the comp.</li>
-<li>The Tracking tab's <b>mesh</b> lays a grid over the shapes, tracks its corners one by one and keys the points where the grid takes them, for shapes on something that bends.</li>
-</ul>
-<h3>Remote control</h3>
-<ul>
-<li>Remote control now reaches every button on every panel: a Nagi's Auto setup (<b>nagi.auto_setup</b>), a plug-in node's buttons (<b>node.plugin_button</b>), Roto's mesh (<b>roto.track_mesh</b>) and Stay linked (<b>roto.follow_track</b> with <b>linked</b>), and a wire stroke's track (<b>roto.add_stroke</b>). 148 commands in 26 areas.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.17.2557.zip" length="376230593" type="application/octet-stream" sparkle:edSignature="y30Agg/z2X3Nx/q/jpmxa+3EL9LEpoGVtNv4oMVfamUiPtj0I6jTNYvQE7zJ7Oc/jSv2PjKpAZGW8/VkEtmTAQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2557-2546.delta" sparkle:deltaFrom="2546" length="1129406" type="application/octet-stream" sparkle:edSignature="uR4G2U/r5OXZa76fdwdw0sb4Gy5ix6dGDkbnnmj2i8qT9mliNJb0xD/3sQ7CrWiy7qFzMwl+yA7RjerPkzTgBQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2557-2526.delta" sparkle:deltaFrom="2526" length="2549390" type="application/octet-stream" sparkle:edSignature="rsn5VOQJNGML4NTrQt2nvNVbMKG55lzulh7lA3/9NdrVjHM7DcsalHqEkXdRcG0XcPq5PKJDDUXezKUfCEIZBA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2557-2522.delta" sparkle:deltaFrom="2522" length="3815990" type="application/octet-stream" sparkle:edSignature="usdIotClNOwoDCB+QRNrYj3HMNSxGeL967SSqjcfXzV6Sr5cgYuGwvBqZucp5BknQj5hKv3eymQoU3nWaMO5CA=="/>
             </sparkle:deltas>
         </item>
     </channel>
