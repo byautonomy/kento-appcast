@@ -3,6 +3,68 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.23</title>
+            <pubDate>Wed, 04 Nov 2026 16:14:55 -0800</pubDate>
+            <sparkle:version>2692</sparkle:version>
+            <sparkle:shortVersionString>0.9.23</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.23, build 2692</h2>
+<h3>RotoPaint and Paint</h3>
+<ul>
+<li><b>Strokes paint as you draw them.</b> What you see under the pen is the node's own render: the brush's color, softness and opacity, the eraser, a clone's source, every tool as it will look when you let go. Letting go is one undo.</li>
+<li><b>Much faster.</b> A new stroke costs only itself, however many are under it: on a UHD frame, RotoPaint's picture is back 0.1 s after the pen lifts with 27 strokes (was 0.4 s) and 0.16 s with 200 (was 2.6 s). Paint now paints on RotoPaint's canvas: a change takes 50 ms instead of 3 s. That covers the brush (round, oval or angled, on RGB, alpha or both, in every blend but pigment), the eraser, clone, reveal, heal, wire removal, blur, sharpen, smear, dodge and burn, and the paint-only output. Dust, pigment, warp pins, auto grade, grain-aware strokes and cloning from Paint's own output on another frame still paint as before.</li>
+<li><b>The pointer is the brush</b>: its outline at its size on screen, with the hardness ring inside, as in other paint programs.</li>
+<li><b>A floating tool palette</b> for Paint, RotoPaint and Roto: drag it anywhere or dock it at the Viewer's left edge, one or two columns, a group's other tools behind the corner of its button. Right-click it to customize: reorder tools, move them between groups, hide the ones you don't use.</li>
+<li><b>Delete works</b> on picked strokes and shapes, and so do every other key of the Roto and Paint tools (they never reached the tool before).</li>
+<li>The right-click menu keeps what's picked, so its Cut, Copy and Delete act on it.</li>
+<li><b>A transform box</b> goes round several picked points, strokes or both: drag inside to move, a corner to scale, just outside a corner to turn.</li>
+<li><b>Pressure controls</b> in the brush menu: how much the lightest touch keeps of the size and opacity, and a light or firm response.</li>
+<li>Paint's History has an × on each row to take that stroke out.</li>
+<li>Paint's eraser shows under the pen even with nothing on the input.</li>
+</ul>
+<h3>AI roto</h3>
+<ul>
+<li>SAM 3.1 installs from Kento: Settings &gt; Performance &gt; AI roto &gt; Install..., with each download's size shown first, and Resume if it stops. Isolate tracks with SAM 3.1 once it's in; SAM 2 stays as a fallback.</li>
+</ul>
+<h3>Viewer and Node Graph</h3>
+<ul>
+<li>Moving the pointer over a picture that's being worked out no longer holds Kento up (the pixel readout waited for the picture).</li>
+<li>The keys of SplineWarp's, Perspective's and the projection plane's Viewer tools now reach them.</li>
+<li>Zoomed out, a port's ring takes a click or a dropped wire where it's drawn.</li>
+</ul>
+<h3>Rendering</h3>
+<ul>
+<li><b>Render nodes</b> render through Kento's render engine, with caches sized for a render (they rendered through Gaffer alone).</li>
+<li>Kento.app carries the render node itself (Contents/Resources/kento/tools/kento_render_node.sh), so a Mac render box doesn't need to open the app.</li>
+<li>Preferences &gt; Render lists render nodes as a table, any number of them: each row shows the node's state, cores, memory and GPU, with an x to take it off the list. Add a render node... has an Add button.</li>
+<li>A render node started on its own takes tasks (it refused every one), and a frame that fails says why (it showed only "Traceback").</li>
+<li>A comp saved on one Mac finds its color config on the machine that opens it: by the path maps, else by the config's name among that machine's own. Kento's own configs are saved by a path that's the same on every machine. Render nodes failed every frame on a config path from the artist's Mac.</li>
+<li>Renders from the Render Queue keep their caches small, as command-line renders do: a batch render of a large comp peaked at 3.2 GB instead of over 12 GB.</li>
+<li>Nuke's older Shuffle and ShuffleCopy go through the render engine as one node each, and draw the right picture.</li>
+<li>New comps render through Kento's render engine again (their color config's path wasn't expanded, and the render stopped).</li>
+<li>Remote control's render_write sends a long range to the Render Queue and answers at once, instead of holding Kento for the whole render.</li>
+</ul>
+<h3>Gizmos</h3>
+<ul>
+<li>Gizmos saved as groups load: a .gizmo file holding a Group (or a NoOp with controls) instead of a Gizmo becomes that node, as in Nuke. 9 of the 23 gizmos in the studio library didn't load before.</li>
+<li>Importing a gizmo no longer loses the comp's folder, which relative footage paths read from.</li>
+</ul>
+<h3>Remote control</h3>
+<ul>
+<li>Lists and makes Kento's own nodes (GrainMatch, Paint, Isolate and the rest), not only Nuke's.</li>
+<li>Can frame the Node Graph, as F does.</li>
+<li>Reads a key on a whole frame back as that whole frame.</li>
+<li>Says what the Generative Grain's knobs are.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.23.2692.zip" length="427816184" type="application/octet-stream" sparkle:edSignature="HuliGpQ8jjQOkY0PVr26Gv6PvleSKkA5wvasn5cY0TYroMQPtham8Zj4GoKceOZj7Tc4Af8pksRexc6ButWYBw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2692-2639.delta" sparkle:deltaFrom="2639" length="2845750" type="application/octet-stream" sparkle:edSignature="gODQGpCan52RypGxOaqNCMAg0Em4afOUtCwLx6x/JP3WJ0qxGf6AydAz+QA09EwG3mCQZNAaHftWzZ91oZeOBg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2692-2617.delta" sparkle:deltaFrom="2617" length="3461138" type="application/octet-stream" sparkle:edSignature="ERoZEAKhUc24WYeb3L5lsIbd0jpMuXALjDym+//0yUEmt/KomIrA9XChsFVX2NYefdOUdpUSTSVpZu5hjCSkBQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2692-2606.delta" sparkle:deltaFrom="2606" length="4350818" type="application/octet-stream" sparkle:edSignature="4kOSSZRta5eWS3sDtkYYUhRESvUC7fPQTeb4wfpgcf5pViSVYmA/xo659uzV/o980tH82SMx3k2jE5prRHQ+Cw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.22</title>
             <pubDate>Wed, 04 Nov 2026 12:45:14 -0800</pubDate>
             <sparkle:version>2639</sparkle:version>
@@ -66,60 +128,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2617-2606.delta" sparkle:deltaFrom="2606" length="2567318" type="application/octet-stream" sparkle:edSignature="3yoGkeeArzq7qLNO4xyxSp0WMadqP6wboIWSAWKC4I6w1Lo2cydVKoe79PhT8DkoZ0RedbXFuJbxAABdt7KEDg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2617-2586.delta" sparkle:deltaFrom="2586" length="32893314" type="application/octet-stream" sparkle:edSignature="uAOiqbES18zjSjlUs8A2O8g26ZEmyLy9jN5k9gmppCG68plhi00n6xGF6AIrKxK+2DE0MG/0v3Hz9y0tQ9Y/BA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2617-2571.delta" sparkle:deltaFrom="2571" length="33142806" type="application/octet-stream" sparkle:edSignature="B10GHerw+YM+NwwYc6gbVIuDrs4f5PHY0Xsx1mF/hKm3V5QAJ4fJy8BhKoW5Xw4ECj6DvfmEZBe3Qlsn2dfYAQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.20</title>
-            <pubDate>Wed, 04 Nov 2026 09:57:54 -0800</pubDate>
-            <sparkle:version>2606</sparkle:version>
-            <sparkle:shortVersionString>0.9.20</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.20, build 2606</h2>
-<h3>Paint</h3>
-<ul>
-<li>A new node, <b>Paint</b> (under Draw), made for cleanup: brush, eraser, clone, reveal, heal, dust, wire removal, blur, sharpen, smear, dodge and burn, from a tool rail over the picture.</li>
-<li>The strip over the Viewer holds the brush (size, hardness, opacity, color), where clone takes from, the stroke's lifetime and the channels. Click the tool chip for presets, each drawn on your own plate. Hold the right button for the marking menu.</li>
-<li>Clone from Paint's own painted output on another frame. <b>Onion skin</b> (O) and <b>split compare</b> (Caps Lock) line a clone up. <b>Auto grade</b> matches the source's brightness to where it lands, and <b>warp pins</b> bend the source to fit.</li>
-<li><b>Grain-aware</b> strokes put the plate's own grain back under what you paint, so a clone doesn't leave a smooth patch.</li>
-<li>Every stroke stays editable: pick one in <b>History</b> and the same strip edits it, in blue-gray, until Done. Drag strokes to reorder them, Delete takes one out.</li>
-<li>Painted frames are cached as tiles where there's paint, in memory and then on the local disk, so playing and cloning across frames are quick.</li>
-<li><b>Edit brush...</b> opens the brush editor: a live pad on your plate, shape, the pressure curve, tilt and speed, the stabilizer, blend modes including pigment mixing.</li>
-<li><b>AI fill</b>: paint over what to remove on a hero frame and Saku fills it, shown with its price first. It comes back as a reveal source for the frames around it, regrained.</li>
-<li>Window &gt; Workspaces &gt; <b>Paint</b>: the Viewer large, History beside it.</li>
-</ul>
-<h3>AI roto: Isolate</h3>
-<ul>
-<li>A new node, <b>Isolate</b> (under Draw): click on an object in the Viewer and SAM 2 follows it through the shot, each object ending as a matte channel of its own (<b>isolate.&lt;name&gt;</b>). Alt-click takes away, a drag draws a box round it, and <b>stroke</b> lays points along a line for something thin.</li>
-<li><b>Track both ways</b> runs in the background while you work. The strip under the Viewer shows each frame green, amber or red by how sure the tracker is, lost frames hatched, so you can see where to click again.</li>
-<li><b>Find every</b> picks objects by name: type "cars" or "people, bikes" and each one SAM 3.1 finds on the frame becomes an object of its own, ready to track.</li>
-<li><b>Edge</b>: snap the matte's edge to the picture, decontaminate the edge's color, reduce chatter between frames, and add motion blur along the object's motion.</li>
-<li><b>Out</b>: a channel per object or Cryptomatte, alpha from every object, and <b>Bake to EXR</b>. The mattes are kept beside the comp, so it renders anywhere, the farm included, without the tracker.</li>
-<li>Set up in Settings &gt; Performance &gt; AI roto: <b>Find</b> fills in what's on your Mac.</li>
-</ul>
-<h3>Saku, built in</h3>
-<ul>
-<li>Kento now ships its own Saku, the version Kento was made with, so Generate, Inpaint and AI fill work without installing anything first.</li>
-<li><b>Settings &gt; Generative &gt; Provider keys</b>: paste your Gemini, OpenAI, Replicate, fal, Higgsfield, Topaz and BytePlus keys there. Each is shown only by its last four characters and kept in Saku's own file, readable only by you.</li>
-</ul>
-<h3>Node Graph</h3>
-<ul>
-<li><b>Tidy</b> lays the selection out as you would: each input straight above its port (a side input above and out to its side), rows evenly spaced, nothing overlapping, the bottom node kept where it is.</li>
-<li>Zoomed out, the ports a hover reveals get room of their own outside the node, their labels level.</li>
-</ul>
-<h3>Faster</h3>
-<ul>
-<li>The Viewer's <b>Visible difference</b> compare is much faster on 4K pictures.</li>
-</ul>
-<h3>Remote control</h3>
-<ul>
-<li>Isolate and Paint are reachable too: Isolate's objects, prompts, Find every, Track and Bake; Paint's strokes, presets, cache and AI fill. 166 commands.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.20.2606.zip" length="427175433" type="application/octet-stream" sparkle:edSignature="G0I73JK/pVda+fLFBsNsNaPCqpZco9+9oDasMQtPhEp7HrzUbgHxQ6JzeWxhPnqMoX7yVAwSifiIEjXJXzXyDw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2606-2586.delta" sparkle:deltaFrom="2586" length="32912106" type="application/octet-stream" sparkle:edSignature="jnK0zPnQhGXkqlsARTyF5ZzQL39p8MXSCD890M2J8ukuqauqzE+X2tYuBjIDmsyQd6f8iLmffoqFeQ2KszAiDg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2606-2571.delta" sparkle:deltaFrom="2571" length="33053606" type="application/octet-stream" sparkle:edSignature="IrxRk4COS+ir9fAronJ5UHCgR4dU/AAPoyD6R57zeWoDVDdibB57UDG58S9TiOQEkbKbZail3ufz9m2jftAlAg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2606-2557.delta" sparkle:deltaFrom="2557" length="33661106" type="application/octet-stream" sparkle:edSignature="3bcEwbFS/LJfcJt0AzWS54RGN5m6VFhV8k7TnEKOogqn+aF9f7PAlISxwB/P2BBaZ03sv9Bwrv2dvJ3cZhezBg=="/>
             </sparkle:deltas>
         </item>
     </channel>
