@@ -3,6 +3,35 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.26</title>
+            <pubDate>Wed, 04 Nov 2026 22:30:18 -0800</pubDate>
+            <sparkle:version>2741</sparkle:version>
+            <sparkle:shortVersionString>0.9.26</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.26, build 2741</h2>
+<h3>Trainer</h3>
+<ul>
+<li><b>Evaluate</b> says how a pass does: on the frames held out, how close it looks to your fix (FLIP and PSNR); how much it changes outside the mask; and whether it adds flicker from frame to frame.</li>
+<li><b>Suggest frames</b> names the frames to fix next: the ones least like those you've fixed, and where the pass is unsure of itself.</li>
+<li><b>Context frames</b> work: with 1 each side the network sees the frame before and after too, for fixes that depend on motion.</li>
+<li><b>Steady</b> holds a fix still that wavers from frame to frame, averaging its change over the frames either side; the plate's own motion is left as it is.</li>
+<li>Each pass holds out a different frame to judge it, so every frame you fixed judges some pass.</li>
+<li>The comp keeps the active pass's network too, so a comp copied without its passes folder still renders.</li>
+</ul>
+<h3>Paint</h3>
+<ul>
+<li>A clone from Paint's own output on another frame now paints on the fast canvas too: every tool and source does, but an AI fill still.</li>
+<li>In paint-only output, a clone from the node's own output reads the painted picture, not the paint-only one.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.26.2741.zip" length="429207647" type="application/octet-stream" sparkle:edSignature="Rl2+s9HoEwO3+anXdV7JTXXDmBm5Z+56XK4jBC1Iy/dtsMLtW0AiMjP4pV9TWAt8DjNUZGUALe6RpiOGZBlBCg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2741-2724.delta" sparkle:deltaFrom="2724" length="1614646" type="application/octet-stream" sparkle:edSignature="EvKiO6GZHME3oJLg8DilKfU3xhKC7Ork7hkkiC0ZtPS4ZP9PP2YQodxhrfaOjr5P8GOK45KHe3WDMZo26LO1CQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2741-2712.delta" sparkle:deltaFrom="2712" length="2043842" type="application/octet-stream" sparkle:edSignature="v/LkELY2P8hgsGJYIAovqzMdNFUIt5nGg6CynOjBYSbGriSk93IxmrzXN+6SSNEyH9KU+yiswZVZm9LjeBbLBw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2741-2692.delta" sparkle:deltaFrom="2692" length="11626654" type="application/octet-stream" sparkle:edSignature="l4yqVtd6Qm74GviFqFjR80I/KI4QLSj0SK4jIFojq4yp/G3VeILSDDllzwBr/CqEWE/gN9C7l+hjgqA0JNmaBA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.25</title>
             <pubDate>Wed, 04 Nov 2026 19:36:59 -0800</pubDate>
             <sparkle:version>2724</sparkle:version>
@@ -64,68 +93,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2712-2692.delta" sparkle:deltaFrom="2692" length="11334330" type="application/octet-stream" sparkle:edSignature="h1eU6qnDP0fNvwsfnL8F2Xcb3Tf4uym/gkap363QNuG939kPWk9tzYIYPm/+M2j7YkixscpXVYPkz+28bfQwCg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2712-2639.delta" sparkle:deltaFrom="2639" length="12395562" type="application/octet-stream" sparkle:edSignature="wHYgIQ9p5LP/IP/jV14PlJRhf2mq8RsdqD50wPZLVr41DwRVGtUD/tNi51TIk5bKOH8QhYlJE9PHSpRRfjJrAg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2712-2617.delta" sparkle:deltaFrom="2617" length="12639210" type="application/octet-stream" sparkle:edSignature="b20qIFOUav1yB/x5/vjDb7G1zJGfM+MQB4Z9oaDLTj9AO8Z5LJQuAFbWqkUbb3Kvzihg64AIVYhqfX3Vkc8CDA=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.23</title>
-            <pubDate>Wed, 04 Nov 2026 16:14:55 -0800</pubDate>
-            <sparkle:version>2692</sparkle:version>
-            <sparkle:shortVersionString>0.9.23</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.23, build 2692</h2>
-<h3>RotoPaint and Paint</h3>
-<ul>
-<li><b>Strokes paint as you draw them.</b> What you see under the pen is the node's own render: the brush's color, softness and opacity, the eraser, a clone's source, every tool as it will look when you let go. Letting go is one undo.</li>
-<li><b>Much faster.</b> A new stroke costs only itself, however many are under it: on a UHD frame, RotoPaint's picture is back 0.1 s after the pen lifts with 27 strokes (was 0.4 s) and 0.16 s with 200 (was 2.6 s). Paint now paints on RotoPaint's canvas: a change takes 50 ms instead of 3 s. That covers the brush (round, oval or angled, on RGB, alpha or both, in every blend but pigment), the eraser, clone, reveal, heal, wire removal, blur, sharpen, smear, dodge and burn, and the paint-only output. Dust, pigment, warp pins, auto grade, grain-aware strokes and cloning from Paint's own output on another frame still paint as before.</li>
-<li><b>The pointer is the brush</b>: its outline at its size on screen, with the hardness ring inside, as in other paint programs.</li>
-<li><b>A floating tool palette</b> for Paint, RotoPaint and Roto: drag it anywhere or dock it at the Viewer's left edge, one or two columns, a group's other tools behind the corner of its button. Right-click it to customize: reorder tools, move them between groups, hide the ones you don't use.</li>
-<li><b>Delete works</b> on picked strokes and shapes, and so do every other key of the Roto and Paint tools (they never reached the tool before).</li>
-<li>The right-click menu keeps what's picked, so its Cut, Copy and Delete act on it.</li>
-<li><b>A transform box</b> goes round several picked points, strokes or both: drag inside to move, a corner to scale, just outside a corner to turn.</li>
-<li><b>Pressure controls</b> in the brush menu: how much the lightest touch keeps of the size and opacity, and a light or firm response.</li>
-<li>Paint's History has an × on each row to take that stroke out.</li>
-<li>Paint's eraser shows under the pen even with nothing on the input.</li>
-</ul>
-<h3>AI roto</h3>
-<ul>
-<li>SAM 3.1 installs from Kento: Settings &gt; Performance &gt; AI roto &gt; Install..., with each download's size shown first, and Resume if it stops. Isolate tracks with SAM 3.1 once it's in; SAM 2 stays as a fallback.</li>
-</ul>
-<h3>Viewer and Node Graph</h3>
-<ul>
-<li>Moving the pointer over a picture that's being worked out no longer holds Kento up (the pixel readout waited for the picture).</li>
-<li>The keys of SplineWarp's, Perspective's and the projection plane's Viewer tools now reach them.</li>
-<li>Zoomed out, a port's ring takes a click or a dropped wire where it's drawn.</li>
-</ul>
-<h3>Rendering</h3>
-<ul>
-<li><b>Render nodes</b> render through Kento's render engine, with caches sized for a render (they rendered through Gaffer alone).</li>
-<li>Kento.app carries the render node itself (Contents/Resources/kento/tools/kento_render_node.sh), so a Mac render box doesn't need to open the app.</li>
-<li>Preferences &gt; Render lists render nodes as a table, any number of them: each row shows the node's state, cores, memory and GPU, with an x to take it off the list. Add a render node... has an Add button.</li>
-<li>A render node started on its own takes tasks (it refused every one), and a frame that fails says why (it showed only "Traceback").</li>
-<li>A comp saved on one Mac finds its color config on the machine that opens it: by the path maps, else by the config's name among that machine's own. Kento's own configs are saved by a path that's the same on every machine. Render nodes failed every frame on a config path from the artist's Mac.</li>
-<li>Renders from the Render Queue keep their caches small, as command-line renders do: a batch render of a large comp peaked at 3.2 GB instead of over 12 GB.</li>
-<li>Nuke's older Shuffle and ShuffleCopy go through the render engine as one node each, and draw the right picture.</li>
-<li>New comps render through Kento's render engine again (their color config's path wasn't expanded, and the render stopped).</li>
-<li>Remote control's render_write sends a long range to the Render Queue and answers at once, instead of holding Kento for the whole render.</li>
-</ul>
-<h3>Gizmos</h3>
-<ul>
-<li>Gizmos saved as groups load: a .gizmo file holding a Group (or a NoOp with controls) instead of a Gizmo becomes that node, as in Nuke. 9 of the 23 gizmos in the studio library didn't load before.</li>
-<li>Importing a gizmo no longer loses the comp's folder, which relative footage paths read from.</li>
-</ul>
-<h3>Remote control</h3>
-<ul>
-<li>Lists and makes Kento's own nodes (GrainMatch, Paint, Isolate and the rest), not only Nuke's.</li>
-<li>Can frame the Node Graph, as F does.</li>
-<li>Reads a key on a whole frame back as that whole frame.</li>
-<li>Says what the Generative Grain's knobs are.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.23.2692.zip" length="427816184" type="application/octet-stream" sparkle:edSignature="HuliGpQ8jjQOkY0PVr26Gv6PvleSKkA5wvasn5cY0TYroMQPtham8Zj4GoKceOZj7Tc4Af8pksRexc6ButWYBw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2692-2639.delta" sparkle:deltaFrom="2639" length="2845750" type="application/octet-stream" sparkle:edSignature="gODQGpCan52RypGxOaqNCMAg0Em4afOUtCwLx6x/JP3WJ0qxGf6AydAz+QA09EwG3mCQZNAaHftWzZ91oZeOBg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2692-2617.delta" sparkle:deltaFrom="2617" length="3461138" type="application/octet-stream" sparkle:edSignature="ERoZEAKhUc24WYeb3L5lsIbd0jpMuXALjDym+//0yUEmt/KomIrA9XChsFVX2NYefdOUdpUSTSVpZu5hjCSkBQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2692-2606.delta" sparkle:deltaFrom="2606" length="4350818" type="application/octet-stream" sparkle:edSignature="4kOSSZRta5eWS3sDtkYYUhRESvUC7fPQTeb4wfpgcf5pViSVYmA/xo659uzV/o980tH82SMx3k2jE5prRHQ+Cw=="/>
             </sparkle:deltas>
         </item>
     </channel>
