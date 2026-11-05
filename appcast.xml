@@ -3,6 +3,51 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.27</title>
+            <pubDate>Thu, 05 Nov 2026 09:38:22 -0800</pubDate>
+            <sparkle:version>2759</sparkle:version>
+            <sparkle:shortVersionString>0.9.27</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.27, build 2759</h2>
+<h3>Trainer's panel</h3>
+<ul>
+<li>Trainer has its own panel. <b>Frames</b> shows the frames you fixed as pictures along a strip, the held-out one edged dashed; click one to go to it, or its x to take it off. <b>Add current frame</b> is lit while the frame isn't a training frame yet.</li>
+<li><b>Suggest frames</b> shows the frames to fix next as dimmed pictures with their reason, as hollow marks on the Timeline, and as circles over the bars of where the pass is unsure.</li>
+<li><b>quality</b> is Quick, Full or Custom side by side, with how long a pass should take on this Mac under it.</li>
+<li><b>Run</b> draws the loss as it falls, with the held-out frame's FLIP as a dot every 1,000 steps.</li>
+<li><b>Passes</b> lists every pass with its steps, minutes, FLIP and flicker; a pass whose frames changed since it trained is marked. A row's menu has Use this pass, Show its folder and Delete pass.</li>
+<li><b>Evaluate</b> shows the held-out frame four ways (the plate, your fix, the pass and their difference), each measure in words, and a bar for each frame where the pass is unsure; click one to go to that frame.</li>
+<li>The job is in the panel's header too, beside the name.</li>
+</ul>
+<h3>Pen test</h3>
+<ul>
+<li><b>Help &gt; Pen test...</b> shows what your pen sends Kento as you draw on its pad: whether it arrives as a pen or only as a mouse, the pressure now and the range you reach, tilt, and how many events a second. It says in plain words whether pressure is reaching Kento, and if not, what to change in the tablet's own settings.</li>
+<li>It also shows what Paint's brush and RotoPaint's brush make of that pressure: the size and opacity range they'll paint with.</li>
+<li><b>Save trace</b> keeps what the pen sent, to attach to a problem report.</li>
+</ul>
+<h3>Paint</h3>
+<ul>
+<li>The stroke under the pen, onion skin and split compare are drawn through the Viewer's own display, view, look, exposure and gamma, so nothing changes color as the pen lifts.</li>
+<li>More strokes paint on the fast canvas: add, multiply, max and min with a see-through color, smear with a Photoshop brush's tip, and a reveal with nothing in bg. Only AI fill still paints the slower way.</li>
+<li>A Photoshop brush's tip after a dust or pigment stroke now paints with its tip, not round.</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>The Viewer no longer goes black when footage dropped into a fresh comp is shown in it. (Until now, resizing the window brought the picture back.)</li>
+<li>A Read's file type shows the type it read the file as (jpeg, exr...), where it was empty.</li>
+<li>.ko files have a document icon of their own, a page with Kento's mark, and open in Kento.</li>
+<li>A panel in the Properties bin grows when its content does after it opens, so its last rows no longer fall out of sight.</li>
+<li>A slider for a whole number (a count of frames) runs evenly from end to end.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.27.2759.zip" length="429810541" type="application/octet-stream" sparkle:edSignature="kuLODIs/kPKbwquEuNEoK8xvDKkuIRYHHRU92Tt1Be7ro2imCxWuTl/tKdRhv/rUn2xtHebRgvkonKCSHnauCw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2759-2741.delta" sparkle:deltaFrom="2741" length="2202078" type="application/octet-stream" sparkle:edSignature="aDjxVtPKCAJYdr4dCWsBhN37HReXis63F1RSinuVgcII/NPmqy2ZtyHHAxCics1XYvCn+QMOyA7p9EaD+hUiBA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2759-2724.delta" sparkle:deltaFrom="2724" length="2345606" type="application/octet-stream" sparkle:edSignature="0+6cD1wSKMzuH5ef7FG6aoE2iUq3wjeFQCo3Qs7nXqq7BtpSidxpKs5sZammD3JjpU9s51PkIe86GjIDRvgFCA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2759-2712.delta" sparkle:deltaFrom="2712" length="2773106" type="application/octet-stream" sparkle:edSignature="CPtDAm1BzooRnchTfdlwB9zfNi9i2QaQEjfNlWxb5LOKI2X3zZkGqPIUtEt/aoZfT+LsJ8ZrowvQrksGBnpCCw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.26</title>
             <pubDate>Wed, 04 Nov 2026 22:30:18 -0800</pubDate>
             <sparkle:version>2741</sparkle:version>
@@ -58,41 +103,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2724-2712.delta" sparkle:deltaFrom="2712" length="1947806" type="application/octet-stream" sparkle:edSignature="+GI0aIg3tcAbV8Y06eNad3L3ZCSLx/aveDfNgHNj8GIUNQa594ZivOxKlwjRO4oPU/Lh+qXl3QfedxERvO60Cg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2724-2692.delta" sparkle:deltaFrom="2692" length="11596054" type="application/octet-stream" sparkle:edSignature="hvYPpNXjXTlhL3VvfgIGVVjVSPuwSe+e1bGYvEetr56oa1wDKh1GEz+GL0WjcA7J7RyoSeBWtR9f1rMWhhaWAA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2724-2639.delta" sparkle:deltaFrom="2639" length="12468314" type="application/octet-stream" sparkle:edSignature="zqiCRjIXVYqG7XpMs83JnM/yYbwlch+VfNW3kbpbG2rTDqEMm1h76758cLds8Fnj11BN+z4yfisJrK9v+eg3Cw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.24</title>
-            <pubDate>Wed, 04 Nov 2026 17:57:31 -0800</pubDate>
-            <sparkle:version>2712</sparkle:version>
-            <sparkle:shortVersionString>0.9.24</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.24, build 2712</h2>
-<h3>Trainer</h3>
-<ul>
-<li><b>A new node, Trainer</b> (Other &gt; Trainer): fix three to five frames by hand, and Trainer learns that fix and works out every other frame. Wire the plate into it and your fixed version into fixed, click Add current frame on each fixed frame, then Train. It trains on this Mac's graphics card, writes the fixed frames beside the comp so it renders anywhere, and shows the result, or the difference it makes. A pass whose training frames have changed says so.</li>
-<li>Trainer needs a Python with PyTorch. Kento finds one, or you can choose it in Settings &gt; Performance &gt; Trainer.</li>
-<li>Context frames, the temporal loss and hosted training are shown but not in Kento yet.</li>
-</ul>
-<h3>Paint</h3>
-<ul>
-<li>Dust, the pigment brush, warp pins on a clone, reveal or heal, and a locked auto grade now paint on RotoPaint's fast canvas, drawn as you paint. An auto grade still measuring, grain-aware strokes and cloning from Paint's own output on another frame paint as before.</li>
-</ul>
-<h3>Rendering and nodes</h3>
-<ul>
-<li><b>Bokeh and ZDefocus five times faster</b> on a large plate: one shot's defocus went from 3.0 s to 0.55 s a frame, with the same picture.</li>
-<li>ColorLookup reads its curves through a table, as Nuke does, and now matches Nuke's picture.</li>
-<li>Roto curves under a scaled shape or layer are as smooth as Nuke's (the curve's pieces counted at their drawn size).</li>
-</ul>
-<h3>The manual</h3>
-<ul>
-<li>Every figure retaken; the Viewer's pictures show again. A section on Trainer.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.24.2712.zip" length="429124468" type="application/octet-stream" sparkle:edSignature="yHV8vFSCenevMhoBqh6+rgrLyIErAfWaR1GS412NtAQykB1Zac28WyKTp69b58O+eTbN97e61Vf5SXYybDniAw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2712-2692.delta" sparkle:deltaFrom="2692" length="11334330" type="application/octet-stream" sparkle:edSignature="h1eU6qnDP0fNvwsfnL8F2Xcb3Tf4uym/gkap363QNuG939kPWk9tzYIYPm/+M2j7YkixscpXVYPkz+28bfQwCg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2712-2639.delta" sparkle:deltaFrom="2639" length="12395562" type="application/octet-stream" sparkle:edSignature="wHYgIQ9p5LP/IP/jV14PlJRhf2mq8RsdqD50wPZLVr41DwRVGtUD/tNi51TIk5bKOH8QhYlJE9PHSpRRfjJrAg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2712-2617.delta" sparkle:deltaFrom="2617" length="12639210" type="application/octet-stream" sparkle:edSignature="b20qIFOUav1yB/x5/vjDb7G1zJGfM+MQB4Z9oaDLTj9AO8Z5LJQuAFbWqkUbb3Kvzihg64AIVYhqfX3Vkc8CDA=="/>
             </sparkle:deltas>
         </item>
     </channel>
