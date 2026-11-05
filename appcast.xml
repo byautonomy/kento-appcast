@@ -3,6 +3,34 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.30</title>
+            <pubDate>Thu, 05 Nov 2026 15:05:36 -0800</pubDate>
+            <sparkle:version>2807</sparkle:version>
+            <sparkle:shortVersionString>0.9.30</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.30, build 2807</h2>
+<h3>Report a problem</h3>
+<ul>
+<li>Reports are filed again: 0.9.29 couldn't reach the studio bug tracker, and kept every report to send later. A report kept that way is filed soon after 0.9.30 starts.</li>
+<li>Reports no longer land on the Desktop. Kento writes them to its own folder and removes a report's .zip once the tracker has it: the tracker keeps the files, and removes them a few weeks after the report is resolved. A report that stays on this Mac is shown in Finder.</li>
+<li><b>Grab a panel</b> works: a click on a panel failed, and a panel's picture came out black.</li>
+<li><b>Record voice</b> says when macOS has refused Kento the microphone, and where to allow it (System Settings &gt; Privacy &amp; Security &gt; Microphone), where it recorded nothing.</li>
+<li>My reports says when the tracker has removed a report's files.</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>Picking a color from the Viewer shows an eyedropper pointer, its tip where the pick lands.</li>
+<li>Optimize shows what it measured; it stayed at "Measuring frame 1".</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.30.2807.zip" length="429888581" type="application/octet-stream" sparkle:edSignature="+oLRyl8G11vb2nQrFAStgsAAj2f+ko8UA2qxaK2K91p5dqpwvrd2NMatgRcudb5ubLtPr63poRObDVyuDWr4BA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2807-2800.delta" sparkle:deltaFrom="2800" length="1619458" type="application/octet-stream" sparkle:edSignature="bPFaWiJfEywV+sZm8WJ3o0R0PA4LuWPrkgg2rvHyOgCElo7kyXEeGK2FKyOu4+NtWrU9RHcqlAFSFgLbaaUgBw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2807-2777.delta" sparkle:deltaFrom="2777" length="1879542" type="application/octet-stream" sparkle:edSignature="2j8ojJpPP5bg+8VXfXmmI91pTcLrwZ0jxqaLYhG1f3eefr29dlSWTZnmN9BZPvy87nAuZSlaLcCK8bArkVydBg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2807-2759.delta" sparkle:deltaFrom="2759" length="1931134" type="application/octet-stream" sparkle:edSignature="w4tRAipZ6COd+J9sVIvd9WTmYIFw6s1i7P874UgNgYGazMgT0mIuPoIw6130SVTiaP4PiGnxB8Fi3cI0FNMbBw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.29</title>
             <pubDate>Thu, 05 Nov 2026 14:23:35 -0800</pubDate>
             <sparkle:version>2800</sparkle:version>
@@ -70,51 +98,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2777-2759.delta" sparkle:deltaFrom="2759" length="1480202" type="application/octet-stream" sparkle:edSignature="6pOET8g1MPcs1ScA8bYGNphftK5FOrhLOvZBce/zjAL/fJ/KaE0q5bVHwTQoi8sobXfuYsAhpl4ntrg0lLeLBg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2777-2741.delta" sparkle:deltaFrom="2741" length="2606250" type="application/octet-stream" sparkle:edSignature="AGINGSBW5AhWwxycYlZUF5E2gQgPPNl34Mm2PqP5K+YkZjnYq8JAqLR3IDAfztJnvKP0yAkZ51lqxiY50uyUAA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2777-2724.delta" sparkle:deltaFrom="2724" length="2650198" type="application/octet-stream" sparkle:edSignature="CKViFJCe7q7OWikmM02ZsD00zMldXIXYJFa/oG1WT/dlZhSkOEzybhPm4tcF4taD3H9nDw7HiZ5o0+JL1wq4DQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.27</title>
-            <pubDate>Thu, 05 Nov 2026 09:38:22 -0800</pubDate>
-            <sparkle:version>2759</sparkle:version>
-            <sparkle:shortVersionString>0.9.27</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.27, build 2759</h2>
-<h3>Trainer's panel</h3>
-<ul>
-<li>Trainer has its own panel. <b>Frames</b> shows the frames you fixed as pictures along a strip, the held-out one edged dashed; click one to go to it, or its x to take it off. <b>Add current frame</b> is lit while the frame isn't a training frame yet.</li>
-<li><b>Suggest frames</b> shows the frames to fix next as dimmed pictures with their reason, as hollow marks on the Timeline, and as circles over the bars of where the pass is unsure.</li>
-<li><b>quality</b> is Quick, Full or Custom side by side, with how long a pass should take on this Mac under it.</li>
-<li><b>Run</b> draws the loss as it falls, with the held-out frame's FLIP as a dot every 1,000 steps.</li>
-<li><b>Passes</b> lists every pass with its steps, minutes, FLIP and flicker; a pass whose frames changed since it trained is marked. A row's menu has Use this pass, Show its folder and Delete pass.</li>
-<li><b>Evaluate</b> shows the held-out frame four ways (the plate, your fix, the pass and their difference), each measure in words, and a bar for each frame where the pass is unsure; click one to go to that frame.</li>
-<li>The job is in the panel's header too, beside the name.</li>
-</ul>
-<h3>Pen test</h3>
-<ul>
-<li><b>Help &gt; Pen test...</b> shows what your pen sends Kento as you draw on its pad: whether it arrives as a pen or only as a mouse, the pressure now and the range you reach, tilt, and how many events a second. It says in plain words whether pressure is reaching Kento, and if not, what to change in the tablet's own settings.</li>
-<li>It also shows what Paint's brush and RotoPaint's brush make of that pressure: the size and opacity range they'll paint with.</li>
-<li><b>Save trace</b> keeps what the pen sent, to attach to a problem report.</li>
-</ul>
-<h3>Paint</h3>
-<ul>
-<li>The stroke under the pen, onion skin and split compare are drawn through the Viewer's own display, view, look, exposure and gamma, so nothing changes color as the pen lifts.</li>
-<li>More strokes paint on the fast canvas: add, multiply, max and min with a see-through color, smear with a Photoshop brush's tip, and a reveal with nothing in bg. Only AI fill still paints the slower way.</li>
-<li>A Photoshop brush's tip after a dust or pigment stroke now paints with its tip, not round.</li>
-</ul>
-<h3>Fixes</h3>
-<ul>
-<li>The Viewer no longer goes black when footage dropped into a fresh comp is shown in it. (Until now, resizing the window brought the picture back.)</li>
-<li>A Read's file type shows the type it read the file as (jpeg, exr...), where it was empty.</li>
-<li>.ko files have a document icon of their own, a page with Kento's mark, and open in Kento.</li>
-<li>A panel in the Properties bin grows when its content does after it opens, so its last rows no longer fall out of sight.</li>
-<li>A slider for a whole number (a count of frames) runs evenly from end to end.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.27.2759.zip" length="429810541" type="application/octet-stream" sparkle:edSignature="kuLODIs/kPKbwquEuNEoK8xvDKkuIRYHHRU92Tt1Be7ro2imCxWuTl/tKdRhv/rUn2xtHebRgvkonKCSHnauCw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2759-2741.delta" sparkle:deltaFrom="2741" length="2202078" type="application/octet-stream" sparkle:edSignature="aDjxVtPKCAJYdr4dCWsBhN37HReXis63F1RSinuVgcII/NPmqy2ZtyHHAxCics1XYvCn+QMOyA7p9EaD+hUiBA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2759-2724.delta" sparkle:deltaFrom="2724" length="2345606" type="application/octet-stream" sparkle:edSignature="0+6cD1wSKMzuH5ef7FG6aoE2iUq3wjeFQCo3Qs7nXqq7BtpSidxpKs5sZammD3JjpU9s51PkIe86GjIDRvgFCA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2759-2712.delta" sparkle:deltaFrom="2712" length="2773106" type="application/octet-stream" sparkle:edSignature="CPtDAm1BzooRnchTfdlwB9zfNi9i2QaQEjfNlWxb5LOKI2X3zZkGqPIUtEt/aoZfT+LsJ8ZrowvQrksGBnpCCw=="/>
             </sparkle:deltas>
         </item>
     </channel>
