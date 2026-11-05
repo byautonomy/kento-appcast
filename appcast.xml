@@ -3,6 +3,35 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.25</title>
+            <pubDate>Wed, 04 Nov 2026 19:36:59 -0800</pubDate>
+            <sparkle:version>2724</sparkle:version>
+            <sparkle:shortVersionString>0.9.25</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.25, build 2724</h2>
+<h3>Paint</h3>
+<ul>
+<li><b>Photoshop brushes</b>: Import Photoshop brushes..., at the foot of Paint's presets, adds a Photoshop brush file's (.abr) brushes to yours as a set of their own. The menu at the top of the presets switches sets. Each brush keeps its size, roundness, angle and spacing; a brush drawn from a picture (spatter, chalk, a leaf) paints with that picture as its tip, scaled and turned with the brush. A comp keeps the tips it uses, so it renders anywhere.</li>
+<li>The brush editor shows a Photoshop brush's tip under Shape; <b>Use a round tip</b> goes back to the round dab.</li>
+<li>Grain-aware strokes, and auto grade while it's still measuring, now paint on the fast canvas too, drawn as you paint; the auto grade card still shows what it measured.</li>
+</ul>
+<h3>Trainer</h3>
+<ul>
+<li>A pass renders without PyTorch: each pass is saved as an ONNX file too, and a frame that isn't written yet is worked out by Kento itself once ONNX Runtime is installed (Install ONNX Runtime, under the pass). Render nodes can use a pass as it is.</li>
+</ul>
+<h3>Render nodes</h3>
+<ul>
+<li><b>A Linux render node to install</b>: Kento's render node for Linux (x86_64) as a package of its own, unpacked and started with one command. Tried on a studio Linux box against the studio's storage: a real shot's frames match a Mac's.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.25.2724.zip" length="429182927" type="application/octet-stream" sparkle:edSignature="+/4Qwl8IY5ozaCNkhnFoZTPUhjpTZH2HYezLnzolB5HffXiF3DMgQPsk72pTBvMXGd9NZInqC3V4rC/w9VS3Dw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2724-2712.delta" sparkle:deltaFrom="2712" length="1947806" type="application/octet-stream" sparkle:edSignature="+GI0aIg3tcAbV8Y06eNad3L3ZCSLx/aveDfNgHNj8GIUNQa594ZivOxKlwjRO4oPU/Lh+qXl3QfedxERvO60Cg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2724-2692.delta" sparkle:deltaFrom="2692" length="11596054" type="application/octet-stream" sparkle:edSignature="hvYPpNXjXTlhL3VvfgIGVVjVSPuwSe+e1bGYvEetr56oa1wDKh1GEz+GL0WjcA7J7RyoSeBWtR9f1rMWhhaWAA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2724-2639.delta" sparkle:deltaFrom="2639" length="12468314" type="application/octet-stream" sparkle:edSignature="zqiCRjIXVYqG7XpMs83JnM/yYbwlch+VfNW3kbpbG2rTDqEMm1h76758cLds8Fnj11BN+z4yfisJrK9v+eg3Cw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.24</title>
             <pubDate>Wed, 04 Nov 2026 17:57:31 -0800</pubDate>
             <sparkle:version>2712</sparkle:version>
@@ -97,42 +126,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2692-2639.delta" sparkle:deltaFrom="2639" length="2845750" type="application/octet-stream" sparkle:edSignature="gODQGpCan52RypGxOaqNCMAg0Em4afOUtCwLx6x/JP3WJ0qxGf6AydAz+QA09EwG3mCQZNAaHftWzZ91oZeOBg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2692-2617.delta" sparkle:deltaFrom="2617" length="3461138" type="application/octet-stream" sparkle:edSignature="ERoZEAKhUc24WYeb3L5lsIbd0jpMuXALjDym+//0yUEmt/KomIrA9XChsFVX2NYefdOUdpUSTSVpZu5hjCSkBQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2692-2606.delta" sparkle:deltaFrom="2606" length="4350818" type="application/octet-stream" sparkle:edSignature="4kOSSZRta5eWS3sDtkYYUhRESvUC7fPQTeb4wfpgcf5pViSVYmA/xo659uzV/o980tH82SMx3k2jE5prRHQ+Cw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.22</title>
-            <pubDate>Wed, 04 Nov 2026 12:45:14 -0800</pubDate>
-            <sparkle:version>2639</sparkle:version>
-            <sparkle:shortVersionString>0.9.22</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.22, build 2639</h2>
-<h3>Paint</h3>
-<ul>
-<li>The stroke under your pen now looks as it will paint: the brush's color with its softness, the clone's source picture as it will be laid, the plate showing through the eraser.</li>
-<li><b>Keyed strokes</b>: pick a stroke, go to another frame and drag it, and it's keyed there; between keys it moves smoothly. A sign that drifts or a wire that sways is painted once and reshaped on a few frames. The keys show as diamonds in History and on the Timeline.</li>
-<li>Faster still: strokes far apart are painted separately, and the parts of the picture a stroke doesn't touch are kept as they were, so the Viewer redraws only what changed.</li>
-</ul>
-<h3>Roto and RotoPaint</h3>
-<ul>
-<li>A compact tool row: the tools are grouped (shapes, brush and eraser, clone and reveal, repair, blur, dodge and burn), each group's button showing its last tool, with a labeled list behind its arrow. Size, hardness and opacity always have room.</li>
-<li>Bezier and Open spline have icons you can tell apart.</li>
-</ul>
-<h3>Node Graph</h3>
-<ul>
-<li>A node's port names each have room of their own, and no longer overlap the node or each other.</li>
-<li>No raw knob values under a node: RotoPaint shows its brush size, not its stroke data.</li>
-<li>Port names stay their size at any zoom.</li>
-</ul>
-<h3>Faster</h3>
-<ul>
-<li>Expressions render up to three times faster in Kento's render engine; a LightKey on a 4K plate keys in well under half the time.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.22.2639.zip" length="427250418" type="application/octet-stream" sparkle:edSignature="wzd41l3T9aJSSVMMuApHpeS7ECNHGJ4TgWk+eSyjTXHm6Qo39u1qlc525QQasGH9heOzlbSWIk+D0MvtGYMNBA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2639-2617.delta" sparkle:deltaFrom="2617" length="2307890" type="application/octet-stream" sparkle:edSignature="P+T0B7G/h2fr/Q0RwZqeMEG2HpoewccyAYtSXRSGK/73CPlW5r4ucpEFXgnSCZWix1KV3Tr1HJFzgzN2971QAA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2639-2606.delta" sparkle:deltaFrom="2606" length="3207130" type="application/octet-stream" sparkle:edSignature="YrLaZH6tEqm9iHjRn8IDTCFWqb7aH748UCPL0+VT4GJsJYd7xmxsLLsGMh+TCRtBmSU+eP2lj6MCOaFlM793AA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2639-2586.delta" sparkle:deltaFrom="2586" length="33536026" type="application/octet-stream" sparkle:edSignature="fU4n0ikOoIWYvcdlvjAXb2sadhl4btPVh+Y6970Z86sy/q+vz+a/lHyeePKidixxX3p3tGE6tx3pKbtX5I6XDw=="/>
             </sparkle:deltas>
         </item>
     </channel>
