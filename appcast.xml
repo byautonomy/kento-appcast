@@ -3,6 +3,39 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.33</title>
+            <pubDate>Fri, 06 Nov 2026 00:27:23 -0800</pubDate>
+            <sparkle:version>2872</sparkle:version>
+            <sparkle:shortVersionString>0.9.33</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.33, build 2872</h2>
+<h3>Fixes</h3>
+<ul>
+<li>Playback draws each frame at the picture's own size. With a plate whose size differs from the comp's format, the playing frame was drawn smaller over the stopped one, a double image.</li>
+<li>Every node's panel keeps to its grid. PlanarTracker's multipass switches ran off the panel's edge.</li>
+<li>A menu shows its choice ticked when the knob holds another spelling of it: Transform's, Reformat's and CornerPin2D's filter showed "Cubic" as plain text, and PointsTo3D's camera type its "free move".</li>
+<li>OCIODisplay's display and view list the comp's own color config. A name the config hasn't got, such as Nuke's "ACES", says which display or view is used in its place.</li>
+<li>Write's frame mode and frame share one row, as Read's do.</li>
+<li>A track that stops says where and why, on the Tracker panel and to an assistant through the remote control.</li>
+</ul>
+<h3>Nuke scripts</h3>
+<ul>
+<li>Gamma takes a value for each channel, as Nuke's does. Glow_Exponential's per-channel gammas were ignored.</li>
+<li>Expressions with Nuke's <code>|</code> and <code>&amp;</code> work, grouped as Nuke groups them, and <code>&amp;&amp;</code> and <code>||</code> give 1 or 0 as in Nuke. Spill_Correct's switches were ignored.</li>
+<li>Expressions can read another node's box, format and pixel aspect (<code>Crop1.bbox.x</code>), a group's own width (<code>parent.width</code>), <code>$gui</code>, and Nuke's obsolete knobs (read as 0, as Nuke reads them).</li>
+<li>Card2's lattice comes in as written: every card in the studio's comps was reported as an expression Kento couldn't work out. A Sampler's curves come in too.</li>
+<li>EdgeDetectWrapper keeps its erode size, so a blur set from it works. The erode itself isn't in Kento yet.</li>
+<li>Of the studio library's 23 gizmos, 18 now work and the other 5 have some controls that do nothing yet. None fails. Across the studio's 225 latest comps, the knobs Kento can't work out went from 595 to about 440.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.33.2872.zip" length="430012084" type="application/octet-stream" sparkle:edSignature="eOc5h+OB+RBknfCgK0ZrmyZxOEP8gUV0eNWbI8oOzLIG1TSQbSjyNVs+N9tMuF8azygZR3HqZ7NaTp3fVw1zBg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2872-2860.delta" sparkle:deltaFrom="2860" length="1085334" type="application/octet-stream" sparkle:edSignature="A3Qi8ZRSUkHfDYP34fmLvAQJFeD8cDu/C0DMqw06d4R3gqTFNRId2Ub72QyI6Srdmitz9Z1A/ER/VmBi6tRnDQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2872-2831.delta" sparkle:deltaFrom="2831" length="2385822" type="application/octet-stream" sparkle:edSignature="eVYxH7l0mI/icRIGlRpUz+uIBhhBJchfOKQBddMTossIks1QrdZNixZabZ4AsLdkJC1d0tNZ/hZlCKHvjm8CDA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2872-2807.delta" sparkle:deltaFrom="2807" length="2658458" type="application/octet-stream" sparkle:edSignature="re2Cix4SYIEcLkLzvhFH6r68Rvd5plHXUnnmLcz/ivtEcKyaDJb/enr98k0djufNt45y9ygkDeLpSsysk76kDw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.32</title>
             <pubDate>Thu, 05 Nov 2026 21:52:15 -0800</pubDate>
             <sparkle:version>2860</sparkle:version>
@@ -85,34 +118,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2831-2807.delta" sparkle:deltaFrom="2807" length="1337158" type="application/octet-stream" sparkle:edSignature="Fi7xxVdpWyTiTksCnhNPy9+aWIk1v08hvFya3yWFo6di+Mepm0VjEPCQTOEZYqbTFckJimVSf4wpG4vj4TtXBg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2831-2800.delta" sparkle:deltaFrom="2800" length="2001078" type="application/octet-stream" sparkle:edSignature="WaqTXQy0c55t9ZGGOsan6irTJsiVsahnW6cBSERsbiMZbUSVWbK0aWeZd579bXh2MByjYQVQ6XaYEojqm9d+BQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2831-2777.delta" sparkle:deltaFrom="2777" length="2101578" type="application/octet-stream" sparkle:edSignature="nIvMJDLXrxTWgPI9K31Y39JlhQgjW1FxXfjjYExmninE9/C3U4mMcT/hyC5tecry1hwLwPLru7vpktdtBkKLDg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.30</title>
-            <pubDate>Thu, 05 Nov 2026 15:05:36 -0800</pubDate>
-            <sparkle:version>2807</sparkle:version>
-            <sparkle:shortVersionString>0.9.30</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.30, build 2807</h2>
-<h3>Report a problem</h3>
-<ul>
-<li>Reports are filed again: 0.9.29 couldn't reach the studio bug tracker, and kept every report to send later. A report kept that way is filed soon after 0.9.30 starts.</li>
-<li>Reports no longer land on the Desktop. Kento writes them to its own folder and removes a report's .zip once the tracker has it: the tracker keeps the files, and removes them a few weeks after the report is resolved. A report that stays on this Mac is shown in Finder.</li>
-<li><b>Grab a panel</b> works: a click on a panel failed, and a panel's picture came out black.</li>
-<li><b>Record voice</b> says when macOS has refused Kento the microphone, and where to allow it (System Settings &gt; Privacy &amp; Security &gt; Microphone), where it recorded nothing.</li>
-<li>My reports says when the tracker has removed a report's files.</li>
-</ul>
-<h3>Fixes</h3>
-<ul>
-<li>Picking a color from the Viewer shows an eyedropper pointer, its tip where the pick lands.</li>
-<li>Optimize shows what it measured; it stayed at "Measuring frame 1".</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.30.2807.zip" length="429888581" type="application/octet-stream" sparkle:edSignature="+oLRyl8G11vb2nQrFAStgsAAj2f+ko8UA2qxaK2K91p5dqpwvrd2NMatgRcudb5ubLtPr63poRObDVyuDWr4BA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2807-2800.delta" sparkle:deltaFrom="2800" length="1619458" type="application/octet-stream" sparkle:edSignature="bPFaWiJfEywV+sZm8WJ3o0R0PA4LuWPrkgg2rvHyOgCElo7kyXEeGK2FKyOu4+NtWrU9RHcqlAFSFgLbaaUgBw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2807-2777.delta" sparkle:deltaFrom="2777" length="1879542" type="application/octet-stream" sparkle:edSignature="2j8ojJpPP5bg+8VXfXmmI91pTcLrwZ0jxqaLYhG1f3eefr29dlSWTZnmN9BZPvy87nAuZSlaLcCK8bArkVydBg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2807-2759.delta" sparkle:deltaFrom="2759" length="1931134" type="application/octet-stream" sparkle:edSignature="w4tRAipZ6COd+J9sVIvd9WTmYIFw6s1i7P874UgNgYGazMgT0mIuPoIw6130SVTiaP4PiGnxB8Fi3cI0FNMbBw=="/>
             </sparkle:deltas>
         </item>
     </channel>
