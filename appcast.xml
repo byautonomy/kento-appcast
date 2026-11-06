@@ -3,6 +3,49 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.32</title>
+            <pubDate>Thu, 05 Nov 2026 21:52:15 -0800</pubDate>
+            <sparkle:version>2860</sparkle:version>
+            <sparkle:shortVersionString>0.9.32</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.32, build 2860</h2>
+<h3>Fixes</h3>
+<ul>
+<li>Kento no longer crashes viewing a chain of deep nodes, such as a DeepFromImage fed a deep picture.</li>
+<li>A comp file that won't open no longer closes Kento when you open it from Finder or start Kento with it. Kento opens on an empty comp and says why, and File &gt; Open says why too. Before, the reason was only in the log.</li>
+<li>Saving a comp with animation, or with a Tracker's linked Transform, no longer warns that the animation or the link wasn't kept. Both were always kept.</li>
+<li>Rendering a Write with no file says so ("WriteSmoke has no file: set where it writes first") before the render is queued. Before, every frame failed with a Python error.</li>
+<li>The Node Graph draws no circles for knob expressions, as Nuke draws none. A Tracker's linked export and an imported comp's expressions were green circles with a wire to every knob they drove. The link lines show what reads what.</li>
+<li>A panel has no two tabs of the same name: Reformat showed Reformat twice, and LensDistortion showed LensDistortion twice.</li>
+<li>A channels menu names the channels its switches show. Erode's read "none...lpha".</li>
+<li>The Tracker panel's planar track row fits the panel: its last switch, points on it, ran off the edge.</li>
+<li>Two false errors are gone from the log: one for a frame stopped part way, one for the Viewer's view menu after a workspace change.</li>
+<li>A Nuke control Kento doesn't need, such as Profile's open profile panel, no longer takes a dim row on the panel. Its tip in the Node Reference says why.</li>
+</ul>
+<h3>New</h3>
+<ul>
+<li><b>Viewer &gt; Ignore pixel aspect</b> shows an anamorphic picture as its pixels are stored, square. The pixels themselves are untouched.</li>
+<li>Profile's <b>Profile...</b> button opens a window that times each node above it over the Profile's frames, slowest first, with each one's share.</li>
+<li>PositionMatte's <b>Pick in the Viewer</b> sets its center from a click on the picture.</li>
+<li>VectorCornerPin's <b>Bake Corners</b> keys its corners over the comp's frame range, where the vectors carry them.</li>
+<li>CleanPlate fills in steps, finer to coarser, and takes a garbage matte. It matches Nuke's.</li>
+<li>MatchGrade has a mask and a mix, and <b>apply to mask</b> applies the match only inside the mask, as in Nuke.</li>
+<li>The Node Reference lists each node's panel buttons and what they do.</li>
+<li>Kento's remote control tells an assistant what changed since it last asked (comps opened and closed, the frame, the selection, nodes made and deleted). Nodes it makes go under their input or beside the graph, not on top of each other. Its saves are Kento's own; they wrote a file Kento couldn't open.</li>
+</ul>
+<h3>Nuke scripts</h3>
+<ul>
+<li>Nuke's built-in layers are named channel sets: motion (forward and backward), disparity, mask, rotopaint_mask, the planar and spline-warp masks, sample, cutout and deep. AddChannels with any of them stopped the render.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.32.2860.zip" length="429983578" type="application/octet-stream" sparkle:edSignature="Vdd9dxSYQ32RZAQOxYdFuDBOLE1qDeDc+MtYAA2vAuvFnHJ0Sw3CSQQYVUrgolqozI91/ucQTGIyeT27qpHxAw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2860-2831.delta" sparkle:deltaFrom="2831" length="2241766" type="application/octet-stream" sparkle:edSignature="tLWPVj+8j0pN8e/L+OKVmLxREIQdUs7zLNf39b2kQeNuVeM3sY3IiwmCDBjNbfCQqH1mORfYQwW3ujE0iAvLAA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2860-2807.delta" sparkle:deltaFrom="2807" length="2532610" type="application/octet-stream" sparkle:edSignature="nlK8qAfYzzFQQmutW+Rp/xntGKGzYtOY2Zf9R1loI9N/S2J3dP7hpY2ik3y2fOvQmlyl1cZJu3LFbZhf1strCA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2860-2800.delta" sparkle:deltaFrom="2800" length="2819574" type="application/octet-stream" sparkle:edSignature="/56rCSByuntio/O/gtlvYEWSY5fx6r9d/l/YRMFjVOODrk75r6SjhQ4v61WWhIg3F1lMPmI3SVbgw/drsHk7AA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.31</title>
             <pubDate>Thu, 05 Nov 2026 18:24:43 -0800</pubDate>
             <sparkle:version>2831</sparkle:version>
@@ -70,36 +113,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2807-2800.delta" sparkle:deltaFrom="2800" length="1619458" type="application/octet-stream" sparkle:edSignature="bPFaWiJfEywV+sZm8WJ3o0R0PA4LuWPrkgg2rvHyOgCElo7kyXEeGK2FKyOu4+NtWrU9RHcqlAFSFgLbaaUgBw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2807-2777.delta" sparkle:deltaFrom="2777" length="1879542" type="application/octet-stream" sparkle:edSignature="2j8ojJpPP5bg+8VXfXmmI91pTcLrwZ0jxqaLYhG1f3eefr29dlSWTZnmN9BZPvy87nAuZSlaLcCK8bArkVydBg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2807-2759.delta" sparkle:deltaFrom="2759" length="1931134" type="application/octet-stream" sparkle:edSignature="w4tRAipZ6COd+J9sVIvd9WTmYIFw6s1i7P874UgNgYGazMgT0mIuPoIw6130SVTiaP4PiGnxB8Fi3cI0FNMbBw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.29</title>
-            <pubDate>Thu, 05 Nov 2026 14:23:35 -0800</pubDate>
-            <sparkle:version>2800</sparkle:version>
-            <sparkle:shortVersionString>0.9.29</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.29, build 2800</h2>
-<h3>Report a problem</h3>
-<ul>
-<li><b>Help &gt; My reports</b> shows each filed report's conversation with the pipeline team: <b>Your turn</b> when they've written and wait on you, <b>New reply</b> for a message you haven't read. The speech button shows the conversation under the report, and <b>Send answer</b> replies under the report's name.</li>
-<li>When the pipeline team answers one of your reports, a card in the window's corner says so, even with My reports closed.</li>
-<li>Reports are filed to the studio bug tracker by its name, tools.vpn.byautonomy.com.</li>
-</ul>
-<h3>Matching Nuke</h3>
-<ul>
-<li>A Reformat that scales samples the picture exactly as Nuke does; a scale of 1.53 was about 1% off.</li>
-<li>A plate reduced with Reformat keeps its edge's brightness: its outer column and row came out up to 9% dark.</li>
-<li>Switch past its last input shows the last input, and an empty input in the middle shows nothing, as in Nuke.</li>
-<li>Merge's bbox A takes in every A input.</li>
-<li>A TIFF or DPX left at colorspace default takes Root's LUT for its bit depth, as Nuke does.</li>
-<li>Roto: a shape's hard side, where its feather points sit on it, is anti-aliased as Nuke draws it, and curved feather bands are closer to Nuke's.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.29.2800.zip" length="429878960" type="application/octet-stream" sparkle:edSignature="8FmDKBO5iN/JiL6JDXqss7Kx6ACCBzpoW2pYBE0n9MoO4pObd4itAff9z1DwZ+Rc/XeRuM196o0eeHEmM7q0Bg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2800-2777.delta" sparkle:deltaFrom="2777" length="1340262" type="application/octet-stream" sparkle:edSignature="cPi+M/b4CZvbH5sW9sut1hoB9YKcBklek/RARzHkXyWTh1ku73ZXour11NNd+0tFBh96846mgseBJ4SoOmlTBA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2800-2759.delta" sparkle:deltaFrom="2759" length="1564294" type="application/octet-stream" sparkle:edSignature="+uTOGZ5lNB9mzU3SxWK6TpwXN/J0kGawkWDCDcKNxEy13WoSu+7ecpPnQflno2xqNKeFtbauA2oegHTYVw1kDQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2800-2741.delta" sparkle:deltaFrom="2741" length="2663918" type="application/octet-stream" sparkle:edSignature="HmlkZoXlFZUSLxz8ANldsIVDe6ODfkNtUR9aaXOPxqmB9LBsnBqQMVNFRHhKVw9RC47mrUu187NkxFiecpD1Ag=="/>
             </sparkle:deltas>
         </item>
     </channel>
