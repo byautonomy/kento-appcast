@@ -3,6 +3,27 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.34</title>
+            <pubDate>Sat, 07 Nov 2026 09:20:14 -0800</pubDate>
+            <sparkle:version>2885</sparkle:version>
+            <sparkle:shortVersionString>0.9.34</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.34, build 2885</h2>
+<h3>Speed</h3>
+<ul>
+<li>Colorspace works each pixel's color out once for its red, green and blue, where it had worked it out once for each channel. Comps with many Colorspace nodes, such as layers blended in their own color space, render faster: on one studio comp Colorspace took half the time.</li>
+<li>FilterErode with the Box filter costs the same at any size. At large sizes it is many times faster: a size of 200 took about 2 seconds a frame and now takes a few hundredths. One studio comp's frame went from 5.1 to 2.9 seconds.</li>
+<li>Both give exactly the same pixels as before, checked against every Write of five studio comps.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.34.2885.zip" length="430017050" type="application/octet-stream" sparkle:edSignature="wBfzHW0TvHZiaJW9rneonqCKajrE/HxqHranvegG/vFW5eGB3hbhpIpn3HYptLX6FXdgctIqkoIFTekwKyXfBQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2885-2872.delta" sparkle:deltaFrom="2872" length="923410" type="application/octet-stream" sparkle:edSignature="Def90PQyiG8dmjks4Lq9j44DlAVxcJnGYeVerSepcwsUUvr9YfkUBt7+WUiX/lTNSJyeg8/5oghIh8UTlrdmBw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2885-2860.delta" sparkle:deltaFrom="2860" length="1183498" type="application/octet-stream" sparkle:edSignature="fdqVyrA/ujhMVEwKACpVT1T+Cdc9M+U5tkQs8+GKVGjq+wFO1FscDLr71CX9ZxGe4K5d9XGTkvi2L8MC0oIPAg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2885-2831.delta" sparkle:deltaFrom="2831" length="2451942" type="application/octet-stream" sparkle:edSignature="V1/t8t7Vb+z+wXv2D91zutyRTfpg1RWxUVm1/hw5WwSYqfvKv09rKN+bk2czXrUd/4EGJHqx7v7TRdkc7+FJBg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.33</title>
             <pubDate>Fri, 06 Nov 2026 00:27:23 -0800</pubDate>
             <sparkle:version>2872</sparkle:version>
@@ -76,48 +97,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2860-2831.delta" sparkle:deltaFrom="2831" length="2241766" type="application/octet-stream" sparkle:edSignature="tLWPVj+8j0pN8e/L+OKVmLxREIQdUs7zLNf39b2kQeNuVeM3sY3IiwmCDBjNbfCQqH1mORfYQwW3ujE0iAvLAA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2860-2807.delta" sparkle:deltaFrom="2807" length="2532610" type="application/octet-stream" sparkle:edSignature="nlK8qAfYzzFQQmutW+Rp/xntGKGzYtOY2Zf9R1loI9N/S2J3dP7hpY2ik3y2fOvQmlyl1cZJu3LFbZhf1strCA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2860-2800.delta" sparkle:deltaFrom="2800" length="2819574" type="application/octet-stream" sparkle:edSignature="/56rCSByuntio/O/gtlvYEWSY5fx6r9d/l/YRMFjVOODrk75r6SjhQ4v61WWhIg3F1lMPmI3SVbgw/drsHk7AA=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.31</title>
-            <pubDate>Thu, 05 Nov 2026 18:24:43 -0800</pubDate>
-            <sparkle:version>2831</sparkle:version>
-            <sparkle:shortVersionString>0.9.31</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.31, build 2831</h2>
-<h3>Fixes</h3>
-<ul>
-<li>The Viewer is drawn the size of its panel when Kento starts. It could be pinned small in the panel's top left, with an old picture showing around it, until another layout was chosen.</li>
-<li>Kento no longer crashes when you go through the Mac menu bar's submenus (Edit's, for one): a submenu is built whole as its menu opens.</li>
-<li>The Viewer no longer says a frame is missing past a Read's range when the Read holds its last frame there.</li>
-<li>Window &gt; Workspaces &gt; Paint opens; it failed to load.</li>
-<li>Right-clicking a node in the Node Graph no longer fails on a node whose control is linked straight to another node's.</li>
-<li>A comp with a BoxOut that isn't wired yet saves, and autosaves. Every save of it failed.</li>
-<li>A TVIscale2 with nothing wired no longer fills the log with errors.</li>
-<li>A panel button that needs something first, like Axis's Read file with no file chosen, says so in a tip by the button. Before, nothing happened.</li>
-<li>The Viewer's tabs are the same size as the other panels' tabs.</li>
-</ul>
-<h3>New</h3>
-<ul>
-<li><b>Edit &gt; Node &gt; Swap A and B</b> (<b>⇧X</b>) swaps the selected nodes' first two inputs, a Merge's A and B. The mask stays where it is.</li>
-<li>The Playback pop-up has a <b>Playback cache</b> switch, to play every frame live, and <b>Clear the cache</b>.</li>
-<li>Colorspace has every one of Nuke's spaces: 2.40, 2.60, BT1886, PLogLin, SLog, SLog1, SLog2, CLog, HybridLogGamma, Protune, st2084, Blackmagic Film Generation 5 and ARRILogC4 are added, checked against NukeX. They stopped the render before.</li>
-<li>Kento's remote control can file a problem report or a suggestion, open the report window filled in, and open My reports.</li>
-</ul>
-<h3>Nuke scripts</h3>
-<ul>
-<li>A Roto or RotoPaint that uses something Kento doesn't draw as Nuke does yet (a clip to its input's box, strokes' motion blur, or a kind of stroke Kento doesn't draw) is named when the script comes in, and its node has an amber dot that says what. Pre-comp such a node in Nuke and read the render in its place.</li>
-<li>A Write left at its default color space takes the LUT for its data type, as Nuke does: an 8-bit TIFF Write took the 16-bit one.</li>
-<li>A Dilate keeps up when only the picture above it changes size (a Crop moved); it could keep the earlier size and cut the picture off.</li>
-<li>A Read's frame field works in its expression mode, as in Nuke: a number holds that frame, and words like frame-1000 or frame/2 pick the file's frame at each frame. It was ignored.</li>
-<li>Expression and MergeExpression take min and max of more than two values, as Nuke does: min(r,g,b) stopped the node. Every Expression in the studio's comps now reads.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.31.2831.zip" length="429924579" type="application/octet-stream" sparkle:edSignature="eo/c8bo3S1LO6SJEnps1s3X4RUl3gw9f3ZUP9LEqac/Q9SsjqK3jhScKUcm45Ypb8UfOrkXbM9FwhLm1OrToCA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2831-2807.delta" sparkle:deltaFrom="2807" length="1337158" type="application/octet-stream" sparkle:edSignature="Fi7xxVdpWyTiTksCnhNPy9+aWIk1v08hvFya3yWFo6di+Mepm0VjEPCQTOEZYqbTFckJimVSf4wpG4vj4TtXBg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2831-2800.delta" sparkle:deltaFrom="2800" length="2001078" type="application/octet-stream" sparkle:edSignature="WaqTXQy0c55t9ZGGOsan6irTJsiVsahnW6cBSERsbiMZbUSVWbK0aWeZd579bXh2MByjYQVQ6XaYEojqm9d+BQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2831-2777.delta" sparkle:deltaFrom="2777" length="2101578" type="application/octet-stream" sparkle:edSignature="nIvMJDLXrxTWgPI9K31Y39JlhQgjW1FxXfjjYExmninE9/C3U4mMcT/hyC5tecry1hwLwPLru7vpktdtBkKLDg=="/>
             </sparkle:deltas>
         </item>
     </channel>
