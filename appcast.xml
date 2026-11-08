@@ -3,6 +3,33 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.38</title>
+            <pubDate>Sat, 07 Nov 2026 22:16:45 -0800</pubDate>
+            <sparkle:version>2998</sparkle:version>
+            <sparkle:shortVersionString>0.9.38</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.38, build 2998</h2>
+<h3>New</h3>
+<ul>
+<li>VectorRetime's motion blur: shutterSamples and shutterTime now blur the retimed picture, the samples spread evenly over the shutter around each frame and weighted equally, as Nuke renders it.</li>
+<li>LightKey's alpha bias and despill bias now work, as do the None and Source replace methods with a clip, matching Nuke.</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>A movie with a sound track played a frame late inside each run of frames Kento decoded together.</li>
+<li>A Read set to black before or after its range gave a picture with no channels, so a TimeClip, AppendClip or Keymix past a clip's end had nothing to show. It now gives black with the file's channels.</li>
+<li>A Bento made from a group with its own controls, such as a transition, lost their values and played as if at the defaults.</li>
+<li>Matched to Nuke's renders: Copy where A reaches past B, VectorCornerPin between its keys, Stabilize2D's scale factor, TimeClip reversed, TimeOffset's whole frames for negative offsets, CheckerBoard2 on non-square pixels, HSVTool on pixels outside 0 to 1, and AddMix outside A.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.38.2998.zip" length="431115921" type="application/octet-stream" sparkle:edSignature="atR4QXEs0cqdKMZveaDsNnTNgwcHrt5GbKFBtpRItUCZZhIF96RZXoN0AESVqxxsDZr7qR5L21z+DRNgIYroDg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2998-2979.delta" sparkle:deltaFrom="2979" length="833038" type="application/octet-stream" sparkle:edSignature="0M/QqElE0bKWfkm6BRXFIn3A5F6ITon/dxvxxa+2e+5UXHFz5nUJskE+1ut6BmkCpOYRsRJwvkv1dMifj9eWCQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2998-2922.delta" sparkle:deltaFrom="2922" length="2546558" type="application/octet-stream" sparkle:edSignature="NwLkgxniOHTJvUUHLpgFntMli3mbWpkt4uaAWUl/Qi3/OLl4aQEyWZGCpqsSbNpjdVh9GmF4ThVjJGBgLGYECw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2998-2909.delta" sparkle:deltaFrom="2909" length="3174082" type="application/octet-stream" sparkle:edSignature="LKbqhxUpXkIpPUDLYHG1Z06Tg7tW1gwmqgjRfEM8aCUzVLiX+RMybooSiJXnFt+QthCo9puLSvSqU64o5x83Aw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.37</title>
             <pubDate>Sat, 07 Nov 2026 20:37:51 -0800</pubDate>
             <sparkle:version>2979</sparkle:version>
@@ -65,41 +92,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2922-2909.delta" sparkle:deltaFrom="2909" length="2139270" type="application/octet-stream" sparkle:edSignature="AynhHCgn/1/dCho7ofsNzBLxxRYpCARgDrSKewXfUDdDqJvX3KknIiZytS0sa5hLccoZ6ZTD3P5HPfj6BIyDCw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2922-2885.delta" sparkle:deltaFrom="2885" length="2748226" type="application/octet-stream" sparkle:edSignature="x9Ob5L8IQJVJ7+3BS5ZQW13BH9CZohkUTG0A3KyFz/vH8SsafAj3TwcwB6Wf8Iz7bM9geuUBDRwf5S43kudcBQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2922-2872.delta" sparkle:deltaFrom="2872" length="2788574" type="application/octet-stream" sparkle:edSignature="+ht2VWHx59a9Hsdrn9NO5hjAAAoDUSrmlaE1lQ/9giB6mGuIC+1jiq9a5oWvEtRk3RQ7giFS4FMmFGM/MRpkBw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.35</title>
-            <pubDate>Sat, 07 Nov 2026 13:43:35 -0800</pubDate>
-            <sparkle:version>2909</sparkle:version>
-            <sparkle:shortVersionString>0.9.35</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.35, build 2909</h2>
-<h3>New</h3>
-<ul>
-<li>Kiri, Kento's own keyer (Keyer, Kiri). It does the screen key, three mattes, despill and the foreground over the background in one node. Choose Green, Blue or Auto in its header, and press Auto to find the screen's color. Core, edge and garbage mattes come from the key or from a matte input, each grown or shrunk and softened. Click the subject puts an Isolate under the plate, and its mask becomes the core and the garbage. Smart despill is chosen by the screen: on green, green is limited to 0.6 red + 0.4 blue, the best of the methods tried on the studio's greenscreen tests. The mattes and the spill can be written as channels of their own.</li>
-<li>Without a clean plate, Kiri finds the screen in the plate by its color rather than its brightness, so a screen lit unevenly, overexposed, or seen through tinted glass keys evenly. On a car interior shot through a moon roof, the screen behind the tinted glass keyed clear, leaving the glass's reflections over the new background.</li>
-<li>Kiri unmixes edges from the screen behind them before the despill, which takes the light fringe off edges against a bright screen, and puts the spill's brightness back as light (the new background's or gray), so spilled skin doesn't go dull.</li>
-<li>Kiri can key from a degrained copy of the plate, so the grain doesn't chatter in the matte, while the foreground keeps the plate's own grain. Make one with Nagi builds the copy. On the moon roof shot it halved the matte's noise behind the glass.</li>
-<li>Still to come in Kiri, drawn in its panel and saying so: the edge refinement by a matting model, steadiness over frames, kept colors, and the Balance section.</li>
-<li>Perspective's Match to has a fourth choice, Horizon and forward point (Transform), for a background behind a foreground shot elsewhere, such as a road plate behind a car interior. Each plate needs only lines along its ground's forward direction, a road's edges for instance, and no focal length. The other plate is moved so the points those lines meet at line up, turned to this plate's horizon, and the box says how much of the frame is left uncovered at the top.</li>
-<li>Perspective's Match to can match two plates by their pictures (From the pictures): the other plate's pixels are fitted onto this one's, with no lines needed. On the studio's plates it lands within a fraction of a pixel.</li>
-<li>Find lines names each edge's direction itself, before anything is solved: the edges are drawn in their direction's color. Click one to add it, or Shift-click to add every edge of that color.</li>
-<li>VectorGenerator can write a confidence channel: how far each vector can be trusted, from the forward and backward vectors agreeing and the next frame matching. VectorRetime and FlowRetime can blend the frames instead of warping where the vectors are unsure, so a fast object's edges don't tear.</li>
-<li>The Lens node has 3DE's Anamorphic, degree 6 and Radial fisheye, degree 8 models, matching LensDistortion2's presets.</li>
-</ul>
-<h3>Fixes</h3>
-<ul>
-<li>Find lines finds the edges on scene-linear plates. A few bright lights left every other edge too faint: on one studio plate of a street with towers it found 2 lines, now over a hundred.</li>
-<li>Perspective's Horizon only match turns the other plate the right way, about its horizon. A plate of another size gets its own corners in Full perspective.</li>
-<li>Perspective's Match to says when either plate's focal length is uncertain, and points to From the pictures.</li>
-<li>The lens from lines warns when the distortion it found is more than a lens that long would show.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.35.2909.zip" length="430157608" type="application/octet-stream" sparkle:edSignature="NLiHniGVVVGJnJi82BiwlOcfmWZkMHd4GIcy6AnheIHPG8vN6w74BOyDQiJWwSadLtkyfUzpZPNaLEj6DlMsBw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2909-2885.delta" sparkle:deltaFrom="2885" length="2188862" type="application/octet-stream" sparkle:edSignature="XDd1vXf/R0OddRLweNBCnPkayflm6AawgD0AllexjIkhb7Bh7maEzPimeQQic9Iyl76KekPMaFDllDa2D9kMBQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2909-2872.delta" sparkle:deltaFrom="2872" length="2230254" type="application/octet-stream" sparkle:edSignature="NhYAnjhE1ibrohHjdO4UdPQHPpquHgBdh5xM74SXgp5F9pmkNRX4ggc53g0cx4PgujMIO+/v9E+R7vC3Sg8SDg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2909-2860.delta" sparkle:deltaFrom="2860" length="2360622" type="application/octet-stream" sparkle:edSignature="HQExLUYWxN7WkQAAPWsOzc1dVnknyfZTCQJ05MtmYHlOG9LXl1/2UCQstEt6OA0fUwCM904WjbImpBw6NLXuCA=="/>
             </sparkle:deltas>
         </item>
     </channel>
