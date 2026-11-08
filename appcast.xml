@@ -3,6 +3,28 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.42</title>
+            <pubDate>Sun, 08 Nov 2026 07:54:42 -0800</pubDate>
+            <sparkle:version>3094</sparkle:version>
+            <sparkle:shortVersionString>0.9.42</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.42, build 3094</h2>
+<h3>New</h3>
+<ul>
+<li>Kiri's CorridorKey edge route is finished. Renders, the render farm's included, now use CorridorKey's mattes as Kento's own render engine, as quickly as the rest of the comp.</li>
+<li>Settings &gt; AI and MCP &gt; Kiri's edge model shows CorridorKey's install: what's downloaded and its size and licenses before anything starts, the progress with Cancel, Resume after a stop, and once installed Show the folder and Remove. Kiri's panel offers the same install.</li>
+<li>Change the plate after working out a shot, and Kiri's model row says how many frames are out of date, so you know to work it out again.</li>
+<li>4K in tiles at full size: a choice on Kiri's model row for a frame bigger than 1536 x 1024. CorridorKey works on it in tiles at full resolution, feathered together, for finer detail (on a walking figure at 4K, 0.0004 from the true matte against 0.0005 fitted). It takes longer, and does worse on a subject close to the screen's color and on fine hair.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.42.3094.zip" length="431307632" type="application/octet-stream" sparkle:edSignature="zIGEHq+R1MPdw92chwZSzJNqbrIqb4G5GOljL+mYcU7ylf6hpdXc2Nf9A3mqybDJaunCeciNtUlXgrKbnnLaAw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3094-3089.delta" sparkle:deltaFrom="3089" length="1025042" type="application/octet-stream" sparkle:edSignature="RANjhtzFKoaTRvfGxh29c1oG724jH9kKHiQ80lGFMcuwdsj0A/dzpe7mqyfMiWs3RKCXPn4d1YObw3yfGNX7BQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3094-3077.delta" sparkle:deltaFrom="3077" length="1763914" type="application/octet-stream" sparkle:edSignature="ADa1ozDV6utbRf9oX8uOynwFHohOJRz0F49WBsdVi3B1Y17VjxjAeBwx6zHOQ8MJ/pq0vs7eEhT0fN4UzV1bCA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3094-3050.delta" sparkle:deltaFrom="3050" length="2321438" type="application/octet-stream" sparkle:edSignature="rXjPYWV0bw4aQ37Z87xEIhxuqQunrPQKd/z5nXAN8xR4lDFKu19sR8hGbBQ4FI8dUnMKgpGpMfYNwvjYMJoFDA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.41</title>
             <pubDate>Sun, 08 Nov 2026 06:58:54 -0800</pubDate>
             <sparkle:version>3089</sparkle:version>
@@ -57,41 +79,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3077-3050.delta" sparkle:deltaFrom="3050" length="2113946" type="application/octet-stream" sparkle:edSignature="3IpFLpZsnnVgQA+tMYLQE5a5zo0FDAELbaPS7RL/b+3Be68f/i1S7frBdJTMLl+5Tf9wkq3UZidV7dURh55/DA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3077-2998.delta" sparkle:deltaFrom="2998" length="2349286" type="application/octet-stream" sparkle:edSignature="qJgB6xa7h4wjtK9pClXOg1HFOB2+O485XSFPwcc7ZKthxTtyHYFjPTrstuV0TeouHZHGM+oWjhvLt7cT8CfADg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3077-2979.delta" sparkle:deltaFrom="2979" length="2380570" type="application/octet-stream" sparkle:edSignature="otGUOX0kRKmhFw007gASSLZY6iz1jPNXdkDNN4vhU/VtqLy5u6xCuscNdhTl1hcRckSVcPPNe5zAvx5oJFFXBQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.39</title>
-            <pubDate>Sun, 08 Nov 2026 01:31:06 -0800</pubDate>
-            <sparkle:version>3050</sparkle:version>
-            <sparkle:shortVersionString>0.9.39</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.39, build 3050</h2>
-<h3>New</h3>
-<ul>
-<li>ColorCorrect's test now shows the range pattern in the picture, as Nuke renders it: red and blue mark the range that weighs most (shadows black, midtones dark gray, highlights white), and green blends the ranges.</li>
-<li>A camera reads ASCII FBX files (Nuke's WriteGeo writes them with its ASCII option) the same as binary ones.</li>
-<li>FrameHold has Nuke's rounding mode: Whole frames (the default) holds the whole frame toward zero, so 4.6 holds frame 4; Fractional time holds the frame as set.</li>
-</ul>
-<h3>Fixes</h3>
-<ul>
-<li>LensDistortion2 and the Lens node on an anamorphic plate (pixels wider than tall) now distort as Nuke does. They work in the plate's pixel aspect, where before they treated its pixels as square and could be 25 pixels off at the corners.</li>
-<li>Keymix now reads its inputs past their edges as Nuke does: each input's edge pixels carry on outside its box, and the mask's box joins the output's. Gizmos that key through an inverted mask, such as Spill_Correct and Match_Black_White, now match Nuke at the mask's edges.</li>
-<li>An expression that reads another knob at a different frame now reads that knob's own keyframes at that frame too. The Erode_Fine gizmo, for one, now leaves the picture alone at size 0.</li>
-<li>UVProject set to perspective with an Axis (not a camera) maps the texture as Nuke does.</li>
-<li>Reconcile3D moves its picture as Nuke does with stabilize and an offset, and with calculate output live.</li>
-<li>A Roto with nothing plugged into it gives only the channels it draws, as Nuke does.</li>
-<li>Crop's presets now cut a whole number of pixels off each side, as Nuke does, instead of a fraction.</li>
-<li>DeepSample lists its samples back to front, as Nuke's panel does, and with accumulate each row is that sample over everything behind it.</li>
-<li>VectorCornerPin's Bake Corners keeps the user keys and sets smooth keys, as Nuke does; the picture is unchanged.</li>
-<li>A Projection saved to a .nk now writes its pad for paint as expressions of its own controls, so changing the pad in Nuke resizes everything inside. Before, only the pad menu changed there.</li>
-<li>In a comp's Python, nuke.createNode wires two selected nodes into a Merge (the first into A, the second into B) and places the new node where Nuke would.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.39.3050.zip" length="431194068" type="application/octet-stream" sparkle:edSignature="i1Z50fJsi/lCKQR6Rns+X0x0tff/zlS+fzVSg584hgV15HXubMALJMpuAvLpqD1Y74emFjxfmcR2OUy63kBkCQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3050-2998.delta" sparkle:deltaFrom="2998" length="1306226" type="application/octet-stream" sparkle:edSignature="3jb7fEy9szP9EGSqApnN5wP3cJLpI0+BmcamIjF7wDpx//VRtONjyVLnokzpt1K/vE5BkOq3H1tCRRO5JzFzCA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3050-2979.delta" sparkle:deltaFrom="2979" length="1330386" type="application/octet-stream" sparkle:edSignature="lacQyID2A09Q1N6lxvoIH3mt3KS3ow2IjzKKwT0rUv3w9ZIkYH9AHPLxKQ2KhFu+7S6KtlZrD56lSQKKvljdAg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3050-2922.delta" sparkle:deltaFrom="2922" length="2776910" type="application/octet-stream" sparkle:edSignature="rUIc/qFJiZn5b/GRIhPkPG/+5fjJ5Vg5WyQ3WXwlx5qNP1qZykj4G9iRwXAITRa9JvlIMbYu0onB/L9b373EAQ=="/>
             </sparkle:deltas>
         </item>
     </channel>
