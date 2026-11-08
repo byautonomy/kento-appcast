@@ -3,6 +3,39 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.36</title>
+            <pubDate>Sat, 07 Nov 2026 17:06:43 -0800</pubDate>
+            <sparkle:version>2922</sparkle:version>
+            <sparkle:shortVersionString>0.9.36</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.36, build 2922</h2>
+<h3>New</h3>
+<ul>
+<li>File &gt; Add to this comp... brings another comp's nodes (a .nk or a .ko) into the comp in front, beside what's there, as one undo. The open comp keeps its own range, format and frame rate, and says where the added comp's differed; footage paths are made absolute so they still find their files.</li>
+<li>Copy and paste with Nuke and between Kento windows. Copy puts the selected nodes on the system clipboard as Nuke script text and as Kento's own copy; Paste reads nodes copied in Nuke, or in another Kento, with Kento's readers.</li>
+<li>Python in comps and gizmos runs, as in Nuke. A gizmo's onCreate, its knobChanged as its panel opens and whenever a control changes, and its Python buttons all run, through Kento's stand-in for Nuke's Python module; what a control's change does through its script comes off with it in one undo. A gizmo whose script rebuilds its inside when a control changes does so here too, and its text lines, dividers and buttons hide and dim as its script says.</li>
+<li>A comp's own callbacks run: onScriptLoad as a Nuke script opens, onScriptSave before it's saved as one, and the comp's and each Write's before and after render and frame callbacks in the Render window, the Render Queue and command-line renders.</li>
+<li>Before any script runs, Kento reads it. One that reaches files, the shell or the network still runs, and a card in the window's corner shows the lines and why. Don't warn about this script again trusts it from then on. Settings &gt; Scripting can ask before such a script runs instead (off by default).</li>
+<li>Scripts can read bounding boxes (a node's bbox, as in Nuke), run a CurveTool's analysis, and use Nuke's AutoCrop, which keys a Crop to the picture over the comp's range.</li>
+<li>Kento's own Python module for scripts, tools and batches: import kento in the Script Editor, a startup script or Kento's Python without the interface. Comps, nodes and knobs by Nuke's names, keys at frames, one undo for a block of changes; every remote control command from a script; the Viewer (show a node, its look, its wipe); callbacks when comps open and close, the frame changes or nodes are added; and a stub file so code editors complete the calls.</li>
+<li>Kiri's Balance: Match to background sets exposure, contrast, warmth and tint part of the way toward the plate behind, each with a lock, and light wrap brings the background's light around the edges.</li>
+<li>Kiri's checking views, in its row over the Viewer: Result, Matte, Bands, Spill and Foreground.</li>
+<li>Kiri's kept colors: pick colors the despill leaves alone (a green costume, a plant) with the dropper; a pixel near a kept color keeps its own color at any brightness.</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>Setting a box control from a script with four numbers set both corners to the first number.</li>
+<li>A gizmo's scripts read as written in the Nuke script: before, they could look as if they had nothing to do.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.36.2922.zip" length="430326212" type="application/octet-stream" sparkle:edSignature="IW60Mgvm/hmHNsftjr9pPm/TwsI7qeHQW3kvvjAz7eGgxmhCqhj81Hx57xEekkwYaijuu/e4BNViMscSPxX6Dw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2922-2909.delta" sparkle:deltaFrom="2909" length="2139270" type="application/octet-stream" sparkle:edSignature="AynhHCgn/1/dCho7ofsNzBLxxRYpCARgDrSKewXfUDdDqJvX3KknIiZytS0sa5hLccoZ6ZTD3P5HPfj6BIyDCw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2922-2885.delta" sparkle:deltaFrom="2885" length="2748226" type="application/octet-stream" sparkle:edSignature="x9Ob5L8IQJVJ7+3BS5ZQW13BH9CZohkUTG0A3KyFz/vH8SsafAj3TwcwB6Wf8Iz7bM9geuUBDRwf5S43kudcBQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2922-2872.delta" sparkle:deltaFrom="2872" length="2788574" type="application/octet-stream" sparkle:edSignature="+ht2VWHx59a9Hsdrn9NO5hjAAAoDUSrmlaE1lQ/9giB6mGuIC+1jiq9a5oWvEtRk3RQ7giFS4FMmFGM/MRpkBw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.35</title>
             <pubDate>Sat, 07 Nov 2026 13:43:35 -0800</pubDate>
             <sparkle:version>2909</sparkle:version>
@@ -56,39 +89,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2885-2872.delta" sparkle:deltaFrom="2872" length="923410" type="application/octet-stream" sparkle:edSignature="Def90PQyiG8dmjks4Lq9j44DlAVxcJnGYeVerSepcwsUUvr9YfkUBt7+WUiX/lTNSJyeg8/5oghIh8UTlrdmBw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2885-2860.delta" sparkle:deltaFrom="2860" length="1183498" type="application/octet-stream" sparkle:edSignature="fdqVyrA/ujhMVEwKACpVT1T+Cdc9M+U5tkQs8+GKVGjq+wFO1FscDLr71CX9ZxGe4K5d9XGTkvi2L8MC0oIPAg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2885-2831.delta" sparkle:deltaFrom="2831" length="2451942" type="application/octet-stream" sparkle:edSignature="V1/t8t7Vb+z+wXv2D91zutyRTfpg1RWxUVm1/hw5WwSYqfvKv09rKN+bk2czXrUd/4EGJHqx7v7TRdkc7+FJBg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.33</title>
-            <pubDate>Fri, 06 Nov 2026 00:27:23 -0800</pubDate>
-            <sparkle:version>2872</sparkle:version>
-            <sparkle:shortVersionString>0.9.33</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.33, build 2872</h2>
-<h3>Fixes</h3>
-<ul>
-<li>Playback draws each frame at the picture's own size. With a plate whose size differs from the comp's format, the playing frame was drawn smaller over the stopped one, a double image.</li>
-<li>Every node's panel keeps to its grid. PlanarTracker's multipass switches ran off the panel's edge.</li>
-<li>A menu shows its choice ticked when the knob holds another spelling of it: Transform's, Reformat's and CornerPin2D's filter showed "Cubic" as plain text, and PointsTo3D's camera type its "free move".</li>
-<li>OCIODisplay's display and view list the comp's own color config. A name the config hasn't got, such as Nuke's "ACES", says which display or view is used in its place.</li>
-<li>Write's frame mode and frame share one row, as Read's do.</li>
-<li>A track that stops says where and why, on the Tracker panel and to an assistant through the remote control.</li>
-</ul>
-<h3>Nuke scripts</h3>
-<ul>
-<li>Gamma takes a value for each channel, as Nuke's does. Glow_Exponential's per-channel gammas were ignored.</li>
-<li>Expressions with Nuke's <code>|</code> and <code>&amp;</code> work, grouped as Nuke groups them, and <code>&amp;&amp;</code> and <code>||</code> give 1 or 0 as in Nuke. Spill_Correct's switches were ignored.</li>
-<li>Expressions can read another node's box, format and pixel aspect (<code>Crop1.bbox.x</code>), a group's own width (<code>parent.width</code>), <code>$gui</code>, and Nuke's obsolete knobs (read as 0, as Nuke reads them).</li>
-<li>Card2's lattice comes in as written: every card in the studio's comps was reported as an expression Kento couldn't work out. A Sampler's curves come in too.</li>
-<li>EdgeDetectWrapper keeps its erode size, so a blur set from it works. The erode itself isn't in Kento yet.</li>
-<li>Of the studio library's 23 gizmos, 18 now work and the other 5 have some controls that do nothing yet. None fails. Across the studio's 225 latest comps, the knobs Kento can't work out went from 595 to about 440.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.33.2872.zip" length="430012084" type="application/octet-stream" sparkle:edSignature="eOc5h+OB+RBknfCgK0ZrmyZxOEP8gUV0eNWbI8oOzLIG1TSQbSjyNVs+N9tMuF8azygZR3HqZ7NaTp3fVw1zBg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2872-2860.delta" sparkle:deltaFrom="2860" length="1085334" type="application/octet-stream" sparkle:edSignature="A3Qi8ZRSUkHfDYP34fmLvAQJFeD8cDu/C0DMqw06d4R3gqTFNRId2Ub72QyI6Srdmitz9Z1A/ER/VmBi6tRnDQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2872-2831.delta" sparkle:deltaFrom="2831" length="2385822" type="application/octet-stream" sparkle:edSignature="eVYxH7l0mI/icRIGlRpUz+uIBhhBJchfOKQBddMTossIks1QrdZNixZabZ4AsLdkJC1d0tNZ/hZlCKHvjm8CDA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2872-2807.delta" sparkle:deltaFrom="2807" length="2658458" type="application/octet-stream" sparkle:edSignature="re2Cix4SYIEcLkLzvhFH6r68Rvd5plHXUnnmLcz/ivtEcKyaDJb/enr98k0djufNt45y9ygkDeLpSsysk76kDw=="/>
             </sparkle:deltas>
         </item>
     </channel>
