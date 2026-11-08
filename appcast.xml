@@ -3,6 +3,38 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.37</title>
+            <pubDate>Sat, 07 Nov 2026 20:37:51 -0800</pubDate>
+            <sparkle:version>2979</sparkle:version>
+            <sparkle:shortVersionString>0.9.37</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.37, build 2979</h2>
+<h3>New</h3>
+<ul>
+<li>Create LUT, Kento's own node for making a LUT from what the comp does to color (Color &gt; Create LUT). Put it at the end of the nodes to bake: everything between start at and here becomes one LUT, branches that split and join again included, each node switchable out. A node a LUT can't hold (a blur, a mask that changes across the frame) is found, left out and named. Or make it from a Match Grade, or from a test pattern graded in another app.</li>
+<li>Create LUT opens simple: made for chooses what the LUT is for (the grade for Resolve, a viewing LUT for editorial, an on-set monitor, OCIO apps) and sets the color spaces, shaper, size and format together. One sentence says what Write LUT will make, and after writing, the check says in plain words how close the file is to the nodes. All options, in the header, shows every option; changing one by hand says what changed, with Back to the use you chose, and a risky combination is named with a button that fixes it.</li>
+<li>Create LUT writes .cube in Resolve's style, CLF, plain .cube and CTF. With CLF or CTF a single chain of pure color transforms is written as those operations, with no table, checked against the nodes first.</li>
+<li>Startup scripts in Settings &gt; Scripting: Nuke-style init.py and menu.py folders and files, their menus in the Scripts menu, knob defaults, formats, gizmo folders and callbacks. A menu key Kento already uses stays Kento's, and the card offers a free key near it.</li>
+<li>Startup scripts' callbacks for a node class run: nuke.addKnobChanged as you set a control on a node of that class (a Read's file, say) and as its panel opens, and nuke.addOnDestroy as a node is deleted.</li>
+<li>Settings &gt; AI and MCP, a page of its own: Connect an assistant lists the AI apps found on this Mac, local-model ones too, and sets one up to drive Kento.</li>
+<li>A gizmo whose scripts only show, hide or set controls becomes a Bento like any other.</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>Matched to NukeX 17.1's renders: LightKey's screen gain, Radial at softness 0 (a one-pixel soft edge, not a hard one), DeepFromFrames' frames, depths and premult, LensDistortion2's Height normalization, and how Reformat and Transform round each filter's position.</li>
+<li>Flare with a visibility mask was cut off where the mask's input stopped.</li>
+<li>bm_CameraShake crashed Kento.</li>
+<li>A transition made into a Bento stopped working.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.37.2979.zip" length="431107096" type="application/octet-stream" sparkle:edSignature="NJqLpHKlCl7SxIjoDEv239fjAQIuatLdto0BZj2mfhJ6hsleyRvmqxgOoBTcOq/zImGB6hUo01BZ4muo1yO/Cg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2979-2922.delta" sparkle:deltaFrom="2922" length="2507614" type="application/octet-stream" sparkle:edSignature="SRj0EwYSWn4E1VPZd3/WN9PD5hvyru/WFVdywSsQ1orG3qFFsNDH4gXdzR81r10G6sEFeVrh+b0eXgvGZEnIDQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2979-2909.delta" sparkle:deltaFrom="2909" length="3138942" type="application/octet-stream" sparkle:edSignature="uhCBOpeHcqvF31ja8jYf235hSccUFN7Vx1whmUu0OGGyoB+08mq+jB44XRpmvEZvBen1WmJQOLhBarwhlekwAA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento2979-2885.delta" sparkle:deltaFrom="2885" length="3491194" type="application/octet-stream" sparkle:edSignature="a2G71FWvO+tiw2oSkjeR5BaIpzTeKERAhEy5XeWPgH6MJYUsPxlzWuWS0ZDP/A2MpeITL3i2nNIloYWjCDb0Bg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.36</title>
             <pubDate>Sat, 07 Nov 2026 17:06:43 -0800</pubDate>
             <sparkle:version>2922</sparkle:version>
@@ -68,27 +100,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2909-2885.delta" sparkle:deltaFrom="2885" length="2188862" type="application/octet-stream" sparkle:edSignature="XDd1vXf/R0OddRLweNBCnPkayflm6AawgD0AllexjIkhb7Bh7maEzPimeQQic9Iyl76KekPMaFDllDa2D9kMBQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2909-2872.delta" sparkle:deltaFrom="2872" length="2230254" type="application/octet-stream" sparkle:edSignature="NhYAnjhE1ibrohHjdO4UdPQHPpquHgBdh5xM74SXgp5F9pmkNRX4ggc53g0cx4PgujMIO+/v9E+R7vC3Sg8SDg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento2909-2860.delta" sparkle:deltaFrom="2860" length="2360622" type="application/octet-stream" sparkle:edSignature="HQExLUYWxN7WkQAAPWsOzc1dVnknyfZTCQJ05MtmYHlOG9LXl1/2UCQstEt6OA0fUwCM904WjbImpBw6NLXuCA=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.34</title>
-            <pubDate>Sat, 07 Nov 2026 09:20:14 -0800</pubDate>
-            <sparkle:version>2885</sparkle:version>
-            <sparkle:shortVersionString>0.9.34</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.34, build 2885</h2>
-<h3>Speed</h3>
-<ul>
-<li>Colorspace works each pixel's color out once for its red, green and blue, where it had worked it out once for each channel. Comps with many Colorspace nodes, such as layers blended in their own color space, render faster: on one studio comp Colorspace took half the time.</li>
-<li>FilterErode with the Box filter costs the same at any size. At large sizes it is many times faster: a size of 200 took about 2 seconds a frame and now takes a few hundredths. One studio comp's frame went from 5.1 to 2.9 seconds.</li>
-<li>Both give exactly the same pixels as before, checked against every Write of five studio comps.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.34.2885.zip" length="430017050" type="application/octet-stream" sparkle:edSignature="wBfzHW0TvHZiaJW9rneonqCKajrE/HxqHranvegG/vFW5eGB3hbhpIpn3HYptLX6FXdgctIqkoIFTekwKyXfBQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2885-2872.delta" sparkle:deltaFrom="2872" length="923410" type="application/octet-stream" sparkle:edSignature="Def90PQyiG8dmjks4Lq9j44DlAVxcJnGYeVerSepcwsUUvr9YfkUBt7+WUiX/lTNSJyeg8/5oghIh8UTlrdmBw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2885-2860.delta" sparkle:deltaFrom="2860" length="1183498" type="application/octet-stream" sparkle:edSignature="fdqVyrA/ujhMVEwKACpVT1T+Cdc9M+U5tkQs8+GKVGjq+wFO1FscDLr71CX9ZxGe4K5d9XGTkvi2L8MC0oIPAg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2885-2831.delta" sparkle:deltaFrom="2831" length="2451942" type="application/octet-stream" sparkle:edSignature="V1/t8t7Vb+z+wXv2D91zutyRTfpg1RWxUVm1/hw5WwSYqfvKv09rKN+bk2czXrUd/4EGJHqx7v7TRdkc7+FJBg=="/>
             </sparkle:deltas>
         </item>
     </channel>
