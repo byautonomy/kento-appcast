@@ -3,6 +3,27 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.45</title>
+            <pubDate>Sun, 08 Nov 2026 14:31:51 -0800</pubDate>
+            <sparkle:version>3163</sparkle:version>
+            <sparkle:shortVersionString>0.9.45</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.45, build 3163</h2>
+<h3>Fixed</h3>
+<ul>
+<li>The Assistant through an app you're signed into (Claude Code, Gemini CLI, Codex) reaches Kento again: it had said "Connection closed", because the app was started with Kento's own Python settings and Kento's tools couldn't start under them. Other apps' MCP servers start cleanly too.</li>
+<li>The Assistant panel no longer widens past its dock: the status line beside the model shortens with "..." (the whole line in its tooltip) and your messages narrow with the panel, so nothing is cut off on the right.</li>
+<li>Settings &gt; AI and MCP, with an app you're signed into: the model row says it's the app's own, and the MLX LM license line shows only for This Mac.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.45.3163.zip" length="431531182" type="application/octet-stream" sparkle:edSignature="XrFeD0qjgaXoS+pLLBc6fCc7bfu0vO6HzeJ/fjnlf88wpGLGf4yopDTCEQyeBsCPFYWI+5Kug/JQpoLjnZqoCw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3163-3156.delta" sparkle:deltaFrom="3156" length="807050" type="application/octet-stream" sparkle:edSignature="hIKbq1wNwWnSs3PRflI+KA75WuZZAzF3nZQvXTz3a9uvDiUP+FAjbJDBTrT1gDURzL+th1Z2Y38545NOopwEBA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3163-3125.delta" sparkle:deltaFrom="3125" length="1908026" type="application/octet-stream" sparkle:edSignature="6JI4tUZDCrHTACuTh04DQKPGm+DPOorjQfH32kv+/PmwbWwnYwssLEEmgvloSUNYNuXFIdjM0bZi2ZQPOr+RCg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3163-3094.delta" sparkle:deltaFrom="3094" length="2288894" type="application/octet-stream" sparkle:edSignature="YB7EzN9xQwx0knIuJ004khpfP3RYc8bpO1ko8Ag0e+Wb+0OFrCNVeZGIOBr6ZA4C35yfbFDra0j4eojn9ze0CA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.44</title>
             <pubDate>Sun, 08 Nov 2026 13:54:16 -0800</pubDate>
             <sparkle:version>3156</sparkle:version>
@@ -64,28 +85,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3125-3094.delta" sparkle:deltaFrom="3094" length="1918570" type="application/octet-stream" sparkle:edSignature="v+x8APPVnCI7YnlNAJ0lQl1CNWWdKWg5cgpWRtz8uSaq+3pf59b4+AuZl5CvcTLkcci4lpGy5XT9HVb8oMnUBg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3125-3089.delta" sparkle:deltaFrom="3089" length="1955914" type="application/octet-stream" sparkle:edSignature="X1XdxTcKFd/f6Tm7LnGKwCVUDgSBHFxwnxabpvCvlN5oWmf11Qg+CymnTekVq4iAeYMhkBASiHgkXVOAK5diBQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3125-3077.delta" sparkle:deltaFrom="3077" length="2143034" type="application/octet-stream" sparkle:edSignature="u2u4R2uJrHXMmc0VAnwaNdkY9bicxsSj8lJzIEPNC/g7p9izbCRVXN3yAF3cNXW6wFAEFpSnrGDRIZx6W1zSDQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.42</title>
-            <pubDate>Sun, 08 Nov 2026 07:54:42 -0800</pubDate>
-            <sparkle:version>3094</sparkle:version>
-            <sparkle:shortVersionString>0.9.42</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.42, build 3094</h2>
-<h3>New</h3>
-<ul>
-<li>Kiri's CorridorKey edge route is finished. Renders, the render farm's included, now use CorridorKey's mattes as Kento's own render engine, as quickly as the rest of the comp.</li>
-<li>Settings &gt; AI and MCP &gt; Kiri's edge model shows CorridorKey's install: what's downloaded and its size and licenses before anything starts, the progress with Cancel, Resume after a stop, and once installed Show the folder and Remove. Kiri's panel offers the same install.</li>
-<li>Change the plate after working out a shot, and Kiri's model row says how many frames are out of date, so you know to work it out again.</li>
-<li>4K in tiles at full size: a choice on Kiri's model row for a frame bigger than 1536 x 1024. CorridorKey works on it in tiles at full resolution, feathered together, for finer detail (on a walking figure at 4K, 0.0004 from the true matte against 0.0005 fitted). It takes longer, and does worse on a subject close to the screen's color and on fine hair.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.42.3094.zip" length="431307632" type="application/octet-stream" sparkle:edSignature="zIGEHq+R1MPdw92chwZSzJNqbrIqb4G5GOljL+mYcU7ylf6hpdXc2Nf9A3mqybDJaunCeciNtUlXgrKbnnLaAw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3094-3089.delta" sparkle:deltaFrom="3089" length="1025042" type="application/octet-stream" sparkle:edSignature="RANjhtzFKoaTRvfGxh29c1oG724jH9kKHiQ80lGFMcuwdsj0A/dzpe7mqyfMiWs3RKCXPn4d1YObw3yfGNX7BQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3094-3077.delta" sparkle:deltaFrom="3077" length="1763914" type="application/octet-stream" sparkle:edSignature="ADa1ozDV6utbRf9oX8uOynwFHohOJRz0F49WBsdVi3B1Y17VjxjAeBwx6zHOQ8MJ/pq0vs7eEhT0fN4UzV1bCA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3094-3050.delta" sparkle:deltaFrom="3050" length="2321438" type="application/octet-stream" sparkle:edSignature="rXjPYWV0bw4aQ37Z87xEIhxuqQunrPQKd/z5nXAN8xR4lDFKu19sR8hGbBQ4FI8dUnMKgpGpMfYNwvjYMJoFDA=="/>
             </sparkle:deltas>
         </item>
     </channel>
