@@ -3,6 +3,34 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.43</title>
+            <pubDate>Sun, 08 Nov 2026 11:10:34 -0800</pubDate>
+            <sparkle:version>3125</sparkle:version>
+            <sparkle:shortVersionString>0.9.43</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.43, build 3125</h2>
+<h3>New</h3>
+<ul>
+<li>Kento's assistant: an Assistant panel beside Properties, Shot and Feedback (Window &gt; Panels &gt; Assistant). Ask about the comp, or say what to change. It uses Kento's own tools, asks before each change (Apply or Skip), and makes a reply's changes one undo. It can run on this Mac (MLX LM, or an Ollama or LM Studio already running), on a machine in the studio, through an app you're signed into (Claude Code or Gemini CLI, no API key), or at a service with an API key (Anthropic, Google, OpenAI or another). Settings &gt; AI and MCP &gt; Kento's assistant sets it up.</li>
+<li>The assistant can see the Viewer's picture (the + beside what it sees), use other apps' MCP servers such as Asobi's, and shows a card with Undo when another assistant changes the comp through MCP. A show can keep its comps away from remote services.</li>
+<li>Nuke pre-renders come back as Reads: File &gt; Import &gt; Nuke pre-renders puts a Read of the frames in the node's place, keeps the node beside it turned off, and adds a note saying why. Right-click the Read and choose Use (the node) Again to go back.</li>
+<li>Faster new frames at 4K: parts of a comp that are the same on every frame, such as a held frame or a still, are kept while you scrub, and TIFF, DPX and EXR files are read on all cores. On a heavy 4K comp a new frame went from about 1.3 s to 0.8 s, and a frame shown for the first time from 2.7 s to 1.6 s. Preferences &gt; Performance's image cache is now shared with the render engine.</li>
+<li>Kiri's Smart despill now follows the edge unmix: with edges unmixed, green is limited to the average of red and blue, and blue to the larger of red and green, the best on the studio's greenscreen tests.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>A transition saved as a Bento now plays in Nuke: its .nk had shown it finished on every frame.</li>
+<li>Kiri's panel no longer shows its own bookkeeping (model folder, model id, model refresh, show) as rows to fill in: Kiri sets them itself.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.43.3125.zip" length="431446227" type="application/octet-stream" sparkle:edSignature="XLz5PzFdIywTUIqe97RkSU3Xtq7UHhkImjOZGgJskFrQ8yciN0z/uJVcbY89s+flZAkccwikiQMR7BqXu31rCA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3125-3094.delta" sparkle:deltaFrom="3094" length="1918570" type="application/octet-stream" sparkle:edSignature="v+x8APPVnCI7YnlNAJ0lQl1CNWWdKWg5cgpWRtz8uSaq+3pf59b4+AuZl5CvcTLkcci4lpGy5XT9HVb8oMnUBg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3125-3089.delta" sparkle:deltaFrom="3089" length="1955914" type="application/octet-stream" sparkle:edSignature="X1XdxTcKFd/f6Tm7LnGKwCVUDgSBHFxwnxabpvCvlN5oWmf11Qg+CymnTekVq4iAeYMhkBASiHgkXVOAK5diBQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3125-3077.delta" sparkle:deltaFrom="3077" length="2143034" type="application/octet-stream" sparkle:edSignature="u2u4R2uJrHXMmc0VAnwaNdkY9bicxsSj8lJzIEPNC/g7p9izbCRVXN3yAF3cNXW6wFAEFpSnrGDRIZx6W1zSDQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.42</title>
             <pubDate>Sun, 08 Nov 2026 07:54:42 -0800</pubDate>
             <sparkle:version>3094</sparkle:version>
@@ -49,36 +77,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3089-3077.delta" sparkle:deltaFrom="3077" length="1748926" type="application/octet-stream" sparkle:edSignature="yC3b0gUfnFrha4kbJUesBXSwaE+QuYpAL3jFaltKI3jYZKrJcfB4N7i5KB+eq9OZGUsUjuOlby4z8iT9meXiDw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3089-3050.delta" sparkle:deltaFrom="3050" length="2312194" type="application/octet-stream" sparkle:edSignature="5iSuyUS4Z0BQOrggwAePbNCiH6OYrUibl/ou0UzOvbuNZYKzz2sm3bSqlequSMmEuWc283o9MCaYtMMiPR4qAw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3089-2998.delta" sparkle:deltaFrom="2998" length="2535214" type="application/octet-stream" sparkle:edSignature="AbYPNQDBrY++ePcqjri2A8Fsc2F6fR4GtWGkm+WggaveBFqA3zo7LWtGagsEmB5HcgUL14sNrAm3ZlewpuOwDQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.40</title>
-            <pubDate>Sun, 08 Nov 2026 04:37:51 -0800</pubDate>
-            <sparkle:version>3077</sparkle:version>
-            <sparkle:shortVersionString>0.9.40</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.40, build 3077</h2>
-<h3>New</h3>
-<ul>
-<li>Render this in Nuke: for the nodes Kento can't render yet, Kento writes one Nuke script that pre-renders them, and puts a stand-in under each that reads the frames back. Find it in the Node Graph's toolbar (Make a Nuke Pre-render) and in File &gt; Import and File &gt; Export (Nuke pre-renders).</li>
-</ul>
-<h3>Fixes</h3>
-<ul>
-<li>The bm_CameraShake gizmo now shakes as it does in Nuke, and no longer crashes Kento. Its shake curve matches Nuke at every frame and subframe. With motion blur on, the blur itself is still a little different from Nuke's.</li>
-<li>Expressions that integrate a knob over a range of frames (knob.integrate(a, b)) now work.</li>
-<li>Transform's bounding box now matches Nuke's: a whole-pixel move shifts the box, and other moves grow it by the same amount Nuke does.</li>
-<li>Dilate, Blur and ShuffleCopy now read past an input's bounding box as Nuke does, with the edge pixels carried on.</li>
-<li>HSVTool with more than one range on (hue, saturation and brightness together) now changes the same pixels as Nuke.</li>
-<li>Keymix's bounding box takes in the mask's box only when the mask is inverted, as in Nuke.</li>
-<li>Inside a group, parent.width, parent.height and parent.pixel_aspect now read the group's format, so the L_Ramp and L_AspectMask gizmos look as they do in Nuke.</li>
-<li>A Dissolve with more than two inputs now picks the same input as Nuke for each value of which (its third input is the mask), and saves that way too. The L_ChannelSolo gizmo now shows the right channel.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.40.3077.zip" length="431229696" type="application/octet-stream" sparkle:edSignature="dr4koZmopYGMIHKVlkWiYr7iphyTivOYxXR2/SA7+Vbi8FgJSfxqH4PG7tR/KWLDoxWk2bsseQGlKcinGDN4CA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3077-3050.delta" sparkle:deltaFrom="3050" length="2113946" type="application/octet-stream" sparkle:edSignature="3IpFLpZsnnVgQA+tMYLQE5a5zo0FDAELbaPS7RL/b+3Be68f/i1S7frBdJTMLl+5Tf9wkq3UZidV7dURh55/DA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3077-2998.delta" sparkle:deltaFrom="2998" length="2349286" type="application/octet-stream" sparkle:edSignature="qJgB6xa7h4wjtK9pClXOg1HFOB2+O485XSFPwcc7ZKthxTtyHYFjPTrstuV0TeouHZHGM+oWjhvLt7cT8CfADg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3077-2979.delta" sparkle:deltaFrom="2979" length="2380570" type="application/octet-stream" sparkle:edSignature="otGUOX0kRKmhFw007gASSLZY6iz1jPNXdkDNN4vhU/VtqLy5u6xCuscNdhTl1hcRckSVcPPNe5zAvx5oJFFXBQ=="/>
             </sparkle:deltas>
         </item>
     </channel>
