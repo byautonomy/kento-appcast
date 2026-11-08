@@ -3,6 +3,33 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.41</title>
+            <pubDate>Sun, 08 Nov 2026 06:58:54 -0800</pubDate>
+            <sparkle:version>3089</sparkle:version>
+            <sparkle:shortVersionString>0.9.41</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.41, build 3089</h2>
+<h3>New</h3>
+<ul>
+<li>Kiri's General edge route now works: CorridorKey 2.0, a matting model trained on screen keys, works out the shot's mattes in the background, and the frames it has done take its edge. It keys hair, motion blur and fine detail far closer than a key can: on a walking figure shot on green, its mattes came within 0.0006 of the true matte on average, where the key's own edge was 0.013 off. Press Install... on Kiri's edge row the first time (it downloads the model, about 3.7 GB, into Kento's own folder), then Work out the shot. Eight 2K frames take about 20 seconds. The mattes are saved beside the comp, so it renders anywhere without the model. CorridorKey 2.0's weights are under the Corridor Key Licence 2.0.</li>
+<li>Settings &gt; AI and MCP &gt; Kiri's edge model: a Python and model folder for CorridorKey already on the Mac, used until Install has run.</li>
+<li>Nodes with many inputs (three or more on one side, as Kiri has) now name their inputs only while you point at them, so the names no longer sit over their wires. Settings &gt; Node Graph &gt; Busy Nodes: Labels On Hover turns this off.</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>Past a picture's edge, Keymix and Merge now read black or the edge pixels as Nuke does, channel by channel. A plate from a Read, a Crop or a Transform reads black past its edge until a node lifts its black (a Grade's add or lift, Invert, a Clamp's minimum, an Expression that isn't 0 on black). The Grain_Advanced gizmo now matches Nuke exactly, and L_Icolor is much closer. Write leaves a Read's black border out of the file only while every channel still reads black past the edge, as Nuke does.</li>
+<li>A Transform with black outside on marks its picture black past its edge, as Nuke does.</li>
+<li>Defocus still reads past a picture's edge its own way, which differs from Nuke's on a few pictures.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.41.3089.zip" length="431286102" type="application/octet-stream" sparkle:edSignature="10Ta3XWCW+Md5UrNZC/N16w2ZK+mFwxODHeW1PreJARCVrQ1Zr6BNhn3gx+ZMLyqlb45zDSM3X1sfD0D2aY6DQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3089-3077.delta" sparkle:deltaFrom="3077" length="1748926" type="application/octet-stream" sparkle:edSignature="yC3b0gUfnFrha4kbJUesBXSwaE+QuYpAL3jFaltKI3jYZKrJcfB4N7i5KB+eq9OZGUsUjuOlby4z8iT9meXiDw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3089-3050.delta" sparkle:deltaFrom="3050" length="2312194" type="application/octet-stream" sparkle:edSignature="5iSuyUS4Z0BQOrggwAePbNCiH6OYrUibl/ou0UzOvbuNZYKzz2sm3bSqlequSMmEuWc283o9MCaYtMMiPR4qAw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3089-2998.delta" sparkle:deltaFrom="2998" length="2535214" type="application/octet-stream" sparkle:edSignature="AbYPNQDBrY++ePcqjri2A8Fsc2F6fR4GtWGkm+WggaveBFqA3zo7LWtGagsEmB5HcgUL14sNrAm3ZlewpuOwDQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.40</title>
             <pubDate>Sun, 08 Nov 2026 04:37:51 -0800</pubDate>
             <sparkle:version>3077</sparkle:version>
@@ -65,33 +92,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3050-2998.delta" sparkle:deltaFrom="2998" length="1306226" type="application/octet-stream" sparkle:edSignature="3jb7fEy9szP9EGSqApnN5wP3cJLpI0+BmcamIjF7wDpx//VRtONjyVLnokzpt1K/vE5BkOq3H1tCRRO5JzFzCA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3050-2979.delta" sparkle:deltaFrom="2979" length="1330386" type="application/octet-stream" sparkle:edSignature="lacQyID2A09Q1N6lxvoIH3mt3KS3ow2IjzKKwT0rUv3w9ZIkYH9AHPLxKQ2KhFu+7S6KtlZrD56lSQKKvljdAg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3050-2922.delta" sparkle:deltaFrom="2922" length="2776910" type="application/octet-stream" sparkle:edSignature="rUIc/qFJiZn5b/GRIhPkPG/+5fjJ5Vg5WyQ3WXwlx5qNP1qZykj4G9iRwXAITRa9JvlIMbYu0onB/L9b373EAQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.38</title>
-            <pubDate>Sat, 07 Nov 2026 22:16:45 -0800</pubDate>
-            <sparkle:version>2998</sparkle:version>
-            <sparkle:shortVersionString>0.9.38</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.38, build 2998</h2>
-<h3>New</h3>
-<ul>
-<li>VectorRetime's motion blur: shutterSamples and shutterTime now blur the retimed picture, the samples spread evenly over the shutter around each frame and weighted equally, as Nuke renders it.</li>
-<li>LightKey's alpha bias and despill bias now work, as do the None and Source replace methods with a clip, matching Nuke.</li>
-</ul>
-<h3>Fixes</h3>
-<ul>
-<li>A movie with a sound track played a frame late inside each run of frames Kento decoded together.</li>
-<li>A Read set to black before or after its range gave a picture with no channels, so a TimeClip, AppendClip or Keymix past a clip's end had nothing to show. It now gives black with the file's channels.</li>
-<li>A Bento made from a group with its own controls, such as a transition, lost their values and played as if at the defaults.</li>
-<li>Matched to Nuke's renders: Copy where A reaches past B, VectorCornerPin between its keys, Stabilize2D's scale factor, TimeClip reversed, TimeOffset's whole frames for negative offsets, CheckerBoard2 on non-square pixels, HSVTool on pixels outside 0 to 1, and AddMix outside A.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.38.2998.zip" length="431115921" type="application/octet-stream" sparkle:edSignature="atR4QXEs0cqdKMZveaDsNnTNgwcHrt5GbKFBtpRItUCZZhIF96RZXoN0AESVqxxsDZr7qR5L21z+DRNgIYroDg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2998-2979.delta" sparkle:deltaFrom="2979" length="833038" type="application/octet-stream" sparkle:edSignature="0M/QqElE0bKWfkm6BRXFIn3A5F6ITon/dxvxxa+2e+5UXHFz5nUJskE+1ut6BmkCpOYRsRJwvkv1dMifj9eWCQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2998-2922.delta" sparkle:deltaFrom="2922" length="2546558" type="application/octet-stream" sparkle:edSignature="NwLkgxniOHTJvUUHLpgFntMli3mbWpkt4uaAWUl/Qi3/OLl4aQEyWZGCpqsSbNpjdVh9GmF4ThVjJGBgLGYECw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento2998-2909.delta" sparkle:deltaFrom="2909" length="3174082" type="application/octet-stream" sparkle:edSignature="LKbqhxUpXkIpPUDLYHG1Z06Tg7tW1gwmqgjRfEM8aCUzVLiX+RMybooSiJXnFt+QthCo9puLSvSqU64o5x83Aw=="/>
             </sparkle:deltas>
         </item>
     </channel>
