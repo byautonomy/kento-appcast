@@ -3,6 +3,42 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.44</title>
+            <pubDate>Sun, 08 Nov 2026 13:54:16 -0800</pubDate>
+            <sparkle:version>3156</sparkle:version>
+            <sparkle:shortVersionString>0.9.44</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.44, build 3156</h2>
+<h3>New</h3>
+<ul>
+<li>Kento's assistant runs on this Mac by itself: Settings &gt; AI and MCP &gt; Kento's assistant &gt; Install... downloads Apple's MLX LM (about 130 MB, into Kento's ML folder), and Kento starts it when the Assistant panel opens (Start and Stop beside it). The model menu lists the models on this Mac with their sizes; Download a model... lists Hugging Face's MLX models as they are today, with each one's size and license page before anything is downloaded. The context row sets how much of the conversation the model is given.</li>
+<li>Codex joins Claude Code and Gemini CLI as an app you're signed into: the assistant runs through it with no API key.</li>
+<li>Settings &gt; General &gt; New nodes: the bbox a new Merge starts with (union as Nuke, B, or by operation), so a studio needs no startup script for it.</li>
+<li>Settings &gt; Scripting offers the studio's own plugin folders (a folder in the studio's _LIBRARY/gizmos with an init.py or menu.py) under the startup scripts, with Add. Kento never adds one unasked.</li>
+<li>New frames come quicker from a network share: while you look at a frame, Kento reads the next frames' files from the NAS (only what the Viewer shows, a Retime's frames included). On a heavy 4K comp read from the NAS, a new frame went from 1.31 s to 0.95 s scrubbing forward.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>A Merge can set its own bbox: turn on auto bbox (under bbox) and it takes A's box for mask and in, and the plate's for over, stencil, out and the rest. A Nuke script saves the box it chose.</li>
+<li>Kiri's Match to background now says it's a starting point to judge by eye: on test renders a full match often landed further off than none.</li>
+<li>Kiri's panel reads better for a compositor: the clean plate's choices say None when nothing is connected, the edge model's progress is a line under the model rather than a second "model" row, amount and pixel fields carry their words, screen match sits under the screen, the sections carry their board's notes, and controls not in Kento yet say so.</li>
+<li>Kiri says when the screen clips and no clean plate is connected: a burnt-out screen keys worst without one, so the clean plate row suggests making one with CleanPlate.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>As Kento opens, the Viewer shows the picture centered and filling the view, whatever the screen size, and fits it again while the window settles; it had opened small and off center.</li>
+<li>LensDistortion2 now renders R-T Coupled, Radial Asymmetric at order 4, the beam splitter's bending and the tangential terms' denominators as Nuke does: they had been up to 419 pixels off.</li>
+<li>Paint: a stroke picked in History stays picked when another Paint's panel is open, and undoing a picked stroke away stops editing it.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.44.3156.zip" length="431527051" type="application/octet-stream" sparkle:edSignature="/m3sbx1t9k7beB9itpiEP3UTdrRuAxrFQ/Nt8Fqo/QHYyZaR1cueFTHhUUyhSIZt7RygDD/qHATCfj4C+cZlCw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3156-3125.delta" sparkle:deltaFrom="3125" length="1889426" type="application/octet-stream" sparkle:edSignature="AbgnwF4RE+kySm4VNkunPcvI+U/7YbW95lfAlYPFGDlTHCWo6x19llRWdS6Y0V0eCP/47Vxzt7Vb9qJfdzRWAQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3156-3094.delta" sparkle:deltaFrom="3094" length="2280802" type="application/octet-stream" sparkle:edSignature="SnSAMHd1jQXcTEo2EfLqLEB0Jrfelxle++vmXNj5g+CcnPWZiFUcIzG7xJiJKwO/CrEJYMBSludd0uc3pDYBDQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3156-3089.delta" sparkle:deltaFrom="3089" length="2309258" type="application/octet-stream" sparkle:edSignature="gFYpAyI7HVOaKUrSxS3EvJN0c1VRcVAlkUTpZefqj8au5Juj7tVuWyBmBb2og9y+YwrBl3ygSGUhIUm5HxrZBg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.43</title>
             <pubDate>Sun, 08 Nov 2026 11:10:34 -0800</pubDate>
             <sparkle:version>3125</sparkle:version>
@@ -50,33 +86,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3094-3089.delta" sparkle:deltaFrom="3089" length="1025042" type="application/octet-stream" sparkle:edSignature="RANjhtzFKoaTRvfGxh29c1oG724jH9kKHiQ80lGFMcuwdsj0A/dzpe7mqyfMiWs3RKCXPn4d1YObw3yfGNX7BQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3094-3077.delta" sparkle:deltaFrom="3077" length="1763914" type="application/octet-stream" sparkle:edSignature="ADa1ozDV6utbRf9oX8uOynwFHohOJRz0F49WBsdVi3B1Y17VjxjAeBwx6zHOQ8MJ/pq0vs7eEhT0fN4UzV1bCA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3094-3050.delta" sparkle:deltaFrom="3050" length="2321438" type="application/octet-stream" sparkle:edSignature="rXjPYWV0bw4aQ37Z87xEIhxuqQunrPQKd/z5nXAN8xR4lDFKu19sR8hGbBQ4FI8dUnMKgpGpMfYNwvjYMJoFDA=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.41</title>
-            <pubDate>Sun, 08 Nov 2026 06:58:54 -0800</pubDate>
-            <sparkle:version>3089</sparkle:version>
-            <sparkle:shortVersionString>0.9.41</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.41, build 3089</h2>
-<h3>New</h3>
-<ul>
-<li>Kiri's General edge route now works: CorridorKey 2.0, a matting model trained on screen keys, works out the shot's mattes in the background, and the frames it has done take its edge. It keys hair, motion blur and fine detail far closer than a key can: on a walking figure shot on green, its mattes came within 0.0006 of the true matte on average, where the key's own edge was 0.013 off. Press Install... on Kiri's edge row the first time (it downloads the model, about 3.7 GB, into Kento's own folder), then Work out the shot. Eight 2K frames take about 20 seconds. The mattes are saved beside the comp, so it renders anywhere without the model. CorridorKey 2.0's weights are under the Corridor Key Licence 2.0.</li>
-<li>Settings &gt; AI and MCP &gt; Kiri's edge model: a Python and model folder for CorridorKey already on the Mac, used until Install has run.</li>
-<li>Nodes with many inputs (three or more on one side, as Kiri has) now name their inputs only while you point at them, so the names no longer sit over their wires. Settings &gt; Node Graph &gt; Busy Nodes: Labels On Hover turns this off.</li>
-</ul>
-<h3>Fixes</h3>
-<ul>
-<li>Past a picture's edge, Keymix and Merge now read black or the edge pixels as Nuke does, channel by channel. A plate from a Read, a Crop or a Transform reads black past its edge until a node lifts its black (a Grade's add or lift, Invert, a Clamp's minimum, an Expression that isn't 0 on black). The Grain_Advanced gizmo now matches Nuke exactly, and L_Icolor is much closer. Write leaves a Read's black border out of the file only while every channel still reads black past the edge, as Nuke does.</li>
-<li>A Transform with black outside on marks its picture black past its edge, as Nuke does.</li>
-<li>Defocus still reads past a picture's edge its own way, which differs from Nuke's on a few pictures.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.41.3089.zip" length="431286102" type="application/octet-stream" sparkle:edSignature="10Ta3XWCW+Md5UrNZC/N16w2ZK+mFwxODHeW1PreJARCVrQ1Zr6BNhn3gx+ZMLyqlb45zDSM3X1sfD0D2aY6DQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3089-3077.delta" sparkle:deltaFrom="3077" length="1748926" type="application/octet-stream" sparkle:edSignature="yC3b0gUfnFrha4kbJUesBXSwaE+QuYpAL3jFaltKI3jYZKrJcfB4N7i5KB+eq9OZGUsUjuOlby4z8iT9meXiDw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3089-3050.delta" sparkle:deltaFrom="3050" length="2312194" type="application/octet-stream" sparkle:edSignature="5iSuyUS4Z0BQOrggwAePbNCiH6OYrUibl/ou0UzOvbuNZYKzz2sm3bSqlequSMmEuWc283o9MCaYtMMiPR4qAw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3089-2998.delta" sparkle:deltaFrom="2998" length="2535214" type="application/octet-stream" sparkle:edSignature="AbYPNQDBrY++ePcqjri2A8Fsc2F6fR4GtWGkm+WggaveBFqA3zo7LWtGagsEmB5HcgUL14sNrAm3ZlewpuOwDQ=="/>
             </sparkle:deltas>
         </item>
     </channel>
