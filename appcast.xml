@@ -3,6 +3,38 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.48</title>
+            <pubDate>Mon, 09 Nov 2026 02:28:11 -0800</pubDate>
+            <sparkle:version>3227</sparkle:version>
+            <sparkle:shortVersionString>0.9.48</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.48, build 3227</h2>
+<h3>New</h3>
+<ul>
+<li>Kiri's depth defocus works: it softens the foreground to the plate's focus. Match to background (or setting depth defocus the first time) measures how much softer the background's edges are than the foreground's own, and depth defocus puts that share of the blur on the foreground over the plate; the line under it says what it measured. On a test plate blurred by 3 px it measured 2.8.</li>
+<li>Kiri's General route refines CorridorKey's edge with MEMatte where CorridorKey is unsure, the studio's best recipe for hair (on its tests, the edge's error 0.165 to 0.139, for about a third of a second a frame). It runs when MEMatte's weights are in Kento's models folder; Install doesn't offer them yet.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>VectorRetime's Motion is sharper and quicker: its flow is now worked out to about 1,000 pixels across rather than at full size, which on footage with true in-between frames scored better (2K 34.0 to 34.5 dB, 4K 32.4 to 33.4).</li>
+<li>LightKey's Screen Grow/Shrink grows the matte as NukeX does: level by level, each level's pixels joined. On RAI_150 the windshield key went from 0.052 off NukeX's to 0.0018, the front edge from 0.031 to 0.0047. Half-pixel sizes still differ a little at some corners.</li>
+<li>Reconcile3D's clamp works as NukeX's: negatives to 0, values over 1 kept.</li>
+<li>Nuke scripts' menus answer as in Nuke: a menu's items come in its own order and getValue() gives the item's index (VectorRetime's Output Speed had read 2, not 0), and menus made from Gaffer's preset lists are found. Kento's own Python API (kento) now sits under the nuke module, and render nodes have it too.</li>
+<li>Nagi's learned method: the tooltip and manual now say to keep non-local means for grainy plates. On fine film grain it takes out about twice as much as learned; learned is the cleanest on even sensor noise.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Gaffer's hash cache is capped at about a tenth of the machine's memory: on a deep comp it could hold some 4 million entries on every thread, about 20 GB on a 16-core Mac (MC1_050's frozen Kento); now about 7 GB at most there. Comps render as fast as before; MC1_050's slowest nodes are still slow where Gaffer works them out.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.48.3227.zip" length="478932859" type="application/octet-stream" sparkle:edSignature="7BxMJVxFIAY45lTSDsjMgHSRoBrkUnJcTy88wiaYgvt4ffIWLTn8bPwfzs2vexUAG93zGu7yd6uaCCa5BL+FAA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3227-3200.delta" sparkle:deltaFrom="3200" length="1322866" type="application/octet-stream" sparkle:edSignature="DLk3ZfyrlH65giWWDg8pZsmCx1ns0n6upKNEDVp/5XGTP7XNrS4j865iWl9dtN1YHwElSOaNW3Kb1xdGlAgvDQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3227-3173.delta" sparkle:deltaFrom="3173" length="47417914" type="application/octet-stream" sparkle:edSignature="N7qJxe4byBPK2QbrDVZCqeZLbtvtmKNVAw56k3EVtwxeKjpInJaX8raAb6dI7dsNrCTPFZBuRtsGco24lW9sCA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3227-3163.delta" sparkle:deltaFrom="3163" length="48278966" type="application/octet-stream" sparkle:edSignature="b61A5jQ6TrT5Kt92XKqby5U7V7lhoDG/SjHcXK2vs6YLYN9UUtZspk4rifB39ILVYxJFpRotjESMsoApH72qBw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.47</title>
             <pubDate>Sun, 08 Nov 2026 22:29:35 -0800</pubDate>
             <sparkle:version>3200</sparkle:version>
@@ -67,27 +99,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3173-3163.delta" sparkle:deltaFrom="3163" length="1989338" type="application/octet-stream" sparkle:edSignature="9ou806NLPGOVSk9+m4IbIEeeHkVu03/f1lIzNuMSqrjy3LOdFVOcVuqRf7LEv/Dm4buZhUJIEHjJeH1G6XVLDQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3173-3156.delta" sparkle:deltaFrom="3156" length="1987362" type="application/octet-stream" sparkle:edSignature="yJMDdTKYhGs1VRY2XBcmKubj0Tq4uV4g73i7Gr3ZiOR9kfza5zbNH3K4sZiUVnyaE52NoRZmxYiMXmvcKCe5BQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3173-3125.delta" sparkle:deltaFrom="3125" length="2401998" type="application/octet-stream" sparkle:edSignature="LsJeE7/FCKan93A/6fLdeQd49HGA2OPFORn7Hcn7a7y+/MbpNc3Zj0o+juRi+clQq950daohJOcn/BPGFuBTBg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.45</title>
-            <pubDate>Sun, 08 Nov 2026 14:31:51 -0800</pubDate>
-            <sparkle:version>3163</sparkle:version>
-            <sparkle:shortVersionString>0.9.45</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.45, build 3163</h2>
-<h3>Fixed</h3>
-<ul>
-<li>The Assistant through an app you're signed into (Claude Code, Gemini CLI, Codex) reaches Kento again: it had said "Connection closed", because the app was started with Kento's own Python settings and Kento's tools couldn't start under them. Other apps' MCP servers start cleanly too.</li>
-<li>The Assistant panel no longer widens past its dock: the status line beside the model shortens with "..." (the whole line in its tooltip) and your messages narrow with the panel, so nothing is cut off on the right.</li>
-<li>Settings &gt; AI and MCP, with an app you're signed into: the model row says it's the app's own, and the MLX LM license line shows only for This Mac.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.45.3163.zip" length="431531182" type="application/octet-stream" sparkle:edSignature="XrFeD0qjgaXoS+pLLBc6fCc7bfu0vO6HzeJ/fjnlf88wpGLGf4yopDTCEQyeBsCPFYWI+5Kug/JQpoLjnZqoCw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3163-3156.delta" sparkle:deltaFrom="3156" length="807050" type="application/octet-stream" sparkle:edSignature="hIKbq1wNwWnSs3PRflI+KA75WuZZAzF3nZQvXTz3a9uvDiUP+FAjbJDBTrT1gDURzL+th1Z2Y38545NOopwEBA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3163-3125.delta" sparkle:deltaFrom="3125" length="1908026" type="application/octet-stream" sparkle:edSignature="6JI4tUZDCrHTACuTh04DQKPGm+DPOorjQfH32kv+/PmwbWwnYwssLEEmgvloSUNYNuXFIdjM0bZi2ZQPOr+RCg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3163-3094.delta" sparkle:deltaFrom="3094" length="2288894" type="application/octet-stream" sparkle:edSignature="YB7EzN9xQwx0knIuJ004khpfP3RYc8bpO1ko8Ag0e+Wb+0OFrCNVeZGIOBr6ZA4C35yfbFDra0j4eojn9ze0CA=="/>
             </sparkle:deltas>
         </item>
     </channel>
