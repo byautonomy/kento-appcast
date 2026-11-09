@@ -1,7 +1,37 @@
-<?xml version="1.0" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>Kento</title>
+        <item>
+            <title>0.9.47</title>
+            <pubDate>Sun, 08 Nov 2026 22:29:35 -0800</pubDate>
+            <sparkle:version>3200</sparkle:version>
+            <sparkle:shortVersionString>0.9.47</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.47, build 3200</h2>
+<h3>New</h3>
+<ul>
+<li>Nagi has a learned denoiser: its spatial method's third choice, learned, runs OpenImageDenoise's neural denoiser on the graphics card after Nagi's temporal stage, with spatial luma and chroma setting how much of its change is kept. On a test frame it took the noise from 0.040 to 0.008, against 0.013 for non-local means. It can smooth fine texture, so watch skin and fabric. A Nuke script saves it as non-local means.</li>
+<li>Kiri at 4K works on the subject, not the whole frame: with a garbage matte from the matte input (Click the subject, a Roto) and tiles off, the General route keys the box round the subject over the shot, at full detail when it fits, and puts the matte back in place. On 10 of 13 test shots it matched or beat fitting the whole frame, at the same cost. The cost line says when it's used.</li>
+<li>The Lens node's Work it out solves a degree-6 or fisheye model's own terms from the grid, so a model change fits the chart itself rather than a conversion of another model's numbers.</li>
+<li>CameraTracker uses a Known Lens: the tracks go through the lens before the solve. It has a Lens section (lens type, distortion, quartic, center) and an Undistort output that grows to fit, as NukeX's does. Saved to a Nuke script, a Known Lens is written as Unknown Lens, which NukeX opens.</li>
+<li>Drop a comp on the Node Graph with Option held and its nodes are added to this comp where you dropped them, instead of opening it.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>A busy node's input names (three or more on one side, as Kiri has), when you point at it, form a staircase: each top input's name just right of its own wire, a line above the next, with the wires passing behind the words. No name lands on another, or on the node's name, at any zoom; they had run together ("degrained matte").</li>
+<li>Copy and paste between Kento and NukeX checked both ways with NukeX itself.</li>
+<li>VectorRetime's blend if unsure measured against true in-between frames: it scored about 3 dB below plain Motion on every test clip, so the manual now says to leave it off unless a retime tears.</li>
+<li>The updater picks its own system's builds from the feed, ready for the Windows build.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.47.3200.zip" length="478783285" type="application/octet-stream" sparkle:edSignature="tf5ynrw1AJb8s4IfaL73Dsr2BwhQXryqs+SUK99jspLHYTxm2nsO4LMLa21E2FSB7yk3Dgl1UPjUcG4J7MuCBQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3200-3173.delta" sparkle:deltaFrom="3173" length="47175194" type="application/octet-stream" sparkle:edSignature="RDq0iPUZ9yAKTbM6B7u6I/YM6QL0LWrsD65MsGTy+g5LRUsGPOk1I17vGV6nQFRkSGjMELwsgx71Xx+lxm4ZAw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3200-3163.delta" sparkle:deltaFrom="3163" length="48154814" type="application/octet-stream" sparkle:edSignature="zJc375TVlbTQczxVqy/HUmpLLALgYVzraVRSaHRHNTDdMvIPg3lPYufYOsMnxCxFra71AsGa9d5osZ1W9iLVDg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3200-3156.delta" sparkle:deltaFrom="3156" length="48159994" type="application/octet-stream" sparkle:edSignature="MI1ITOcEpr0wuMQyvm50wKA8UqoiT1C9Td5UbuezQ28nbzGJuKYwh3zgHciH7AQ7QLP8ObGdRw+/YfDyDaCpAA=="/>
+            </sparkle:deltas>
+        </item>
         <item>
             <title>0.9.46</title>
             <pubDate>Sun, 08 Nov 2026 18:27:50 -0800</pubDate>
@@ -58,42 +88,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3163-3156.delta" sparkle:deltaFrom="3156" length="807050" type="application/octet-stream" sparkle:edSignature="hIKbq1wNwWnSs3PRflI+KA75WuZZAzF3nZQvXTz3a9uvDiUP+FAjbJDBTrT1gDURzL+th1Z2Y38545NOopwEBA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3163-3125.delta" sparkle:deltaFrom="3125" length="1908026" type="application/octet-stream" sparkle:edSignature="6JI4tUZDCrHTACuTh04DQKPGm+DPOorjQfH32kv+/PmwbWwnYwssLEEmgvloSUNYNuXFIdjM0bZi2ZQPOr+RCg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3163-3094.delta" sparkle:deltaFrom="3094" length="2288894" type="application/octet-stream" sparkle:edSignature="YB7EzN9xQwx0knIuJ004khpfP3RYc8bpO1ko8Ag0e+Wb+0OFrCNVeZGIOBr6ZA4C35yfbFDra0j4eojn9ze0CA=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.44</title>
-            <pubDate>Sun, 08 Nov 2026 13:54:16 -0800</pubDate>
-            <sparkle:version>3156</sparkle:version>
-            <sparkle:shortVersionString>0.9.44</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.44, build 3156</h2>
-<h3>New</h3>
-<ul>
-<li>Kento's assistant runs on this Mac by itself: Settings &gt; AI and MCP &gt; Kento's assistant &gt; Install... downloads Apple's MLX LM (about 130 MB, into Kento's ML folder), and Kento starts it when the Assistant panel opens (Start and Stop beside it). The model menu lists the models on this Mac with their sizes; Download a model... lists Hugging Face's MLX models as they are today, with each one's size and license page before anything is downloaded. The context row sets how much of the conversation the model is given.</li>
-<li>Codex joins Claude Code and Gemini CLI as an app you're signed into: the assistant runs through it with no API key.</li>
-<li>Settings &gt; General &gt; New nodes: the bbox a new Merge starts with (union as Nuke, B, or by operation), so a studio needs no startup script for it.</li>
-<li>Settings &gt; Scripting offers the studio's own plugin folders (a folder in the studio's _LIBRARY/gizmos with an init.py or menu.py) under the startup scripts, with Add. Kento never adds one unasked.</li>
-<li>New frames come quicker from a network share: while you look at a frame, Kento reads the next frames' files from the NAS (only what the Viewer shows, a Retime's frames included). On a heavy 4K comp read from the NAS, a new frame went from 1.31 s to 0.95 s scrubbing forward.</li>
-</ul>
-<h3>Changed</h3>
-<ul>
-<li>A Merge can set its own bbox: turn on auto bbox (under bbox) and it takes A's box for mask and in, and the plate's for over, stencil, out and the rest. A Nuke script saves the box it chose.</li>
-<li>Kiri's Match to background now says it's a starting point to judge by eye: on test renders a full match often landed further off than none.</li>
-<li>Kiri's panel reads better for a compositor: the clean plate's choices say None when nothing is connected, the edge model's progress is a line under the model rather than a second "model" row, amount and pixel fields carry their words, screen match sits under the screen, the sections carry their board's notes, and controls not in Kento yet say so.</li>
-<li>Kiri says when the screen clips and no clean plate is connected: a burnt-out screen keys worst without one, so the clean plate row suggests making one with CleanPlate.</li>
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li>As Kento opens, the Viewer shows the picture centered and filling the view, whatever the screen size, and fits it again while the window settles; it had opened small and off center.</li>
-<li>LensDistortion2 now renders R-T Coupled, Radial Asymmetric at order 4, the beam splitter's bending and the tangential terms' denominators as Nuke does: they had been up to 419 pixels off.</li>
-<li>Paint: a stroke picked in History stays picked when another Paint's panel is open, and undoing a picked stroke away stops editing it.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.44.3156.zip" length="431527051" type="application/octet-stream" sparkle:edSignature="/m3sbx1t9k7beB9itpiEP3UTdrRuAxrFQ/Nt8Fqo/QHYyZaR1cueFTHhUUyhSIZt7RygDD/qHATCfj4C+cZlCw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3156-3125.delta" sparkle:deltaFrom="3125" length="1889426" type="application/octet-stream" sparkle:edSignature="AbgnwF4RE+kySm4VNkunPcvI+U/7YbW95lfAlYPFGDlTHCWo6x19llRWdS6Y0V0eCP/47Vxzt7Vb9qJfdzRWAQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3156-3094.delta" sparkle:deltaFrom="3094" length="2280802" type="application/octet-stream" sparkle:edSignature="SnSAMHd1jQXcTEo2EfLqLEB0Jrfelxle++vmXNj5g+CcnPWZiFUcIzG7xJiJKwO/CrEJYMBSludd0uc3pDYBDQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3156-3089.delta" sparkle:deltaFrom="3089" length="2309258" type="application/octet-stream" sparkle:edSignature="gFYpAyI7HVOaKUrSxS3EvJN0c1VRcVAlkUTpZefqj8au5Juj7tVuWyBmBb2og9y+YwrBl3ygSGUhIUm5HxrZBg=="/>
             </sparkle:deltas>
         </item>
     </channel>
