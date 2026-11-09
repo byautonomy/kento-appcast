@@ -3,6 +3,39 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>1.0</title>
+            <pubDate>Mon, 09 Nov 2026 09:09:27 -0800</pubDate>
+            <sparkle:version>3292</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Beta 1.0, build 3292</h2>
+<p>Kento's first beta: from this version on, "Beta" stands where "Alpha" did.</p>
+<h3>New</h3>
+<ul>
+<li>Kiri's see-through subject, for smoke, glass and anything else the screen shows through (Edge, under 4K in tiles): the edge becomes how far the plate differs from the screen behind it, in place of the model's matte, which leaves smoke nearly empty and calls glass solid. On the studio's test shots, where the screen shows through, the error went from 0.261 to 0.109 on smoke and from 0.817 to 0.098 on glass. Connect a clean plate first, and leave it off for hair and fur.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>The Viewer's guides can be seen: they draw at full strength in their colors (they had been faint whatever the color), any color through Custom..., and a lines row sets their strength, width (1 to 3 px) and mode: Normal, Outlined (a dark edge either side, readable on any picture) or Difference.</li>
+<li>Zoomed out, a node's ports stay where their wires meet it: the ring you aim at is the one the wire arrives at, nothing jumps. Each input takes the stretch of the node's edge nearest it, so a press needn't hit the ring; the one it would take is lit and named. On a busy node (Kiri, a Merge with several A inputs), a wire dropped anywhere on it opens a short list of its inputs by name; Settings > Node Graph > Busy Nodes: Choose Input From A List turns it off.</li>
+<li>Errors show in Kento's own sheet, dropped from the top of the window: what didn't happen in plain words, what happened and what to do, each error and warning as a row (a node's name selects it), the technical details folded with Copy details, and Report a problem.</li>
+<li>Copy and paste are Kento's own: Cmd+C and Cmd+V copy and paste nodes with everything kept, and text on the clipboard that isn't nodes copied in Kento is never run. For Nuke, Edit > Copy for Nuke (Shift+Cmd+C) and Paste from Nuke (Shift+Cmd+V).</li>
+<li>Kiri's MEMatte refinement is now a choice a shot, refine hair, off until you turn it on. 0.9.48 and 0.9.49 ran it on every shot of the General route; measured against the true mattes of eight test shots, it helped a hair shot and a portrait (their error over the frame 0.0129 to 0.0101 and 0.040 to 0.030) but made fur, a walking figure and leaves a little worse. Turn it on for hair and compare. It works in 4K tiles too.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>An update no longer waits forever when the old Kento gets stuck quitting: the new one goes in once the old one has stopped running. (This takes effect from this version's updater on.)</li>
+<li>Working out a shot of two or three frames on Kiri's General route failed with "missing profile files": such ranges are now padded to the four frames CorridorKey works on at a time.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-1.0.3292.zip" length="479314708" type="application/octet-stream" sparkle:edSignature="cUp/jhKDTl6VY8woy4lbOM0ZOrksIV14RjIdtLa/Gj6KBZDNlTha7Zq2TAd29f7hUrWcGC20CH9vQh1tlXetCw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3292-3240.delta" sparkle:deltaFrom="3240" length="2579890" type="application/octet-stream" sparkle:edSignature="jEG2a+AF6XNfey7WMXBFAq580bROOMHNJa/BoCsnS89Vl8kQ3uZ1jrHX85B8gZGtx72Jp7XXs+UE86LDtL5oDg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3292-3227.delta" sparkle:deltaFrom="3227" length="2580190" type="application/octet-stream" sparkle:edSignature="PIiYA282ovYJ2b3bHzMaU4ogxzkB+64QADRKEj+mLS99AHZqW+gkBhfCuFRWqKujvCQrtgKxp7HOcRkmGHEBAw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3292-3200.delta" sparkle:deltaFrom="3200" length="2797050" type="application/octet-stream" sparkle:edSignature="mF3HZCbj/1glR50FI2NFgkApmnP05DqsIj4CW8k/lyNkdb42UyPlvLQ3tCJgDN3BEncrgRS6OkRu6UhEah01Cg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.49</title>
             <pubDate>Mon, 09 Nov 2026 06:03:14 -0800</pubDate>
             <sparkle:version>3240</sparkle:version>
@@ -53,36 +86,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3227-3200.delta" sparkle:deltaFrom="3200" length="1322866" type="application/octet-stream" sparkle:edSignature="DLk3ZfyrlH65giWWDg8pZsmCx1ns0n6upKNEDVp/5XGTP7XNrS4j865iWl9dtN1YHwElSOaNW3Kb1xdGlAgvDQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3227-3173.delta" sparkle:deltaFrom="3173" length="47417914" type="application/octet-stream" sparkle:edSignature="N7qJxe4byBPK2QbrDVZCqeZLbtvtmKNVAw56k3EVtwxeKjpInJaX8raAb6dI7dsNrCTPFZBuRtsGco24lW9sCA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3227-3163.delta" sparkle:deltaFrom="3163" length="48278966" type="application/octet-stream" sparkle:edSignature="b61A5jQ6TrT5Kt92XKqby5U7V7lhoDG/SjHcXK2vs6YLYN9UUtZspk4rifB39ILVYxJFpRotjESMsoApH72qBw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.47</title>
-            <pubDate>Sun, 08 Nov 2026 22:29:35 -0800</pubDate>
-            <sparkle:version>3200</sparkle:version>
-            <sparkle:shortVersionString>0.9.47</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.47, build 3200</h2>
-<h3>New</h3>
-<ul>
-<li>Nagi has a learned denoiser: its spatial method's third choice, learned, runs OpenImageDenoise's neural denoiser on the graphics card after Nagi's temporal stage, with spatial luma and chroma setting how much of its change is kept. On a test frame it took the noise from 0.040 to 0.008, against 0.013 for non-local means. It can smooth fine texture, so watch skin and fabric. A Nuke script saves it as non-local means.</li>
-<li>Kiri at 4K works on the subject, not the whole frame: with a garbage matte from the matte input (Click the subject, a Roto) and tiles off, the General route keys the box round the subject over the shot, at full detail when it fits, and puts the matte back in place. On 10 of 13 test shots it matched or beat fitting the whole frame, at the same cost. The cost line says when it's used.</li>
-<li>The Lens node's Work it out solves a degree-6 or fisheye model's own terms from the grid, so a model change fits the chart itself rather than a conversion of another model's numbers.</li>
-<li>CameraTracker uses a Known Lens: the tracks go through the lens before the solve. It has a Lens section (lens type, distortion, quartic, center) and an Undistort output that grows to fit, as NukeX's does. Saved to a Nuke script, a Known Lens is written as Unknown Lens, which NukeX opens.</li>
-<li>Drop a comp on the Node Graph with Option held and its nodes are added to this comp where you dropped them, instead of opening it.</li>
-</ul>
-<h3>Changed</h3>
-<ul>
-<li>A busy node's input names (three or more on one side, as Kiri has), when you point at it, form a staircase: each top input's name just right of its own wire, a line above the next, with the wires passing behind the words. No name lands on another, or on the node's name, at any zoom; they had run together ("degrained matte").</li>
-<li>Copy and paste between Kento and NukeX checked both ways with NukeX itself.</li>
-<li>VectorRetime's blend if unsure measured against true in-between frames: it scored about 3 dB below plain Motion on every test clip, so the manual now says to leave it off unless a retime tears.</li>
-<li>The updater picks its own system's builds from the feed, ready for the Windows build.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.47.3200.zip" length="478783285" type="application/octet-stream" sparkle:edSignature="tf5ynrw1AJb8s4IfaL73Dsr2BwhQXryqs+SUK99jspLHYTxm2nsO4LMLa21E2FSB7yk3Dgl1UPjUcG4J7MuCBQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3200-3173.delta" sparkle:deltaFrom="3173" length="47175194" type="application/octet-stream" sparkle:edSignature="RDq0iPUZ9yAKTbM6B7u6I/YM6QL0LWrsD65MsGTy+g5LRUsGPOk1I17vGV6nQFRkSGjMELwsgx71Xx+lxm4ZAw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3200-3163.delta" sparkle:deltaFrom="3163" length="48154814" type="application/octet-stream" sparkle:edSignature="zJc375TVlbTQczxVqy/HUmpLLALgYVzraVRSaHRHNTDdMvIPg3lPYufYOsMnxCxFra71AsGa9d5osZ1W9iLVDg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3200-3156.delta" sparkle:deltaFrom="3156" length="48159994" type="application/octet-stream" sparkle:edSignature="MI1ITOcEpr0wuMQyvm50wKA8UqoiT1C9Td5UbuezQ28nbzGJuKYwh3zgHciH7AQ7QLP8ObGdRw+/YfDyDaCpAA=="/>
             </sparkle:deltas>
         </item>
     </channel>
