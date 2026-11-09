@@ -3,6 +3,27 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>0.9.49</title>
+            <pubDate>Mon, 09 Nov 2026 06:03:14 -0800</pubDate>
+            <sparkle:version>3240</sparkle:version>
+            <sparkle:shortVersionString>0.9.49</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Alpha 0.9.49, build 3240</h2>
+<h3>Changed</h3>
+<ul>
+<li>Kiri's MEMatte refinement now works on every Mac: its weights (111 MB) come down from Kento's own download site the first time you work out a shot with the General route, checked against the authors' file. It needs Kento's seat; if the download fails, CorridorKey's matte is used and the line under the button says why.</li>
+<li>Nagi's learned method: its tooltip and the manual now say it's made for path-traced CG renders. On the studio's real camera plates non-local means took out more noise (3.5 dB against learned's 1.8 on one plate; on another learned made it slightly worse), so keep non-local means for camera plates and grain.</li>
+<li>The Lens node reads ARRI's own lens metadata from a plate (its focal lengths and focus distance under ARRI's names), so a plate from an ALEXA names its lens where it didn't before.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.49.3240.zip" length="478937742" type="application/octet-stream" sparkle:edSignature="XcFqVI3o26IgZgdn8esQD2dZLgWY77I7biOlpPAxv8XqMt4st5a/uVC6ZQ3Pt6pZz6LBUxOC2WuubWBcokBxDQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3240-3227.delta" sparkle:deltaFrom="3227" length="984014" type="application/octet-stream" sparkle:edSignature="tdJiMukDodrjJEf+5keMC5xZ4iE54lm6Ox/gwMygrFsTciu1DtrYWfbMQ5ImIi3RRhS4MPiIb7tJidUG5nKVDQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3240-3200.delta" sparkle:deltaFrom="3200" length="1313334" type="application/octet-stream" sparkle:edSignature="Y1KkhX7d0GRvWBOQ/OtB0CqkK4PAH6l0Jv6jIYbq7OkPWA6V0/Lot4jBL6jG7TPGV/EYWjbghwhw1tDUO6rnAw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3240-3173.delta" sparkle:deltaFrom="3173" length="47417574" type="application/octet-stream" sparkle:edSignature="RHjSZcqf97sH8zhNYoAHl9twHjLx+eK+1O88ORyPXIwA9stSU7VoDTcOt4dskPl6EwpoiO7j1WWti6sEFEpqCg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.9.48</title>
             <pubDate>Mon, 09 Nov 2026 02:28:11 -0800</pubDate>
             <sparkle:version>3227</sparkle:version>
@@ -62,43 +83,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3200-3173.delta" sparkle:deltaFrom="3173" length="47175194" type="application/octet-stream" sparkle:edSignature="RDq0iPUZ9yAKTbM6B7u6I/YM6QL0LWrsD65MsGTy+g5LRUsGPOk1I17vGV6nQFRkSGjMELwsgx71Xx+lxm4ZAw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3200-3163.delta" sparkle:deltaFrom="3163" length="48154814" type="application/octet-stream" sparkle:edSignature="zJc375TVlbTQczxVqy/HUmpLLALgYVzraVRSaHRHNTDdMvIPg3lPYufYOsMnxCxFra71AsGa9d5osZ1W9iLVDg=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3200-3156.delta" sparkle:deltaFrom="3156" length="48159994" type="application/octet-stream" sparkle:edSignature="MI1ITOcEpr0wuMQyvm50wKA8UqoiT1C9Td5UbuezQ28nbzGJuKYwh3zgHciH7AQ7QLP8ObGdRw+/YfDyDaCpAA=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.9.46</title>
-            <pubDate>Sun, 08 Nov 2026 18:27:50 -0800</pubDate>
-            <sparkle:version>3173</sparkle:version>
-            <sparkle:shortVersionString>0.9.46</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Alpha 0.9.46, build 3173</h2>
-<h3>New</h3>
-<ul>
-<li>Kiri matches the plate's grain: turn on match the plate's grain (Balance) and the background's grain is put on the foreground, inside its matte, at the foreground's brightness, so a clean subject sits in a grainy plate. Key from the degrained copy for it, so the foreground's own grain comes out first.</li>
-<li>Kiri draws its edge band: change the band's width and the band shows over the picture in yellow for a moment, round the matte's edge, with its width named and the place you picked the screen ringed. Pick screen now remembers where it sampled.</li>
-<li>FilmLab has halation and grain, as Asobi's Film Lab does: a halation box with strength, size, threshold, hue, bounce and scatter, working on the scene light before the look, and a grain box with amount, color and seed. A look's settings keep its halation.</li>
-<li>FilmLab's negative and print menus show headings: motion picture, still, black-and-white and reversal negatives; motion picture prints, photographic paper, black-and-white and reversal prints.</li>
-</ul>
-<h3>Changed</h3>
-<ul>
-<li>The Color menu is in submenus: Grade and correct, Looks and film, Color spaces, OCIO, Math and 3D LUT. The toolbar's Grade button is gone: ReviewGrade, CDLLook, Look and FilmLab are under Color &gt; Looks and film. A favourite whose node moved is still found.</li>
-<li>The Lens node asks before a model change it can't fit closely: it says how far off the closest fit would be and why (NukeX Classic's anamorphic terms, for one), with Change anyway (one undo) or keep the model you had. It had switched back without a word.</li>
-<li>While the Assistant answers, it says how long it's been, with a Stop button in words beside it.</li>
-<li>A clone's time offset in a Nuke script renders as NukeX renders it: it works when the clone's source is a background input and does nothing on the foreground, as in NukeX. Clones painted in Kento keep their time offset on any source.</li>
-<li>Renders use memory better: deep pictures (ScanlineRender's cards) and the 4K planes a comp keeps asking for are reused from frame to frame instead of taken fresh each time.</li>
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li>The Assistant through Claude Code no longer hangs when it adds nodes: its Apply and Skip card failed to appear, and the reply waited for ever.</li>
-<li>Settings &gt; AI and MCP: the assistant menu takes another app; it had stayed on the first.</li>
-<li>A pane's Split Vertical and Split Horizontal give two even halves; the new pane had come out a sliver, squeezing the panels beside it. The pane menu says Close Pane (it showed "emove Panel").</li>
-<li>The icons in a pane's corner stay put: hovering over them brought back blank squares. The editor focus button shows what the pane follows (the selection, the Focus Node, a bookmark, or pinned).</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-0.9.46.3173.zip" length="431514495" type="application/octet-stream" sparkle:edSignature="QFlAF1FeAK7BA3oNcDEUBDc9zjX5MGWaEcq/rdeu1dkEdRhrtQM6YI1whxzDiPWz9K//MXgwiceDAUYAbP8ZBA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3173-3163.delta" sparkle:deltaFrom="3163" length="1989338" type="application/octet-stream" sparkle:edSignature="9ou806NLPGOVSk9+m4IbIEeeHkVu03/f1lIzNuMSqrjy3LOdFVOcVuqRf7LEv/Dm4buZhUJIEHjJeH1G6XVLDQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3173-3156.delta" sparkle:deltaFrom="3156" length="1987362" type="application/octet-stream" sparkle:edSignature="yJMDdTKYhGs1VRY2XBcmKubj0Tq4uV4g73i7Gr3ZiOR9kfza5zbNH3K4sZiUVnyaE52NoRZmxYiMXmvcKCe5BQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3173-3125.delta" sparkle:deltaFrom="3125" length="2401998" type="application/octet-stream" sparkle:edSignature="LsJeE7/FCKan93A/6fLdeQd49HGA2OPFORn7Hcn7a7y+/MbpNc3Zj0o+juRi+clQq950daohJOcn/BPGFuBTBg=="/>
             </sparkle:deltas>
         </item>
     </channel>
