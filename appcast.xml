@@ -3,6 +3,35 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>1.0.3</title>
+            <pubDate>Tue, 10 Nov 2026 04:36:51 -0800</pubDate>
+            <sparkle:version>3437</sparkle:version>
+            <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Beta 1.0.3, build 3437</h2>
+<h3>New</h3>
+<ul>
+<li>The Curve Editor, rebuilt to fit small panels: one strip along the top (Key shape, Frame and Value, the time unit, Snap, the view mode, Motion and View) whose less-used parts fold into the View menu as the panel narrows; zoom and frame buttons in the graph's corner; scroll bars that also zoom when you drag their ends; the key's numbers, Move by, Low-pass filter and Bake in small popovers beside what you clicked instead of windows; and right clicks on a key, a curve or empty space for what applies there. Frame and Value take +=, -=, *= and /= on every selected key, and the frame can be shown in frames, timecode or seconds.</li>
+<li>The key inspector at the Curve Editor's right: a narrow column with the chosen key's frame, value and shape, its handles drawn so you can drag them or type their angle and length, whether the handles are tied or broken, and how the curve carries on before and after its keys. Its chevron folds it to a thin edge, giving the graph the room; Shift+I or the edge opens it again. With several keys chosen, typing sets them all.</li>
+<li>Curve groups: any keyed curves grouped (Cmd+G) and shaped together by a strength, a speed and an offset curve, each curve about its own values and in its own range. Groups nest; Ungroup, or deleting the group, puts the curves back as they were keyed, and Bake keeps the shaped result as keys. Saved in .nk files, where Nuke gives the same numbers.</li>
+<li>The Dope Sheet as the Curve Editor's twin: the same strip, a row for each channel, Find and Show over the names, the selection's range shown in amber to drag or scale, and the names closing to a narrow edge on small panels.</li>
+<li>The Motion window: the gallery of motions as cards that flow and scroll in three sizes, with favorites; the settings in one scrolling column; a one-line footer with the expression, Bake and Apply live; and the motion shown live on its curve in the Curve Editor while the window is open.</li>
+<li>Node toolbar: Make a button turns a family's group into a button of its own, and Icon... picks a button's icon.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Keymix with its mask channel switched off now treats the mask as black, as Nuke does (it used to give all of A).</li>
+<li>Remote control finishes sending a reply before it closes the connection.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-1.0.3.3437.zip" length="479823966" type="application/octet-stream" sparkle:edSignature="7o56g+v4dN3vswXkEBoaMubHDV5k/fefM74OAzjXTrZqT1d06yworeKxC61c241k/+O/RTg1dh6AqFAJCnjXDA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3437-3346.delta" sparkle:deltaFrom="3346" length="3061270" type="application/octet-stream" sparkle:edSignature="VbjLXLyF7kfY0//9NnyfvggIQsRzJQ8EgxS1QJ89qXV2wV4wI5/CpgbxkB26LM9Mu1ju40VMGCcpRwSjAAYCBw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3437-3310.delta" sparkle:deltaFrom="3310" length="3937058" type="application/octet-stream" sparkle:edSignature="md6mxT7f7421IA4NE11ARYohyw9DFkPTrm5TDB7NYfTHuqWm8o4F/aPagZAZPzM1GjUTHPtZoV9fit3K3m3rBA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3437-3292.delta" sparkle:deltaFrom="3292" length="4600318" type="application/octet-stream" sparkle:edSignature="WHf5fc9a1ggYvt67J1xPJcXt5vvhRh4kPcZfB3jaqEh3u9j8t8OE5kMXr3msQDghD17kdugQaA61gvGcCBOsDA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.0.2</title>
             <pubDate>Mon, 09 Nov 2026 19:43:42 -0800</pubDate>
             <sparkle:version>3346</sparkle:version>
@@ -70,39 +99,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3310-3292.delta" sparkle:deltaFrom="3292" length="2499334" type="application/octet-stream" sparkle:edSignature="hY2wv13UtAADzymbHvyzepLDUMdgJYagsVgLC+QMgYE5OqNGpRZWXSFL/35qlWdGBaT07+OVK8RQ9662P90sBQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3310-3240.delta" sparkle:deltaFrom="3240" length="2662018" type="application/octet-stream" sparkle:edSignature="xa0RialPn+wZrNrUoLmPSu6UWKX7/9mp4RFjzROsNKJqyiiW3Bb/0BzEKq4AuUUuLOxZIMoP1tfbh6f6nnCOBA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3310-3227.delta" sparkle:deltaFrom="3227" length="2665170" type="application/octet-stream" sparkle:edSignature="VEvAOEuUfBTyhyJf1WWodjDka3j6SnC3qF+Z1UHacosrUmclOrHKbvMJuXDP6EBOF18MJBKJIXJVUIPTVAvMBA=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>1.0</title>
-            <pubDate>Mon, 09 Nov 2026 09:09:27 -0800</pubDate>
-            <sparkle:version>3292</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Beta 1.0, build 3292</h2>
-<p>Kento's first beta: from this version on, "Beta" stands where "Alpha" did.</p>
-<h3>New</h3>
-<ul>
-<li>Kiri's see-through subject, for smoke, glass and anything else the screen shows through (Edge, under 4K in tiles): the edge becomes how far the plate differs from the screen behind it, in place of the model's matte, which leaves smoke nearly empty and calls glass solid. On the studio's test shots, where the screen shows through, the error went from 0.261 to 0.109 on smoke and from 0.817 to 0.098 on glass. Connect a clean plate first, and leave it off for hair and fur.</li>
-</ul>
-<h3>Changed</h3>
-<ul>
-<li>The Viewer's guides can be seen: they draw at full strength in their colors (they had been faint whatever the color), any color through Custom..., and a lines row sets their strength, width (1 to 3 px) and mode: Normal, Outlined (a dark edge either side, readable on any picture) or Difference.</li>
-<li>Zoomed out, a node's ports stay where their wires meet it: the ring you aim at is the one the wire arrives at, nothing jumps. Each input takes the stretch of the node's edge nearest it, so a press needn't hit the ring; the one it would take is lit and named. On a busy node (Kiri, a Merge with several A inputs), a wire dropped anywhere on it opens a short list of its inputs by name; Settings > Node Graph > Busy Nodes: Choose Input From A List turns it off.</li>
-<li>Errors show in Kento's own sheet, dropped from the top of the window: what didn't happen in plain words, what happened and what to do, each error and warning as a row (a node's name selects it), the technical details folded with Copy details, and Report a problem.</li>
-<li>Copy and paste are Kento's own: Cmd+C and Cmd+V copy and paste nodes with everything kept, and text on the clipboard that isn't nodes copied in Kento is never run. For Nuke, Edit > Copy for Nuke (Shift+Cmd+C) and Paste from Nuke (Shift+Cmd+V).</li>
-<li>Kiri's MEMatte refinement is now a choice a shot, refine hair, off until you turn it on. 0.9.48 and 0.9.49 ran it on every shot of the General route; measured against the true mattes of eight test shots, it helped a hair shot and a portrait (their error over the frame 0.0129 to 0.0101 and 0.040 to 0.030) but made fur, a walking figure and leaves a little worse. Turn it on for hair and compare. It works in 4K tiles too.</li>
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li>An update no longer waits forever when the old Kento gets stuck quitting: the new one goes in once the old one has stopped running. (This takes effect from this version's updater on.)</li>
-<li>Working out a shot of two or three frames on Kiri's General route failed with "missing profile files": such ranges are now padded to the four frames CorridorKey works on at a time.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-1.0.3292.zip" length="479314708" type="application/octet-stream" sparkle:edSignature="cUp/jhKDTl6VY8woy4lbOM0ZOrksIV14RjIdtLa/Gj6KBZDNlTha7Zq2TAd29f7hUrWcGC20CH9vQh1tlXetCw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3292-3240.delta" sparkle:deltaFrom="3240" length="2579890" type="application/octet-stream" sparkle:edSignature="jEG2a+AF6XNfey7WMXBFAq580bROOMHNJa/BoCsnS89Vl8kQ3uZ1jrHX85B8gZGtx72Jp7XXs+UE86LDtL5oDg=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3292-3227.delta" sparkle:deltaFrom="3227" length="2580190" type="application/octet-stream" sparkle:edSignature="PIiYA282ovYJ2b3bHzMaU4ogxzkB+64QADRKEj+mLS99AHZqW+gkBhfCuFRWqKujvCQrtgKxp7HOcRkmGHEBAw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3292-3200.delta" sparkle:deltaFrom="3200" length="2797050" type="application/octet-stream" sparkle:edSignature="mF3HZCbj/1glR50FI2NFgkApmnP05DqsIj4CW8k/lyNkdb42UyPlvLQ3tCJgDN3BEncrgRS6OkRu6UhEah01Cg=="/>
             </sparkle:deltas>
         </item>
     </channel>
