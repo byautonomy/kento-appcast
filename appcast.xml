@@ -3,6 +3,40 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>1.0.4</title>
+            <pubDate>Tue, 10 Nov 2026 10:56:06 -0800</pubDate>
+            <sparkle:version>3504</sparkle:version>
+            <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Beta 1.0.4, build 3504</h2>
+<h3>New</h3>
+<ul>
+<li>Settings, redesigned: grouped by what you're doing (Global and This comp), each page opening with what it changes, every row saying in a line what it does, live previews on the pages that change a look (Look and size, Node Graph, Viewer and playback), search that lands on the row, a Reset this page that can be undone, and the risky actions apart in a Start over box. The Node toolbar page shows the toolbar as it will look and every node of each button's menu.</li>
+<li>Tracks in and out of other apps: Import tracks... and Export tracks... on the Tracker and the CameraTracker read and write the files matchmove and finishing apps use (3DEqualizer, SynthEyes, PFTrack, boujou, Flame, MatchMover, Maya, Shake, Nuke's Tracker and CameraTracker, and After Effects nulls on export). A sheet draws the tracks' paths over the plate before anything is added or written, so a file read upside down, at the wrong size or on the wrong frames looks wrong first. Frames start at the comp's first frame, a plate of another size is scaled, and adding or replacing tracks is one undo.</li>
+<li>3D wired by what it carries: a port's shape says whether it takes pictures, a 3D scene, a camera or a material. While you drag a wire, the inputs that would take it light up and the rest fade. A wire that can't work, such as a 3D object straight into a Grade, is refused, and a small card by the node says why and offers the fix (Render it puts a ScanlineRender in between; Put on a card puts an image into 3D), fading by itself. A camera dropped on a render's obj/scn goes to its cam. Older comps load as written, with a wrong wire shown dashed and its fix on hover.</li>
+<li>A ScanlineRender, ScanlineRender2 or Projection that shows nothing says why in the Viewer and in Properties: an object at the camera's position (with Move Card1 in front), no camera, or lit materials with no lights.</li>
+<li>3D scenes that work: ScanlineRender lights cubes, spheres, cylinders and meshes as well as cards, sees through a default camera when none is wired, and draws the lights; the 3D view has rotate and scale handles, box select and a lit preview.</li>
+<li>Remote control: tracks.import and tracks.export; a wrong argument is answered in plain words with what the command takes; render_frame no longer holds up the interface.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Roto over remote control: setting a shape's points at a frame keys the shape there, five times faster than before; a duplicated Roto or PlanarTracker tracks like the original; tracking backward works whichever way round the range is given; a point that jumps far from the others stops and is reported; a track that has lost the plane says so; shapes held out of a plane track ride along with it; an exported track lands beside its Roto with the held-out shapes as its matte.</li>
+<li>GridWarp: a grid point keyed in x and not in y (or the other way) now warps (it was ignored, which also made "on black" give a black frame); keyed grids render about six times faster; a Read with missing files fails at once instead of after a long wait.</li>
+<li>Node toolbar: 3D's classic nodes (Card, Camera, ScanlineRender, Project3D and the rest) a level up; the new 3D system under 3D &gt; USD 3D.</li>
+<li>Node Graph: a busy node's input names show on hover without stacking; zoomed in, a node's name shrinks until it fits rather than being cut. Scroll bars show only their handle until they're needed.</li>
+<li>The Dope Sheet's strip can be resized. Saku's Inpaint is now called TextureFill.</li>
+<li>The Curve Editor: an offset typed as a timecode (00:00:01:00) moves keys by that much rather than from the comp's start timecode, and += takes a timecode.</li>
+<li>Kiri: the black and white levels amount starts at half; levels stay off until you turn them on.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-1.0.4.3504.zip" length="480918252" type="application/octet-stream" sparkle:edSignature="Q+75BOEN1NSa2sw+qUvLn7HjgTeywXZNVDzgoDS295L2c6183aklEO0qY4xXGawRF/M/P21hRZTsrntH7ANuDg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3504-3437.delta" sparkle:deltaFrom="3437" length="5166178" type="application/octet-stream" sparkle:edSignature="69U/HBcrlKSMSQT+qXjKDS0sfPSY+SozAXpZuaClDugPXtWnRXoEPvXHaYKjzDcT0kI1S/K5tJmrcpb/OkjEAA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3504-3346.delta" sparkle:deltaFrom="3346" length="6309246" type="application/octet-stream" sparkle:edSignature="ZqIvnddGjvDSxm8CVi5gQGg3z5flYbxD4dc64Varondd6cQF3Jjy47wx+wYnNUAZvoFpCxR3veRi71qVABbcBQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3504-3310.delta" sparkle:deltaFrom="3310" length="7043034" type="application/octet-stream" sparkle:edSignature="ndHCCPbswSRlpX1nvHciIQOool1+d09IkWCMwivEmOh4/XMIoFasejuIccSYvuQx1RLIk8aD63Pfcnm7IsylBg=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.0.3</title>
             <pubDate>Tue, 10 Nov 2026 04:36:51 -0800</pubDate>
             <sparkle:version>3437</sparkle:version>
@@ -71,34 +105,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3346-3310.delta" sparkle:deltaFrom="3310" length="2623722" type="application/octet-stream" sparkle:edSignature="Jc7pG+z39Bt2fkuTH65stJeYciC0IZVlMS1y9EDXxRPF+RLizFIO9sJeiizj1soXBJhrghM/a4VU0/CrRBQyAA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3346-3292.delta" sparkle:deltaFrom="3292" length="3402266" type="application/octet-stream" sparkle:edSignature="mlYBncovjMDsp/CkiE11g3sdWq/4465x1NMded4IMvLjKzkgWm23smnsK6Rdf//C06SRAC3cd9rKcfNgwsRKCQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3346-3240.delta" sparkle:deltaFrom="3240" length="3426510" type="application/octet-stream" sparkle:edSignature="JbupsF0FSAjUsgjfwoBMjMX/7rvs1s5tuMA6irmY/p8CEoPlDaAXM7CLpYMnVMZ2hio78gFLHfX70narnyj+DA=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>1.0.1</title>
-            <pubDate>Mon, 09 Nov 2026 11:40:40 -0800</pubDate>
-            <sparkle:version>3310</sparkle:version>
-            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Beta 1.0.1, build 3310</h2>
-<h3>New</h3>
-<ul>
-<li>Kiri's Balance matches black and white levels: Match levels measures the subject's darkest and brightest, each of red, green and blue, where its matte is solid, and the plate's near it, and carries one to the other at an amount. The two sides are written out in numbers, each lockable, and Check blacks and Check whites push the Viewer's exposure up or down so you can judge the shadows and highlights; press again to put it back.</li>
-<li>Plates with newer versions on disk are marked on their Read's tile (an amber arrow and "v005 on disk"), checked in the background as you work; File > Check plates for newer versions... lists them to update one or all, one undo.</li>
-<li>Edit > Find and Replace... (Option+Cmd+F) finds nodes by type, a setting's value, state (disabled, showing an error, missing its file, keyed, driven by an expression) or the group or backdrop they're in, built from rows of menus or typed as words. Replace changes file paths, text settings or labels in what it finds, every change previewed first, as one undo; Rename names them in a series. Cmd+F's quick Find opens it from its last row.</li>
-<li>Cook times on the graph: Optimize's Show on the graph (or Render > Cook times on the graph) puts each node's time on this frame on its tile, a bar in amber by how much it costs and its seconds in the tile's words, with a key in the corner saying when it was measured.</li>
-</ul>
-<h3>Changed</h3>
-<ul>
-<li>Renders skip work a node throws away: a Multiply or Grade at 0 no longer works out what's above it, and a Merge at mix 0 doesn't work out its A, frame by frame when the mix is keyed. On one studio comp, a Write whose picture ends at a Multiply at 0 went from 16.3 s a frame to 0.26.</li>
-<li>Saving a preset, naming a layer or a section, a grid step, a timeline mark's note, a Kitsu reply and every other small question now ask in Kento's own sheet, with a button that says what it does (Save, Add, Set, Send).</li>
-<li>Remote control can find nodes, replace text in their settings, rename them in a series, list and update plates with newer versions, and read and show cook times (graph.find, graph.replace, graph.rename_series, plates.newer, plates.update, perf.cook_times).</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-1.0.1.3310.zip" length="479205938" type="application/octet-stream" sparkle:edSignature="0y5XJ78RblIzgqGapPOA+Z9pkhOKbE4J1v7UCT9WlmpJFG3KxEgMf5aLkMlM5Wk89h4Xim7++OinaroHEPQFDw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3310-3292.delta" sparkle:deltaFrom="3292" length="2499334" type="application/octet-stream" sparkle:edSignature="hY2wv13UtAADzymbHvyzepLDUMdgJYagsVgLC+QMgYE5OqNGpRZWXSFL/35qlWdGBaT07+OVK8RQ9662P90sBQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3310-3240.delta" sparkle:deltaFrom="3240" length="2662018" type="application/octet-stream" sparkle:edSignature="xa0RialPn+wZrNrUoLmPSu6UWKX7/9mp4RFjzROsNKJqyiiW3Bb/0BzEKq4AuUUuLOxZIMoP1tfbh6f6nnCOBA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3310-3227.delta" sparkle:deltaFrom="3227" length="2665170" type="application/octet-stream" sparkle:edSignature="VEvAOEuUfBTyhyJf1WWodjDka3j6SnC3qF+Z1UHacosrUmclOrHKbvMJuXDP6EBOF18MJBKJIXJVUIPTVAvMBA=="/>
             </sparkle:deltas>
         </item>
     </channel>
