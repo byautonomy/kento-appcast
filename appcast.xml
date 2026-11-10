@@ -3,6 +3,36 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>1.0.6</title>
+            <pubDate>Tue, 10 Nov 2026 14:32:12 -0800</pubDate>
+            <sparkle:version>3594</sparkle:version>
+            <sparkle:shortVersionString>1.0.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Beta 1.0.6, build 3594</h2>
+<h3>New</h3>
+<ul>
+<li>The 3D view: choosing a camera under view keeps it and looks through it, and orbiting, panning and zooming then move the camera (one undo each), with a lock to look without moving it. Wire, Shaded, Textured and Lit are icons, and points, frustums, coverage, grid and unconnected sit in one Show menu. The translate handle's axes end in arrowheads.</li>
+<li>The open and save dialog: click a column's header to sort by it (again to reverse), right-click the header to choose columns (Kind, Modified, Size, Created, Frames, Resolution, Owner), and drag their edges to size them; Kento remembers all three. Folders stay above files.</li>
+<li>Settings, New comps: New Writes' compression, the EXR compression new Writes start with (Nuke's Zip (1 scanline) unless you choose another).</li>
+<li>Remote control: roto.set_points sets a shape's points over many frames in one call; grid.make, grid.move_points, grid.key_points and grid.points edit a GridWarp; comp.check lists what would stop a render (missing files, Writes into missing folders, nodes in error); node.channels; render_frame as a float EXR; viewer.overlay_grab shows a matte laid over the picture, as an artist checks one; describe with a command's name explains it.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>A save that would leave out a node you can see in the Node Graph is refused, and your file is left as it was. Exporting a .nk writes beside the file first, as saving a .ko does.</li>
+<li>After an update, Kento reopens the saved comps that were open.</li>
+<li>The open and save dialog's "newest first" sorts folders by date too; Favorites is spelled the American way.</li>
+<li>A new Roto shape made over remote control keeps the name it's given when that name is free.</li>
+<li>PlanarTracker's settings have descriptions on hover.</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-1.0.6.3594.zip" length="481616592" type="application/octet-stream" sparkle:edSignature="pTYWxUgPIKOjtSDahRCpQZr9HXMNZC/vb2KZhVJ3mHCk0xpf1KyU0Dm5bWiCnQgJjLACmYNjaiCW2565WdTYAA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3594-3508.delta" sparkle:deltaFrom="3508" length="2604942" type="application/octet-stream" sparkle:edSignature="z4a9x9FGMHMtrgt+JRGJ8tGnscl3oyNtXWg4pSUawbjSaMe43Q52EgjgkGF+YJ/hObQYaLrMRZgLpsmDB8ehCQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3594-3504.delta" sparkle:deltaFrom="3504" length="2603866" type="application/octet-stream" sparkle:edSignature="DvvcdmE4L+EqeUkjlb3SCOHfa5hVJpGSAEddJpka29gFqdz1lwDE7dvVRhhmLZWsCNME+DN1N2CF80Jcqo3JCQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3594-3437.delta" sparkle:deltaFrom="3437" length="6036710" type="application/octet-stream" sparkle:edSignature="HDAiXAzAc34s03s07X13ziphc/qQBTJfVseKzj+iYdHCiiYwE9AGYun4BzGFMkHi8fs13wQIUPvGRLlND7hECQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.0.5</title>
             <pubDate>Tue, 10 Nov 2026 12:05:29 -0800</pubDate>
             <sparkle:version>3508</sparkle:version>
@@ -53,35 +83,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3504-3437.delta" sparkle:deltaFrom="3437" length="5166178" type="application/octet-stream" sparkle:edSignature="69U/HBcrlKSMSQT+qXjKDS0sfPSY+SozAXpZuaClDugPXtWnRXoEPvXHaYKjzDcT0kI1S/K5tJmrcpb/OkjEAA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3504-3346.delta" sparkle:deltaFrom="3346" length="6309246" type="application/octet-stream" sparkle:edSignature="ZqIvnddGjvDSxm8CVi5gQGg3z5flYbxD4dc64Varondd6cQF3Jjy47wx+wYnNUAZvoFpCxR3veRi71qVABbcBQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3504-3310.delta" sparkle:deltaFrom="3310" length="7043034" type="application/octet-stream" sparkle:edSignature="ndHCCPbswSRlpX1nvHciIQOool1+d09IkWCMwivEmOh4/XMIoFasejuIccSYvuQx1RLIk8aD63Pfcnm7IsylBg=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>1.0.3</title>
-            <pubDate>Tue, 10 Nov 2026 04:36:51 -0800</pubDate>
-            <sparkle:version>3437</sparkle:version>
-            <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Beta 1.0.3, build 3437</h2>
-<h3>New</h3>
-<ul>
-<li>The Curve Editor, rebuilt to fit small panels: one strip along the top (Key shape, Frame and Value, the time unit, Snap, the view mode, Motion and View) whose less-used parts fold into the View menu as the panel narrows; zoom and frame buttons in the graph's corner; scroll bars that also zoom when you drag their ends; the key's numbers, Move by, Low-pass filter and Bake in small popovers beside what you clicked instead of windows; and right clicks on a key, a curve or empty space for what applies there. Frame and Value take +=, -=, *= and /= on every selected key, and the frame can be shown in frames, timecode or seconds.</li>
-<li>The key inspector at the Curve Editor's right: a narrow column with the chosen key's frame, value and shape, its handles drawn so you can drag them or type their angle and length, whether the handles are tied or broken, and how the curve carries on before and after its keys. Its chevron folds it to a thin edge, giving the graph the room; Shift+I or the edge opens it again. With several keys chosen, typing sets them all.</li>
-<li>Curve groups: any keyed curves grouped (Cmd+G) and shaped together by a strength, a speed and an offset curve, each curve about its own values and in its own range. Groups nest; Ungroup, or deleting the group, puts the curves back as they were keyed, and Bake keeps the shaped result as keys. Saved in .nk files, where Nuke gives the same numbers.</li>
-<li>The Dope Sheet as the Curve Editor's twin: the same strip, a row for each channel, Find and Show over the names, the selection's range shown in amber to drag or scale, and the names closing to a narrow edge on small panels.</li>
-<li>The Motion window: the gallery of motions as cards that flow and scroll in three sizes, with favorites; the settings in one scrolling column; a one-line footer with the expression, Bake and Apply live; and the motion shown live on its curve in the Curve Editor while the window is open.</li>
-<li>Node toolbar: Make a button turns a family's group into a button of its own, and Icon... picks a button's icon.</li>
-</ul>
-<h3>Changed</h3>
-<ul>
-<li>Keymix with its mask channel switched off now treats the mask as black, as Nuke does (it used to give all of A).</li>
-<li>Remote control finishes sending a reply before it closes the connection.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-1.0.3.3437.zip" length="479823966" type="application/octet-stream" sparkle:edSignature="7o56g+v4dN3vswXkEBoaMubHDV5k/fefM74OAzjXTrZqT1d06yworeKxC61c241k/+O/RTg1dh6AqFAJCnjXDA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3437-3346.delta" sparkle:deltaFrom="3346" length="3061270" type="application/octet-stream" sparkle:edSignature="VbjLXLyF7kfY0//9NnyfvggIQsRzJQ8EgxS1QJ89qXV2wV4wI5/CpgbxkB26LM9Mu1ju40VMGCcpRwSjAAYCBw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3437-3310.delta" sparkle:deltaFrom="3310" length="3937058" type="application/octet-stream" sparkle:edSignature="md6mxT7f7421IA4NE11ARYohyw9DFkPTrm5TDB7NYfTHuqWm8o4F/aPagZAZPzM1GjUTHPtZoV9fit3K3m3rBA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3437-3292.delta" sparkle:deltaFrom="3292" length="4600318" type="application/octet-stream" sparkle:edSignature="WHf5fc9a1ggYvt67J1xPJcXt5vvhRh4kPcZfB3jaqEh3u9j8t8OE5kMXr3msQDghD17kdugQaA61gvGcCBOsDA=="/>
             </sparkle:deltas>
         </item>
     </channel>
