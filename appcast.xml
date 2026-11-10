@@ -3,6 +3,25 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>1.0.5</title>
+            <pubDate>Tue, 10 Nov 2026 12:05:29 -0800</pubDate>
+            <sparkle:version>3508</sparkle:version>
+            <sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h2>Kento Beta 1.0.5, build 3508</h2>
+<h3>Changed</h3>
+<ul>
+<li>With Keep the history in the comp on (Settings, Saving and updates), each step's saved copy of the comp held every copy before it, so the history doubled with every edit until Kento stopped answering and saving took minutes. Each step now keeps the comp alone, the kept history has a limit, and a comp saved with the oversized history opens with it dropped (a warning says so).</li>
+</ul>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-1.0.5.3508.zip" length="480917960" type="application/octet-stream" sparkle:edSignature="aQc74urYgowyLYKGZ+57DMTkpfCgmuDsW3cqJqzEsfvjnRo4msKanfRy3aHi72gn5Kq5rhdY6FSvFzoM1aYiAg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3508-3504.delta" sparkle:deltaFrom="3504" length="811878" type="application/octet-stream" sparkle:edSignature="5hpbvX8Qkz/HSx/8QPfT0CGbqOjK/ehetKE5nrAZNQ43DtnU3J1ZvZ4hjLG4BNiQprNfauJiIISpz3gPOVrxAw=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3508-3437.delta" sparkle:deltaFrom="3437" length="5178306" type="application/octet-stream" sparkle:edSignature="A6uoahrFnmJSHFR5Rxsv+Jt1XcWr65EeoSTH5b5XvLBx0jWnmExN2e2OiLsCnH8BsXOXAuIBMp/cfllWx8I6DQ=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3508-3346.delta" sparkle:deltaFrom="3346" length="6318434" type="application/octet-stream" sparkle:edSignature="KqVakmpFvp4aqTw0/bfOVMtdbdAzlDiUO75gfTUc04fmNl+8vY/tAXJ4YKLtkHhdMTQ77lSdbz3esLzjlDIwAA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.0.4</title>
             <pubDate>Tue, 10 Nov 2026 10:56:06 -0800</pubDate>
             <sparkle:version>3504</sparkle:version>
@@ -63,48 +82,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3437-3346.delta" sparkle:deltaFrom="3346" length="3061270" type="application/octet-stream" sparkle:edSignature="VbjLXLyF7kfY0//9NnyfvggIQsRzJQ8EgxS1QJ89qXV2wV4wI5/CpgbxkB26LM9Mu1ju40VMGCcpRwSjAAYCBw=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3437-3310.delta" sparkle:deltaFrom="3310" length="3937058" type="application/octet-stream" sparkle:edSignature="md6mxT7f7421IA4NE11ARYohyw9DFkPTrm5TDB7NYfTHuqWm8o4F/aPagZAZPzM1GjUTHPtZoV9fit3K3m3rBA=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3437-3292.delta" sparkle:deltaFrom="3292" length="4600318" type="application/octet-stream" sparkle:edSignature="WHf5fc9a1ggYvt67J1xPJcXt5vvhRh4kPcZfB3jaqEh3u9j8t8OE5kMXr3msQDghD17kdugQaA61gvGcCBOsDA=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>1.0.2</title>
-            <pubDate>Mon, 09 Nov 2026 19:43:42 -0800</pubDate>
-            <sparkle:version>3346</sparkle:version>
-            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Beta 1.0.2, build 3346</h2>
-<h3>New</h3>
-<ul>
-<li>SmartMerge (under Merge): a Merge whose A is matched to B before it goes over, by itself. With Automatic on it measures five frames across the shot in the background, decides which parts apply, says what it did in a sentence, and measures again when A or B changes; one Match amount turns all of it up or down, and anything you set yourself stays. In its details it carries A's blacks and whites to the plate's near it (by default a toe that moves only the shadows, or a lift), balances its red and blue to the plate's, veils it with the plate's haze and wraps it in the plate's light. Every number can be locked or typed, each part switched off or turned down, and Flip, Check blacks and Check whites show the difference. Bake to nodes writes plain nodes doing the same; a .nk gets them in a Group.</li>
-<li>More of SmartMerge: B's own grain onto A, from a new B denoised input (connect a Denoise of B; Measure reads the grain and adds it only where A is); its defocus measured from how soft B is near A, with its own Measure the defocus button; an eyedropper on Color's from row to pick something gray in A as the neutral, and one on the haze color to pick the sky; a graph of the toe's curve over A's shadows; and Wedge..., one amount at five steps side by side, a click taking one.</li>
-<li>The node toolbar is a panel of its own (Window &gt; Panels &gt; Node Toolbar) and can be set up as you like in Settings &gt; Preferences &gt; Node Toolbar or with a right click on it: docked left, right, top or bottom or floating, vertical or horizontal, its icon size, words under the icons, which buttons show and in what order, the groups in each family's menu, and buttons of your own.</li>
-<li>Detect features on the Tracker: places tracks on a frame's strongest corners, in the whole frame, a box you drag, or inside or outside the input's alpha; how many, how far apart and how strong, shown in the Viewer first; then adds them, or adds and tracks them both ways.</li>
-<li>Edge Wrap's color bleed, also SmartMerge's: the background's broad color into the foreground's edge, its brightness kept.</li>
-<li>The CameraTracker can track and solve with Blender: set its engine to Blender (it must be installed) and Track features and Solve run Blender's tracking in the background, the tracks and the camera landing on the node as Kento's do. Its new cull filters pick the tracks that don't belong (a large error, too short, a jump against the rest's motion, inside the mask), to look at and delete; tracks are colored green, amber or red by their error, and a box drag picks them in the Viewer.</li>
-<li>The CameraTracker works out where an unknown lens's solve starts: from the focal length in the plate's metadata when there is one, otherwise from quick solves over lenses from 12 to 100 mm. Its new start from setting can keep the typed value instead. Left at its default, its film back comes from the plate too (the sensor area the file records, or its camera's recording mode), cut to the plate's shape when the plate is an extraction. Its new lens type and squeeze settings handle anamorphic plates whose files don't say they're squeezed, and its plate setting says whether such a plate is still squeezed or was desqueezed already (worked out from its shape unless you set it). The note under the solve line says where each came from. With Blender as the engine, Blender's camera is always kept; when Kento's own solve fits clearly better, an amber line says so, with Solve with Kento beside it.</li>
-<li>Node tags: words naming a node's role (hero, plate, temp), shown as colored pills over the tiles, added and taken off in Properties' new Tags row, and listed in Edit &gt; Tags... (also a button on the Node Graph's toolbar), where a click selects a tag's nodes and a drag tags another. An expression can read tag("hero").white, which follows the tag to whichever node has it. Tags are kept in .ko and .nk files, and Find's Tag row lists them.</li>
-<li>Inverse Switch (under Merge): one picture in, two to sixteen outputs out, Which (keyable) picking the output that carries it, the others black or empty. A .nk gets one Switch for each output.</li>
-<li>A Prerender's tile shows where its frames stand: how many are rendered, how many are out of date since an edit upstream, how far a render has got, or not rendered yet. Clicking the chip renders what's needed, and the out-of-date record is kept beside the frames, so it survives reopening the comp. Render &gt; Render Writes in Order... lists every Write and Prerender in the order they render, with a Write reading another's frames always after it, and lets you drag them into a new order. The Render window and command-line renders use the same order.</li>
-<li>Studio pipeline hooks: a studio can give Kento its own tools from a folder (KENTO_PIPELINE_PATH, or Settings &gt; Preferences &gt; Scripting): menu items in a new Studio menu, and scripts run when a comp opens, saves or finishes rendering, one at a time, each with a time limit. Studio &gt; What ran... shows each run and its output. Nodes can carry a studio's data (Kitsu, Kura), shown in the Node tab and kept in .ko and .nk files.</li>
-<li>Two new motions in the Motion window: Chaos, a chaotic attractor that wanders without repeating (the same at a frame however you get there), and Lag, which follows a knob's own keys a few frames late, smoothed.</li>
-</ul>
-<h3>Changed</h3>
-<ul>
-<li>The node toolbar's Keyer menu has Screen keyers and Mattes by color and position submenus, and Filter's short Motion blur and Clean-up submenus are folded away.</li>
-<li>Kento lets go of its open files on network drives before it quits, and after two minutes in the background, so a drive that stops answering is less likely to leave it stuck quitting.</li>
-<li>The Viewer skips work a node throws away, as renders already did: a Grade or Multiply that makes a channel constant shows it without working out what's above, and a Merge at mix 0 shows B without working out A. The pixels are the same.</li>
-<li>Tracker: the reference is a menu on the Tracker tab too, and a removed track leaves the Viewer at once.</li>
-<li>Remote control reaches the new parts: tags (graph.tags, node.tags), render order (render.order), pipeline data (node.pipeline, graph.pipeline) the CameraTracker's cull (camera.cull) and the Tracker's Detect features (tracker.detect).</li>
-</ul>
-<h3>Corrected</h3>
-<ul>
-<li>1.0.1's notes said a studio comp's Write went from 16.3 s a frame to 0.26 s by skipping a Multiply at 0. Measured again with its plates read, that Write's picture depends on its whole tree and the skip saves it nothing; the earlier run hadn't read its plates.</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-1.0.2.3346.zip" length="479662968" type="application/octet-stream" sparkle:edSignature="PCqVrVQRp8vyoqM9FHQ/UGIqsTz1CvCbUaiL8XzRrSD+5rJ5ozPJOGsAOhnJNmfNHrCPX+z/RSN2j12rvwiEDg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3346-3310.delta" sparkle:deltaFrom="3310" length="2623722" type="application/octet-stream" sparkle:edSignature="Jc7pG+z39Bt2fkuTH65stJeYciC0IZVlMS1y9EDXxRPF+RLizFIO9sJeiizj1soXBJhrghM/a4VU0/CrRBQyAA=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3346-3292.delta" sparkle:deltaFrom="3292" length="3402266" type="application/octet-stream" sparkle:edSignature="mlYBncovjMDsp/CkiE11g3sdWq/4465x1NMded4IMvLjKzkgWm23smnsK6Rdf//C06SRAC3cd9rKcfNgwsRKCQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3346-3240.delta" sparkle:deltaFrom="3240" length="3426510" type="application/octet-stream" sparkle:edSignature="JbupsF0FSAjUsgjfwoBMjMX/7rvs1s5tuMA6irmY/p8CEoPlDaAXM7CLpYMnVMZ2hio78gFLHfX70narnyj+DA=="/>
             </sparkle:deltas>
         </item>
     </channel>
