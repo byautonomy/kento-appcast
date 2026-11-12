@@ -3,6 +3,233 @@
     <channel>
         <title>Kento</title>
         <item>
+            <title>1.0.8</title>
+            <pubDate>Thu, 12 Nov 2026 10:38:55 -0800</pubDate>
+            <sparkle:version>3923</sparkle:version>
+            <sparkle:shortVersionString>1.0.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<!doctype html><html><head><meta charset="utf-8"><style>body{font:13px -apple-system,sans-serif;line-height:1.5}h2{font-size:16px}h3{font-size:14px}summary{cursor:pointer}details{margin:16px 0}li{margin:4px 0}</style></head><body>
+<h2>1.0.8 (build 3923) &nbsp; Nov 12, 2026 &nbsp; This version</h2><h3>New</h3>
+<ul>
+<li>CameraTracker shows how well a solve covers the shot and how closely it fits, before you export it.</li>
+<li>Lens imports rectilinear calibrations from Lensfun (poly5) exactly.</li>
+<li>Cattery models run in Kento: a gizmo built on a .cat (DepthPro, Depth Anything and the like) works out its picture on the GPU, frame by frame or the whole shot in the background, from your Cattery folders (Settings, AI and MCP). A missing model says which gizmo needs it and lets you find it.</li>
+<li>A node switched off by an expression shows it on its tile, and the node that makes the picture's box grow is marked.</li>
+<li>Chroma Rebuild smooths a 4:2:0 or 4:2:2 movie's color before keying, reading the movie's subsampling and color matrix from its Read; older comps keep the way they worked.</li>
+</ul>
+<h3>Faster</h3>
+<ul>
+<li>Opening a big comp: a 4K show comp with hundreds of Reads opens in about 16 seconds on a 16 GB Mac mini (5 on a Mac Studio, where it took 40).</li>
+<li>STMap on the CPU is about 1.6 times faster at 4K.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Adding a node while the Viewer's input process is on no longer freezes Kento.</li>
+<li>A Read whose file is on only one of the studio drive's mounts (Autonomy or laxnas) reads it from the one that has it; when neither has it, the error names both.</li>
+<li>RotoPaint's eraser and reveal over a plate without alpha leave alpha where they paint, as Nuke does (comps over such plates had holes in their alpha).</li>
+<li>ZDefocus no longer turns plates without alpha into extreme bright pixels (BOU_180's background), and near depths over such plates blend as in Nuke.</li>
+<li>Long renders no longer stop when the disk cache fills: a decoded frame still in use isn't cleared.</li>
+<li>Notes in a .nk imported into an open comp are laid out at once; a group's inner nodes with no position in the .nk are saved back without one, so Nuke lays them out.</li>
+<li>With the Viewer set to a smaller size, a picture cropped with an expression such as width or height (inside depth tools, for example) no longer shrinks to a quarter of the frame.</li>
+<li>Optimize no longer says "Couldn't measure this frame" on comps holding MergeExpression, Convolve, LiveGroupInfo, ModifyMetaData or the vector retime nodes.</li>
+<li>The render command line no longer crashes after it has written its frames.</li>
+<li>A Read's color tag shows again on the narrower tiles.</li>
+<li>Colorspace uses the right white points when converting between spaces.</li>
+<li>Retime keeps the transforms chained after it, sampled on the right frames.</li>
+<li>Crop's autocrop rounds its box the way Nuke does.</li>
+<li>Card lattices are the right size with a lens in front.</li>
+<li>CameraTracker's No Lens Distortion setting is kept.</li>
+<li>PSD files with two layers of the same name open with both layers.</li>
+<li>Vector maps carried through warps keep the right values and windows.</li>
+<li>Kiri: mattes whose freshness record is missing or damaged are marked out of date; background keying keeps the comp it started from.</li>
+</ul>
+<h2>Earlier updates</h2>
+<details><summary>1.0.8 (build 3916) &nbsp; Date unavailable</summary><h3>New</h3>
+<ul>
+<li>CameraTracker shows how well a solve covers the shot and how closely it fits, before you export it.</li>
+<li>Lens imports rectilinear calibrations from Lensfun (poly5) exactly.</li>
+<li>Cattery models run in Kento: a gizmo built on a .cat (DepthPro, Depth Anything and the like) works out its picture on the GPU, frame by frame or the whole shot in the background, from your Cattery folders (Settings, AI and MCP). A missing model says which gizmo needs it and lets you find it.</li>
+<li>A node switched off by an expression shows it on its tile, and the node that makes the picture's box grow is marked.</li>
+<li>Chroma Rebuild smooths a 4:2:0 or 4:2:2 movie's color before keying, reading the movie's subsampling and color matrix from its Read; older comps keep the way they worked.</li>
+</ul>
+<h3>Faster</h3>
+<ul>
+<li>Opening a big comp: a 4K show comp with hundreds of Reads opens in about 16 seconds on a 16 GB Mac mini (5 on a Mac Studio, where it took 40).</li>
+<li>STMap on the CPU is about 1.6 times faster at 4K.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>A Read whose file is on only one of the studio drive's mounts (Autonomy or laxnas) reads it from the one that has it; when neither has it, the error names both.</li>
+<li>RotoPaint's eraser and reveal over a plate without alpha leave alpha where they paint, as Nuke does (comps over such plates had holes in their alpha).</li>
+<li>ZDefocus no longer turns plates without alpha into extreme bright pixels (BOU_180's background), and near depths over such plates blend as in Nuke.</li>
+<li>Long renders no longer stop when the disk cache fills: a decoded frame still in use isn't cleared.</li>
+<li>Notes in a .nk imported into an open comp are laid out at once; a group's inner nodes with no position in the .nk are saved back without one, so Nuke lays them out.</li>
+<li>With the Viewer set to a smaller size, a picture cropped with an expression such as width or height (inside depth tools, for example) no longer shrinks to a quarter of the frame.</li>
+<li>Optimize no longer says "Couldn't measure this frame" on comps holding MergeExpression, Convolve, LiveGroupInfo, ModifyMetaData or the vector retime nodes.</li>
+<li>The render command line no longer crashes after it has written its frames.</li>
+<li>A Read's color tag shows again on the narrower tiles.</li>
+<li>Colorspace uses the right white points when converting between spaces.</li>
+<li>Retime keeps the transforms chained after it, sampled on the right frames.</li>
+<li>Crop's autocrop rounds its box the way Nuke does.</li>
+<li>Card lattices are the right size with a lens in front.</li>
+<li>CameraTracker's No Lens Distortion setting is kept.</li>
+<li>PSD files with two layers of the same name open with both layers.</li>
+<li>Vector maps carried through warps keep the right values and windows.</li>
+<li>Kiri: mattes whose freshness record is missing or damaged are marked out of date; background keying keeps the comp it started from.</li>
+</ul></details>
+<details><summary>1.0.8 (build 3915) &nbsp; Date unavailable</summary><h3>New</h3>
+<ul>
+<li>CameraTracker shows how well a solve covers the shot and how closely it fits, before you export it.</li>
+<li>Lens imports rectilinear calibrations from Lensfun (poly5) exactly.</li>
+<li>Cattery models run in Kento: a gizmo built on a .cat (DepthPro, Depth Anything and the like) works out its picture on the GPU, frame by frame or the whole shot in the background, from your Cattery folders (Settings, AI and MCP). A missing model says which gizmo needs it and lets you find it.</li>
+<li>A node switched off by an expression shows it on its tile, and the node that makes the picture's box grow is marked.</li>
+<li>Chroma Rebuild smooths a 4:2:0 or 4:2:2 movie's color before keying, reading the movie's subsampling and color matrix from its Read; older comps keep the way they worked.</li>
+</ul>
+<h3>Faster</h3>
+<ul>
+<li>Opening a big comp: a 4K show comp with hundreds of Reads opens in about 16 seconds on a 16 GB Mac mini (5 on a Mac Studio, where it took 40).</li>
+<li>STMap on the CPU is about 1.6 times faster at 4K.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>A Read whose file is on only one of the studio drive's mounts (Autonomy or laxnas) reads it from the one that has it; when neither has it, the error names both.</li>
+<li>RotoPaint's eraser and reveal over a plate without alpha leave alpha where they paint, as Nuke does (comps over such plates had holes in their alpha).</li>
+<li>ZDefocus no longer turns plates without alpha into extreme bright pixels (BOU_180's background), and near depths over such plates blend as in Nuke.</li>
+<li>Long renders no longer stop when the disk cache fills: a decoded frame still in use isn't cleared.</li>
+<li>Notes in a .nk imported into an open comp are laid out at once; a group's inner nodes with no position in the .nk are saved back without one, so Nuke lays them out.</li>
+<li>With the Viewer set to a smaller size, a picture cropped with an expression such as width or height (inside depth tools, for example) no longer shrinks to a quarter of the frame.</li>
+<li>Optimize no longer says "Couldn't measure this frame" on comps holding MergeExpression, Convolve, LiveGroupInfo, ModifyMetaData or the vector retime nodes.</li>
+<li>The render command line no longer crashes after it has written its frames.</li>
+<li>A Read's color tag shows again on the narrower tiles.</li>
+<li>Colorspace uses the right white points when converting between spaces.</li>
+<li>Retime keeps the transforms chained after it, sampled on the right frames.</li>
+<li>Crop's autocrop rounds its box the way Nuke does.</li>
+<li>Card lattices are the right size with a lens in front.</li>
+<li>CameraTracker's No Lens Distortion setting is kept.</li>
+<li>PSD files with two layers of the same name open with both layers.</li>
+<li>Vector maps carried through warps keep the right values and windows.</li>
+<li>Kiri: mattes whose freshness record is missing or damaged are marked out of date; background keying keeps the comp it started from.</li>
+</ul></details>
+<details><summary>1.0.7 (build 3786) &nbsp; Nov 11, 2026</summary><h3>New</h3>
+<ul>
+<li>The Node Graph's tiles are 112 px wide, so trees are more compact; zoomed out, a name can run past its tile's end rather than be cut, and long names shorten in the middle with the full name on hover.</li>
+<li>3D nodes are told apart at a glance: cameras end in a lens, lights in a small sun, Scene in a cube, ball and cone, and Axis in three arrows.</li>
+<li>A node with a warning is edged and banded in hatched yellow, and a node's own color tints the whole tile with a wide stripe at its left, easy to see from a distance.</li>
+<li>Blender 5.3 works with CameraTracker's Blender solve and 3D file conversions; 5.2 still does.</li>
+<li>Denoise2 has a second method, OpenImageDenoise, with optional Albedo and Normal inputs for cleaner detail. It runs on the CPU or Metal. Existing comps keep Nagi.</li>
+<li>ScanlineRender can cast solid shadows from directional and spot lights. Turn on Cast shadows in the light's Shadows tab.</li>
+<li>VectorRetime has a Matte input and separate Foreground and Background outputs.</li>
+<li>Roto has an Edge time-strip window that shows how a shape's edge slips, chatters or drifts across the shot.</li>
+<li>CameraTracker: lasso solved tracks in the Viewer to delete the outliers; focal length and lens distortion come back from Blender solves.</li>
+<li>GridWarp can follow a PlanarTracker, with live links or baked keys.</li>
+<li>Arrange has Grid size and Grid dots sliders and a compact tree layout that keeps branches readable.</li>
+<li>What's New in the Kento menu (Help menu on Windows) opens a searchable history of every release's notes, offline.</li>
+<li>Lens: Brown-Conrady, equidistant fisheye, and the 3DEqualizer Classic LD and Radial Standard models; CameraTracker now keeps the full Lens model when you hand it a calibration.</li>
+<li>Tab search puts the nodes you most often wire after the selected one first.</li>
+<li>Write can save a full-frame padded display window and a single-channel grayscale matte for client deliveries, without touching working color.</li>
+<li>Curve groups keep live motions such as Chaos and Lag instead of baking them to keys.</li>
+<li>Studio scripts get the Kento Python module, with progress dialogs and a built-in reference.</li>
+</ul>
+<h3>Faster</h3>
+<ul>
+<li>STMap on the CPU is about 1.6 times faster at 4K.</li>
+<li>Large blurs run on Metal: about 2.3 times faster for a 4K, radius 100 blur.</li>
+<li>Big RotoPaint strokes are calculated in parallel: up to 3 times faster at 4K.</li>
+<li>Nodes that leave a plane unchanged share it instead of copying it: repeat renders of 4K comps are 9 to 14 percent faster.</li>
+<li>Selecting hundreds of nodes is quick again, and Tidy no longer stalls on large comps.</li>
+<li>Viewers hidden behind other panels stop rendering and reading ahead, so background CPU use drops from several cores to almost nothing.</li>
+<li>Reading a frame again right after it was read is about 2.7 times faster (decoded tiles stay in memory when idle files close).</li>
+<li>Checking that files exist no longer freezes the interface during playback and scrubbing.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Paths written as a drive with its slash left out (X:kura/...) map like X:/kura instead of being read next to the comp.</li>
+<li>Importing a gizmo as a Bento no longer fails.</li>
+<li>Zoomed all the way in, a tile is still over 500 px wide.</li>
+<li>CameraTracker: Blender solves line up with your plate's frame numbers, keep coordinates right on anamorphic plates, and use your latest mesh after you re-export geometry.</li>
+<li>Kiri: Stop ends a stuck model process; changing a model setting marks old mattes out of date; keying stops with a message when the input sequence is incomplete; color picks no longer overwrite protected samples; a bad hair result keeps your previous matte instead of publishing it.</li>
+<li>Comps from studio scripts keep their Tracker4 row selection.</li>
+<li>ScanlineRender keeps an OBJ's own vertex normals when lit.</li>
+<li>3D handles draw and drag in the object's parent frame, not world axes.</li>
+<li>In focus mode, selecting an already selected node or box-selecting no longer opens Properties; only an explicit click does.</li>
+<li>Tab search no longer connects a wire of the wrong kind, and never reroutes an existing output.</li>
+<li>VectorDistort only warps the channels you chose.</li>
+<li>Camera2, Axis2, Mirror2 and LiveGroupInfo have descriptions and Help pages.</li>
+<li>Remote control reports who is busy, queues overlapping requests, and approval prompts no longer block it.</li>
+<li>Settings label a comp's own value "this comp only".</li>
+</ul>
+<h3>Windows</h3>
+<ul>
+<li>An interface scale option in Settings, kept across restarts.</li>
+<li>The file browser keeps drive letters and network share names in its path bar.</li>
+<li>Color pickers close with their panel without crashing.</li>
+<li>Paths over 260 characters work in the launcher, the installed runtime and the movie tools.</li>
+<li>Roto curves with quotes save and reopen correctly; Roto edge rounding matches the Mac.</li>
+<li>The Viewer shows reliably when a panel opens; toolbars close without errors.</li>
+<li>Help stays the last menu; render queue jobs keep their destination folders; the launcher says which runtime file is missing or why a child process failed.</li>
+</ul></details>
+<details><summary>1.0.6 (build 3594) &nbsp; Nov 10, 2026</summary><h3>New</h3>
+<ul>
+<li>The 3D view: choosing a camera under view keeps it and looks through it, and orbiting, panning and zooming then move the camera (one undo each), with a lock to look without moving it. Wire, Shaded, Textured and Lit are icons, and points, frustums, coverage, grid and unconnected sit in one Show menu. The translate handle's axes end in arrowheads.</li>
+<li>The open and save dialog: click a column's header to sort by it (again to reverse), right-click the header to choose columns (Kind, Modified, Size, Created, Frames, Resolution, Owner), and drag their edges to size them; Kento remembers all three. Folders stay above files.</li>
+<li>Settings, New comps: New Writes' compression, the EXR compression new Writes start with (Nuke's Zip (1 scanline) unless you choose another).</li>
+<li>Remote control: roto.set_points sets a shape's points over many frames in one call; grid.make, grid.move_points, grid.key_points and grid.points edit a GridWarp; comp.check lists what would stop a render (missing files, Writes into missing folders, nodes in error); node.channels; render_frame as a float EXR; viewer.overlay_grab shows a matte laid over the picture, as an artist checks one; describe with a command's name explains it.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>A save that would leave out a node you can see in the Node Graph is refused, and your file is left as it was. Exporting a .nk writes beside the file first, as saving a .ko does.</li>
+<li>After an update, Kento reopens the saved comps that were open.</li>
+<li>The open and save dialog's "newest first" sorts folders by date too; Favorites is spelled the American way.</li>
+<li>A new Roto shape made over remote control keeps the name it's given when that name is free.</li>
+<li>PlanarTracker's settings have descriptions on hover.</li>
+</ul></details>
+<details><summary>1.0.5 (build 3508) &nbsp; Nov 10, 2026</summary><h3>Changed</h3>
+<ul>
+<li>With Keep the history in the comp on (Settings, Saving and updates), each step's saved copy of the comp held every copy before it, so the history doubled with every edit until Kento stopped answering and saving took minutes. Each step now keeps the comp alone, the kept history has a limit, and a comp saved with the oversized history opens with it dropped (a warning says so).</li>
+</ul></details>
+<details><summary>1.0.4 (build 3504) &nbsp; Nov 10, 2026</summary><h3>New</h3>
+<ul>
+<li>Settings, redesigned: grouped by what you're doing (Global and This comp), each page opening with what it changes, every row saying in a line what it does, live previews on the pages that change a look (Look and size, Node Graph, Viewer and playback), search that lands on the row, a Reset this page that can be undone, and the risky actions apart in a Start over box. The Node toolbar page shows the toolbar as it will look and every node of each button's menu.</li>
+<li>Tracks in and out of other apps: Import tracks... and Export tracks... on the Tracker and the CameraTracker read and write the files matchmove and finishing apps use (3DEqualizer, SynthEyes, PFTrack, boujou, Flame, MatchMover, Maya, Shake, Nuke's Tracker and CameraTracker, and After Effects nulls on export). A sheet draws the tracks' paths over the plate before anything is added or written, so a file read upside down, at the wrong size or on the wrong frames looks wrong first. Frames start at the comp's first frame, a plate of another size is scaled, and adding or replacing tracks is one undo.</li>
+<li>3D wired by what it carries: a port's shape says whether it takes pictures, a 3D scene, a camera or a material. While you drag a wire, the inputs that would take it light up and the rest fade. A wire that can't work, such as a 3D object straight into a Grade, is refused, and a small card by the node says why and offers the fix (Render it puts a ScanlineRender in between; Put on a card puts an image into 3D), fading by itself. A camera dropped on a render's obj/scn goes to its cam. Older comps load as written, with a wrong wire shown dashed and its fix on hover.</li>
+<li>A ScanlineRender, ScanlineRender2 or Projection that shows nothing says why in the Viewer and in Properties: an object at the camera's position (with Move Card1 in front), no camera, or lit materials with no lights.</li>
+<li>3D scenes that work: ScanlineRender lights cubes, spheres, cylinders and meshes as well as cards, sees through a default camera when none is wired, and draws the lights; the 3D view has rotate and scale handles, box select and a lit preview.</li>
+<li>Remote control: tracks.import and tracks.export; a wrong argument is answered in plain words with what the command takes; render_frame no longer holds up the interface.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Roto over remote control: setting a shape's points at a frame keys the shape there, five times faster than before; a duplicated Roto or PlanarTracker tracks like the original; tracking backward works whichever way round the range is given; a point that jumps far from the others stops and is reported; a track that has lost the plane says so; shapes held out of a plane track ride along with it; an exported track lands beside its Roto with the held-out shapes as its matte.</li>
+<li>GridWarp: a grid point keyed in x and not in y (or the other way) now warps (it was ignored, which also made "on black" give a black frame); keyed grids render about six times faster; a Read with missing files fails at once instead of after a long wait.</li>
+<li>Node toolbar: 3D's classic nodes (Card, Camera, ScanlineRender, Project3D and the rest) a level up; the new 3D system under 3D &gt; USD 3D.</li>
+<li>Node Graph: a busy node's input names show on hover without stacking; zoomed in, a node's name shrinks until it fits rather than being cut. Scroll bars show only their handle until they're needed.</li>
+<li>The Dope Sheet's strip can be resized. Saku's Inpaint is now called TextureFill.</li>
+<li>The Curve Editor: an offset typed as a timecode (00:00:01:00) moves keys by that much rather than from the comp's start timecode, and += takes a timecode.</li>
+<li>Kiri: the black and white levels amount starts at half; levels stay off until you turn them on.</li>
+</ul></details>
+<details><summary>1.0.3 (build 3437) &nbsp; Nov 10, 2026</summary><h3>New</h3>
+<ul>
+<li>The Curve Editor, rebuilt to fit small panels: one strip along the top (Key shape, Frame and Value, the time unit, Snap, the view mode, Motion and View) whose less-used parts fold into the View menu as the panel narrows; zoom and frame buttons in the graph's corner; scroll bars that also zoom when you drag their ends; the key's numbers, Move by, Low-pass filter and Bake in small popovers beside what you clicked instead of windows; and right clicks on a key, a curve or empty space for what applies there. Frame and Value take +=, -=, *= and /= on every selected key, and the frame can be shown in frames, timecode or seconds.</li>
+<li>The key inspector at the Curve Editor's right: a narrow column with the chosen key's frame, value and shape, its handles drawn so you can drag them or type their angle and length, whether the handles are tied or broken, and how the curve carries on before and after its keys. Its chevron folds it to a thin edge, giving the graph the room; Shift+I or the edge opens it again. With several keys chosen, typing sets them all.</li>
+<li>Curve groups: any keyed curves grouped (Cmd+G) and shaped together by a strength, a speed and an offset curve, each curve about its own values and in its own range. Groups nest; Ungroup, or deleting the group, puts the curves back as they were keyed, and Bake keeps the shaped result as keys. Saved in .nk files, where Nuke gives the same numbers.</li>
+<li>The Dope Sheet as the Curve Editor's twin: the same strip, a row for each channel, Find and Show over the names, the selection's range shown in amber to drag or scale, and the names closing to a narrow edge on small panels.</li>
+<li>The Motion window: the gallery of motions as cards that flow and scroll in three sizes, with favorites; the settings in one scrolling column; a one-line footer with the expression, Bake and Apply live; and the motion shown live on its curve in the Curve Editor while the window is open.</li>
+<li>Node toolbar: Make a button turns a family's group into a button of its own, and Icon... picks a button's icon.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Keymix with its mask channel switched off now treats the mask as black, as Nuke does (it used to give all of A).</li>
+<li>Remote control finishes sending a reply before it closes the connection.</li>
+</ul></details>
+</body></html>
+]]></description>
+            <enclosure url="https://review.byautonomy.com/download/kento/Kento-1.0.8.3923.zip" length="485175729" type="application/octet-stream" sparkle:edSignature="yAyYVdDQyXiLyS3FkgpelcX18UVJGlPcuJhTqPRLwoGju1DKIU4A0YAy+RS11cXtW0VP+OTTQ5B0YMfnFb6CDg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3923-3786.delta" sparkle:deltaFrom="3786" length="6016026" type="application/octet-stream" sparkle:edSignature="IUObJBwbpR2awuX86Y80wnTuUnl6ejxI6tbkfpIhftC5fpHl6aYSasT89OKSn58MtgUHhxwCcG+hQhHrknkBDA=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3923-3594.delta" sparkle:deltaFrom="3594" length="7688738" type="application/octet-stream" sparkle:edSignature="GCq7gCGJLrGZPO4kiFpZu+QmgiRs3kNLBD03ZKculxRA8ERlEjObfLtBrP3I+bexfhzzZH9XjEJ06aHIy7rTAg=="/>
+                <enclosure url="https://review.byautonomy.com/download/kento/Kento3923-3508.delta" sparkle:deltaFrom="3508" length="8611006" type="application/octet-stream" sparkle:edSignature="UIxNWPFUxMXIw0bKj/hzMJMl35WlrMqT4hgyty9/Lkv7RE70gQksS3uOKw9Tq9vA7l/C3jVwPLbgQpJxQDJNBQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.0.7</title>
             <pubDate>Wed, 11 Nov 2026 19:00:20 -0800</pubDate>
             <sparkle:version>3786</sparkle:version>
@@ -215,25 +442,6 @@
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3594-3508.delta" sparkle:deltaFrom="3508" length="2604942" type="application/octet-stream" sparkle:edSignature="z4a9x9FGMHMtrgt+JRGJ8tGnscl3oyNtXWg4pSUawbjSaMe43Q52EgjgkGF+YJ/hObQYaLrMRZgLpsmDB8ehCQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3594-3504.delta" sparkle:deltaFrom="3504" length="2603866" type="application/octet-stream" sparkle:edSignature="DvvcdmE4L+EqeUkjlb3SCOHfa5hVJpGSAEddJpka29gFqdz1lwDE7dvVRhhmLZWsCNME+DN1N2CF80Jcqo3JCQ=="/>
                 <enclosure url="https://review.byautonomy.com/download/kento/Kento3594-3437.delta" sparkle:deltaFrom="3437" length="6036710" type="application/octet-stream" sparkle:edSignature="HDAiXAzAc34s03s07X13ziphc/qQBTJfVseKzj+iYdHCiiYwE9AGYun4BzGFMkHi8fs13wQIUPvGRLlND7hECQ=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>1.0.5</title>
-            <pubDate>Tue, 10 Nov 2026 12:05:29 -0800</pubDate>
-            <sparkle:version>3508</sparkle:version>
-            <sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h2>Kento Beta 1.0.5, build 3508</h2>
-<h3>Changed</h3>
-<ul>
-<li>With Keep the history in the comp on (Settings, Saving and updates), each step's saved copy of the comp held every copy before it, so the history doubled with every edit until Kento stopped answering and saving took minutes. Each step now keeps the comp alone, the kept history has a limit, and a comp saved with the oversized history opens with it dropped (a warning says so).</li>
-</ul>
-]]></description>
-            <enclosure url="https://review.byautonomy.com/download/kento/Kento-1.0.5.3508.zip" length="480917960" type="application/octet-stream" sparkle:edSignature="aQc74urYgowyLYKGZ+57DMTkpfCgmuDsW3cqJqzEsfvjnRo4msKanfRy3aHi72gn5Kq5rhdY6FSvFzoM1aYiAg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3508-3504.delta" sparkle:deltaFrom="3504" length="811878" type="application/octet-stream" sparkle:edSignature="5hpbvX8Qkz/HSx/8QPfT0CGbqOjK/ehetKE5nrAZNQ43DtnU3J1ZvZ4hjLG4BNiQprNfauJiIISpz3gPOVrxAw=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3508-3437.delta" sparkle:deltaFrom="3437" length="5178306" type="application/octet-stream" sparkle:edSignature="A6uoahrFnmJSHFR5Rxsv+Jt1XcWr65EeoSTH5b5XvLBx0jWnmExN2e2OiLsCnH8BsXOXAuIBMp/cfllWx8I6DQ=="/>
-                <enclosure url="https://review.byautonomy.com/download/kento/Kento3508-3346.delta" sparkle:deltaFrom="3346" length="6318434" type="application/octet-stream" sparkle:edSignature="KqVakmpFvp4aqTw0/bfOVMtdbdAzlDiUO75gfTUc04fmNl+8vY/tAXJ4YKLtkHhdMTQ77lSdbz3esLzjlDIwAA=="/>
             </sparkle:deltas>
         </item>
     </channel>
